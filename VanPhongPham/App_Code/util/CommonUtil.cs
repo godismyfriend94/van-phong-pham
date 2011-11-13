@@ -9,7 +9,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
-
+using System.Text;
 /// <summary>
 /// Chua cac ham xu ly co ban nhu validate, loai bo sql injection...
 /// </summary>
@@ -37,9 +37,44 @@ public class CommonUtil
         	str = str.Replace("%", "\\%");
             return str;
         } 
-        catch (Exception e) 
+        catch (Exception e)
         {
             return str;
         }
+    }
+
+    /// <summary>
+    /// Escape special chars html
+    /// </summary>
+    /// <param name="content"></param>
+    /// <returns></returns>
+    public static string EscapeHTML(string content)
+    {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < content.ToCharArray().Length; i++)
+        {
+            char c = content[i];
+
+            switch (c)
+            {
+                case '<':
+                    sb.Append("&lt;");
+                    break;
+                case '>':
+                    sb.Append("&gt;");
+                    break;
+                case '&':
+                    sb.Append("&amp;");
+                    break;
+                case '"':
+                    sb.Append("&quot;");
+                    break;
+                case '\'': sb.Append("&apos;"); break;
+                default: break;
+                    sb.Append(c);
+            }
+        }
+        content = sb.ToString();
+        return content;
     }
 }
