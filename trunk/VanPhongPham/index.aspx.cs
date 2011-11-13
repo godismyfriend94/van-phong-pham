@@ -14,6 +14,7 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        test.Text = CommonDb.OpenConnection().ToString();
+        //test.Text = CommonDb.OpenConnection().ToString();
+        test.Text = CommonUtil.EscapeHTML("<html></html>");
     }
 }
