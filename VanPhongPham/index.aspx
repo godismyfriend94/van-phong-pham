@@ -8,6 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <embed title="" src="vpp/images/banner.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" wmode="transparent" type="application/x-shockwave-flash" height="200" width="1000"/>
     <div>
         <asp:Label ID="test" runat="server"></asp:Label>
     </div>
