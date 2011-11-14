@@ -26,6 +26,14 @@
     <asp:ToolkitScriptManager ID="ScriptManager1" runat="server" 
         EnablePartialRendering="true">
     </asp:ToolkitScriptManager>
+    <div>
+        <embed title="" src="vpp/images/banner.swf" quality="high" 
+        pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" 
+        wmode="transparent" type="application/x-shockwave-flash" height="200" width="1000"/>
+    </div>
+    <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
+        
+    </asp:ContentPlaceHolder>
 </form>
 </body>
 </html>
