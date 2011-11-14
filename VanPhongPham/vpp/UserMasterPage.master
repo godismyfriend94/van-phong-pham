@@ -1,0 +1,32 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Văn Phòng Phẩm - 18 Tô Vĩnh Diện</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, assignment" />
+    <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
+        máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
+        18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
+        sửa chữa máy in, sua chua may in, lắp đặt máy văn phòng, lap dat may van phong" />
+    <meta name="description" content="Cung cấp thiết bị văn phong - chất lượng cao - 18 Tô Vĩnh Diện" />
+    <link rel="SHORTCUT ICON" href="images/contact_bt.gif"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/iecss.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/boxOver.js"></script>
+
+</head>
+
+<body runat="server">
+<form runat="server" id="formUser">
+    <asp:ToolkitScriptManager ID="ScriptManager1" runat="server" 
+        EnablePartialRendering="true">
+    </asp:ToolkitScriptManager>
+</form>
+</body>
+</html>
+

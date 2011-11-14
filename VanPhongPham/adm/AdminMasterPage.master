@@ -6,10 +6,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
+    <title>Văn Phòng Phẩm - 18 Tô Vĩnh Diện</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Flower Shop Admin</title>
-    <link rel="SHORTCUT ICON" href="../user/images/bullet2.gif"/>
-    <!--// SCRIPTS FOR DROPDOWN AND TABBED INTERFACE -->
+    <meta name="robots" content="index, assignment" />
+    <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
+        máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
+        18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
+        sửa chữa máy in, sua chua may in, lắp đặt máy văn phòng, lap dat may van phong" />
+    <meta name="description" content="Cung cấp thiết bị văn phong - chất lượng cao - 18 Tô Vĩnh Diện" />
+    <link rel="SHORTCUT ICON" href="../vpp/images/bullet2.gif"/>
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/dropmenu.js" type="text/javascript"></script>
