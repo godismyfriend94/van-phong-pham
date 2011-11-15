@@ -11,6 +11,12 @@ public partial class vpp_default : System.Web.UI.Page
     {
 
     }
+
+    /*call this webmethod to display top 5 products on banner
+         
+    
+     */
+      
     [System.Web.Services.WebMethod]
     [System.Web.Script.Services.ScriptMethod]
     public static AjaxControlToolkit.Slide[] GetSlides()

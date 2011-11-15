@@ -17,7 +17,7 @@
 </head>
 <body>
     <form runat="server" id="frm_main">
-    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    
         
     <div id="main_container">
         <div class="top_bar">
@@ -56,7 +56,8 @@
                     
                     <div class="oferta_content">
                     <%-------------------------------------------------------%>
-                                     
+                        <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                        </cc1:ToolkitScriptManager>                
                     
                     <cc1:SlideShowExtender ID="SlideShowExtender1" runat="server"
                         BehaviorID="SSBehaviorID"
@@ -68,7 +69,7 @@
                         NextButtonID="btnNext"
                         PreviousButtonID="btnPrev"
                         PlayButtonID="btnPlay"
-                        PlayButtonText="Play"                        
+                                              
                         Loop="true" PlayInterval = "2000"  >
                     </cc1:SlideShowExtender>
                     
