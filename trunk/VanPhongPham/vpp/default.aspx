@@ -1,11 +1,7 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="vpp_default" %>
-<<<<<<< .mine
 <%@ Register Src="LastestProduct.ascx" TagPrefix="usc" TagName="LastestProduct" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
-=======
-<%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
->>>>>>> .r10
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -72,10 +68,10 @@
                         NextButtonID="btnNext"
                         PreviousButtonID="btnPrev"
                         PlayButtonID="btnPlay"
-                        PlayButtonText="Play"
-                        StopButtonText="Stop"
-                        Loop="true" PlayInterval = "100" >
+                        PlayButtonText="Play"                        
+                        Loop="true" PlayInterval = "2000"  >
                     </cc1:SlideShowExtender>
+                    
                     <asp:Image ID="img1" runat="server"
                           Height="92px" Width="94px" ImageUrl="images/laptop.png"
                           CssClass="oferta_img"/>   
@@ -112,104 +108,11 @@
                 <div class="top_divider">
                     <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
             </div>
-<<<<<<< .mine
             <!-- end of oferte_content-->
         </div>
     <div id="main_content">
         <div id="menu_tab">
             <div class="left_menu_corner">
-=======
-            <div class="top_divider"><img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-        	
-        </div> <!-- end of oferte_content-->
-        
-
-    </div>
-    
-   <div id="main_content"> 
-   
-            <div id="menu_tab">
-            <div class="left_menu_corner"></div>
-                    <ul class="menu">
-                         <li><a href="index.html" class="nav1"> Trang ch&#7911; </a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav2">S&#7843;n ph&#7849;m </a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
-                         <li class="divider"></li>
-                         <li><a href="#" class="nav4">My account</a></li>
-                         
-                         <li class="divider"></li>                         
-                         <li><a href="#" class="nav5">Giao h&agrave;ng  </a></li>
-                         <li class="divider"></li>
-                         <li><a href="contact.html" class="nav6">Li&ecirc;n h&#7879; </a></li>
-                         <li class="divider"></li>
-                         <li class="currencies">Currencies
-                         <select>
-                         <option>US Dollar</option>
-                         <option>Euro</option>
-                         </select>
-                         </li>
-                    </ul>
-
-             <div class="right_menu_corner"></div>
-            </div><!-- end of menu tab -->
-            
-    <div class="crumb_navigation">
-    Navigation: <span class="current">Home</span>
-    
-    </div>        
-    
-    
-   <div class="left_content">
-    <div class="title_box">Danh m&#7909;c s&#7843;n ph&#7849;m </div>
-    
-        <ul class="left_menu">
-        <li class="odd"><a href="#">Processors</a></li>
-        <li class="even"><a href="#">Motherboards</a></li>
-        
-        </ul> 
-        
-        
-     <div class="title_box">Special Products</div>  
-     <div class="border_box">
-         <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-         <div class="product_img"><a href="details.aspx"><img src="images/laptop.png" alt="" title="" border="0" /></a></div>
-         <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
-     </div>  
-     
-     
-     <div class="title_box">Newsletter</div>  
-     <div class="border_box">
-		<input type="text" name="newsletter" class="newsletter_input" value="your email"/>
-        <a href="#" class="join">join</a>
-     </div>  
-     
-     <div class="banner_adds">
-     
-     <a href="#"><img src="images/bann2.jpg" alt="" title="" border="0" /></a>
-     </div>    
-        
-    
-   </div><!-- end of left content -->
-   
-   
-   <div class="center_content">
-   	<div class="center_title_bar">S&#7843;n ph&#7849;m m&#7899;i  </div>
-   	<!--begin lastest products-->
-       <usc:LastestProduct  runat="server" ID ="uscLastestProduct"/>
-    <!--end of lastest products-->
-    
-     	<div class="center_title_bar">S&#7843;n ph&#7849;m xem nhi&#7873;u nh&#7845;t </div>
- 
- 
-      	<div class="prod_box">
-        	<div class="top_prod_box"></div>
-            <div class="center_prod_box">            
-                 <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-                 <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
-                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
->>>>>>> .r10
             </div>
             <ul class="menu">
                 <li><a href="index.html" class="nav1">Trang ch&#7911; </a></li>
