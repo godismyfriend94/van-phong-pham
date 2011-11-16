@@ -204,7 +204,7 @@ margin:0px; padding:0px;background:url(../images/menu_bg.gif) repeat-x;}
 
 ul.menu li {
 display:inline;
-font-size:11px;
+font-size:12px;
 font-weight:bold;
 line-height:50px;
 }
@@ -304,6 +304,15 @@ height:auto;
 text-align:center;
 border:1px #6da6b1 solid;
 }
+
+.border_box_menu{
+width:194px;
+height:auto;
+text-align:left;
+padding: 0px;
+border:1px #6da6b1 solid;
+}
+
 .product_title{
 color:#ea2222;
 padding:5px 0 5px 0;

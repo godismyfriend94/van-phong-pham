@@ -11,9 +11,7 @@
     <!--[if IE 6]>
 <link rel="stylesheet" type="text/css" href="css/iecss.css" />
 <![endif]-->
-
     <script type="text/javascript" src="js/boxOver.js"></script>
-
 </head>
 <body>
     <form runat="server" id="frm_main">
