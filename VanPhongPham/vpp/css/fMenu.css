@@ -6,6 +6,14 @@
 	color: #4A8CFF;
 	text-decoration: underline;
 }
+
+#left_menu_acc .actived
+{
+	/*background: url(../images/right.png) no-repeat 5px center;*/
+	/*color: #4A8CFF;*/
+	text-decoration: underline;
+}
+
 #left_menu_acc dl
 {
 	width: 194px;

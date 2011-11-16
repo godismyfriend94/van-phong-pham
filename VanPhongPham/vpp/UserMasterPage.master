@@ -21,6 +21,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     
+    <!--Begin doan javascript xu ly cho left menu-->
     <script type="text/javascript">
         $(document).ready(function() {
             $('dd:not(:first)').hide();
@@ -31,11 +32,17 @@
                 return false;
             });
 
+            $('dd a').click(function() {
+                $('.actived').removeClass('actived');
+                $(this).parent().addClass('actived');
+                return true;
+            });
         });
     </script>
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="css/iecss.css" />
-<![endif]-->
+    <!--End doan javascript xu ly cho left menu-->
+    <!--[if IE 6]>-->
+    <link rel="stylesheet" type="text/css" href="css/iecss.css" />
+    <!--<![endif]-->
 <script type="text/javascript" src="js/boxOver.js"></script>
 </head>
 <body>
@@ -76,10 +83,10 @@
             
             <div class="oferta_content">
             <!-- --------------------------------------------------- -->
-            <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+            <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>                
             
-            <asp:SlideShowExtender ID="SlideShowExtender1" runat="server"
+            <asp:SlideShowExtender ID="SlideShowExtender" runat="server"
                 BehaviorID="SSBehaviorID"
                 TargetControlID="img1"
                 SlideShowServiceMethod="GetSlides"
@@ -88,8 +95,7 @@
                 ImageTitleLabelID ="lblTitle"
                 NextButtonID="btnNext"
                 PreviousButtonID="btnPrev"
-                PlayButtonID="btnPlay"
-                                      
+                PlayButtonID="btnPlay"                
                 Loop="true" PlayInterval = "2000"  >
             </asp:SlideShowExtender>
             
@@ -107,8 +113,6 @@
                 </div>
                 <a href="details.aspx" class="details">details</a>
             </div>   
-            <div> 
-            </div>
             </div>
             <div class="oferta_pagination">
                 <!--<span class="current">1</span>
@@ -131,19 +135,20 @@
             <div id="menu_tab">
             <div class="left_menu_corner"></div>
                     <ul class="menu">
-                         <li><a href="index.html" class="nav1"> Trang ch&#7911; </a></li>
+                         <li><a href="../index.aspx" class="nav1"> Trang ch&#7911; </a></li>
                          <li class="divider"></li>
-                         <li><a href="#" class="nav2">S&#7843;n ph&#7849;m </a></li>
+                         <li><a href="products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
                          <li class="divider"></li>
-                         <li><a href="#" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
+                         <li><a href="promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
                          <li class="divider"></li>
                          <li><a href="#" class="nav4">My account</a></li>
                          
-                         <li class="divider"></li>                         
+                         <li class="divider"></li>
                          <li><a href="#" class="nav5">Giao h&agrave;ng  </a></li>
                          <li class="divider"></li>
-                         <li><a href="contact.html" class="nav6">Li&ecirc;n h&#7879; </a></li>
+                         <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                          <li class="divider"></li>
+                         
                          <li class="currencies">Currencies
                          <select>
                          <option>US Dollar</option>
@@ -168,17 +173,17 @@
         <div class="border_box_menu">
         <div id="left_menu_acc" class="post">
             <dl>
-            <dt><a href="/index.html">Muc may in</a></dt>
+            <dt><a href="#">Muc may in</a></dt>
             <dd>
                 <ul style="margin-left: 0px;">
-                    <li><a href="#">- Thiet bi van phong</a></li>
-                    <li><a href="#">- Muc in may tinh</a></li>
-                    <li><a href="#">- Thiet bi van phong</a></li>
-                    <li><a href="#">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                    <li><a href="#">- Thiet bi van phong Thiet bi van phong</a></li>
-                    <li><a href="#">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                    <li><a href="#">- Thiet bi van phong Thiet bi van phong</a></li>
-                    <li><a href="#">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
+                    <li><a href="details.aspx">- Thiet bi van phong</a></li>
+                    <li><a href="details.aspx">- Muc in may tinh</a></li>
+                    <li><a href="details.aspx">- Thiet bi van phong</a></li>
+                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
+                    <li><a href="details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
+                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
+                    <li><a href="details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
+                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
                 </ul>
             </dd>
             <dt><a href="#"><b>Thiet bi van phong</b></a></dt>

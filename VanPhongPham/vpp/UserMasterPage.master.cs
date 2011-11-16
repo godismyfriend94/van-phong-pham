@@ -17,17 +17,13 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
     static HttpCookie cookie = new HttpCookie("Language");    
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!Page.IsPostBack)
-        {
+        //if (!Page.IsPostBack)
+        //{
             
-        }
+        //}
     }
 
-    /*call this webmethod to display top 5 products on banner
-         
-    
-     */
-
+    /*call this webmethod to display top 5 products on banner*/
     [System.Web.Services.WebMethod]
     [System.Web.Script.Services.ScriptMethod]
     public static AjaxControlToolkit.Slide[] GetSlides()
