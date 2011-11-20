@@ -100,18 +100,18 @@
 
 	<div class="top_bar">
     	<div class="top_search">
-        	<div class="search_text"><a href="vpp/advancesearch.aspx">Tìm kiếm nâng cao</a></div>
-            <input type="text" class="search_input" name="search" />
-            <input type="image" src="vpp/images/search.gif" class="search_bt"/>
+        	<div class="search_text"><a href="vpp/advancesearch.aspx" title="header=[Tới trang tìm kiếm nâng cao] body=[&nbsp;] fade=[on]">Tìm kiếm nâng cao</a></div>
+            <input type="text" class="search_input" name="search" title="header=[Điền tên sản phẩm cần tìm] body=[&nbsp;] fade=[on]"/>
+            <input type="image" src="vpp/images/search.gif" class="search_bt" title="header=[Bắt đầu tìm kiếm] body=[&nbsp;] fade=[on]"/>
         </div>
         
         <div class="languages">
         	<div class="lang_text">
-        	<a href="#">
+        	<a href="#" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">
         	Đăng nhập 
         	</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="#">
+        	<a href="#" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">
         	Đăng ký
         	</a> </div>
            <%-- <a href="#" class="lang"><img src="vpp/images/en.gif" alt="" title="" border="0" /></a>
@@ -183,26 +183,28 @@
             <div id="menu_tab">
             <div class="left_menu_corner"></div>
                     <ul class="menu">
-                         <li><a href="index.aspx" class="nav1"> Trang ch&#7911; </a></li>
+                         <li><a href="../index.aspx" class="nav1"> Trang ch&#7911; </a></li>
                          <li class="divider"></li>
-                         <li><a href="vpp/products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
+                         <li><a href="products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
                          <li class="divider"></li>
-                         <li><a href="vpp/promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
+                         <li><a href="promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
                          <li class="divider"></li>
-                         <li><a href="#" class="nav4">Tài khoản</a></li>
+                         <li><a href="#" class="nav4">Chính sách</a></li>
                          
                          <li class="divider"></li>
                          <li><a href="#" class="nav5">Giao h&agrave;ng  </a></li>
                          <li class="divider"></li>
-                         <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
+                         <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                          <li class="divider"></li>
                          
-                         <li class="currencies">Loại tiền: 
+                         <li><a href="contact.aspx" class="nav7">FAQs</a></li>
+                         <li class="divider"></li>
+                         <%--<li class="currencies">Loại tiền: 
                          <select>
                          <option selected="true">VND</option>
                          <option>US Dollar</option>
                          </select>
-                         </li>
+                         </li>--%>
                     </ul>
              <div class="right_menu_corner"></div>
             </div><!-- end of menu tab -->
@@ -295,8 +297,8 @@
      
      <div class="banner_adds">
      
-     <a href="#"><img src="vpp/images/bann2.jpg" alt="" title="" border="0" /></a>
-     </div>    
+     <a href="#"><img src="images/advertise/bann2.jpg" alt="" title="" border="0" /></a>
+     </div>
         
     
    </div><!-- end of left content -->
@@ -398,37 +400,37 @@
      
      <div class="banner_adds">
      
-     <a href="#"><img src="vpp/images/bann1.jpg" alt="" title="" border="0" /></a>
+     <a href="#"><img src="images/advertise/bann1.jpg" alt="" title="" border="0" /></a>
      </div>        
    </div><!-- end of right content -->   
    
    <!-- bat dau vung quang cao truot 2 ben trang web -->   
    <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
       <a href="#">
-          <img src="vpp/images/bann1.jpg" width="125"  alt="bann1"/>
+          <img src="images/advertise/bann1.jpg" width="125"  alt="bann1"/>
       </a>
       <br />
       <a href="#">
-          <img src="vpp/images/bann2.jpg" width="125" alt="bann2"/>
+          <img src="images/advertise/bann2.jpg" width="125" alt="bann2"/>
       </a>
       <br />
       <a href="#">
-          <img src="vpp/images/bann1.jpg" width="125"  alt="bann1"/>
+          <img src="images/advertise/bann1.jpg" width="125"  alt="bann1"/>
       </a>
       
     </div>
     
     <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
         <a href="#">
-          <img src="vpp/images/bann2.jpg" width="125" alt="bann2"/>
+          <img src="images/advertise/bann2.jpg" width="125" alt="bann2"/>
         </a>
         <br />
         <a href="#">
-          <img src="vpp/images/bann1.jpg" width="125"  alt="bann1"/>
+          <img src="images/advertise/bann1.jpg" width="125"  alt="bann1"/>
         </a>
         <br />
         <a href="#">
-          <img src="vpp/images/bann2.jpg" width="125"  alt="bann2"/>
+          <img src="images/advertise/bann2.jpg" width="125"  alt="bann2"/>
         </a>
     </div>
     
