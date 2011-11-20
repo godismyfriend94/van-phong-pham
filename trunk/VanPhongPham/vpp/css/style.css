@@ -619,7 +619,7 @@ background:url(../images/footer_bg.gif) repeat-x top;
 }
 .left_footer{
 float:left;
-width:300px;
+width:250px;
 padding:5px 0 0 10px;
 }
 .right_footer{
@@ -637,10 +637,11 @@ text-decoration:underline;
 
 .center_footer{
 float:left;
-width:200px;
+width:350px;
 text-align:center;
 color:#666666;
 padding:10px 0 0 60px;
+font-size: 13px;
 }
 
 .Image
