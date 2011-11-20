@@ -7,7 +7,7 @@
             <!--Chi tiet san pham-->
         </asp:ContentPlaceHolder>
         
-        <div class="center_title_bar">Similar products</div>
+        <div class="center_title_bar">Sản phẩm tương tự</div>
       	<div class="prod_box">
         	<div class="top_prod_box"></div>
             <div class="center_prod_box">            
@@ -15,7 +15,7 @@
                  <div class="product_img"><a href="details.html"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
                  <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
             </div>
-            <div class="bottom_prod_box"></div>             
+            <div class="bottom_prod_box"></div>
             <div class="prod_details_tab">
             <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
             <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>

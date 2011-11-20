@@ -1,24 +1,26 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
     <meta name="robots" content="index, assignment" />
     <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
         18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
         sửa chữa máy in, sua chua may in, lắp đặt máy văn phòng, lap dat may van phong" />
     <meta name="description" content="Cung cấp thiết bị văn phong - chất lượng cao - 18 Tô Vĩnh Diện" />
-    <title>Văn Phòng Phẩm - 18 Tô Vĩnh Diện</title>
+    
     <link rel="SHORTCUT ICON" href="images/iconHNTechPro.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     
     <!--Begin doan javascript xu ly cho left menu-->
@@ -42,7 +44,6 @@
     <script type="text/javascript">
         PositionX = 100;
         PositionY = 100;
-
 
         defaultWidth  = 500;
         defaultHeight = 500;
@@ -81,15 +82,16 @@
 <body>
 <form runat="server" id="frm_main">
 <div id="main_container">
+
 	<div class="top_bar">
     	<div class="top_search">
-        	<div class="search_text"><a href="#">Advanced Search</a></div>
+        	<div class="search_text"><a href="#">Tìm kiếm nâng cao</a></div>
             <input type="text" class="search_input" name="search" />
             <input type="image" src="images/search.gif" class="search_bt"/>
         </div>
         
         <div class="languages">
-        	<div class="lang_text">Tài khoản: </div>
+        	<div class="lang_text">Tài khoản: </div>
             <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>
             <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>     
         </div>
@@ -144,7 +146,7 @@
                 <div class="oferta_text">
                     <asp:Label ID="lblDesc" runat="server" Text=""></asp:Label>
                 </div>
-                <a href="details.aspx" class="details">details</a>
+                <a href="details.aspx" class="details">chi tiết...</a>
             </div>   
             </div>
             <div class="oferta_pagination">
@@ -174,7 +176,7 @@
                          <li class="divider"></li>
                          <li><a href="promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
                          <li class="divider"></li>
-                         <li><a href="#" class="nav4">My account</a></li>
+                         <li><a href="#" class="nav4">Tài khoản</a></li>
                          
                          <li class="divider"></li>
                          <li><a href="#" class="nav5">Giao h&agrave;ng  </a></li>
@@ -182,10 +184,10 @@
                          <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                          <li class="divider"></li>
                          
-                         <li class="currencies">Currencies
+                         <li class="currencies">Loại tiền: 
                          <select>
+                         <option selected="true">VND</option>
                          <option>US Dollar</option>
-                         <option>Euro</option>
                          </select>
                          </li>
                     </ul>
@@ -193,7 +195,7 @@
             </div><!-- end of menu tab -->
             
     <div class="crumb_navigation">
-        Navigation: <span class="current">Home</span>
+        Bạn đang ở: <span class="current">Trang chủ</span>
     </div>        
    <div class="left_content">
     <div class="title_box">Danh m&#7909;c s&#7843;n ph&#7849;m </div>
@@ -206,7 +208,7 @@
         <div class="border_box_menu">
         <div id="left_menu_acc" class="post">
             <dl>
-            <dt><a href="#">Muc may in</a></dt>
+            <dt><a href="#">Mực máy in</a></dt>
             <dd>
                 <ul style="margin-left: 0px;">
                     <li><a href="details.aspx">- Thiet bi van phong</a></li>
@@ -219,7 +221,7 @@
                     <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
                 </ul>
             </dd>
-            <dt><a href="#"><b>Thiet bi van phong</b></a></dt>
+            <dt><a href="#"><b>Thiết bị văn phòng</b></a></dt>
             <dd>
                 <ul>
                     <li><a href="#">- Home</a></li>
@@ -232,7 +234,7 @@
                     <li><a href="#">- Services</a></li>
                 </ul>
             </dd>
-            <dt><a href="#">May tinh</a></dt>
+            <dt><a href="#">Máy tính</a></dt>
             <dd>
                 <ul>
                     <li><a href="#">- Home</a></li>
@@ -249,7 +251,7 @@
                     <li><a href="#">- Services</a></li>
                 </ul>
             </dd>
-            <dt><a href="#">Dich vu</a></dt>
+            <dt><a href="#">Dịch vụ</a></dt>
             <dd>
                 <ul>
                     <li><a href="#">- Home</a></li>
@@ -265,7 +267,7 @@
             </dl>
         </div>
         </div>
-     <div class="title_box">Special Products</div>  
+     <div class="title_box">Sản phẩm tiêu biểu</div>  
      <div class="border_box">
          <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
          <div class="product_img"><a href="details.aspx"><img src="images/laptop.png" alt="" title="" border="0" /></a></div>
@@ -320,19 +322,19 @@
    
    <div class="right_content">
    		<div class="shopping_cart">
-        	<div class="cart_title">Shopping cart</div>
+        	<div class="cart_title">Giỏ hàng</div>
             
             <div class="cart_details">
-            3 items <br />
+            3 sản phẩm <br />
             <span class="border_cart"></span>
-            Total: <span class="price">350$</span>
+            Tổng tiền: <span class="price">350$</span>
             </div>
             
             <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]">
 			<img src="images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
         
         </div>
-     <div class="title_box">What’s new</div>  
+     <div class="title_box">Sản phẩm mới</div>  
      <div class="border_box">
          <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
          <div class="product_img"><a href="details.aspx"><img src="images/p2.gif" alt="" title="" border="0" /></a></div>
@@ -342,7 +344,11 @@
     
         <ul class="left_menu">
         <li class="odd"><a href="#">Sony</a></li>
-        <li class="even"><a href="#">Samsung</a></li>        
+        <li class="even"><a href="#">Samsung</a></li>       
+        <li class="odd"><a href="#">Canon</a></li>  
+        <li class="even"><a href="#">Misubishi</a></li>   
+        <li class="odd"><a href="#">Toshiba</a></li>   
+        <li class="even"><a href="#">Dell</a></li>   
         </ul>      
      
      <div class="banner_adds">
@@ -350,7 +356,25 @@
      <a href="#"><img src="images/bann1.jpg" alt="" title="" border="0" /></a>
      </div>        
    </div><!-- end of right content -->   
-            
+   
+   <!-- bat dau vung quang cao truot 2 ben trang web -->   
+   <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+      <a href="#">
+          <img src="images/bann1.jpg" width="125"  alt="bann1"/>
+      </a>
+    </div>
+
+    <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+      <a href="#">
+          <img src="images/bann2.jpg" width="125" alt="bann2"/>
+      </a>
+    </div>
+    
+    <script type="text/javascript">
+    document.write("<script type='text/javascript' language='javascript'>MainContentW = 1000;LeftBannerW = 125;RightBannerW = 125;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 10;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");
+    </script>      
+    <!-- ket thuc vung quang cao truot 2 ben trang web -->  
+     
    </div><!-- end of main content -->
    <div class="footer">
         <div class="left_footer">
@@ -364,11 +388,11 @@
         <img src="images/payment.gif" alt="" title="" />
      </div>
         <div class="right_footer">
-        <a href="index.html">home</a>
-        <a href="details.aspx">about</a>
-        <a href="details.aspx">sitemap</a>
-        <a href="details.aspx">rss</a>
-        <a href="contact.html">contact us</a>
+        <a href="index.html">Trang chủ</a>
+        <a href="details.aspx">Giới thiệu</a>
+        <a href="details.aspx">Sơ đồ</a>
+        <a href="details.aspx">RSS</a>
+        <a href="contact.html">Liên hệ</a>
         </div>   
    </div>                 
 </div>
