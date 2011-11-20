@@ -12,7 +12,19 @@
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
         18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
         sửa chữa máy in, sua chua may in, lắp đặt máy văn phòng, lap dat may van phong" />
-    <meta name="description" content="Cung cấp thiết bị văn phong - chất lượng cao - 18 Tô Vĩnh Diện" />
+        
+        <!--thẻ meta description rất quan trọng khi chia sẻ qua thư, các trang chia sẻ sẽ lấy giá trị
+        trong thuộc tính content để gắn vào nội dung thư chia sẻ.-->
+    <meta name="description" content="
+        Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội
+        18 Tô Vĩnh Diện - Thanh Xuân - Hà Nội. 
+        
+        Chuyên cung cấp thiết bị văn phòng - chất lượng cao như: máy in, máy photocopy, máy fax, máy chấm công, máy hủy tài liệu, máy scan, mực máy in...
+        Trung tâm cung cấp các dịch vụ về lắp đặt, sửa chữa, bảo trì thiết bị văn phòng tại công ty, tại nhà...
+        
+        Điện thoại: 04-35683040 -35683640- 66732220
+        Hotline: Mr Hưởng 0913.583.121  
+        "/>
     
     <link rel="SHORTCUT ICON" href="images/iconHNTechPro.png"/>
     
@@ -291,30 +303,7 @@
    
    <div class="center_content">
    <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
-   	<div class="center_title_bar">S&#7843;n ph&#7849;m m&#7899;i  </div>
-   	<!--begin lastest products-->
-       <usc:LastestProduct  runat="server" ID ="uscLastestProduct"/>
-    <!--end of lastest products-->
-    
-     	<div class="center_title_bar">S&#7843;n ph&#7849;m xem nhi&#7873;u nh&#7845;t </div>
- 
- 
-      	<div class="prod_box">
-        	<div class="top_prod_box"></div>
-            <div class="center_prod_box">            
-                 <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-                 <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
-                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
-            </div>
-            <div class="bottom_prod_box"></div>         
-                
-            <div class="prod_details_tab">
-            <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
-            <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>
-            <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]"><img src="images/favorites.gif" alt="" title="" border="0" class="left_bt" /></a>           
-            <a href="details.aspx" class="prod_details">details</a>            
-            </div>                     
-        </div>
+
      </asp:ContentPlaceHolder>
    	 </div>
    	 
