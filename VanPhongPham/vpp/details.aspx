@@ -34,7 +34,26 @@
                          
                          <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
                          <a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>
-                     </div>                        
+                         
+                          <br /><br />
+                    <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_default_style">
+                        <a class="a2a_dd" href="http://www.addtoany.com/share_save">Chia sẻ</a>
+                        <span class="a2a_divider"></span>
+                        <a class="a2a_button_facebook" title="header=[Chia sẻ với Facebook] body=[&nbsp;] fade=[on]"></a>
+                        <a class="a2a_button_twitter" title="header=[Chia sẻ với Twitter] body=[&nbsp;] fade=[on]"></a>
+                        <a class="a2a_button_email" title="header=[Chia sẻ với Email] body=[&nbsp;] fade=[on]"></a>
+                        <a class="a2a_button_google_plus" title="header=[Chia sẻ với Google+] body=[&nbsp;] fade=[on]"></a>
+                        <a class="a2a_button_blogger_post" title="header=[Chia sẻ với BloggSpot] body=[&nbsp;] fade=[on]"></a>
+                        <!--<a class="a2a_button_yahoo_mail" title="header=[Chia sẻ với YahooMail] body=[&nbsp;] fade=[on]"></a>-->
+                        <a class="a2a_button_yahoo_messenger" title="header=[Chia sẻ với YahooMessenger] body=[&nbsp;] fade=[on]"></a>
+                        <!--<a class="a2a_button_google_gmail" title="header=[Chia sẻ với Gmail] body=[&nbsp;] fade=[on]"></a>-->
+                        </div>
+                        <%--<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>--%>
+                        <script type="text/javascript" src="js/add_any_page.js"></script>
+                    <!-- AddToAny END -->
+                     </div>    
+                    
             </div>
             <div class="bottom_prod_box_big"></div>                                
         </div>

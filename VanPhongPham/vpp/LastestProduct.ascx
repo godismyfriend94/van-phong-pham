@@ -23,7 +23,7 @@
                <img alt="" border="0" class="left_bt" src="images/favs.gif" title="" /></a>
                <a href="#" title="header=[Tặng phẩm] body=[&nbsp;] fade=[on]">
                <img alt="" border="0" class="left_bt" src="images/favorites.gif" title="" /></a>
-               <a href="details.html" class="prod_details" title="header=[Xem chi tiết] body=[&nbsp;] fade=[on]">Xem</a>
+               <a href="details.aspx" class="prod_details" title="header=[Xem chi tiết] body=[&nbsp;] fade=[on]">Xem</a>
            </div>
        </div>
        <br />
