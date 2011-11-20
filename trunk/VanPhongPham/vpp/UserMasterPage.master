@@ -362,12 +362,29 @@
       <a href="#">
           <img src="images/bann1.jpg" width="125"  alt="bann1"/>
       </a>
-    </div>
-
-    <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+      <br />
       <a href="#">
           <img src="images/bann2.jpg" width="125" alt="bann2"/>
       </a>
+      <br />
+      <a href="#">
+          <img src="images/bann1.jpg" width="125"  alt="bann1"/>
+      </a>
+      
+    </div>
+
+    <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+        <a href="#">
+          <img src="images/bann2.jpg" width="125" alt="bann2"/>
+        </a>
+        <br />
+        <a href="#">
+          <img src="images/bann1.jpg" width="125"  alt="bann1"/>
+        </a>
+        <br />
+        <a href="#">
+          <img src="images/bann2.jpg" width="125"  alt="bann2"/>
+        </a>
     </div>
     
     <script type="text/javascript">
