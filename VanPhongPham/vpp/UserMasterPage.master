@@ -73,6 +73,7 @@
         close();		
         }}
     </script>
+    
     <!--End doan javascript xu ly cho left menu-->
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
@@ -85,15 +86,22 @@
 
 	<div class="top_bar">
     	<div class="top_search">
-        	<div class="search_text"><a href="#">Tìm kiếm nâng cao</a></div>
+        	<div class="search_text"><a href="advancesearch.aspx">Tìm kiếm nâng cao</a></div>
             <input type="text" class="search_input" name="search" />
             <input type="image" src="images/search.gif" class="search_bt"/>
         </div>
         
         <div class="languages">
-        	<div class="lang_text">Tài khoản: </div>
-            <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>
-            <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>     
+        	<div class="lang_text">
+        	<a href="#">
+        	Đăng nhập 
+        	</a>
+        	&nbsp;&nbsp;&nbsp;
+        	<a href="#">
+        	Đăng ký
+        	</a> </div>
+           <%-- <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a>
+            <a href="#" class="lang"><img src="images/en.gif" alt="" title="" border="0" /></a> --%>    
         </div>
     </div>
 	<div id="header">
@@ -105,17 +113,8 @@
         <div class="oferte_content">
         <div class="top_divider">
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-        <div class="oferta">
-          <!-- <div class="oferta_content">
-        	<img src="images/laptop.png" width="94" height="92" border="0" class="oferta_img" />
-        	
-            <div class="oferta_details">
-                    <div class="oferta_title">Samsung GX 2004 LM</div>
-                    <div class="oferta_text">
-                    description of product </div>
-                    <a href="details.aspx" class="details">details</a>
-            </div> -->
             
+        <div class="oferta">
             <div class="oferta_content">
             <!-- --------------------------------------------------- -->
             <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
@@ -146,7 +145,7 @@
                 <div class="oferta_text">
                     <asp:Label ID="lblDesc" runat="server" Text=""></asp:Label>
                 </div>
-                <a href="details.aspx" class="details">chi tiết...</a>
+                <a href="details.aspx" class="details" title="header=[Xem chi tiết hơn] body=[&nbsp;] fade=[on]">chi tiết...</a>
             </div>   
             </div>
             <div class="oferta_pagination">
@@ -155,7 +154,7 @@
                  <a href="#?page=3">3</a>
                  <a href="#?page=3">4</a>
                  <a href="#?page=3">5</a> -->
-                 <asp:LinkButton ID="btnPrev" runat="server" Text="<<" ToolTip ="Prev" />
+                 <asp:LinkButton ID="btnPrev" runat="server" Text="<<" ToolTip ="Prev"/>
                  <asp:LinkButton ID="btnPlay" runat="server" Text="[]" ToolTip ="Play" />
                  <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip ="Next" />
             </div>
@@ -193,10 +192,10 @@
                     </ul>
              <div class="right_menu_corner"></div>
             </div><!-- end of menu tab -->
+            <asp:ContentPlaceHolder runat="server" ID="cpld_crumb_navigator">
             
-    <div class="crumb_navigation">
-        Bạn đang ở: <span class="current">Trang chủ</span>
-    </div>        
+            </asp:ContentPlaceHolder>
+           
    <div class="left_content">
     <div class="title_box">Danh m&#7909;c s&#7843;n ph&#7849;m </div>
         <!--
@@ -307,7 +306,8 @@
                  <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
                  <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
             </div>
-            <div class="bottom_prod_box"></div>             
+            <div class="bottom_prod_box"></div>         
+                
             <div class="prod_details_tab">
             <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]"><img src="images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
             <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]"><img src="images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>
@@ -330,7 +330,7 @@
             Tổng tiền: <span class="price">350$</span>
             </div>
             
-            <div class="cart_icon"><a href="#" title="header=[Checkout] body=[&nbsp;] fade=[on]">
+            <div class="cart_icon"><a href="#" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
 			<img src="images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
         
         </div>
