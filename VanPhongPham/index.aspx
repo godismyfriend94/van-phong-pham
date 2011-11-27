@@ -325,13 +325,14 @@
            <div class="bottom_prod_box">
            </div>
            <div class="prod_details_tab">
-               <a href="#" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">
-               <img alt="" border="0" class="left_bt" src="vpp/images/cart.gif" title="" /></a>
-               <a href="#" title="header=[Ưu đãi khi mua] body=[&nbsp;] fade=[on]">
+               <a href="#" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]" class="prod_addtocart">
+               đặt hàng
+               </a>
+               <%--<a href="#" title="header=[Ưu đãi khi mua] body=[&nbsp;] fade=[on]">
                <img alt="" border="0" class="left_bt" src="vpp/images/favs.gif" title="" /></a>
                <a href="#" title="header=[Tặng phẩm] body=[&nbsp;] fade=[on]">
-               <img alt="" border="0" class="left_bt" src="vpp/images/favorites.gif" title="" /></a>
-               <a href="vpp/details.aspx" class="prod_details" title="header=[Xem chi tiết] body=[&nbsp;] fade=[on]">Xem</a>
+               <img alt="" border="0" class="left_bt" src="vpp/images/favorites.gif" title="" /></a>--%>
+               <a href="vpp/details.aspx" class="prod_details" title="header=[Xem chi tiết sản phẩm] body=[&nbsp;] fade=[on]" >chi tiết</a>
            </div>
        </div>
        <br />
