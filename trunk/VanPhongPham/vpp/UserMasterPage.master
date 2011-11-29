@@ -1,12 +1,12 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="true" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head runat="server">   
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
+    
     <meta name="robots" content="index, assignment" />
     <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
@@ -34,7 +34,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
-    
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <!--Begin doan javascript xu ly cho left menu-->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -53,7 +53,7 @@
             });
         });
     </script>
-    <script type="text/javascript">
+    <script type="text/javascript" >
         PositionX = 100;
         PositionY = 100;
 
@@ -67,33 +67,58 @@
         var optNN='scrollbars=no,width='+defaultWidth+',height='+defaultHeight+',left='+PositionX+',top='+PositionY;
         var optIE='scrollbars=no,width=150,height=100,left='+PositionX+',top='+PositionY;
         function popImage(imageURL,imageTitle){
-        if (isNN){imgWin=window.open('about:blank','',optNN);}
-        if (isIE){imgWin=window.open('about:blank','',optIE);}
-        with (imgWin.document){
-        writeln('<html><head><title>Loading...</title><style>body{margin:0px;}</style>');writeln('<sc'+'ript>');
-        writeln('var isNN,isIE;');writeln('if (parseInt(navigator.appVersion.charAt(0))>=4){');
-        writeln('isNN=(navigator.appName=="Netscape")?1:0;');writeln('isIE=(navigator.appName.indexOf("Microsoft")!=-1)?1:0;}');
-        writeln('function reSizeToImage(){');writeln('if (isIE){');writeln('window.resizeTo(300,300);');
-        writeln('width=300-(document.body.clientWidth-document.images[0].width);');
-        writeln('height=300-(document.body.clientHeight-document.images[0].height);');
-        writeln('window.resizeTo(width,height);}');writeln('if (isNN){');       
-        writeln('window.innerWidth=document.images["George"].width;');writeln('window.innerHeight=document.images["George"].height;}}');
-        writeln('function doTitle(){document.title="'+imageTitle+'";}');writeln('</sc'+'ript>');
-        if (!AutoClose) writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()">')
-        else writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()" onblur="self.close()">');
-        writeln('<img name="George" src='+imageURL+' style="display:block"></body></html>');
-        close();		
-        }}
+            if (isNN){imgWin=window.open('about:blank','',optNN);}
+            if (isIE){imgWin=window.open('about:blank','',optIE);}
+            with (imgWin.document){
+                writeln('<html><head><title>Loading...</title><style>body{margin:0px;}</style>');
+                writeln('<sc'+'ript>');
+                writeln('var isNN,isIE;');
+                writeln('if (parseInt(navigator.appVersion.charAt(0))>=4){');
+                writeln('isNN=(navigator.appName=="Netscape")?1:0;');
+                writeln('isIE=(navigator.appName.indexOf("Microsoft")!=-1)?1:0;}');
+                writeln('function reSizeToImage(){');
+                writeln('if (isIE){');
+                writeln('window.resizeTo(300,300);');
+                writeln('width=300-(document.body.clientWidth-document.images[0].width);');
+                writeln('height=300-(document.body.clientHeight-document.images[0].height);');
+                writeln('window.resizeTo(width,height);}');
+                writeln('if (isNN){');       
+                writeln('window.innerWidth=document.images["George"].width;');
+                writeln('window.innerHeight=document.images["George"].height;}}');
+                writeln('function doTitle(){document.title="'+imageTitle+'";}');
+                writeln('</sc'+'ript>');
+                if (!AutoClose) writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()">')
+                else 
+                    writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()" onblur="self.close()">');
+                    writeln('<img name="George" src='+imageURL+' style="display:block"></body></html>');
+                close();
+            }
+        }
     </script>
-    
+    <%--<script type="text/javascript">
+	    function DisplayFullImage(ctrlimg)
+	    {
+	        txtCode = "<HTML><HEAD>"
+	        "</HEAD><BODY TOPMARGIN=0 LEFTMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0><CENTER>"  
+	        "<IMG src='" + ctrlimg.src + "' BORDER=0 NAME=FullImage "
+	        "onload='window.resizeTo(document.FullImage.width,document.FullImage.height)'>" 
+	        "</CENTER>"  
+	        "</BODY></HTML>";
+	        mywindow= window.open  ('','image',  'toolbar=0,location=0,menuBar=0,scrollbars=0,resizable=0,width=100,height=100');
+	        mywindow.document.open();
+	        mywindow.document.write(txtCode);
+	        mywindow.document.close();
+	    }
+	</script>--%>  
     <!--End doan javascript xu ly cho left menu-->
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->
     <script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/switchimages.js"></script>
+    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
-<body>
+<body runat="server">
 <form runat="server" id="frm_main">
 <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>    

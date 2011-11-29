@@ -5,9 +5,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
+    
     <meta name="robots" content="index, assignment" />
     <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
@@ -18,7 +18,7 @@
         trong thuộc tính content để gắn vào nội dung thư chia sẻ.-->
     <meta name="description" content="
         Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội
-        18 Tô Vĩnh Diện - Thanh Xuân - Hà Nội. 
+        18 Tô Vĩnh Diện - Thanh Xuân - Hà Nội.
         
         Chuyên cung cấp thiết bị văn phòng - chất lượng cao như: máy in, máy photocopy, máy fax, máy chấm công, máy hủy tài liệu, máy scan, mực máy in...
         Trung tâm cung cấp các dịch vụ về lắp đặt, sửa chữa, bảo trì thiết bị văn phòng tại công ty, tại nhà...
@@ -55,7 +55,7 @@
             });
         });
     </script>
-    <script type="text/javascript">
+   <script type="text/javascript">
         PositionX = 100;
         PositionY = 100;
 
@@ -93,6 +93,8 @@
     <%--<link rel="stylesheet" type="text/css" href="vpp/css/iecss.css" />--%>
     <!--<![endif]-->
     <script type="text/javascript" src="vpp/js/boxOver.js"></script>
+    
+    <title id="Title1" runat="server">Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
 <body>
 <form runat="server" id="frm_main">

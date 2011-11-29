@@ -19,3 +19,4 @@
 	newImg.src = imSrc;
 	return false;
 } 
+
