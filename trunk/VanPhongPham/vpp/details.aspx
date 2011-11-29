@@ -1,7 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
-<script src="js/prototype.js" type="text/javascript"></script>
+    
+    
+    <script src="js/prototype.js" type="text/javascript"></script>
     <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>
     <script src="js/lightbox.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/java.js"></script>
@@ -16,7 +18,7 @@
             <div class="center_prod_box_big">            
                  
                  <div class="product_img_big">
-                 <a  rel="lightbox" title="header=[Phóng to ảnh] body=[&nbsp;] fade=[on]">
+                 <a href="images/laptop.gif"  rel="lightbox" title="header=[Phóng to ảnh] body=[&nbsp;] fade=[on]">
                     <img src="images/laptop.gif" alt="" title="" border="0"/>
                  </a>
                  <div class="thumbs">
