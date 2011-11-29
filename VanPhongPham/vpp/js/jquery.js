@@ -1,12 +1,1304 @@
-/*
- * jQuery 1.1.2 - New Wave Javascript
- *
- * Copyright (c) 2007 John Resig (jquery.com)
- * Dual licensed under the MIT (MIT-LICENSE.txt)
- * and GPL (GPL-LICENSE.txt) licenses.
- *
- * $Date: 2007-02-27 17:18:47 -0500 (Tue, 27 Feb 2007) $
- * $Rev: 1460 $
+/*!
+ * jQuery Cycle Plugin (with Transition Definitions)
+ * Examples and documentation at: http://jquery.malsup.com/cycle/
+ * Copyright (c) 2007-2010 M. Alsup
+ * Version: 2.86 (05-APR-2010)
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ * Requires: jQuery v1.2.6 or later
  */
+;(function($) {
 
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('7(1D 1u.6=="R"){1u.R=1u.R;v 6=q(a,c){7(1u==l)u 1q 6(a,c);a=a||12;7(6.1p(a))u 1q 6(12)[6.D.27?"27":"2P"](a);7(1D a=="20"){v m=/^[^<]*(<(.|\\s)+>)[^>]*$/.2M(a);7(m)a=6.41([m[1]]);I u 1q 6(c).2p(a)}u l.6p(a.1l==2A&&a||(a.3W||a.H&&a!=1u&&!a.1W&&a[0]!=R&&a[0].1W)&&6.3N(a)||[a])};7(1D $!="R")6.30$=$;v $=6;6.D=6.8n={3W:"1.1.2",8K:q(){u l.H},H:0,2b:q(1P){u 1P==R?6.3N(l):l[1P]},2j:q(a){v K=6(a);K.6n=l;u K},6p:q(a){l.H=0;[].1m.15(l,a);u l},J:q(D,1A){u 6.J(l,D,1A)},2g:q(1b){v 4W=-1;l.J(q(i){7(l==1b)4W=i});u 4W},1G:q(23,O,B){v 1b=23;7(23.1l==3t)7(O==R)u l.H&&6[B||"1G"](l[0],23)||R;I{1b={};1b[23]=O}u l.J(q(2g){P(v G 1B 1b)6.1G(B?l.1o:l,G,6.G(l,1b[G],B,2g,G))})},1n:q(23,O){u l.1G(23,O,"3g")},2I:q(e){7(1D e=="20")u l.3u().3s(12.8q(e));v t="";6.J(e||l,q(){6.J(l.3b,q(){7(l.1W!=8)t+=l.1W!=1?l.6u:6.D.2I([l])})});u t},2H:q(){v a=6.41(1v);u l.J(q(){v b=a[0].3j(U);l.Y.2T(b,l);1Y(b.1a)b=b.1a;b.4A(l)})},3s:q(){u l.3d(1v,U,1,q(a){l.4A(a)})},5j:q(){u l.3d(1v,U,-1,q(a){l.2T(a,l.1a)})},5k:q(){u l.3d(1v,11,1,q(a){l.Y.2T(a,l)})},5u:q(){u l.3d(1v,11,-1,q(a){l.Y.2T(a,l.2c)})},4f:q(){u l.6n||6([])},2p:q(t){u l.2j(6.2Y(l,q(a){u 6.2p(t,a)}),t)},4Y:q(4M){u l.2j(6.2Y(l,q(a){v a=a.3j(4M!=R?4M:U);a.$1E=14;u a}))},1C:q(t){u l.2j(6.1p(t)&&6.2n(l,q(2u,2g){u t.15(2u,[2g])})||6.3z(t,l))},2e:q(t){u l.2j(t.1l==3t&&6.3z(t,l,U)||6.2n(l,q(a){u(t.1l==2A||t.3W)?6.3y(a,t)<0:a!=t}))},1K:q(t){u l.2j(6.2m(l.2b(),t.1l==3t?6(t).2b():t.H!=R&&(!t.1e||t.1e=="8s")?t:[t]))},4k:q(1s){u 1s?6.1C(1s,l).r.H>0:11},19:q(19){u 19==R?(l.H?l[0].O:14):l.1G("O",19)},4T:q(19){u 19==R?(l.H?l[0].2G:14):l.3u().3s(19)},3d:q(1A,1N,3Y,D){v 4Y=l.H>1;v a=6.41(1A);7(3Y<0)a.8t();u l.J(q(){v 1b=l;7(1N&&6.1e(l,"1N")&&6.1e(a[0],"3m"))1b=l.5K("1X")[0]||l.4A(12.56("1X"));6.J(a,q(){D.15(1b,[4Y?l.3j(U):l])})})}};6.1w=6.D.1w=q(){v 1T=1v[0],a=1;7(1v.H==1){1T=l;a=0}v G;1Y(G=1v[a++])P(v i 1B G)1T[i]=G[i];u 1T};6.1w({8u:q(){7(6.30$)$=6.30$;u 6},1p:q(D){u!!D&&1D D!="20"&&!D.1e&&1D D[0]=="R"&&/q/i.1j(D+"")},4C:q(C){u C.60&&C.5J&&!C.5J.63},1e:q(C,W){u C.1e&&C.1e.3K()==W.3K()},J:q(1b,D,1A){7(1b.H==R)P(v i 1B 1b)D.15(1b[i],1A||[i,1b[i]]);I P(v i=0,6q=1b.H;i<6q;i++)7(D.15(1b[i],1A||[i,1b[i]])===11)3M;u 1b},G:q(C,O,B,2g,G){7(6.1p(O))O=O.3n(C,[2g]);v 5G=/z-?2g|8x-?8y|1c|58|8z-?26/i;u O&&O.1l==3J&&B=="3g"&&!5G.1j(G)?O+"4R":O},18:{1K:q(C,c){6.J(c.3o(/\\s+/),q(i,N){7(!6.18.2Q(C.18,N))C.18+=(C.18?" ":"")+N})},2d:q(C,c){C.18=c?6.2n(C.18.3o(/\\s+/),q(N){u!6.18.2Q(c,N)}).6r(" "):""},2Q:q(t,c){t=t.18||t;c=c.1S(/([\\.\\\\\\+\\*\\?\\[\\^\\]\\$\\(\\)\\{\\}\\=\\!\\<\\>\\|\\:])/g,"\\\\$1");u t&&1q 4u("(^|\\\\s)"+c+"(\\\\s|$)").1j(t)}},4c:q(e,o,f){P(v i 1B o){e.1o["1L"+i]=e.1o[i];e.1o[i]=o[i]}f.15(e,[]);P(v i 1B o)e.1o[i]=e.1o["1L"+i]},1n:q(e,p){7(p=="26"||p=="3Q"){v 1L={},44,3I,d=["8A","8B","8C","8D"];6.J(d,q(){1L["8E"+l]=0;1L["8F"+l+"8G"]=0});6.4c(e,1L,q(){7(6.1n(e,"1h")!="1V"){44=e.8H;3I=e.8I}I{e=6(e.3j(U)).2p(":4i").5m("2W").4f().1n({4m:"1F",3k:"7H",1h:"2z",8L:"0",6w:"0"}).5A(e.Y)[0];v 3i=6.1n(e.Y,"3k");7(3i==""||3i=="4a")e.Y.1o.3k="6x";44=e.6y;3I=e.6z;7(3i==""||3i=="4a")e.Y.1o.3k="4a";e.Y.36(e)}});u p=="26"?44:3I}u 6.3g(e,p)},3g:q(C,G,53){v K;7(G=="1c"&&6.V.1g)u 6.1G(C.1o,"1c");7(G=="4g"||G=="2s")G=6.V.1g?"3X":"2s";7(!53&&C.1o[G])K=C.1o[G];I 7(12.42&&12.42.4V){7(G=="2s"||G=="3X")G="4g";G=G.1S(/([A-Z])/g,"-$1").4l();v N=12.42.4V(C,14);7(N)K=N.54(G);I 7(G=="1h")K="1V";I 6.4c(C,{1h:"2z"},q(){v c=12.42.4V(l,"");K=c&&c.54(G)||""})}I 7(C.4e){v 55=G.1S(/\\-(\\w)/g,q(m,c){u c.3K()});K=C.4e[G]||C.4e[55]}u K},41:q(a){v r=[];6.J(a,q(i,1z){7(!1z)u;7(1z.1l==3J)1z=1z.6C();7(1D 1z=="20"){v s=6.32(1z),22=12.56("22"),2h=[];v 2H=!s.17("<1t")&&[1,"<40>","</40>"]||(!s.17("<6D")||!s.17("<1X")||!s.17("<6E"))&&[1,"<1N>","</1N>"]||!s.17("<3m")&&[2,"<1N><1X>","</1X></1N>"]||(!s.17("<6F")||!s.17("<6G"))&&[3,"<1N><1X><3m>","</3m></1X></1N>"]||[0,"",""];22.2G=2H[1]+s+2H[2];1Y(2H[0]--)22=22.1a;7(6.V.1g){7(!s.17("<1N")&&s.17("<1X")<0)2h=22.1a&&22.1a.3b;I 7(2H[1]=="<1N>"&&s.17("<1X")<0)2h=22.3b;P(v n=2h.H-1;n>=0;--n)7(6.1e(2h[n],"1X")&&!2h[n].3b.H)2h[n].Y.36(2h[n])}1z=22.3b}7(1z.H===0&&!6.1e(1z,"3w"))u;7(1z[0]==R||6.1e(1z,"3w"))r.1m(1z);I r=6.2m(r,1z)});u r},1G:q(C,W,O){v 2l=6.4C(C)?{}:{"P":"6J","6L":"18","4g":6.V.1g?"3X":"2s",2s:6.V.1g?"3X":"2s",2G:"2G",18:"18",O:"O",2U:"2U",2W:"2W",88:"6N",2R:"2R"};7(W=="1c"&&6.V.1g&&O!=R){C.58=1;u C.1C=C.1C.1S(/4h\\([^\\)]*\\)/6O,"")+(O==1?"":"4h(1c="+O*6c+")")}I 7(W=="1c"&&6.V.1g)u C.1C?4S(C.1C.6P(/4h\\(1c=(.*)\\)/)[1])/6c:1;7(W=="1c"&&6.V.3h&&O==1)O=0.6R;7(2l[W]){7(O!=R)C[2l[W]]=O;u C[2l[W]]}I 7(O==R&&6.V.1g&&6.1e(C,"3w")&&(W=="80"||W=="7Z"))u C.6T(W).6u;I 7(C.60){7(O!=R)C.6V(W,O);7(6.V.1g&&/5E|3f/.1j(W)&&!6.4C(C))u C.33(W,2);u C.33(W)}I{W=W.1S(/-([a-z])/6W,q(z,b){u b.3K()});7(O!=R)C[W]=O;u C[W]}},32:q(t){u t.1S(/^\\s+|\\s+$/g,"")},3N:q(a){v r=[];7(a.1l!=2A)P(v i=0,2L=a.H;i<2L;i++)r.1m(a[i]);I r=a.3O(0);u r},3y:q(b,a){P(v i=0,2L=a.H;i<2L;i++)7(a[i]==b)u i;u-1},2m:q(2r,3P){v r=[].3O.3n(2r,0);P(v i=0,5c=3P.H;i<5c;i++)7(6.3y(3P[i],r)==-1)2r.1m(3P[i]);u 2r},2n:q(1O,D,4j){7(1D D=="20")D=1q 4v("a","i","u "+D);v 1f=[];P(v i=0,2u=1O.H;i<2u;i++)7(!4j&&D(1O[i],i)||4j&&!D(1O[i],i))1f.1m(1O[i]);u 1f},2Y:q(1O,D){7(1D D=="20")D=1q 4v("a","u "+D);v 1f=[],r=[];P(v i=0,2u=1O.H;i<2u;i++){v 19=D(1O[i],i);7(19!==14&&19!=R){7(19.1l!=2A)19=[19];1f=1f.6Z(19)}}v r=1f.H?[1f[0]]:[];5g:P(v i=1,5f=1f.H;i<5f;i++){P(v j=0;j<i;j++)7(1f[i]==r[j])5F 5g;r.1m(1f[i])}u r}});1q q(){v b=7K.71.4l();6.V={2F:/5D/.1j(b),3e:/3e/.1j(b),1g:/1g/.1j(b)&&!/3e/.1j(b),3h:/3h/.1j(b)&&!/(72|5D)/.1j(b)};6.7G=!6.V.1g||12.74=="75"};6.J({5v:"a.Y",4y:"6.4y(a)",76:"6.29(a,2,\'2c\')",7C:"6.29(a,2,\'5t\')",78:"6.2w(a.Y.1a,a)",79:"6.2w(a.1a)"},q(i,n){6.D[i]=q(a){v K=6.2Y(l,n);7(a&&1D a=="20")K=6.3z(a,K);u l.2j(K)}});6.J({5A:"3s",7b:"5j",2T:"5k",7d:"5u"},q(i,n){6.D[i]=q(){v a=1v;u l.J(q(){P(v j=0,2L=a.H;j<2L;j++)6(a[j])[n](l)})}});6.J({5m:q(23){6.1G(l,23,"");l.7f(23)},7g:q(c){6.18.1K(l,c)},7h:q(c){6.18.2d(l,c)},7j:q(c){6.18[6.18.2Q(l,c)?"2d":"1K"](l,c)},2d:q(a){7(!a||6.1C(a,[l]).r.H)l.Y.36(l)},3u:q(){1Y(l.1a)l.36(l.1a)}},q(i,n){6.D[i]=q(){u l.J(n,1v)}});6.J(["5r","5o","5q","5w"],q(i,n){6.D[n]=q(1P,D){u l.1C(":"+n+"("+1P+")",D)}});6.J(["26","3Q"],q(i,n){6.D[n]=q(h){u h==R?(l.H?6.1n(l[0],n):14):l.1n(n,h.1l==3t?h:h+"4R")}});6.1w({1s:{"":"m[2]==\'*\'||6.1e(a,m[2])","#":"a.33(\'2D\')==m[2]",":":{5o:"i<m[3]-0",5q:"i>m[3]-0",29:"m[3]-0==i",5r:"m[3]-0==i",2r:"i==0",2X:"i==r.H-1",5S:"i%2==0",5T:"i%2","29-3r":"6.29(a.Y.1a,m[3],\'2c\',a)==a","2r-3r":"6.29(a.Y.1a,1,\'2c\')==a","2X-3r":"6.29(a.Y.7m,1,\'5t\')==a","7o-3r":"6.2w(a.Y.1a).H==1",5v:"a.1a",3u:"!a.1a",5w:"6.D.2I.15([a]).17(m[3])>=0",38:\'a.B!="1F"&&6.1n(a,"1h")!="1V"&&6.1n(a,"4m")!="1F"\',1F:\'a.B=="1F"||6.1n(a,"1h")=="1V"||6.1n(a,"4m")=="1F"\',7u:"!a.2U",2U:"a.2U",2W:"a.2W",2R:"a.2R||6.1G(a,\'2R\')",2I:"a.B==\'2I\'",4i:"a.B==\'4i\'",5y:"a.B==\'5y\'",4F:"a.B==\'4F\'",5z:"a.B==\'5z\'",4Q:"a.B==\'4Q\'",5a:"a.B==\'5a\'",5B:"a.B==\'5B\'",3x:\'a.B=="3x"||6.1e(a,"3x")\',5C:"/5C|40|7z|3x/i.1j(a.1e)"},".":"6.18.2Q(a,m[2])","@":{"=":"z==m[4]","!=":"z!=m[4]","^=":"z&&!z.17(m[4])","$=":"z&&z.2S(z.H - m[4].H,m[4].H)==m[4]","*=":"z&&z.17(m[4])>=0","":"z",4t:q(m){u["",m[1],m[3],m[2],m[5]]},5Q:"z=a[m[3]];7(!z||/5E|3f/.1j(m[3]))z=6.1G(a,m[3]);"},"[":"6.2p(m[2],a).H"},5N:[/^\\[ *(@)([a-2o-3C-]*) *([!*$^=]*) *(\'?"?)(.*?)\\4 *\\]/i,/^(\\[)\\s*(.*?(\\[.*?\\])?[^[]*?)\\s*\\]/,/^(:)([a-2o-3C-]*)\\("?\'?(.*?(\\(.*?\\))?[^(]*?)"?\'?\\)/i,/^([:.#]*)([a-2o-3C*-]*)/i],1R:[/^(\\/?\\.\\.)/,"a.Y",/^(>|\\/)/,"6.2w(a.1a)",/^(\\+)/,"6.29(a,2,\'2c\')",/^(~)/,q(a){v s=6.2w(a.Y.1a);u s.3O(6.3y(a,s)+1)}],3z:q(1s,1O,2e){v 1L,N=[];1Y(1s&&1s!=1L){1L=1s;v f=6.1C(1s,1O,2e);1s=f.t.1S(/^\\s*,\\s*/,"");N=2e?1O=f.r:6.2m(N,f.r)}u N},2p:q(t,1y){7(1D t!="20")u[t];7(1y&&!1y.1W)1y=14;1y=1y||12;7(!t.17("//")){1y=1y.4G;t=t.2S(2,t.H)}I 7(!t.17("/")){1y=1y.4G;t=t.2S(1,t.H);7(t.17("/")>=1)t=t.2S(t.17("/"),t.H)}v K=[1y],2a=[],2X=14;1Y(t&&2X!=t){v r=[];2X=t;t=6.32(t).1S(/^\\/\\//i,"");v 3B=11;v 1H=/^[\\/>]\\s*([a-2o-9*-]+)/i;v m=1H.2M(t);7(m){6.J(K,q(){P(v c=l.1a;c;c=c.2c)7(c.1W==1&&(6.1e(c,m[1])||m[1]=="*"))r.1m(c)});K=r;t=t.1S(1H,"");7(t.17(" ")==0)5F;3B=U}I{P(v i=0;i<6.1R.H;i+=2){v 1H=6.1R[i];v m=1H.2M(t);7(m){r=K=6.2Y(K,6.1p(6.1R[i+1])?6.1R[i+1]:q(a){u 3l(6.1R[i+1])});t=6.32(t.1S(1H,""));3B=U;3M}}}7(t&&!3B){7(!t.17(",")){7(K[0]==1y)K.4K();6.2m(2a,K);r=K=[1y];t=" "+t.2S(1,t.H)}I{v 31=/^([a-2o-3C-]+)(#)([a-2o-9\\\\*30-]*)/i;v m=31.2M(t);7(m){m=[0,m[2],m[3],m[1]]}I{31=/^([#.]?)([a-2o-9\\\\*30-]*)/i;m=31.2M(t)}7(m[1]=="#"&&K[K.H-1].4X){v 2i=K[K.H-1].4X(m[2]);7(6.V.1g&&2i&&2i.2D!=m[2])2i=6(\'[@2D="\'+m[2]+\'"]\',K[K.H-1])[0];K=r=2i&&(!m[3]||6.1e(2i,m[3]))?[2i]:[]}I{7(m[1]==".")v 4q=1q 4u("(^|\\\\s)"+m[2]+"(\\\\s|$)");6.J(K,q(){v 3E=m[1]!=""||m[0]==""?"*":m[2];7(6.1e(l,"7I")&&3E=="*")3E="3c";6.2m(r,m[1]!=""&&K.H!=1?6.4w(l,[],m[1],m[2],4q):l.5K(3E))});7(m[1]=="."&&K.H==1)r=6.2n(r,q(e){u 4q.1j(e.18)});7(m[1]=="#"&&K.H==1){v 5L=r;r=[];6.J(5L,q(){7(l.33("2D")==m[2]){r=[l];u 11}})}K=r}t=t.1S(31,"")}}7(t){v 19=6.1C(t,r);K=r=19.r;t=6.32(19.t)}}7(K&&K[0]==1y)K.4K();6.2m(2a,K);u 2a},1C:q(t,r,2e){1Y(t&&/^[a-z[({<*:.#]/i.1j(t)){v p=6.5N,m;6.J(p,q(i,1H){m=1H.2M(t);7(m){t=t.7L(m[0].H);7(6.1s[m[1]].4t)m=6.1s[m[1]].4t(m);u 11}});7(m[1]==":"&&m[2]=="2e")r=6.1C(m[3],r,U).r;I 7(m[1]=="."){v 1H=1q 4u("(^|\\\\s)"+m[2]+"(\\\\s|$)");r=6.2n(r,q(e){u 1H.1j(e.18||"")},2e)}I{v f=6.1s[m[1]];7(1D f!="20")f=6.1s[m[1]][m[2]];3l("f = q(a,i){"+(6.1s[m[1]].5Q||"")+"u "+f+"}");r=6.2n(r,f,2e)}}u{r:r,t:t}},4w:q(o,r,1R,W,1H){P(v s=o.1a;s;s=s.2c)7(s.1W==1){v 1K=U;7(1R==".")1K=s.18&&1H.1j(s.18);I 7(1R=="#")1K=s.33("2D")==W;7(1K)r.1m(s);7(1R=="#"&&r.H)3M;7(s.1a)6.4w(s,r,1R,W,1H)}u r},4y:q(C){v 4z=[];v N=C.Y;1Y(N&&N!=12){4z.1m(N);N=N.Y}u 4z},29:q(N,1f,3Y,C){1f=1f||1;v 1P=0;P(;N;N=N[3Y]){7(N.1W==1)1P++;7(1P==1f||1f=="5S"&&1P%2==0&&1P>1&&N==C||1f=="5T"&&1P%2==1&&N==C)u N}},2w:q(n,C){v r=[];P(;n;n=n.2c){7(n.1W==1&&(!C||n!=C))r.1m(n)}u r}});6.F={1K:q(S,B,1k,E){7(6.V.1g&&S.45!=R)S=1u;7(E)1k.E=E;7(!1k.2y)1k.2y=l.2y++;7(!S.$1E)S.$1E={};v 34=S.$1E[B];7(!34){34=S.$1E[B]={};7(S["35"+B])34[0]=S["35"+B]}34[1k.2y]=1k;S["35"+B]=l.5Y;7(!l.1i[B])l.1i[B]=[];l.1i[B].1m(S)},2y:1,1i:{},2d:q(S,B,1k){7(S.$1E){v i,j,k;7(B&&B.B){1k=B.1k;B=B.B}7(B&&S.$1E[B])7(1k)5V S.$1E[B][1k.2y];I P(i 1B S.$1E[B])5V S.$1E[B][i];I P(j 1B S.$1E)l.2d(S,j);P(k 1B S.$1E[B])7(k){k=U;3M}7(!k)S["35"+B]=14}},1Q:q(B,E,S){E=6.3N(E||[]);7(!S)6.J(l.1i[B]||[],q(){6.F.1Q(B,E,l)});I{v 1k=S["35"+B],19,D=6.1p(S[B]);7(1k){E.61(l.2l({B:B,1T:S}));7((19=1k.15(S,E))!==11)l.4E=U}7(D&&19!==11)S[B]();l.4E=11}},5Y:q(F){7(1D 6=="R"||6.F.4E)u;F=6.F.2l(F||1u.F||{});v 3R;v c=l.$1E[F.B];v 1A=[].3O.3n(1v,1);1A.61(F);P(v j 1B c){1A[0].1k=c[j];1A[0].E=c[j].E;7(c[j].15(l,1A)===11){F.2q();F.2E();3R=11}}7(6.V.1g)F.1T=F.2q=F.2E=F.1k=F.E=14;u 3R},2l:q(F){7(!F.1T&&F.62)F.1T=F.62;7(F.64==R&&F.66!=R){v e=12.4G,b=12.63;F.64=F.66+(e.67||b.67);F.7W=F.7X+(e.6b||b.6b)}7(6.V.2F&&F.1T.1W==3){v 2V=F;F=6.1w({},2V);F.1T=2V.1T.Y;F.2q=q(){u 2V.2q()};F.2E=q(){u 2V.2E()}}7(!F.2q)F.2q=q(){l.3R=11};7(!F.2E)F.2E=q(){l.7Y=U};u F}};6.D.1w({3T:q(B,E,D){u l.J(q(){6.F.1K(l,B,D||E,E)})},6s:q(B,E,D){u l.J(q(){6.F.1K(l,B,q(F){6(l).6f(F);u(D||E).15(l,1v)},E)})},6f:q(B,D){u l.J(q(){6.F.2d(l,B,D)})},1Q:q(B,E){u l.J(q(){6.F.1Q(B,E,l)})},3V:q(){v a=1v;u l.6i(q(e){l.4L=l.4L==0?1:0;e.2q();u a[l.4L].15(l,[e])||11})},81:q(f,g){q 4N(e){v p=(e.B=="3Z"?e.82:e.83)||e.84;1Y(p&&p!=l)2B{p=p.Y}2J(e){p=l};7(p==l)u 11;u(e.B=="3Z"?f:g).15(l,[e])}u l.3Z(4N).6j(4N)},27:q(f){7(6.3U)f.15(12,[6]);I{6.3a.1m(q(){u f.15(l,[6])})}u l}});6.1w({3U:11,3a:[],27:q(){7(!6.3U){6.3U=U;7(6.3a){6.J(6.3a,q(){l.15(12)});6.3a=14}7(6.V.3h||6.V.3e)12.85("6m",6.27,11)}}});1q q(){6.J(("86,87,2P,89,8b,51,6i,8c,"+"8d,8e,8f,3Z,6j,8h,40,"+"4Q,8i,8j,8k,2x").3o(","),q(i,o){6.D[o]=q(f){u f?l.3T(o,f):l.1Q(o)}});7(6.V.3h||6.V.3e)12.8l("6m",6.27,11);I 7(6.V.1g){12.8m("<8o"+"8p 2D=6o 8r=U "+"3f=//:><\\/2f>");v 2f=12.4X("6o");7(2f)2f.37=q(){7(l.3D!="1Z")u;l.Y.36(l);6.27()};2f=14}I 7(6.V.2F)6.4Z=45(q(){7(12.3D=="8v"||12.3D=="1Z"){4o(6.4Z);6.4Z=14;6.27()}},10);6.F.1K(1u,"2P",6.27)};7(6.V.1g)6(1u).6s("51",q(){v 1i=6.F.1i;P(v B 1B 1i){v 49=1i[B],i=49.H;7(i&&B!=\'51\')6v 6.F.2d(49[i-1],B);1Y(--i)}});6.D.1w({6A:q(T,21,L){l.2P(T,21,L,1)},2P:q(T,21,L,1U){7(6.1p(T))u l.3T("2P",T);L=L||q(){};v B="5e";7(21)7(6.1p(21)){L=21;21=14}I{21=6.3c(21);B="65"}v 4d=l;6.3v({T:T,B:B,E:21,1U:1U,1Z:q(2K,16){7(16=="2O"||!1U&&16=="5M")4d.1G("2G",2K.3G).4U().J(L,[2K.3G,16,2K]);I L.15(4d,[2K.3G,16,2K])}});u l},6B:q(){u 6.3c(l)},4U:q(){u l.2p("2f").J(q(){7(l.3f)6.59(l.3f);I 6.50(l.2I||l.6H||l.2G||"")}).4f()}});7(!1u.3p)3p=q(){u 1q 6I("6K.6M")};6.J("5n,5R,5P,5W,5O,5I".3o(","),q(i,o){6.D[o]=q(f){u l.3T(o,f)}});6.1w({2b:q(T,E,L,B,1U){7(6.1p(E)){L=E;E=14}u 6.3v({T:T,E:E,2O:L,4s:B,1U:1U})},6Q:q(T,E,L,B){u 6.2b(T,E,L,B,1)},59:q(T,L){u 6.2b(T,14,L,"2f")},6S:q(T,E,L){u 6.2b(T,E,L,"6l")},6U:q(T,E,L,B){7(6.1p(E)){L=E;E={}}u 6.3v({B:"65",T:T,E:E,2O:L,4s:B})},6X:q(28){6.3q.28=28},6Y:q(5d){6.1w(6.3q,5d)},3q:{1i:U,B:"5e",28:0,5s:"70/x-73-3w-77",5i:U,48:U,E:14},3S:{},3v:q(s){s=6.1w({},6.3q,s);7(s.E){7(s.5i&&1D s.E!="20")s.E=6.3c(s.E);7(s.B.4l()=="2b"){s.T+=((s.T.17("?")>-1)?"&":"?")+s.E;s.E=14}}7(s.1i&&!6.4D++)6.F.1Q("5n");v 4x=11;v M=1q 3p();M.7i(s.B,s.T,s.48);7(s.E)M.3A("7k-7l",s.5s);7(s.1U)M.3A("7n-4J-7p",6.3S[s.T]||"7r, 7s 7v 7w 4n:4n:4n 7y");M.3A("X-7A-7B","3p");7(M.7D)M.3A("7E","7F");7(s.5H)s.5H(M);7(s.1i)6.F.1Q("5I",[M,s]);v 37=q(4r){7(M&&(M.3D==4||4r=="28")){4x=U;7(3H){4o(3H);3H=14}v 16;2B{16=6.5Z(M)&&4r!="28"?s.1U&&6.68(M,s.T)?"5M":"2O":"2x";7(16!="2x"){v 3F;2B{3F=M.4O("6a-4J")}2J(e){}7(s.1U&&3F)6.3S[s.T]=3F;v E=6.6h(M,s.4s);7(s.2O)s.2O(E,16);7(s.1i)6.F.1Q("5O",[M,s])}I 6.3L(s,M,16)}2J(e){16="2x";6.3L(s,M,16,e)}7(s.1i)6.F.1Q("5P",[M,s]);7(s.1i&&!--6.4D)6.F.1Q("5R");7(s.1Z)s.1Z(M,16);7(s.48)M=14}};v 3H=45(37,13);7(s.28>0)57(q(){7(M){M.7M();7(!4x)37("28")}},s.28);2B{M.7O(s.E)}2J(e){6.3L(s,M,14,e)}7(!s.48)37();u M},3L:q(s,M,16,e){7(s.2x)s.2x(M,16,e);7(s.1i)6.F.1Q("5W",[M,s,e])},4D:0,5Z:q(r){2B{u!r.16&&7T.7U=="4F:"||(r.16>=5X&&r.16<7V)||r.16==6d||6.V.2F&&r.16==R}2J(e){}u 11},68:q(M,T){2B{v 6e=M.4O("6a-4J");u M.16==6d||6e==6.3S[T]||6.V.2F&&M.16==R}2J(e){}u 11},6h:q(r,B){v 4P=r.4O("8a-B");v E=!B&&4P&&4P.17("M")>=0;E=B=="M"||E?r.8g:r.3G;7(B=="2f")6.50(E);7(B=="6l")3l("E = "+E);7(B=="4T")6("<22>").4T(E).4U();u E},3c:q(a){v s=[];7(a.1l==2A||a.3W)6.J(a,q(){s.1m(2N(l.W)+"="+2N(l.O))});I P(v j 1B a)7(a[j]&&a[j].1l==2A)6.J(a[j],q(){s.1m(2N(j)+"="+2N(l))});I s.1m(2N(j)+"="+2N(a[j]));u s.6r("&")},50:q(E){7(1u.52)1u.52(E);I 7(6.V.2F)1u.57(E,0);I 3l.3n(1u,E)}});6.D.1w({1M:q(Q,L){v 1F=l.1C(":1F");Q?1F.25({26:"1M",3Q:"1M",1c:"1M"},Q,L):1F.J(q(){l.1o.1h=l.2C?l.2C:"";7(6.1n(l,"1h")=="1V")l.1o.1h="2z"});u l},1I:q(Q,L){v 38=l.1C(":38");Q?38.25({26:"1I",3Q:"1I",1c:"1I"},Q,L):38.J(q(){l.2C=l.2C||6.1n(l,"1h");7(l.2C=="1V")l.2C="2z";l.1o.1h="1V"});u l},5h:6.D.3V,3V:q(D,4H){v 1A=1v;u 6.1p(D)&&6.1p(4H)?l.5h(D,4H):l.J(q(){6(l)[6(l).4k(":1F")?"1M":"1I"].15(6(l),1A)})},7a:q(Q,L){u l.25({26:"1M"},Q,L)},7c:q(Q,L){u l.25({26:"1I"},Q,L)},7e:q(Q,L){u l.J(q(){v 5l=6(l).4k(":1F")?"1M":"1I";6(l).25({26:5l},Q,L)})},7q:q(Q,L){u l.25({1c:"1M"},Q,L)},7t:q(Q,L){u l.25({1c:"1I"},Q,L)},7x:q(Q,43,L){u l.25({1c:43},Q,L)},25:q(G,Q,1r,L){u l.1J(q(){l.2t=6.1w({},G);v 1t=6.Q(Q,1r,L);P(v p 1B G){v e=1q 6.39(l,1t,p);7(G[p].1l==3J)e.2v(e.N(),G[p]);I e[G[p]](G)}})},1J:q(B,D){7(!D){D=B;B="39"}u l.J(q(){7(!l.1J)l.1J={};7(!l.1J[B])l.1J[B]=[];l.1J[B].1m(D);7(l.1J[B].H==1)D.15(l)})}});6.1w({Q:q(Q,1r,D){v 1t=Q&&Q.1l==7J?Q:{1Z:D||!D&&1r||6.1p(Q)&&Q,24:Q,1r:D&&1r||1r&&1r.1l!=4v&&1r};1t.24=(1t.24&&1t.24.1l==3J?1t.24:{7P:7Q,7R:5X}[1t.24])||7S;1t.1L=1t.1Z;1t.1Z=q(){6.69(l,"39");7(6.1p(1t.1L))1t.1L.15(l)};u 1t},1r:{},1J:{},69:q(C,B){B=B||"39";7(C.1J&&C.1J[B]){C.1J[B].4K();v f=C.1J[B][0];7(f)f.15(C)}},39:q(C,1d,G){v z=l;v y=C.1o;v 4B=6.1n(C,"1h");y.5U="1F";z.a=q(){7(1d.47)1d.47.15(C,[z.2k]);7(G=="1c")6.1G(y,"1c",z.2k);I 7(6k(z.2k))y[G]=6k(z.2k)+"4R";y.1h="2z"};z.6t=q(){u 4S(6.1n(C,G))};z.N=q(){v r=4S(6.3g(C,G));u r&&r>-8w?r:z.6t()};z.2v=q(4b,43){z.4I=(1q 5p()).5x();z.2k=4b;z.a();z.4p=45(q(){z.47(4b,43)},13)};z.1M=q(){7(!C.1x)C.1x={};C.1x[G]=l.N();1d.1M=U;z.2v(0,C.1x[G]);7(G!="1c")y[G]="5b"};z.1I=q(){7(!C.1x)C.1x={};C.1x[G]=l.N();1d.1I=U;z.2v(C.1x[G],0)};z.3V=q(){7(!C.1x)C.1x={};C.1x[G]=l.N();7(4B=="1V"){1d.1M=U;7(G!="1c")y[G]="5b";z.2v(0,C.1x[G])}I{1d.1I=U;z.2v(C.1x[G],0)}};z.47=q(2Z,46){v t=(1q 5p()).5x();7(t>1d.24+z.4I){4o(z.4p);z.4p=14;z.2k=46;z.a();7(C.2t)C.2t[G]=U;v 2a=U;P(v i 1B C.2t)7(C.2t[i]!==U)2a=11;7(2a){y.5U="";y.1h=4B;7(6.1n(C,"1h")=="1V")y.1h="2z";7(1d.1I)y.1h="1V";7(1d.1I||1d.1M)P(v p 1B C.2t)7(p=="1c")6.1G(y,p,C.1x[p]);I y[p]=""}7(2a&&6.1p(1d.1Z))1d.1Z.15(C)}I{v n=t-l.4I;v p=n/1d.24;z.2k=1d.1r&&6.1r[1d.1r]?6.1r[1d.1r](p,n,2Z,(46-2Z),1d.24):((-6g.7N(p*6g.8J)/2)+0.5)*(46-2Z)+2Z;z.a()}}}})}',62,544,'||||||jQuery|if||||||||||||||this|||||function||||return|var||||||type|elem|fn|data|event|prop|length|else|each|ret|callback|xml|cur|value|for|speed|undefined|element|url|true|browser|name||parentNode|||false|document||null|apply|status|indexOf|className|val|firstChild|obj|opacity|options|nodeName|result|msie|display|global|test|handler|constructor|push|css|style|isFunction|new|easing|expr|opt|window|arguments|extend|orig|context|arg|args|in|filter|typeof|events|hidden|attr|re|hide|queue|add|old|show|table|elems|num|trigger|token|replace|target|ifModified|none|nodeType|tbody|while|complete|string|params|div|key|duration|animate|height|ready|timeout|nth|done|get|nextSibling|remove|not|script|index|tb|oid|pushStack|now|fix|merge|grep|z0|find|preventDefault|first|cssFloat|curAnim|el|custom|sibling|error|guid|block|Array|try|oldblock|id|stopPropagation|safari|innerHTML|wrap|text|catch|res|al|exec|encodeURIComponent|success|load|has|selected|substr|insertBefore|disabled|originalEvent|checked|last|map|firstNum|_|re2|trim|getAttribute|handlers|on|removeChild|onreadystatechange|visible|fx|readyList|childNodes|param|domManip|opera|src|curCSS|mozilla|parPos|cloneNode|position|eval|tr|call|split|XMLHttpRequest|ajaxSettings|child|append|String|empty|ajax|form|button|inArray|multiFilter|setRequestHeader|foundToken|9_|readyState|tag|modRes|responseText|ival|oWidth|Number|toUpperCase|handleError|break|makeArray|slice|second|width|returnValue|lastModified|bind|isReady|toggle|jquery|styleFloat|dir|mouseover|select|clean|defaultView|to|oHeight|setInterval|lastNum|step|async|els|static|from|swap|self|currentStyle|end|float|alpha|radio|inv|is|toLowerCase|visibility|00|clearInterval|timer|rec|isTimeout|dataType|_resort|RegExp|Function|getAll|requestDone|parents|matched|appendChild|oldDisplay|isXMLDoc|active|triggered|file|documentElement|fn2|startTime|Modified|shift|lastToggle|deep|handleHover|getResponseHeader|ct|submit|px|parseFloat|html|evalScripts|getComputedStyle|pos|getElementById|clone|safariTimer|globalEval|unload|execScript|force|getPropertyValue|newProp|createElement|setTimeout|zoom|getScript|image|1px|sl|settings|GET|rl|check|_toggle|processData|prepend|before|state|removeAttr|ajaxStart|lt|Date|gt|eq|contentType|previousSibling|after|parent|contains|getTime|checkbox|password|appendTo|reset|input|webkit|href|continue|exclude|beforeSend|ajaxSend|ownerDocument|getElementsByTagName|tmp|notmodified|parse|ajaxSuccess|ajaxComplete|_prefix|ajaxStop|even|odd|overflow|delete|ajaxError|200|handle|httpSuccess|tagName|unshift|srcElement|body|pageX|POST|clientX|scrollLeft|httpNotModified|dequeue|Last|scrollTop|100|304|xmlRes|unbind|Math|httpData|click|mouseout|parseInt|json|DOMContentLoaded|prevObject|__ie_init|setArray|ol|join|one|max|nodeValue|do|left|relative|clientHeight|clientWidth|loadIfModified|serialize|toString|thead|tfoot|td|th|textContent|ActiveXObject|htmlFor|Microsoft|class|XMLHTTP|readOnly|gi|match|getIfModified|9999|getJSON|getAttributeNode|post|setAttribute|ig|ajaxTimeout|ajaxSetup|concat|application|userAgent|compatible|www|compatMode|CSS1Compat|next|urlencoded|siblings|children|slideDown|prependTo|slideUp|insertAfter|slideToggle|removeAttribute|addClass|removeClass|open|toggleClass|Content|Type|lastChild|If|only|Since|fadeIn|Thu|01|fadeOut|enabled|Jan|1970|fadeTo|GMT|textarea|Requested|With|prev|overrideMimeType|Connection|close|boxModel|absolute|object|Object|navigator|substring|abort|cos|send|slow|600|fast|400|location|protocol|300|pageY|clientY|cancelBubble|method|action|hover|fromElement|toElement|relatedTarget|removeEventListener|blur|focus|readonly|resize|content|scroll|dblclick|mousedown|mouseup|mousemove|responseXML|change|keydown|keypress|keyup|addEventListener|write|prototype|scr|ipt|createTextNode|defer|FORM|reverse|noConflict|loaded|10000|font|weight|line|Top|Bottom|Right|Left|padding|border|Width|offsetHeight|offsetWidth|PI|size|right'.split('|'),0,{}))
+var ver = '2.86';
+
+// if $.support is not defined (pre jQuery 1.3) add what I need
+if ($.support == undefined) {
+	$.support = {
+		opacity: !($.browser.msie)
+	};
+}
+
+function debug(s) {
+	if ($.fn.cycle.debug)
+		log(s);
+}		
+function log() {
+	if (window.console && window.console.log)
+		window.console.log('[cycle] ' + Array.prototype.join.call(arguments,' '));
+};
+
+// the options arg can be...
+//   a number  - indicates an immediate transition should occur to the given slide index
+//   a string  - 'pause', 'resume', 'toggle', 'next', 'prev', 'stop', 'destroy' or the name of a transition effect (ie, 'fade', 'zoom', etc)
+//   an object - properties to control the slideshow
+//
+// the arg2 arg can be...
+//   the name of an fx (only used in conjunction with a numeric value for 'options')
+//   the value true (only used in first arg == 'resume') and indicates
+//	 that the resume should occur immediately (not wait for next timeout)
+
+$.fn.cycle = function(options, arg2) {
+	var o = { s: this.selector, c: this.context };
+
+	// in 1.3+ we can fix mistakes with the ready state
+	if (this.length === 0 && options != 'stop') {
+		if (!$.isReady && o.s) {
+			log('DOM not ready, queuing slideshow');
+			$(function() {
+				$(o.s,o.c).cycle(options,arg2);
+			});
+			return this;
+		}
+		// is your DOM ready?  http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+		log('terminating; zero elements found by selector' + ($.isReady ? '' : ' (DOM not ready)'));
+		return this;
+	}
+
+	// iterate the matched nodeset
+	return this.each(function() {
+		var opts = handleArguments(this, options, arg2);
+		if (opts === false)
+			return;
+
+		opts.updateActivePagerLink = opts.updateActivePagerLink || $.fn.cycle.updateActivePagerLink;
+		
+		// stop existing slideshow for this container (if there is one)
+		if (this.cycleTimeout)
+			clearTimeout(this.cycleTimeout);
+		this.cycleTimeout = this.cyclePause = 0;
+
+		var $cont = $(this);
+		var $slides = opts.slideExpr ? $(opts.slideExpr, this) : $cont.children();
+		var els = $slides.get();
+		if (els.length < 2) {
+			log('terminating; too few slides: ' + els.length);
+			return;
+		}
+
+		var opts2 = buildOptions($cont, $slides, els, opts, o);
+		if (opts2 === false)
+			return;
+
+		var startTime = opts2.continuous ? 10 : getTimeout(opts2.currSlide, opts2.nextSlide, opts2, !opts2.rev);
+
+		// if it's an auto slideshow, kick it off
+		if (startTime) {
+			startTime += (opts2.delay || 0);
+			if (startTime < 10)
+				startTime = 10;
+			debug('first timeout: ' + startTime);
+			this.cycleTimeout = setTimeout(function(){go(els,opts2,0,!opts2.rev)}, startTime);
+		}
+	});
+};
+
+// process the args that were passed to the plugin fn
+function handleArguments(cont, options, arg2) {
+	if (cont.cycleStop == undefined)
+		cont.cycleStop = 0;
+	if (options === undefined || options === null)
+		options = {};
+	if (options.constructor == String) {
+		switch(options) {
+		case 'destroy':
+		case 'stop':
+			var opts = $(cont).data('cycle.opts');
+			if (!opts)
+				return false;
+			cont.cycleStop++; // callbacks look for change
+			if (cont.cycleTimeout)
+				clearTimeout(cont.cycleTimeout);
+			cont.cycleTimeout = 0;
+			$(cont).removeData('cycle.opts');
+			if (options == 'destroy')
+				destroy(opts);
+			return false;
+		case 'toggle':
+			cont.cyclePause = (cont.cyclePause === 1) ? 0 : 1;
+			checkInstantResume(cont.cyclePause, arg2, cont);
+			return false;
+		case 'pause':
+			cont.cyclePause = 1;
+			return false;
+		case 'resume':
+			cont.cyclePause = 0;
+			checkInstantResume(false, arg2, cont);
+			return false;
+		case 'prev':
+		case 'next':
+			var opts = $(cont).data('cycle.opts');
+			if (!opts) {
+				log('options not found, "prev/next" ignored');
+				return false;
+			}
+			$.fn.cycle[options](opts);
+			return false;
+		default:
+			options = { fx: options };
+		};
+		return options;
+	}
+	else if (options.constructor == Number) {
+		// go to the requested slide
+		var num = options;
+		options = $(cont).data('cycle.opts');
+		if (!options) {
+			log('options not found, can not advance slide');
+			return false;
+		}
+		if (num < 0 || num >= options.elements.length) {
+			log('invalid slide index: ' + num);
+			return false;
+		}
+		options.nextSlide = num;
+		if (cont.cycleTimeout) {
+			clearTimeout(cont.cycleTimeout);
+			cont.cycleTimeout = 0;
+		}
+		if (typeof arg2 == 'string')
+			options.oneTimeFx = arg2;
+		go(options.elements, options, 1, num >= options.currSlide);
+		return false;
+	}
+	return options;
+	
+	function checkInstantResume(isPaused, arg2, cont) {
+		if (!isPaused && arg2 === true) { // resume now!
+			var options = $(cont).data('cycle.opts');
+			if (!options) {
+				log('options not found, can not resume');
+				return false;
+			}
+			if (cont.cycleTimeout) {
+				clearTimeout(cont.cycleTimeout);
+				cont.cycleTimeout = 0;
+			}
+			go(options.elements, options, 1, 1);
+		}
+	}
+};
+
+function removeFilter(el, opts) {
+	if (!$.support.opacity && opts.cleartype && el.style.filter) {
+		try { el.style.removeAttribute('filter'); }
+		catch(smother) {} // handle old opera versions
+	}
+};
+
+// unbind event handlers
+function destroy(opts) {
+	if (opts.next)
+		$(opts.next).unbind(opts.prevNextEvent);
+	if (opts.prev)
+		$(opts.prev).unbind(opts.prevNextEvent);
+	
+	if (opts.pager || opts.pagerAnchorBuilder)
+		$.each(opts.pagerAnchors || [], function() {
+			this.unbind().remove();
+		});
+	opts.pagerAnchors = null;
+	if (opts.destroy) // callback
+		opts.destroy(opts);
+};
+
+// one-time initialization
+function buildOptions($cont, $slides, els, options, o) {
+	// support metadata plugin (v1.0 and v2.0)
+	var opts = $.extend({}, $.fn.cycle.defaults, options || {}, $.metadata ? $cont.metadata() : $.meta ? $cont.data() : {});
+	if (opts.autostop)
+		opts.countdown = opts.autostopCount || els.length;
+
+	var cont = $cont[0];
+	$cont.data('cycle.opts', opts);
+	opts.$cont = $cont;
+	opts.stopCount = cont.cycleStop;
+	opts.elements = els;
+	opts.before = opts.before ? [opts.before] : [];
+	opts.after = opts.after ? [opts.after] : [];
+	opts.after.unshift(function(){ opts.busy=0; });
+
+	// push some after callbacks
+	if (!$.support.opacity && opts.cleartype)
+		opts.after.push(function() { removeFilter(this, opts); });
+	if (opts.continuous)
+		opts.after.push(function() { go(els,opts,0,!opts.rev); });
+
+	saveOriginalOpts(opts);
+
+	// clearType corrections
+	if (!$.support.opacity && opts.cleartype && !opts.cleartypeNoBg)
+		clearTypeFix($slides);
+
+	// container requires non-static position so that slides can be position within
+	if ($cont.css('position') == 'static')
+		$cont.css('position', 'relative');
+	if (opts.width)
+		$cont.width(opts.width);
+	if (opts.height && opts.height != 'auto')
+		$cont.height(opts.height);
+
+	if (opts.startingSlide)
+		opts.startingSlide = parseInt(opts.startingSlide);
+
+	// if random, mix up the slide array
+	if (opts.random) {
+		opts.randomMap = [];
+		for (var i = 0; i < els.length; i++)
+			opts.randomMap.push(i);
+		opts.randomMap.sort(function(a,b) {return Math.random() - 0.5;});
+		opts.randomIndex = 1;
+		opts.startingSlide = opts.randomMap[1];
+	}
+	else if (opts.startingSlide >= els.length)
+		opts.startingSlide = 0; // catch bogus input
+	opts.currSlide = opts.startingSlide || 0;
+	var first = opts.startingSlide;
+
+	// set position and zIndex on all the slides
+	$slides.css({position: 'absolute', top:0, left:0}).hide().each(function(i) {
+		var z = first ? i >= first ? els.length - (i-first) : first-i : els.length-i;
+		$(this).css('z-index', z)
+	});
+
+	// make sure first slide is visible
+	$(els[first]).css('opacity',1).show(); // opacity bit needed to handle restart use case
+	removeFilter(els[first], opts);
+
+	// stretch slides
+	if (opts.fit && opts.width)
+		$slides.width(opts.width);
+	if (opts.fit && opts.height && opts.height != 'auto')
+		$slides.height(opts.height);
+
+	// stretch container
+	var reshape = opts.containerResize && !$cont.innerHeight();
+	if (reshape) { // do this only if container has no size http://tinyurl.com/da2oa9
+		var maxw = 0, maxh = 0;
+		for(var j=0; j < els.length; j++) {
+			var $e = $(els[j]), e = $e[0], w = $e.outerWidth(), h = $e.outerHeight();
+			if (!w) w = e.offsetWidth || e.width || $e.attr('width')
+			if (!h) h = e.offsetHeight || e.height || $e.attr('height');
+			maxw = w > maxw ? w : maxw;
+			maxh = h > maxh ? h : maxh;
+		}
+		if (maxw > 0 && maxh > 0)
+			$cont.css({width:maxw+'px',height:maxh+'px'});
+	}
+
+	if (opts.pause)
+		$cont.hover(function(){this.cyclePause++;},function(){this.cyclePause--;});
+
+	if (supportMultiTransitions(opts) === false)
+		return false;
+
+	// apparently a lot of people use image slideshows without height/width attributes on the images.
+	// Cycle 2.50+ requires the sizing info for every slide; this block tries to deal with that.
+	var requeue = false;
+	options.requeueAttempts = options.requeueAttempts || 0;
+	$slides.each(function() {
+		// try to get height/width of each slide
+		var $el = $(this);
+		this.cycleH = (opts.fit && opts.height) ? opts.height : ($el.height() || this.offsetHeight || this.height || $el.attr('height') || 0);
+		this.cycleW = (opts.fit && opts.width) ? opts.width : ($el.width() || this.offsetWidth || this.width || $el.attr('width') || 0);
+
+		if ( $el.is('img') ) {
+			// sigh..  sniffing, hacking, shrugging...  this crappy hack tries to account for what browsers do when
+			// an image is being downloaded and the markup did not include sizing info (height/width attributes);
+			// there seems to be some "default" sizes used in this situation
+			var loadingIE	= ($.browser.msie  && this.cycleW == 28 && this.cycleH == 30 && !this.complete);
+			var loadingFF	= ($.browser.mozilla && this.cycleW == 34 && this.cycleH == 19 && !this.complete);
+			var loadingOp	= ($.browser.opera && ((this.cycleW == 42 && this.cycleH == 19) || (this.cycleW == 37 && this.cycleH == 17)) && !this.complete);
+			var loadingOther = (this.cycleH == 0 && this.cycleW == 0 && !this.complete);
+			// don't requeue for images that are still loading but have a valid size
+			if (loadingIE || loadingFF || loadingOp || loadingOther) {
+				if (o.s && opts.requeueOnImageNotLoaded && ++options.requeueAttempts < 100) { // track retry count so we don't loop forever
+					log(options.requeueAttempts,' - img slide not loaded, requeuing slideshow: ', this.src, this.cycleW, this.cycleH);
+					setTimeout(function() {$(o.s,o.c).cycle(options)}, opts.requeueTimeout);
+					requeue = true;
+					return false; // break each loop
+				}
+				else {
+					log('could not determine size of image: '+this.src, this.cycleW, this.cycleH);
+				}
+			}
+		}
+		return true;
+	});
+
+	if (requeue)
+		return false;
+
+	opts.cssBefore = opts.cssBefore || {};
+	opts.animIn = opts.animIn || {};
+	opts.animOut = opts.animOut || {};
+
+	$slides.not(':eq('+first+')').css(opts.cssBefore);
+	if (opts.cssFirst)
+		$($slides[first]).css(opts.cssFirst);
+
+	if (opts.timeout) {
+		opts.timeout = parseInt(opts.timeout);
+		// ensure that timeout and speed settings are sane
+		if (opts.speed.constructor == String)
+			opts.speed = $.fx.speeds[opts.speed] || parseInt(opts.speed);
+		if (!opts.sync)
+			opts.speed = opts.speed / 2;
+		
+		var buffer = opts.fx == 'shuffle' ? 500 : 250;
+		while((opts.timeout - opts.speed) < buffer) // sanitize timeout
+			opts.timeout += opts.speed;
+	}
+	if (opts.easing)
+		opts.easeIn = opts.easeOut = opts.easing;
+	if (!opts.speedIn)
+		opts.speedIn = opts.speed;
+	if (!opts.speedOut)
+		opts.speedOut = opts.speed;
+
+	opts.slideCount = els.length;
+	opts.currSlide = opts.lastSlide = first;
+	if (opts.random) {
+		if (++opts.randomIndex == els.length)
+			opts.randomIndex = 0;
+		opts.nextSlide = opts.randomMap[opts.randomIndex];
+	}
+	else
+		opts.nextSlide = opts.startingSlide >= (els.length-1) ? 0 : opts.startingSlide+1;
+
+	// run transition init fn
+	if (!opts.multiFx) {
+		var init = $.fn.cycle.transitions[opts.fx];
+		if ($.isFunction(init))
+			init($cont, $slides, opts);
+		else if (opts.fx != 'custom' && !opts.multiFx) {
+			log('unknown transition: ' + opts.fx,'; slideshow terminating');
+			return false;
+		}
+	}
+
+	// fire artificial events
+	var e0 = $slides[first];
+	if (opts.before.length)
+		opts.before[0].apply(e0, [e0, e0, opts, true]);
+	if (opts.after.length > 1)
+		opts.after[1].apply(e0, [e0, e0, opts, true]);
+
+	if (opts.next)
+		$(opts.next).bind(opts.prevNextEvent,function(){return advance(opts,opts.rev?-1:1)});
+	if (opts.prev)
+		$(opts.prev).bind(opts.prevNextEvent,function(){return advance(opts,opts.rev?1:-1)});
+	if (opts.pager || opts.pagerAnchorBuilder)
+		buildPager(els,opts);
+
+	exposeAddSlide(opts, els);
+
+	return opts;
+};
+
+// save off original opts so we can restore after clearing state
+function saveOriginalOpts(opts) {
+	opts.original = { before: [], after: [] };
+	opts.original.cssBefore = $.extend({}, opts.cssBefore);
+	opts.original.cssAfter  = $.extend({}, opts.cssAfter);
+	opts.original.animIn	= $.extend({}, opts.animIn);
+	opts.original.animOut   = $.extend({}, opts.animOut);
+	$.each(opts.before, function() { opts.original.before.push(this); });
+	$.each(opts.after,  function() { opts.original.after.push(this); });
+};
+
+function supportMultiTransitions(opts) {
+	var i, tx, txs = $.fn.cycle.transitions;
+	// look for multiple effects
+	if (opts.fx.indexOf(',') > 0) {
+		opts.multiFx = true;
+		opts.fxs = opts.fx.replace(/\s*/g,'').split(',');
+		// discard any bogus effect names
+		for (i=0; i < opts.fxs.length; i++) {
+			var fx = opts.fxs[i];
+			tx = txs[fx];
+			if (!tx || !txs.hasOwnProperty(fx) || !$.isFunction(tx)) {
+				log('discarding unknown transition: ',fx);
+				opts.fxs.splice(i,1);
+				i--;
+			}
+		}
+		// if we have an empty list then we threw everything away!
+		if (!opts.fxs.length) {
+			log('No valid transitions named; slideshow terminating.');
+			return false;
+		}
+	}
+	else if (opts.fx == 'all') {  // auto-gen the list of transitions
+		opts.multiFx = true;
+		opts.fxs = [];
+		for (p in txs) {
+			tx = txs[p];
+			if (txs.hasOwnProperty(p) && $.isFunction(tx))
+				opts.fxs.push(p);
+		}
+	}
+	if (opts.multiFx && opts.randomizeEffects) {
+		// munge the fxs array to make effect selection random
+		var r1 = Math.floor(Math.random() * 20) + 30;
+		for (i = 0; i < r1; i++) {
+			var r2 = Math.floor(Math.random() * opts.fxs.length);
+			opts.fxs.push(opts.fxs.splice(r2,1)[0]);
+		}
+		debug('randomized fx sequence: ',opts.fxs);
+	}
+	return true;
+};
+
+// provide a mechanism for adding slides after the slideshow has started
+function exposeAddSlide(opts, els) {
+	opts.addSlide = function(newSlide, prepend) {
+		var $s = $(newSlide), s = $s[0];
+		if (!opts.autostopCount)
+			opts.countdown++;
+		els[prepend?'unshift':'push'](s);
+		if (opts.els)
+			opts.els[prepend?'unshift':'push'](s); // shuffle needs this
+		opts.slideCount = els.length;
+
+		$s.css('position','absolute');
+		$s[prepend?'prependTo':'appendTo'](opts.$cont);
+
+		if (prepend) {
+			opts.currSlide++;
+			opts.nextSlide++;
+		}
+
+		if (!$.support.opacity && opts.cleartype && !opts.cleartypeNoBg)
+			clearTypeFix($s);
+
+		if (opts.fit && opts.width)
+			$s.width(opts.width);
+		if (opts.fit && opts.height && opts.height != 'auto')
+			$slides.height(opts.height);
+		s.cycleH = (opts.fit && opts.height) ? opts.height : $s.height();
+		s.cycleW = (opts.fit && opts.width) ? opts.width : $s.width();
+
+		$s.css(opts.cssBefore);
+
+		if (opts.pager || opts.pagerAnchorBuilder)
+			$.fn.cycle.createPagerAnchor(els.length-1, s, $(opts.pager), els, opts);
+
+		if ($.isFunction(opts.onAddSlide))
+			opts.onAddSlide($s);
+		else
+			$s.hide(); // default behavior
+	};
+}
+
+// reset internal state; we do this on every pass in order to support multiple effects
+$.fn.cycle.resetState = function(opts, fx) {
+	fx = fx || opts.fx;
+	opts.before = []; opts.after = [];
+	opts.cssBefore = $.extend({}, opts.original.cssBefore);
+	opts.cssAfter  = $.extend({}, opts.original.cssAfter);
+	opts.animIn	= $.extend({}, opts.original.animIn);
+	opts.animOut   = $.extend({}, opts.original.animOut);
+	opts.fxFn = null;
+	$.each(opts.original.before, function() { opts.before.push(this); });
+	$.each(opts.original.after,  function() { opts.after.push(this); });
+
+	// re-init
+	var init = $.fn.cycle.transitions[fx];
+	if ($.isFunction(init))
+		init(opts.$cont, $(opts.elements), opts);
+};
+
+// this is the main engine fn, it handles the timeouts, callbacks and slide index mgmt
+function go(els, opts, manual, fwd) {
+	// opts.busy is true if we're in the middle of an animation
+	if (manual && opts.busy && opts.manualTrump) {
+		// let manual transitions requests trump active ones
+		debug('manualTrump in go(), stopping active transition');
+		$(els).stop(true,true);
+		opts.busy = false;
+	}
+	// don't begin another timeout-based transition if there is one active
+	if (opts.busy) {
+		debug('transition active, ignoring new tx request');
+		return;
+	}
+
+	var p = opts.$cont[0], curr = els[opts.currSlide], next = els[opts.nextSlide];
+
+	// stop cycling if we have an outstanding stop request
+	if (p.cycleStop != opts.stopCount || p.cycleTimeout === 0 && !manual)
+		return;
+
+	// check to see if we should stop cycling based on autostop options
+	if (!manual && !p.cyclePause &&
+		((opts.autostop && (--opts.countdown <= 0)) ||
+		(opts.nowrap && !opts.random && opts.nextSlide < opts.currSlide))) {
+		if (opts.end)
+			opts.end(opts);
+		return;
+	}
+
+	// if slideshow is paused, only transition on a manual trigger
+	var changed = false;
+	if ((manual || !p.cyclePause) && (opts.nextSlide != opts.currSlide)) {
+		changed = true;
+		var fx = opts.fx;
+		// keep trying to get the slide size if we don't have it yet
+		curr.cycleH = curr.cycleH || $(curr).height();
+		curr.cycleW = curr.cycleW || $(curr).width();
+		next.cycleH = next.cycleH || $(next).height();
+		next.cycleW = next.cycleW || $(next).width();
+
+		// support multiple transition types
+		if (opts.multiFx) {
+			if (opts.lastFx == undefined || ++opts.lastFx >= opts.fxs.length)
+				opts.lastFx = 0;
+			fx = opts.fxs[opts.lastFx];
+			opts.currFx = fx;
+		}
+
+		// one-time fx overrides apply to:  $('div').cycle(3,'zoom');
+		if (opts.oneTimeFx) {
+			fx = opts.oneTimeFx;
+			opts.oneTimeFx = null;
+		}
+
+		$.fn.cycle.resetState(opts, fx);
+
+		// run the before callbacks
+		if (opts.before.length)
+			$.each(opts.before, function(i,o) {
+				if (p.cycleStop != opts.stopCount) return;
+				o.apply(next, [curr, next, opts, fwd]);
+			});
+
+		// stage the after callacks
+		var after = function() {
+			$.each(opts.after, function(i,o) {
+				if (p.cycleStop != opts.stopCount) return;
+				o.apply(next, [curr, next, opts, fwd]);
+			});
+		};
+
+		debug('tx firing; currSlide: ' + opts.currSlide + '; nextSlide: ' + opts.nextSlide);
+		
+		// get ready to perform the transition
+		opts.busy = 1;
+		if (opts.fxFn) // fx function provided?
+			opts.fxFn(curr, next, opts, after, fwd, manual && opts.fastOnEvent);
+		else if ($.isFunction($.fn.cycle[opts.fx])) // fx plugin ?
+			$.fn.cycle[opts.fx](curr, next, opts, after, fwd, manual && opts.fastOnEvent);
+		else
+			$.fn.cycle.custom(curr, next, opts, after, fwd, manual && opts.fastOnEvent);
+	}
+
+	if (changed || opts.nextSlide == opts.currSlide) {
+		// calculate the next slide
+		opts.lastSlide = opts.currSlide;
+		if (opts.random) {
+			opts.currSlide = opts.nextSlide;
+			if (++opts.randomIndex == els.length)
+				opts.randomIndex = 0;
+			opts.nextSlide = opts.randomMap[opts.randomIndex];
+			if (opts.nextSlide == opts.currSlide)
+				opts.nextSlide = (opts.currSlide == opts.slideCount - 1) ? 0 : opts.currSlide + 1;
+		}
+		else { // sequence
+			var roll = (opts.nextSlide + 1) == els.length;
+			opts.nextSlide = roll ? 0 : opts.nextSlide+1;
+			opts.currSlide = roll ? els.length-1 : opts.nextSlide-1;
+		}
+	}
+	if (changed && opts.pager)
+		opts.updateActivePagerLink(opts.pager, opts.currSlide, opts.activePagerClass);
+	
+	// stage the next transition
+	var ms = 0;
+	if (opts.timeout && !opts.continuous)
+		ms = getTimeout(curr, next, opts, fwd);
+	else if (opts.continuous && p.cyclePause) // continuous shows work off an after callback, not this timer logic
+		ms = 10;
+	if (ms > 0)
+		p.cycleTimeout = setTimeout(function(){ go(els, opts, 0, !opts.rev) }, ms);
+};
+
+// invoked after transition
+$.fn.cycle.updateActivePagerLink = function(pager, currSlide, clsName) {
+   $(pager).each(function() {
+       $(this).children().removeClass(clsName).eq(currSlide).addClass(clsName);
+   });
+};
+
+// calculate timeout value for current transition
+function getTimeout(curr, next, opts, fwd) {
+	if (opts.timeoutFn) {
+		// call user provided calc fn
+		var t = opts.timeoutFn(curr,next,opts,fwd);
+		while ((t - opts.speed) < 250) // sanitize timeout
+			t += opts.speed;
+		debug('calculated timeout: ' + t + '; speed: ' + opts.speed);
+		if (t !== false)
+			return t;
+	}
+	return opts.timeout;
+};
+
+// expose next/prev function, caller must pass in state
+$.fn.cycle.next = function(opts) { advance(opts, opts.rev?-1:1); };
+$.fn.cycle.prev = function(opts) { advance(opts, opts.rev?1:-1);};
+
+// advance slide forward or back
+function advance(opts, val) {
+	var els = opts.elements;
+	var p = opts.$cont[0], timeout = p.cycleTimeout;
+	if (timeout) {
+		clearTimeout(timeout);
+		p.cycleTimeout = 0;
+	}
+	if (opts.random && val < 0) {
+		// move back to the previously display slide
+		opts.randomIndex--;
+		if (--opts.randomIndex == -2)
+			opts.randomIndex = els.length-2;
+		else if (opts.randomIndex == -1)
+			opts.randomIndex = els.length-1;
+		opts.nextSlide = opts.randomMap[opts.randomIndex];
+	}
+	else if (opts.random) {
+		opts.nextSlide = opts.randomMap[opts.randomIndex];
+	}
+	else {
+		opts.nextSlide = opts.currSlide + val;
+		if (opts.nextSlide < 0) {
+			if (opts.nowrap) return false;
+			opts.nextSlide = els.length - 1;
+		}
+		else if (opts.nextSlide >= els.length) {
+			if (opts.nowrap) return false;
+			opts.nextSlide = 0;
+		}
+	}
+
+	var cb = opts.onPrevNextEvent || opts.prevNextClick; // prevNextClick is deprecated
+	if ($.isFunction(cb))
+		cb(val > 0, opts.nextSlide, els[opts.nextSlide]);
+	go(els, opts, 1, val>=0);
+	return false;
+};
+
+function buildPager(els, opts) {
+	var $p = $(opts.pager);
+	$.each(els, function(i,o) {
+		$.fn.cycle.createPagerAnchor(i,o,$p,els,opts);
+	});
+	opts.updateActivePagerLink(opts.pager, opts.startingSlide, opts.activePagerClass);
+};
+
+$.fn.cycle.createPagerAnchor = function(i, el, $p, els, opts) {
+	var a;
+	if ($.isFunction(opts.pagerAnchorBuilder)) {
+		a = opts.pagerAnchorBuilder(i,el);
+		debug('pagerAnchorBuilder('+i+', el) returned: ' + a);
+	}
+	else
+		a = '<a href="#">'+(i+1)+'</a>';
+		
+	if (!a)
+		return;
+	var $a = $(a);
+	// don't reparent if anchor is in the dom
+	if ($a.parents('body').length === 0) {
+		var arr = [];
+		if ($p.length > 1) {
+			$p.each(function() {
+				var $clone = $a.clone(true);
+				$(this).append($clone);
+				arr.push($clone[0]);
+			});
+			$a = $(arr);
+		}
+		else {
+			$a.appendTo($p);
+		}
+	}
+
+	opts.pagerAnchors =  opts.pagerAnchors || [];
+	opts.pagerAnchors.push($a);
+	$a.bind(opts.pagerEvent, function(e) {
+		e.preventDefault();
+		opts.nextSlide = i;
+		var p = opts.$cont[0], timeout = p.cycleTimeout;
+		if (timeout) {
+			clearTimeout(timeout);
+			p.cycleTimeout = 0;
+		}
+		var cb = opts.onPagerEvent || opts.pagerClick; // pagerClick is deprecated
+		if ($.isFunction(cb))
+			cb(opts.nextSlide, els[opts.nextSlide]);
+		go(els,opts,1,opts.currSlide < i); // trigger the trans
+//		return false; // <== allow bubble
+	});
+	
+	if ( ! /^click/.test(opts.pagerEvent) && !opts.allowPagerClickBubble)
+		$a.bind('click.cycle', function(){return false;}); // suppress click
+	
+	if (opts.pauseOnPagerHover)
+		$a.hover(function() { opts.$cont[0].cyclePause++; }, function() { opts.$cont[0].cyclePause--; } );
+};
+
+// helper fn to calculate the number of slides between the current and the next
+$.fn.cycle.hopsFromLast = function(opts, fwd) {
+	var hops, l = opts.lastSlide, c = opts.currSlide;
+	if (fwd)
+		hops = c > l ? c - l : opts.slideCount - l;
+	else
+		hops = c < l ? l - c : l + opts.slideCount - c;
+	return hops;
+};
+
+// fix clearType problems in ie6 by setting an explicit bg color
+// (otherwise text slides look horrible during a fade transition)
+function clearTypeFix($slides) {
+	debug('applying clearType background-color hack');
+	function hex(s) {
+		s = parseInt(s).toString(16);
+		return s.length < 2 ? '0'+s : s;
+	};
+	function getBg(e) {
+		for ( ; e && e.nodeName.toLowerCase() != 'html'; e = e.parentNode) {
+			var v = $.css(e,'background-color');
+			if (v.indexOf('rgb') >= 0 ) {
+				var rgb = v.match(/\d+/g);
+				return '#'+ hex(rgb[0]) + hex(rgb[1]) + hex(rgb[2]);
+			}
+			if (v && v != 'transparent')
+				return v;
+		}
+		return '#ffffff';
+	};
+	$slides.each(function() { $(this).css('background-color', getBg(this)); });
+};
+
+// reset common props before the next transition
+$.fn.cycle.commonReset = function(curr,next,opts,w,h,rev) {
+	$(opts.elements).not(curr).hide();
+	opts.cssBefore.opacity = 1;
+	opts.cssBefore.display = 'block';
+	if (w !== false && next.cycleW > 0)
+		opts.cssBefore.width = next.cycleW;
+	if (h !== false && next.cycleH > 0)
+		opts.cssBefore.height = next.cycleH;
+	opts.cssAfter = opts.cssAfter || {};
+	opts.cssAfter.display = 'none';
+	$(curr).css('zIndex',opts.slideCount + (rev === true ? 1 : 0));
+	$(next).css('zIndex',opts.slideCount + (rev === true ? 0 : 1));
+};
+
+// the actual fn for effecting a transition
+$.fn.cycle.custom = function(curr, next, opts, cb, fwd, speedOverride) {
+	var $l = $(curr), $n = $(next);
+	var speedIn = opts.speedIn, speedOut = opts.speedOut, easeIn = opts.easeIn, easeOut = opts.easeOut;
+	$n.css(opts.cssBefore);
+	if (speedOverride) {
+		if (typeof speedOverride == 'number')
+			speedIn = speedOut = speedOverride;
+		else
+			speedIn = speedOut = 1;
+		easeIn = easeOut = null;
+	}
+	var fn = function() {$n.animate(opts.animIn, speedIn, easeIn, cb)};
+	$l.animate(opts.animOut, speedOut, easeOut, function() {
+		if (opts.cssAfter) $l.css(opts.cssAfter);
+		if (!opts.sync) fn();
+	});
+	if (opts.sync) fn();
+};
+
+// transition definitions - only fade is defined here, transition pack defines the rest
+$.fn.cycle.transitions = {
+	fade: function($cont, $slides, opts) {
+		$slides.not(':eq('+opts.currSlide+')').css('opacity',0);
+		opts.before.push(function(curr,next,opts) {
+			$.fn.cycle.commonReset(curr,next,opts);
+			opts.cssBefore.opacity = 0;
+		});
+		opts.animIn	   = { opacity: 1 };
+		opts.animOut   = { opacity: 0 };
+		opts.cssBefore = { top: 0, left: 0 };
+	}
+};
+
+$.fn.cycle.ver = function() { return ver; };
+
+// override these globally if you like (they are all optional)
+$.fn.cycle.defaults = {
+	fx:			  'fade', // name of transition effect (or comma separated names, ex: 'fade,scrollUp,shuffle')
+	timeout:	   4000,  // milliseconds between slide transitions (0 to disable auto advance)
+	timeoutFn:     null,  // callback for determining per-slide timeout value:  function(currSlideElement, nextSlideElement, options, forwardFlag)
+	continuous:	   0,	  // true to start next transition immediately after current one completes
+	speed:		   1000,  // speed of the transition (any valid fx speed value)
+	speedIn:	   null,  // speed of the 'in' transition
+	speedOut:	   null,  // speed of the 'out' transition
+	next:		   null,  // selector for element to use as event trigger for next slide
+	prev:		   null,  // selector for element to use as event trigger for previous slide
+//	prevNextClick: null,  // @deprecated; please use onPrevNextEvent instead
+	onPrevNextEvent: null,  // callback fn for prev/next events: function(isNext, zeroBasedSlideIndex, slideElement)
+	prevNextEvent:'click.cycle',// event which drives the manual transition to the previous or next slide
+	pager:		   null,  // selector for element to use as pager container
+	//pagerClick   null,  // @deprecated; please use onPagerEvent instead
+	onPagerEvent:  null,  // callback fn for pager events: function(zeroBasedSlideIndex, slideElement)
+	pagerEvent:	  'click.cycle', // name of event which drives the pager navigation
+	allowPagerClickBubble: false, // allows or prevents click event on pager anchors from bubbling
+	pagerAnchorBuilder: null, // callback fn for building anchor links:  function(index, DOMelement)
+	before:		   null,  // transition callback (scope set to element to be shown):	 function(currSlideElement, nextSlideElement, options, forwardFlag)
+	after:		   null,  // transition callback (scope set to element that was shown):  function(currSlideElement, nextSlideElement, options, forwardFlag)
+	end:		   null,  // callback invoked when the slideshow terminates (use with autostop or nowrap options): function(options)
+	easing:		   null,  // easing method for both in and out transitions
+	easeIn:		   null,  // easing for "in" transition
+	easeOut:	   null,  // easing for "out" transition
+	shuffle:	   null,  // coords for shuffle animation, ex: { top:15, left: 200 }
+	animIn:		   null,  // properties that define how the slide animates in
+	animOut:	   null,  // properties that define how the slide animates out
+	cssBefore:	   null,  // properties that define the initial state of the slide before transitioning in
+	cssAfter:	   null,  // properties that defined the state of the slide after transitioning out
+	fxFn:		   null,  // function used to control the transition: function(currSlideElement, nextSlideElement, options, afterCalback, forwardFlag)
+	height:		  'auto', // container height
+	startingSlide: 0,	  // zero-based index of the first slide to be displayed
+	sync:		   1,	  // true if in/out transitions should occur simultaneously
+	random:		   0,	  // true for random, false for sequence (not applicable to shuffle fx)
+	fit:		   0,	  // force slides to fit container
+	containerResize: 1,	  // resize container to fit largest slide
+	pause:		   0,	  // true to enable "pause on hover"
+	pauseOnPagerHover: 0, // true to pause when hovering over pager link
+	autostop:	   0,	  // true to end slideshow after X transitions (where X == slide count)
+	autostopCount: 0,	  // number of transitions (optionally used with autostop to define X)
+	delay:		   0,	  // additional delay (in ms) for first transition (hint: can be negative)
+	slideExpr:	   null,  // expression for selecting slides (if something other than all children is required)
+	cleartype:	   !$.support.opacity,  // true if clearType corrections should be applied (for IE)
+	cleartypeNoBg: false, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+	nowrap:		   0,	  // true to prevent slideshow from wrapping
+	fastOnEvent:   0,	  // force fast transitions when triggered manually (via pager or prev/next); value == time in ms
+	randomizeEffects: 1,  // valid when multiple effects are used; true to make the effect sequence random
+	rev:		   0,	 // causes animations to transition in reverse
+	manualTrump:   true,  // causes manual transition to stop an active transition instead of being ignored
+	requeueOnImageNotLoaded: true, // requeue the slideshow if any image slides are not yet loaded
+	requeueTimeout: 250,  // ms delay for requeue
+	activePagerClass: 'activeSlide', // class name used for the active pager link
+	updateActivePagerLink: null // callback fn invoked to update the active pager link (adds/removes activePagerClass style)
+};
+
+})(jQuery);
+
+
+/*!
+ * jQuery Cycle Plugin Transition Definitions
+ * This script is a plugin for the jQuery Cycle Plugin
+ * Examples and documentation at: http://malsup.com/jquery/cycle/
+ * Copyright (c) 2007-2008 M. Alsup
+ * Version:	 2.72
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+(function($) {
+
+//
+// These functions define one-time slide initialization for the named
+// transitions. To save file size feel free to remove any of these that you
+// don't need.
+//
+$.fn.cycle.transitions.none = function($cont, $slides, opts) {
+	opts.fxFn = function(curr,next,opts,after){
+		$(next).show();
+		$(curr).hide();
+		after();
+	};
+}
+
+// scrollUp/Down/Left/Right
+$.fn.cycle.transitions.scrollUp = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden');
+	opts.before.push($.fn.cycle.commonReset);
+	var h = $cont.height();
+	opts.cssBefore ={ top: h, left: 0 };
+	opts.cssFirst = { top: 0 };
+	opts.animIn	  = { top: 0 };
+	opts.animOut  = { top: -h };
+};
+$.fn.cycle.transitions.scrollDown = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden');
+	opts.before.push($.fn.cycle.commonReset);
+	var h = $cont.height();
+	opts.cssFirst = { top: 0 };
+	opts.cssBefore= { top: -h, left: 0 };
+	opts.animIn	  = { top: 0 };
+	opts.animOut  = { top: h };
+};
+$.fn.cycle.transitions.scrollLeft = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden');
+	opts.before.push($.fn.cycle.commonReset);
+	var w = $cont.width();
+	opts.cssFirst = { left: 0 };
+	opts.cssBefore= { left: w, top: 0 };
+	opts.animIn	  = { left: 0 };
+	opts.animOut  = { left: 0-w };
+};
+$.fn.cycle.transitions.scrollRight = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden');
+	opts.before.push($.fn.cycle.commonReset);
+	var w = $cont.width();
+	opts.cssFirst = { left: 0 };
+	opts.cssBefore= { left: -w, top: 0 };
+	opts.animIn	  = { left: 0 };
+	opts.animOut  = { left: w };
+};
+$.fn.cycle.transitions.scrollHorz = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden').width();
+	opts.before.push(function(curr, next, opts, fwd) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		opts.cssBefore.left = fwd ? (next.cycleW-1) : (1-next.cycleW);
+		opts.animOut.left = fwd ? -curr.cycleW : curr.cycleW;
+	});
+	opts.cssFirst = { left: 0 };
+	opts.cssBefore= { top: 0 };
+	opts.animIn   = { left: 0 };
+	opts.animOut  = { top: 0 };
+};
+$.fn.cycle.transitions.scrollVert = function($cont, $slides, opts) {
+	$cont.css('overflow','hidden');
+	opts.before.push(function(curr, next, opts, fwd) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		opts.cssBefore.top = fwd ? (1-next.cycleH) : (next.cycleH-1);
+		opts.animOut.top = fwd ? curr.cycleH : -curr.cycleH;
+	});
+	opts.cssFirst = { top: 0 };
+	opts.cssBefore= { left: 0 };
+	opts.animIn   = { top: 0 };
+	opts.animOut  = { left: 0 };
+};
+
+// slideX/slideY
+$.fn.cycle.transitions.slideX = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$(opts.elements).not(curr).hide();
+		$.fn.cycle.commonReset(curr,next,opts,false,true);
+		opts.animIn.width = next.cycleW;
+	});
+	opts.cssBefore = { left: 0, top: 0, width: 0 };
+	opts.animIn	 = { width: 'show' };
+	opts.animOut = { width: 0 };
+};
+$.fn.cycle.transitions.slideY = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$(opts.elements).not(curr).hide();
+		$.fn.cycle.commonReset(curr,next,opts,true,false);
+		opts.animIn.height = next.cycleH;
+	});
+	opts.cssBefore = { left: 0, top: 0, height: 0 };
+	opts.animIn	 = { height: 'show' };
+	opts.animOut = { height: 0 };
+};
+
+// shuffle
+$.fn.cycle.transitions.shuffle = function($cont, $slides, opts) {
+	var i, w = $cont.css('overflow', 'visible').width();
+	$slides.css({left: 0, top: 0});
+	opts.before.push(function(curr,next,opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,true,true);
+	});
+	// only adjust speed once!
+	if (!opts.speedAdjusted) {
+		opts.speed = opts.speed / 2; // shuffle has 2 transitions
+		opts.speedAdjusted = true;
+	}
+	opts.random = 0;
+	opts.shuffle = opts.shuffle || {left:-w, top:15};
+	opts.els = [];
+	for (i=0; i < $slides.length; i++)
+		opts.els.push($slides[i]);
+
+	for (i=0; i < opts.currSlide; i++)
+		opts.els.push(opts.els.shift());
+
+	// custom transition fn (hat tip to Benjamin Sterling for this bit of sweetness!)
+	opts.fxFn = function(curr, next, opts, cb, fwd) {
+		var $el = fwd ? $(curr) : $(next);
+		$(next).css(opts.cssBefore);
+		var count = opts.slideCount;
+		$el.animate(opts.shuffle, opts.speedIn, opts.easeIn, function() {
+			var hops = $.fn.cycle.hopsFromLast(opts, fwd);
+			for (var k=0; k < hops; k++)
+				fwd ? opts.els.push(opts.els.shift()) : opts.els.unshift(opts.els.pop());
+			if (fwd) {
+				for (var i=0, len=opts.els.length; i < len; i++)
+					$(opts.els[i]).css('z-index', len-i+count);
+			}
+			else {
+				var z = $(curr).css('z-index');
+				$el.css('z-index', parseInt(z)+1+count);
+			}
+			$el.animate({left:0, top:0}, opts.speedOut, opts.easeOut, function() {
+				$(fwd ? this : curr).hide();
+				if (cb) cb();
+			});
+		});
+	};
+	opts.cssBefore = { display: 'block', opacity: 1, top: 0, left: 0 };
+};
+
+// turnUp/Down/Left/Right
+$.fn.cycle.transitions.turnUp = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,false);
+		opts.cssBefore.top = next.cycleH;
+		opts.animIn.height = next.cycleH;
+	});
+	opts.cssFirst  = { top: 0 };
+	opts.cssBefore = { left: 0, height: 0 };
+	opts.animIn	   = { top: 0 };
+	opts.animOut   = { height: 0 };
+};
+$.fn.cycle.transitions.turnDown = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,false);
+		opts.animIn.height = next.cycleH;
+		opts.animOut.top   = curr.cycleH;
+	});
+	opts.cssFirst  = { top: 0 };
+	opts.cssBefore = { left: 0, top: 0, height: 0 };
+	opts.animOut   = { height: 0 };
+};
+$.fn.cycle.transitions.turnLeft = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,true);
+		opts.cssBefore.left = next.cycleW;
+		opts.animIn.width = next.cycleW;
+	});
+	opts.cssBefore = { top: 0, width: 0  };
+	opts.animIn	   = { left: 0 };
+	opts.animOut   = { width: 0 };
+};
+$.fn.cycle.transitions.turnRight = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,true);
+		opts.animIn.width = next.cycleW;
+		opts.animOut.left = curr.cycleW;
+	});
+	opts.cssBefore = { top: 0, left: 0, width: 0 };
+	opts.animIn	   = { left: 0 };
+	opts.animOut   = { width: 0 };
+};
+
+// zoom
+$.fn.cycle.transitions.zoom = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,false,true);
+		opts.cssBefore.top = next.cycleH/2;
+		opts.cssBefore.left = next.cycleW/2;
+		opts.animIn	   = { top: 0, left: 0, width: next.cycleW, height: next.cycleH };
+		opts.animOut   = { width: 0, height: 0, top: curr.cycleH/2, left: curr.cycleW/2 };
+	});
+	opts.cssFirst = { top:0, left: 0 };
+	opts.cssBefore = { width: 0, height: 0 };
+};
+
+// fadeZoom
+$.fn.cycle.transitions.fadeZoom = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,false);
+		opts.cssBefore.left = next.cycleW/2;
+		opts.cssBefore.top = next.cycleH/2;
+		opts.animIn	= { top: 0, left: 0, width: next.cycleW, height: next.cycleH };
+	});
+	opts.cssBefore = { width: 0, height: 0 };
+	opts.animOut  = { opacity: 0 };
+};
+
+// blindX
+$.fn.cycle.transitions.blindX = function($cont, $slides, opts) {
+	var w = $cont.css('overflow','hidden').width();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		opts.animIn.width = next.cycleW;
+		opts.animOut.left   = curr.cycleW;
+	});
+	opts.cssBefore = { left: w, top: 0 };
+	opts.animIn = { left: 0 };
+	opts.animOut  = { left: w };
+};
+// blindY
+$.fn.cycle.transitions.blindY = function($cont, $slides, opts) {
+	var h = $cont.css('overflow','hidden').height();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		opts.animIn.height = next.cycleH;
+		opts.animOut.top   = curr.cycleH;
+	});
+	opts.cssBefore = { top: h, left: 0 };
+	opts.animIn = { top: 0 };
+	opts.animOut  = { top: h };
+};
+// blindZ
+$.fn.cycle.transitions.blindZ = function($cont, $slides, opts) {
+	var h = $cont.css('overflow','hidden').height();
+	var w = $cont.width();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		opts.animIn.height = next.cycleH;
+		opts.animOut.top   = curr.cycleH;
+	});
+	opts.cssBefore = { top: h, left: w };
+	opts.animIn = { top: 0, left: 0 };
+	opts.animOut  = { top: h, left: w };
+};
+
+// growX - grow horizontally from centered 0 width
+$.fn.cycle.transitions.growX = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,true);
+		opts.cssBefore.left = this.cycleW/2;
+		opts.animIn = { left: 0, width: this.cycleW };
+		opts.animOut = { left: 0 };
+	});
+	opts.cssBefore = { width: 0, top: 0 };
+};
+// growY - grow vertically from centered 0 height
+$.fn.cycle.transitions.growY = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,false);
+		opts.cssBefore.top = this.cycleH/2;
+		opts.animIn = { top: 0, height: this.cycleH };
+		opts.animOut = { top: 0 };
+	});
+	opts.cssBefore = { height: 0, left: 0 };
+};
+
+// curtainX - squeeze in both edges horizontally
+$.fn.cycle.transitions.curtainX = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,false,true,true);
+		opts.cssBefore.left = next.cycleW/2;
+		opts.animIn = { left: 0, width: this.cycleW };
+		opts.animOut = { left: curr.cycleW/2, width: 0 };
+	});
+	opts.cssBefore = { top: 0, width: 0 };
+};
+// curtainY - squeeze in both edges vertically
+$.fn.cycle.transitions.curtainY = function($cont, $slides, opts) {
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,false,true);
+		opts.cssBefore.top = next.cycleH/2;
+		opts.animIn = { top: 0, height: next.cycleH };
+		opts.animOut = { top: curr.cycleH/2, height: 0 };
+	});
+	opts.cssBefore = { left: 0, height: 0 };
+};
+
+// cover - curr slide covered by next slide
+$.fn.cycle.transitions.cover = function($cont, $slides, opts) {
+	var d = opts.direction || 'left';
+	var w = $cont.css('overflow','hidden').width();
+	var h = $cont.height();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts);
+		if (d == 'right')
+			opts.cssBefore.left = -w;
+		else if (d == 'up')
+			opts.cssBefore.top = h;
+		else if (d == 'down')
+			opts.cssBefore.top = -h;
+		else
+			opts.cssBefore.left = w;
+	});
+	opts.animIn = { left: 0, top: 0};
+	opts.animOut = { opacity: 1 };
+	opts.cssBefore = { top: 0, left: 0 };
+};
+
+// uncover - curr slide moves off next slide
+$.fn.cycle.transitions.uncover = function($cont, $slides, opts) {
+	var d = opts.direction || 'left';
+	var w = $cont.css('overflow','hidden').width();
+	var h = $cont.height();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,true,true);
+		if (d == 'right')
+			opts.animOut.left = w;
+		else if (d == 'up')
+			opts.animOut.top = -h;
+		else if (d == 'down')
+			opts.animOut.top = h;
+		else
+			opts.animOut.left = -w;
+	});
+	opts.animIn = { left: 0, top: 0 };
+	opts.animOut = { opacity: 1 };
+	opts.cssBefore = { top: 0, left: 0 };
+};
+
+// toss - move top slide and fade away
+$.fn.cycle.transitions.toss = function($cont, $slides, opts) {
+	var w = $cont.css('overflow','visible').width();
+	var h = $cont.height();
+	opts.before.push(function(curr, next, opts) {
+		$.fn.cycle.commonReset(curr,next,opts,true,true,true);
+		// provide default toss settings if animOut not provided
+		if (!opts.animOut.left && !opts.animOut.top)
+			opts.animOut = { left: w*2, top: -h/2, opacity: 0 };
+		else
+			opts.animOut.opacity = 0;
+	});
+	opts.cssBefore = { left: 0, top: 0 };
+	opts.animIn = { left: 0 };
+};
+
+// wipe - clip animation
+$.fn.cycle.transitions.wipe = function($cont, $slides, opts) {
+	var w = $cont.css('overflow','hidden').width();
+	var h = $cont.height();
+	opts.cssBefore = opts.cssBefore || {};
+	var clip;
+	if (opts.clip) {
+		if (/l2r/.test(opts.clip))
+			clip = 'rect(0px 0px '+h+'px 0px)';
+		else if (/r2l/.test(opts.clip))
+			clip = 'rect(0px '+w+'px '+h+'px '+w+'px)';
+		else if (/t2b/.test(opts.clip))
+			clip = 'rect(0px '+w+'px 0px 0px)';
+		else if (/b2t/.test(opts.clip))
+			clip = 'rect('+h+'px '+w+'px '+h+'px 0px)';
+		else if (/zoom/.test(opts.clip)) {
+			var top = parseInt(h/2);
+			var left = parseInt(w/2);
+			clip = 'rect('+top+'px '+left+'px '+top+'px '+left+'px)';
+		}
+	}
+
+	opts.cssBefore.clip = opts.cssBefore.clip || clip || 'rect(0px 0px 0px 0px)';
+
+	var d = opts.cssBefore.clip.match(/(\d+)/g);
+	var t = parseInt(d[0]), r = parseInt(d[1]), b = parseInt(d[2]), l = parseInt(d[3]);
+
+	opts.before.push(function(curr, next, opts) {
+		if (curr == next) return;
+		var $curr = $(curr), $next = $(next);
+		$.fn.cycle.commonReset(curr,next,opts,true,true,false);
+		opts.cssAfter.display = 'block';
+
+		var step = 1, count = parseInt((opts.speedIn / 13)) - 1;
+		(function f() {
+			var tt = t ? t - parseInt(step * (t/count)) : 0;
+			var ll = l ? l - parseInt(step * (l/count)) : 0;
+			var bb = b < h ? b + parseInt(step * ((h-b)/count || 1)) : h;
+			var rr = r < w ? r + parseInt(step * ((w-r)/count || 1)) : w;
+			$next.css({ clip: 'rect('+tt+'px '+rr+'px '+bb+'px '+ll+'px)' });
+			(step++ <= count) ? setTimeout(f, 13) : $curr.css('display', 'none');
+		})();
+	});
+	opts.cssBefore = { display: 'block', opacity: 1, top: 0, left: 0 };
+	opts.animIn	   = { left: 0 };
+	opts.animOut   = { left: 0 };
+};
+
+})(jQuery);
