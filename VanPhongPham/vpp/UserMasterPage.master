@@ -30,11 +30,13 @@
     
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="js/boxOver.js"></script>
+    <%--<script type="text/javascript" src="js/boxOver.js"></script>--%>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+    
     <!--Begin doan javascript xu ly cho left menu-->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -114,11 +116,11 @@
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->
-    <script type="text/javascript" src="js/boxOver.js"></script>
-    <script type="text/javascript" src="js/switchimages.js"></script>
+    <%--<script type="text/javascript" src="js/boxOver.js"></script>
+    <script type="text/javascript" src="js/switchimages.js"></script>--%>
     <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
-<body runat="server">
+<body >
 <form runat="server" id="frm_main">
 <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>    
@@ -159,7 +161,8 @@
             <!-- --------------------------------------------------- -->
             <asp:SlideShowExtender ID="SlideShowExtender" runat="server"
                 BehaviorID="SSBehaviorID"
-                TargetControlID="img1"
+                TargetControlID="img1"   
+                SlideShowServicePath="SlideShow.aspx"             
                 SlideShowServiceMethod="GetSlides"
                 AutoPlay="true"
                 ImageDescriptionLabelID="lblDesc"
@@ -330,7 +333,7 @@
    
    <div class="center_content">
    <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
-
+                 
      </asp:ContentPlaceHolder>
    	 </div>
    	 
