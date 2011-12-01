@@ -9,13 +9,13 @@
     <script type="text/javascript" src="js/java.js"></script>
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang chi tiết sản phẩm</span>
-    </div> 
+    </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
     <div class="center_title_bar">Motorola 156 MX-VL</div>
     	<div class="prod_box_big">
         	<div class="top_prod_box_big"></div>
-            <div class="center_prod_box_big">            
+            <div class="center_prod_box_big">
                  
                  <div class="product_img_big">
                  <a href="images/laptop.gif"  rel="lightbox" title="header=[Phóng to ảnh] body=[&nbsp;] fade=[on]">
@@ -137,8 +137,9 @@
                     </div> 
                     <!-- AddThis Button BEGIN -->
                         <div>
-                        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                        <script type="text/javascript" src="js/plusone.js"></script>
                             <g:plusone  size="small" lang="vi"></g:plusone>
+                            
                             <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed2e0173abe82f3">
                             <img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
                             
