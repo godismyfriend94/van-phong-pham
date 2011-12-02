@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="robots" content="index, assignment" />
+    <meta name="robots" content="index, vanphongpham" />
     <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
         18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
@@ -86,7 +86,7 @@
                 else writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()" onblur="self.close()">');
                 writeln('<img name="George" src=' + imageURL + ' style="display:block"></body></html>');
                 close();
-            } 
+            }
         }
     </script>
 
@@ -124,7 +124,7 @@
                 <a href="index.aspx">
                     <img src="vpp/images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
             </div>
-            <div class="oferte_content">
+            <div class="oferta_content">
                 <div class="top_divider">
                     <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
                 <div class="oferta">
@@ -149,17 +149,13 @@
                             <a href="vpp/details.aspx" class="details" title="header=[Xem chi tiết hơn] body=[&nbsp;] fade=[on]">
                                 chi tiết...</a>
                         </div>
+                        <div class="oferta_pagination">
+                            <asp:LinkButton ID="btnPrev" runat="server" Text="<<" ToolTip="Prev" />
+                            <asp:LinkButton ID="btnPlay" runat="server" Text="[]" ToolTip="Play/Stop" />
+                            <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip="Next" />
+                        </div>
                     </div>
-                    <div class="oferta_pagination">
-                        <!--<span class="current">1</span>
-                 <a href="#?page=2">2</a>
-                 <a href="#?page=3">3</a>
-                 <a href="#?page=3">4</a>
-                 <a href="#?page=3">5</a> -->
-                        <asp:LinkButton ID="btnPrev" runat="server" Text="<<" ToolTip="Prev" />
-                        <asp:LinkButton ID="btnPlay" runat="server" Text="[]" ToolTip="Play/Stop" />
-                        <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip="Next" />
-                    </div>
+                    
                 </div>
                 <div class="top_divider">
                     <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
@@ -171,19 +167,19 @@
                 <div class="left_menu_corner">
                 </div>
                 <ul class="menu">
-                    <li><a href="../index.aspx" class="nav1">Trang ch&#7911; </a></li>
+                    <li><a href="vpp/index.aspx" class="nav1">Trang ch&#7911; </a></li>
                     <li class="divider"></li>
-                    <li><a href="products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
+                    <li><a href="vpp/products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
                     <li class="divider"></li>
-                    <li><a href="promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
+                    <li><a href="vpp/promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
                     <li class="divider"></li>
                     <li><a href="#" class="nav4">Chính sách</a></li>
                     <li class="divider"></li>
                     <li><a href="#" class="nav5">Giao h&agrave;ng </a></li>
                     <li class="divider"></li>
-                    <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
+                    <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                     <li class="divider"></li>
-                    <li><a href="contact.aspx" class="nav7">FAQs</a></li>
+                    <li><a href="vpp/contact.aspx" class="nav7">FAQs</a></li>
                     <li class="divider"></li>
                     <%--<li class="currencies">Loại tiền: 
                          <select>
@@ -196,13 +192,13 @@
                 </div>
             </div>
             <!-- end of menu tab -->
-            <div class="crumb_navigation">
-                Bạn đang ở: <span class="current">trang chủ</span>
+        <div class="crumb_navigation">
+            Bạn đang ở: <span class="current">trang chủ</span>
+        </div>
+        <div class="left_content">
+            <div class="title_box">
+                Danh m&#7909;c s&#7843;n ph&#7849;m
             </div>
-            <div class="left_content">
-                <div class="title_box">
-                    Danh m&#7909;c s&#7843;n ph&#7849;m
-                </div>
                 <!--
         <ul class="left_menu">
             <li class="odd"><a href="#">Processors</a></li>

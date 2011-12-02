@@ -102,9 +102,10 @@
     <%--<script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/switchimages.js"></script>--%>
     <script type="text/javascript" src="js/plusone.js"></script>
+    
     <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
-<body >
+<body runat="server">
 <form runat="server" id="frm_main">
 <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>    
@@ -133,10 +134,10 @@
 	<div id="header">
         
         <div id="logo">
-            <a href="index.html"><img src="images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
+            <a href="../index.aspx"><img src="images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
 	    </div>
         
-        <div class="oferte_content">
+        <div class="oferta_content">
         <div class="top_divider">
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
             
@@ -170,22 +171,18 @@
                     <asp:Label ID="lblDesc" runat="server" Text=""></asp:Label>
                 </div>
                 <a href="details.aspx" class="details" title="header=[Xem chi tiết hơn] body=[&nbsp;] fade=[on]">chi tiết...</a>
-            </div>   
-            </div>
+            </div>  
             <div class="oferta_pagination">
-                <!--<span class="current">1</span>
-                 <a href="#?page=2">2</a>
-                 <a href="#?page=3">3</a>
-                 <a href="#?page=3">4</a>
-                 <a href="#?page=3">5</a> -->
                  <asp:LinkButton ID="btnPrev" runat="server" Text="<<" ToolTip ="Prev"/>
                  <asp:LinkButton ID="btnPlay" runat="server" Text="[]" ToolTip ="Play" />
                  <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip ="Next" />
+            </div> 
             </div>
+            <!-- --------------------------------------------------- -->
         </div>
         <div class="top_divider">
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-    </div> <!-- end of oferte_content-->
+    </div> <!-- end of oferta_content-->
     </div>
     
     <div id="main_content"> 
@@ -291,7 +288,7 @@
             </dd>
             </dl>
         </div>
-        </div>
+    </div>
      <div class="title_box">Sản phẩm tiêu biểu</div>  
      <div class="border_box">
          <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
