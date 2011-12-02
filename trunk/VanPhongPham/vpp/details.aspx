@@ -1,8 +1,8 @@
 ﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
-    <%--<script src="js/prototype.js" type="text/javascript"></script>
-    <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>--%>
+    <script src="js/prototype.js" type="text/javascript"></script>
+    <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>
     <script src="js/lightbox.js" type="text/javascript"></script>
     <%--<script type="text/javascript" src="js/java.js"></script>--%>
     
@@ -31,43 +31,71 @@
              <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
              </div>
              </div>
-                 <div class="details_big_box">
-                     <div class="product_title_big">My Cinema-U3000/DVBT, USB 2.0 TV BOX External, White</div>
-                     <div class="specifications">
-                        Disponibilitate: <span class="blue">In stoc</span><br />
+         <div class="details_big_box">
+             <div class="product_title_big">My Cinema-U3000/DVBT, USB 2.0 TV BOX External, White</div>
+             <div class="specifications">
+                Disponibilitate: <span class="blue">In stoc</span><br />
 
-                        Garantie: <span class="blue">24 luni</span><br />
+                Garantie: <span class="blue">24 luni</span><br />
+                
+                Tip transport: <span class="blue">Mic</span><br />
+                
+                Pretul include <span class="blue">TVA</span><br />
+             </div>
+             <div class="prod_price_big"><span class="reduce">350$</span> <span class="price">270$</span></div>
+             
+             <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
+             <a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>
+             
+              <br /><br /><br /><br /><br /><br />
+         </div>  
+
+        <div class="comment">
+             <!-- AddThis Button BEGIN -->
+                    <div>
+                    <script type="text/javascript" src="js/plusone.js"></script>
+                        <g:plusone  size="small" lang="vi"></g:plusone>
                         
-                        Tip transport: <span class="blue">Mic</span><br />
+                        <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed2e0173abe82f3">
+                        <img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
                         
-                        Pretul include <span class="blue">TVA</span><br />
-                     </div>
-                     <div class="prod_price_big"><span class="reduce">350$</span> <span class="price">270$</span></div>
-                     
-                     <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
-                     <a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>
-                     
-                      <br /><br />
-                 </div>    
-                <div class="comment">
+                    </div>
+                    <%--http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed2e0173abe82f3--%>
+                    <script type="text/javascript" src="js/addthis.js"></script>
+                    <!-- AddThis Button END -->
+                    <br /><br />
         <asp:UpdatePanel runat="server" ID="up1">
         <ContentTemplate>
-        <asp:Accordion ID="MyAccordion" runat="server" SelectedIndex="0" 
-            HeaderCssClass="accordionHeader" HeaderSelectedCssClass="accordionHeaderSelected"
-            ContentCssClass="accordionContent" FadeTransitions="true" FramesPerSecond="40" 
-            TransitionDuration="250" AutoSize="None" RequireOpenedPane="false" SuppressHeaderPostbacks="true">
-        <Panes>
-        <asp:AccordionPane ID="AccordionPane1" runat="server">
-        <Header>
-            <asp:Label ID="Label1" ForeColor="#a81f22" Font-Bold="true" runat="server" Text="Đánh giá và chia sẻ về sản phẩm "></asp:Label>
-            
-        </Header>
-        <Content>
+        <asp:CollapsiblePanelExtender ID="cpeDemo" runat="Server"
+            TargetControlID="description_ContentPanel"
+            ExpandControlID="description_HeaderPanel"
+            CollapseControlID="description_HeaderPanel" 
+            Collapsed="True"
+            TextLabelID="Label1"
+
+            SuppressPostBack="true"
+            SkinID="CollapsiblePanelDemo" />
+        <div>
+        <asp:Panel ID="description_HeaderPanel" runat="server" style="cursor: pointer;">
+            <div style="padding:5px; cursor: pointer; vertical-align: middle;">
+                <div style="float: left;">
+                    <asp:Label ID="Label2" ForeColor="blue" Font-Bold="true" runat="server" Text="Đánh giá về chất lượng sản phẩm và dịch vụ"></asp:Label>
+                 </div>
+                <div style="float: left;">
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </div>
+<%--                <div style="float: right; vertical-align: middle;">
+                    <asp:ImageButton ID="Image1" runat="server" ImageUrl="images/expand_blue.jpg" AlternateText="(Show Details...)"/>
+                </div>--%>
+            </div>
+        </asp:Panel>
+        </div>
+        <div style="float:left; margin-top: 20px;">
+        <asp:Panel id="description_ContentPanel" runat="server" style="overflow:hidden;">
             <div style="float: left;">
                     <asp:Label ID="lblHowLike" ForeColor="#a81f22" Font-Bold="true" runat="server" Text="Bạn cảm thấy sản phẩm này như nào? "></asp:Label>
                     &nbsp;&nbsp;
-                </div>
-                
+            </div>
                 <asp:Rating id="productRating" runat="server" BehaviorID="RatingBehavior1"
                     CurrentRating="1"
                     MaxRating="5"
@@ -132,29 +160,14 @@
                 </div>
 
                 <div class="form_row">
-                    <%--<asp:Button ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="register" Text="- Submit -" />--%>
+                    <asp:Button ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="register" Text="- Đánh giá -" />
                 </div> 
-                <!-- AddThis Button BEGIN -->
-                    <div>
-                    <script type="text/javascript" src="js/plusone.js"></script>
-                        <g:plusone  size="small" lang="vi"></g:plusone>
-                        
-                        <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed2e0173abe82f3">
-                        <img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
-                        
-                    </div>
-                    <%--http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed2e0173abe82f3--%>
-                    <script type="text/javascript" src="js/addthis.js"></script>
-                    <!-- AddThis Button END -->
                     
-            </Content>
-
-            </asp:AccordionPane>
-            </Panes>
-        </asp:Accordion>
-                
+            </asp:Panel>
+            </div>
         </ContentTemplate> 
         </asp:UpdatePanel>
+       
         </div>
                 
         </div>

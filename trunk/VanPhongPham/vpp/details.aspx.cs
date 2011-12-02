@@ -26,27 +26,33 @@ public partial class vpp_details : System.Web.UI.Page
         switch (productRating.CurrentRating)
         {
             case 1:
-                howSpicy = "Not like";
+                howSpicy = "Không tốt";
                 lblResponse.ForeColor = System.Drawing.Color.Red;
                 break;
             case 2:
-                howSpicy = "Like a bit";
+                howSpicy = "Bình thường";
                 lblResponse.ForeColor = System.Drawing.Color.BlueViolet;
                 break;
             case 3:
-                howSpicy = "Like";
+                howSpicy = "Tốt";
                 lblResponse.ForeColor = System.Drawing.Color.Blue;
                 break;
             case 4:
-                howSpicy = "Very like";
+                howSpicy = "Rất tốt";
                 lblResponse.ForeColor = System.Drawing.Color.Green;
                 break;
             case 5:
-                howSpicy = "Perfect";
+                howSpicy = "Hoàn hảo";
                 lblResponse.ForeColor = System.Drawing.Color.Gold;
                 break;
         }
 
         lblResponse.Text = "<b>" + howSpicy + "</b>";
+    }
+
+
+    protected void btnSubmitRate_Click(object sender, EventArgs e)
+    {
+
     }
 }

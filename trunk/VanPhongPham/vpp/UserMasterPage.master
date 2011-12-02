@@ -99,8 +99,8 @@
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->
-    <%--<script type="text/javascript" src="js/boxOver.js"></script>
-    <script type="text/javascript" src="js/switchimages.js"></script>--%>
+    <script type="text/javascript" src="js/boxOver.js"></script>
+    <script type="text/javascript" src="js/switchimages.js"></script>
     <script type="text/javascript" src="js/plusone.js"></script>
     
     <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
