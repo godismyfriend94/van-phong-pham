@@ -1,34 +1,36 @@
 ﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
-    <%--<script src="js/prototype.js" type="text/javascript"></script>
+    <script src="js/prototype.js" type="text/javascript"></script>
     <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>
-    <script src="js/lightbox.js" type="text/javascript"></script>--%>
-    <%--<script type="text/javascript" src="js/java.js"></script>--%>
-  
+    <script src="js/lightbox.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/java.js"></script>
   
    <!-- Zoom anh kieu ImageLens -->
 	
     <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
     <script src="js/jqzoom.pack.1.0.1.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="css/jqzoom.css" type="text/css">
+    <link rel="stylesheet" href="css/jqzoom.css" type="text/css"/>
     <style type"text/css">
-    div.notes{
-	    font-size:12px;
-    }
-    div.notes a{
-	    color:#990000;
-    }
-
+        div.notes{
+	        font-size:12px;
+        }
+        div.notes a{
+	        color:#990000;
+        }
     </style>
     <script type="text/javascript">
-
         $(function() {
             $(".jqzoom").jqzoom();
         });
     </script>
-
+    <script type="text/javascript">
+         function swap(image) {
+             document.getElementById("img_main").src = image.href;
+             document.getElementById("img_link").href = image.href;
+         }
+     </script>
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang chi tiết sản phẩm</span>
     </div>
@@ -39,21 +41,24 @@
     	<div class="top_prod_box_big"></div>
         <div class="center_prod_box_big">
              <div class="product_img_big">
-            
-              <a href="images/big_pic.jpg" class="jqzoom" style="" title="zoom image">
-		        <img alt="" src="images/laptop.gif" class="">
-             </a>
-             
-             <div class="thumbs">
-             <a href="#" title="header=[Thumb1] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb2] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             <a href="#" title="header=[Thumb3] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
-             </div>
+                
+                <a href="images/big_pic.jpg" style=""  class="jqzoom" title="zoom image"  id="img_link">
+		            <img alt="" src="images/laptop.gif" id="img_main"/>
+                </a>
+                 <div class="thumbs">
+                     <a href="images/p5.gif" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     </a>
+                     <a href="images/iphone.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     </a>
+                     <a href="images/laptop.gif" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     </a>
+                     <a href="images/p5.gif" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     </a>
+                 </div>
              </div>
          <div class="details_big_box">
              <div class="product_title_big">My Cinema-U3000/DVBT, USB 2.0 TV BOX External, White</div>
