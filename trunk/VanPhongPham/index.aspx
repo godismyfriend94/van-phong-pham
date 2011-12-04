@@ -54,8 +54,8 @@
             });
         });
     </script>
-
-    <script type="text/javascript">
+ <!--End doan javascript xu ly cho left menu-->
+   <script type="text/javascript">
         PositionX = 100;
         PositionY = 100;
 
@@ -90,7 +90,7 @@
         }
     </script>
 
-    <!--End doan javascript xu ly cho left menu-->
+   
     <!--[if IE 6]>
     <!--<![endif]-->
 

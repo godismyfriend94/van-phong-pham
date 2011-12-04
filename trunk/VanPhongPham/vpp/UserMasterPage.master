@@ -30,11 +30,12 @@
     
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <%--<script type="text/javascript" src="js/boxOver.js"></script>--%>
+    <script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
 
     <!--Begin doan javascript xu ly cho left menu-->
     <script type="text/javascript">
@@ -54,7 +55,7 @@
             });
         });
     </script>
-    <script type="text/javascript" >
+    <%--<script type="text/javascript" >
         PositionX = 100;
         PositionY = 100;
 
@@ -95,7 +96,7 @@
                 close();
             }
         }
-    </script>
+    </script>--%>
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->
