@@ -42,21 +42,21 @@
         <div class="center_prod_box_big">
              <div class="product_img_big">
                 
-                <a href="images/big_pic.jpg" style=""  class="jqzoom" title="zoom image"  id="img_link">
-		            <img alt="" src="images/laptop.gif" id="img_main"/>
+                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="zoom image"  id="img_link">
+		            <img alt="" src="images/laptop.gif" id="img_main" width="150" height="150"/>
                 </a>
                  <div class="thumbs">
-                     <a href="images/p5.gif" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     <a href="images/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/Canon ImageCLASS MF4350D.png" alt="" title="" border="0" width="28" height="28"/>
                      </a>
-                     <a href="images/iphone.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     <a href="images/CanonimageCLASS MF4550d.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/CanonimageCLASS MF4550d.png" alt="" title="" border="0"  width="28" height="28"/>
                      </a>
-                     <a href="images/laptop.gif" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     <a href="images/CanonimageCLASSD520.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/CanonimageCLASSD520.png" alt="" title="" border="0"  width="28" height="28"/>
                      </a>
-                     <a href="images/p5.gif" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/thumb1.gif" alt="" title="" border="0" />
+                     <a href="images/CanonPixmaMX-328.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="images/CanonPixmaMX-328.png" alt="" title="" border="0"  width="28" height="28"/>
                      </a>
                  </div>
              </div>
