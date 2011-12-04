@@ -8,20 +8,27 @@
   
   
    <!-- Zoom anh kieu ImageLens -->
-    <script src="js/jquery.js" type="text/javascript"></script>
-	<script src="js/jquery.imageLens.js" type="text/javascript"></script>
-   <script type="text/javascript" language="javascript">
-       $(function() {
-           $("#img_01").imageLens();
-           $("#img_02").imageLens({ lensSize: 200 });
-           
-       });	
-	</script>
 	
-	
-	
-	
-	
+    <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="js/jqzoom.pack.1.0.1.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/jqzoom.css" type="text/css">
+    <style type"text/css">
+    div.notes{
+	    font-size:12px;
+    }
+    div.notes a{
+	    color:#990000;
+    }
+
+    </style>
+    <script type="text/javascript">
+
+        $(function() {
+            $(".jqzoom").jqzoom();
+        });
+    </script>
+
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang chi tiết sản phẩm</span>
     </div>
@@ -32,18 +39,11 @@
     	<div class="top_prod_box_big"></div>
         <div class="center_prod_box_big">
              <div class="product_img_big">
-            <%-- <a class="thumbnail" href="images/laptop.gif"  rel="lightbox" title="Ảnh phóng to">
-                <img src="images/laptop.gif" alt="" title="" border="0"/>
-             </a>--%>
-          <p>
-				<img alt ="" id="img_02" src="images/big_pic.jpg" width="150" height="180" />
-				</p>
-				<div class ="hideText">$("#img_02").imageLens();</div>
+            
+              <a href="images/big_pic.jpg" class="jqzoom" style="" title="zoom image">
+		        <img alt="" src="images/laptop.gif" class="">
+             </a>
              
-        
-             <%--<a href="javascript:popImage('images/big_pic.jpg','Some Title')" title="header=[Zoom] body=[&nbsp;] fade=[on]">
-                <img src="images/laptop.gif" alt="" title="" border="0" />
-             </a>--%>
              <div class="thumbs">
              <a href="#" title="header=[Thumb1] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
              <a href="#" title="header=[Thumb2] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
