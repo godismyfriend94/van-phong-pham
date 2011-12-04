@@ -1,12 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
-    <script src="js/prototype.js" type="text/javascript"></script>
-    <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>
-    <script src="js/lightbox.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/java.js"></script>
-  
-   <!-- Zoom anh kieu ImageLens -->
+    <!-- Zoom anh kieu ImageLens -->
 	
     <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
     <script src="js/jqzoom.pack.1.0.1.js" type="text/javascript"></script>
@@ -42,8 +37,8 @@
         <div class="center_prod_box_big">
              <div class="product_img_big">
                 
-                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="zoom image"  id="img_link">
-		            <img alt="" src="images/laptop.gif" id="img_main" width="150" height="150"/>
+                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link">
+		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="150" height="150"/>
                 </a>
                  <div class="thumbs">
                      <a href="images/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
