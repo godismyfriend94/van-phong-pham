@@ -37,21 +37,21 @@
         <div class="center_prod_box_big">
              <div class="product_img_big">
                 
-                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link">
-		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="150" height="150"/>
+                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link"  style="border: 0px;">
+		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="150" height="150" style="border: 0px;"/>
                 </a>
                  <div class="thumbs">
                      <a href="images/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/Canon ImageCLASS MF4350D.png" alt="" title="" border="0" width="28" height="28"/>
+                        <img src="images/Canon ImageCLASS MF4350D.png" alt="" title="" border="0" width="28" height="28" style="border: 0px;"/>
                      </a>
                      <a href="images/CanonimageCLASS MF4550d.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonimageCLASS MF4550d.png" alt="" title="" border="0"  width="28" height="28"/>
+                        <img src="images/CanonimageCLASS MF4550d.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
                      <a href="images/CanonimageCLASSD520.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonimageCLASSD520.png" alt="" title="" border="0"  width="28" height="28"/>
+                        <img src="images/CanonimageCLASSD520.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
                      <a href="images/CanonPixmaMX-328.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonPixmaMX-328.png" alt="" title="" border="0"  width="28" height="28"/>
+                        <img src="images/CanonPixmaMX-328.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
                  </div>
              </div>
