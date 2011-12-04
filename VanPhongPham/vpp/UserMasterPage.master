@@ -55,7 +55,7 @@
             });
         });
     </script>
-    <%--<script type="text/javascript" >
+    <script type="text/javascript" >
         PositionX = 100;
         PositionY = 100;
 
@@ -96,7 +96,7 @@
                 close();
             }
         }
-    </script>--%>
+    </script>
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->

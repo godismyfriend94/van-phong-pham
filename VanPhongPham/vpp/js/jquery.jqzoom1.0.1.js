@@ -15,8 +15,8 @@
     {
         var settings = {
             zoomType: 'standard', //standard/reverse/innerzoom
-            zoomWidth: 200,		//zoomed width default width
-            zoomHeight: 200,		//zoomed div default width
+            zoomWidth: 300,		//zoomed width default width
+            zoomHeight: 300,		//zoomed div default width
             xOffset: 10,		//zoomed div default offset
             yOffset: 0,
             position: "right" ,//zoomed div default position,offset position is to the right of the image
