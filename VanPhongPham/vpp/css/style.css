@@ -980,3 +980,9 @@ color:#fff;
 	background:url(../images/bgboxcart.gif) no-repeat;
 	
 }
+
+.hideText
+{
+	color:#ffffff;	
+	display:none;
+}

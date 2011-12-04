@@ -1,11 +1,27 @@
 ﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
-    <script src="js/prototype.js" type="text/javascript"></script>
+    <%--<script src="js/prototype.js" type="text/javascript"></script>
     <script src="js/scriptaculous.js?load=effects" type="text/javascript"></script>
-    <script src="js/lightbox.js" type="text/javascript"></script>
+    <script src="js/lightbox.js" type="text/javascript"></script>--%>
     <%--<script type="text/javascript" src="js/java.js"></script>--%>
-    
+  
+  
+   <!-- Zoom anh kieu ImageLens -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.imageLens.js" type="text/javascript"></script>
+   <script type="text/javascript" language="javascript">
+       $(function() {
+           $("#img_01").imageLens();
+           $("#img_02").imageLens({ lensSize: 200 });
+           
+       });	
+	</script>
+	
+	
+	
+	
+	
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang chi tiết sản phẩm</span>
     </div>
@@ -15,11 +31,19 @@
 	<div class="prod_box_big">
     	<div class="top_prod_box_big"></div>
         <div class="center_prod_box_big">
-             
              <div class="product_img_big">
-             <a href="images/laptop.gif"  rel="lightbox" title="Ảnh phóng to">
+            <%-- <a class="thumbnail" href="images/laptop.gif"  rel="lightbox" title="Ảnh phóng to">
                 <img src="images/laptop.gif" alt="" title="" border="0"/>
-             </a>
+             </a>--%>
+          <p>
+				<img alt ="" id="img_02" src="images/big_pic.jpg" width="150" height="180" />
+				</p>
+				<div class ="hideText">$("#img_02").imageLens();</div>
+             
+        
+             <%--<a href="javascript:popImage('images/big_pic.jpg','Some Title')" title="header=[Zoom] body=[&nbsp;] fade=[on]">
+                <img src="images/laptop.gif" alt="" title="" border="0" />
+             </a>--%>
              <div class="thumbs">
              <a href="#" title="header=[Thumb1] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
              <a href="#" title="header=[Thumb2] body=[&nbsp;] fade=[on]"><img src="images/thumb1.gif" alt="" title="" border="0" /></a>
