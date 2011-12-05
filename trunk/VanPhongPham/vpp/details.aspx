@@ -5,9 +5,9 @@
 	
     <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
     <script src="js/jqzoom.pack.1.0.1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/jqzoom.css" type="text/css" />
+    <style type ="text/css">
 
-    <link rel="stylesheet" href="css/jqzoom.css" type="text/css"/>
-    <style type"text/css">
         div.notes{
 	        font-size:12px;
         }
@@ -36,7 +36,7 @@
     	<div class="top_prod_box_big"></div>
         <div class="center_prod_box_big">
              <div class="product_img_big">
-                
+
                 <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link"  style="border: 0px;">
 		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="150" height="150" style="border: 0px;"/>
                 </a>
