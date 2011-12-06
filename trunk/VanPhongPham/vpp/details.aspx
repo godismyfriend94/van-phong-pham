@@ -38,7 +38,7 @@
              <div class="product_img_big">
 
                 <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link"  style="border: 0px;">
-		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="150" height="150" style="border: 0px;"/>
+		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="170" height="170" style="border: 0px;"/>
                 </a>
                  <div class="thumbs">
                      <a href="images/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
