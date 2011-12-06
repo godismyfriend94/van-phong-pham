@@ -11,14 +11,15 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
 /// <summary>
-/// Summary description for LogBiz
+/// Summary description for QuoteProductLogic
 /// </summary>
-public class LogBiz
+/// 
+
+public class QuoteProductLogic
 {
-	public LogBiz()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public QuoteProductLogic()
+    {
+
+    }
 }
+
