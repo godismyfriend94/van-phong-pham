@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index"
     Title="Untitled Page" %>
-
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="vpp/LastestProduct.ascx" TagPrefix="usc" TagName="LastestProduct" %>
 <%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
@@ -163,7 +162,7 @@
             <div id ="right_flash">
             
             <Bewise:FlashControl ID="FlashControl1" runat="server" 
-                    MovieUrl="~/images/banners/rflash.swf" width="250" height="170" />
+                    MovieUrl="./images/banners/rflash.swf" width="250" height="170" />
             </div>
         </div>
             

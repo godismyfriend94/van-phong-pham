@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="false" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
+<%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -185,7 +187,10 @@
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" />
         </div>        
     </div> 
-    <div id ="right_flash">this is right Flashthis is right Flashthis is right Flashthis is right Flashthis is right Flash</div>
+    <div id ="right_flash">
+        <Bewise:FlashControl id="FlashControl1" runat="server" 
+                    MovieUrl="../images/banners/rflash.swf" width="250" height="170" />
+    </div>
     <!-- end of oferta_content-->
     </div>
     
