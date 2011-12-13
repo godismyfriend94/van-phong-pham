@@ -3,6 +3,7 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="vpp/LastestProduct.ascx" TagPrefix="usc" TagName="LastestProduct" %>
+<%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -124,9 +125,10 @@
             </div>
             <div class="oferta_content">
                 <div class="top_divider">
-                    <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
+                    <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" />
+                </div>
                 <div class="oferta">
-                    <div class="oferta_content">
+                   <%-- <div class="oferte_content">--%>
                         <!-- --------------------------------------------------- -->
                         <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
                         </asp:ToolkitScriptManager>
@@ -153,12 +155,18 @@
                             <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip="Next" />
                         </div>
                     </div>
-                </div>
+               <%-- </div>--%>
                 <div class="top_divider">
                     <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
             </div>
             <!-- end of oferte_content-->
+            <div id ="right_flash">
+            
+            <Bewise:FlashControl ID="FlashControl1" runat="server" 
+                    MovieUrl="~/images/banners/rflash.swf" width="250" height="170" />
+            </div>
         </div>
+            
         <div id="main_content">
             <div id="menu_tab">
                 <div class="left_menu_corner">

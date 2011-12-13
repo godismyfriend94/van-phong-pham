@@ -135,7 +135,7 @@
 	<div id="header">
         
         <div id="logo">
-            <a href="../index.aspx"><img src="images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
+            <a href="../index.aspx"><img src="images/logo.png" alt="" title="" border="0" width="140" height="140" /></a>
 	    </div>
         
         <div class="oferta_content">
@@ -143,7 +143,7 @@
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
             
         <div class="oferta">
-            <div class="oferta_content">
+            <%--<div class="oferta_content">--%>
             <!-- --------------------------------------------------- -->
             <asp:SlideShowExtender ID="SlideShowExtender" runat="server"
                 BehaviorID="SSBehaviorID"
@@ -178,12 +178,15 @@
                  <asp:LinkButton ID="btnPlay" runat="server" Text="[]" ToolTip ="Play" />
                  <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip ="Next" />
             </div> 
-            </div>
+            <%--</div>--%>
             <!-- --------------------------------------------------- -->
         </div>
         <div class="top_divider">
-            <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
-    </div> <!-- end of oferta_content-->
+            <img src="images/header_divider.png" alt="" title="" width="1" height="164" />
+        </div>        
+    </div> 
+    <div id ="right_flash">this is right Flashthis is right Flashthis is right Flashthis is right Flashthis is right Flash</div>
+    <!-- end of oferta_content-->
     </div>
     
     <div id="main_content"> 
