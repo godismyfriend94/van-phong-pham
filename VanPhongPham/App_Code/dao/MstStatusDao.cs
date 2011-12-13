@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class MstStatusDao
 {
+    CommonDb db = new CommonDb();
     public MstStatusDao()
     {
 

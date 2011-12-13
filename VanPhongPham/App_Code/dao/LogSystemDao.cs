@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class LogSystemDao
 {
+    CommonDb db = new CommonDb();
     public LogSystemDao()
     {
     }

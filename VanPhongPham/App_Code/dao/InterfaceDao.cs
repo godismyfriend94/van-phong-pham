@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class InterfaceDao
 {
+    CommonDb db = new CommonDb();
     public InterfaceDao()
     {
     }

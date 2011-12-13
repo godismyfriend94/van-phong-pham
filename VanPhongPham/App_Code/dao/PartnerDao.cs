@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class PartnerDao
 {
+    CommonDb db = new CommonDb();
     public PartnerDao()
     {
 

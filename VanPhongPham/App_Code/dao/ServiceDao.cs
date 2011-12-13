@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class ServiceDao
 {
+    CommonDb db = new CommonDb();
     public ServiceDao()
     {
 

@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class CategoryDao
 {
+    CommonDb db = new CommonDb();
     public CategoryDao()
     {
 

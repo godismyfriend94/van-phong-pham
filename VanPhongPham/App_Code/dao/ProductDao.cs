@@ -16,6 +16,7 @@ using System.Xml.Linq;
 /// 
 public class ProductDao
 {
+    CommonDb db = new CommonDb();
     public ProductDao()
     {
 
