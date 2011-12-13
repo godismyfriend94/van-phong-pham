@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class ProductImageDao
 {
+    CommonDb db = new CommonDb();
     public ProductImageDao()
     {
 

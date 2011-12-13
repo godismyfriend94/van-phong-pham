@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class PolicyDao
 {
+    CommonDb db = new CommonDb();
     public PolicyDao()
     {
 

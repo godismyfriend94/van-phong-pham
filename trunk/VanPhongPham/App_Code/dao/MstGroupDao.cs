@@ -16,6 +16,7 @@ using System.Xml.Linq;
 
 public class MstGroupDao
 {
+    CommonDb db = new CommonDb();
     public MstGroupDao()
     {
     }

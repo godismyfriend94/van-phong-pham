@@ -89,8 +89,6 @@
             }
         }
     </script>
-
-   
     <!--[if IE 6]>
     <!--<![endif]-->
 
@@ -122,7 +120,7 @@
         <div id="header">
             <div id="logo">
                 <a href="index.aspx">
-                    <img src="vpp/images/logo.png" alt="" title="" border="0" width="237" height="140" /></a>
+                    <img src="vpp/images/logo.png" alt="" title="" border="0" width="140" height="140" /></a>
             </div>
             <div class="oferta_content">
                 <div class="top_divider">
@@ -155,7 +153,6 @@
                             <asp:LinkButton ID="btnNext" runat="server" Text=">>" ToolTip="Next" />
                         </div>
                     </div>
-                    
                 </div>
                 <div class="top_divider">
                     <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
@@ -167,7 +164,7 @@
                 <div class="left_menu_corner">
                 </div>
                 <ul class="menu">
-                    <li><a href="vpp/index.aspx" class="nav1">Trang ch&#7911; </a></li>
+                    <li><a href="index.aspx" class="nav1">Trang ch&#7911; </a></li>
                     <li class="divider"></li>
                     <li><a href="vpp/products.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
                     <li class="divider"></li>

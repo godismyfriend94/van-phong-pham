@@ -16,11 +16,10 @@ using System.Xml.Linq;
 /// 
 public class AdvertiseDao
 {
+    CommonDb db = new CommonDb();
     public AdvertiseDao()
 	{
-		//
-		// TODO: Add constructor logic here
-		//
 	}
+
 }
 

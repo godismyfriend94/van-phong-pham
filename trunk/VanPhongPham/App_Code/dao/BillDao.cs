@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class BillDao
 {
+    CommonDb db = new CommonDb();
     public BillDao()
     {
 	    //

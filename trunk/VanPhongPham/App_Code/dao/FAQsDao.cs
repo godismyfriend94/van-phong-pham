@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class FAQsDao
 {
+    CommonDb db = new CommonDb();
     public FAQsDao()
     {
 

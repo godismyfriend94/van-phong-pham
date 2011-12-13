@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class TblUserDao
 {
+    CommonDb db = new CommonDb();
     public TblUserDao()
     {
 

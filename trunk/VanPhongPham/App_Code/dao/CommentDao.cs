@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class CommentDao
 {
+    CommonDb db = new CommonDb();
     public CommentDao()
     {
 

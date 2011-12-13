@@ -17,6 +17,7 @@ using System.Xml.Linq;
 
 public class QuoteProductDao
 {
+    CommonDb db = new CommonDb();
     public QuoteProductDao()
     {
 
