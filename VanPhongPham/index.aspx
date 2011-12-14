@@ -120,7 +120,7 @@
         <div id="header">
             <div id="logo">
                 <a href="index.aspx">
-                    <img src="vpp/images/logo.png" alt="" title="" border="0" width="140" height="140" /></a>
+                    <img src="vpp/images/logo.png" alt="" title="" border="0" width="145" height="145" /></a>
             </div>
             <div class="oferta_content">
                 <div class="top_divider">
@@ -155,14 +155,13 @@
                         </div>
                     </div>
                <%-- </div>--%>
-                <div class="top_divider">
-                    <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>
+                <%--<div class="top_divider">
+                    <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" /></div>--%>
             </div>
             <!-- end of oferte_content-->
             <div id ="right_flash">
-            
             <Bewise:FlashControl ID="FlashControl1" runat="server" 
-                    MovieUrl="./images/banners/rflash.swf" width="250" height="170" />
+                    MovieUrl="./images/banners/rflash.swf" width="280px" height="170px" />
             </div>
         </div>
             
@@ -183,8 +182,9 @@
                     <li class="divider"></li>
                     <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                     <li class="divider"></li>
-                    <li><a href="vpp/contact.aspx" class="nav7">FAQs</a></li>
+                    <li><a href="#" class="nav4">Diễn đàn</a></li>
                     <li class="divider"></li>
+                    <li><a href="vpp/contact.aspx" class="nav7">FAQs</a></li>
                     <%--<li class="currencies">Loại tiền: 
                          <select>
                          <option selected="true">VND</option>
@@ -331,7 +331,7 @@
                     </ItemTemplate>
                 </asp:DataList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                    SelectCommand="SELECT * FROM Flower"></asp:SqlDataSource>
+                    SelectCommand="SELECT * FROM Product"></asp:SqlDataSource>
                 <!--end of lastest products-->
                 <div class="center_title_bar">
                     S&#7843;n ph&#7849;m xem nhi&#7873;u nh&#7845;t

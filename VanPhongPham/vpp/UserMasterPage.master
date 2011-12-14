@@ -183,13 +183,13 @@
             <%--</div>--%>
             <!-- --------------------------------------------------- -->
         </div>
-        <div class="top_divider">
+        <%--<div class="top_divider">
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" />
-        </div>        
+        </div>    --%>    
     </div> 
     <div id ="right_flash">
         <Bewise:FlashControl id="FlashControl1" runat="server" 
-                    MovieUrl="../images/banners/rflash.swf" width="250" height="170" />
+                    MovieUrl="../images/banners/rflash.swf" width="280" height="170" />
     </div>
     <!-- end of oferta_content-->
     </div>

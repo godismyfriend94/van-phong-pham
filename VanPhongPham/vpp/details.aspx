@@ -198,7 +198,7 @@
         <div class="bottom_prod_box_big"></div>                                
     </div>
 
-    <div class="center_title_bar">Similar products</div>
+    <div class="center_title_bar">Sản phẩm cùng loại</div>
   	<div class="prod_box">
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            

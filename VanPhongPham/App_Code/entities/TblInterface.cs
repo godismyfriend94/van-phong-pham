@@ -13,7 +13,7 @@ using System.Xml.Linq;
 /// <summary>
 /// Summary description for Interface
 /// </summary>
-public class Interface
+public class TblInterface
 {
     int interfaceId;
     string typeId;
@@ -58,7 +58,7 @@ public class Interface
         set { statusId = value; }
     }
 
-	public Interface()
+    public TblInterface()
 	{
 	}
 }
