@@ -109,7 +109,7 @@ public class PolicyDao
     /// <returns></returns>
     public bool DeletePolicy(Policy policy)
     {
-        SqlParameter[] paramList = new SqlParameter[2];
+        SqlParameter[] paramList = new SqlParameter[1];
 
         paramList[0] = new SqlParameter("@PolicyId", SqlDbType.Int);
         paramList[0].Value = policy.PolicyId;

@@ -28,8 +28,6 @@ public class MstGroupDao
     /// <returns></returns>
     public DataTable GetAllGroup()
     {
-        
-  
         return db.executeSelect("GetAllGroup");
     }
 
@@ -42,7 +40,7 @@ public class MstGroupDao
     {
         SqlParameter[] paramList = new SqlParameter[1];
 
-        paramList[0] = new SqlParameter("@GroupId", SqlDbType.Int);
+        paramList[0] = new SqlParameter("@GroupId", SqlDbType.NVarChar, 256);
         paramList[0].Value = groupId;
 
         return db.executeSelect("GetGroupById", paramList);

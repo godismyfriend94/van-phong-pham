@@ -154,7 +154,7 @@ public class TblUserDao
     /// <returns></returns>
     public bool UpdateUserById(TblUser tblUser)
     {
-        SqlParameter[] paramList = new SqlParameter[10];
+        SqlParameter[] paramList = new SqlParameter[11];
 
         paramList[0] = new SqlParameter("@UserId", SqlDbType.Int);
         paramList[0].Value = tblUser.UserId;
@@ -270,7 +270,7 @@ public class TblUserDao
     /// <returns></returns>
     public bool DeleteUserById(TblUser tblUser)
     {
-        SqlParameter[] paramList = new SqlParameter[2];
+        SqlParameter[] paramList = new SqlParameter[1];
 
         paramList[0] = new SqlParameter("@UserId", SqlDbType.Int);
         paramList[0].Value = tblUser.UserId;
