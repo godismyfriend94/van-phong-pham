@@ -16,7 +16,7 @@ using System.Xml.Linq;
 public class QuoteProduct
 {
     int quoteId;
-    string quoteName;
+    string quoteProductName;
     string quoteLink;
     string description;
     DateTime createDate;
@@ -28,10 +28,10 @@ public class QuoteProduct
         set { quoteId = value; }
     }
 
-    public string QuoteName
+    public string QuoteProductName
     {
-        get { return quoteName; }
-        set { quoteName = value; }
+        get { return quoteProductName; }
+        set { quoteProductName = value; }
     }
 
     public string QuoteLink

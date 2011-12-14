@@ -43,7 +43,8 @@ public partial class vpp_details : System.Web.UI.Page
                 break;
             case 5:
                 howSpicy = "Hoàn hảo";
-                lblResponse.ForeColor = System.Drawing.Color.Gold;
+                lblResponse.ForeColor = System.Drawing.Color.OrangeRed;
+
                 break;
         }
 

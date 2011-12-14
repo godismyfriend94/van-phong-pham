@@ -94,10 +94,9 @@ padding:15px;
 }
 
 #right_flash{
-float:right;
+float:left;
 height:173px;
-width:270px;
-
+width:280px;
 }
 /*------------------------------oferte_content-----------------------*/
 .oferta_content{

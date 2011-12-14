@@ -18,7 +18,7 @@ public class FAQs
     int faqId;
     string question;
     string answer;
-    int index;
+    int faqIndex;
     string statusId;
 
     public int FaqId
@@ -39,10 +39,10 @@ public class FAQs
         set { answer = value; }
     }
 
-    public int Index
+    public int FaqIndex
     {
-        get { return index; }
-        set { index = value; }
+        get { return faqIndex; }
+        set { faqIndex = value; }
     }
 
     public string StatusId

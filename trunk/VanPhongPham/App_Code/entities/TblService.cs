@@ -11,9 +11,9 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 
 /// <summary>
-/// Summary description for Service
+/// Summary description for TblService
 /// </summary>
-public class Service
+public class TblService
 {
     int serviceId;
     string serviceName;
@@ -58,7 +58,7 @@ public class Service
         set { statusId = value; }
     }
 
-	public Service()
+    public TblService()
 	{
 	}
 }

@@ -17,9 +17,9 @@ public class Comment
 {
     int commentId;
     int productId;
-    string name;
+    string commentName;
     string email;
-    string content;
+    string commentContent;
     float rate;
     DateTime createDate;
     string statusId;
@@ -36,10 +36,10 @@ public class Comment
         set { productId = value; }
     }
 
-    public string Name
+    public string CommentName
     {
-        get { return name; }
-        set { name = value; }
+        get { return commentName; }
+        set { commentName = value; }
     }
 
     public string Email
@@ -48,10 +48,10 @@ public class Comment
         set { email = value; }
     }
 
-    public string Content
+    public string CommentContent
     {
-        get { return content; }
-        set { content = value; }
+        get { return commentContent; }
+        set { commentContent = value; }
     }
 
     public float Rate
