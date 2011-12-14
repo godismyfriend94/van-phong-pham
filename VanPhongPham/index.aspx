@@ -160,7 +160,7 @@
             </div>
             <!-- end of oferte_content-->
             <div id ="right_flash">
-            <Bewise:FlashControl ID="FlashControl1" runat="server" 
+                <Bewise:FlashControl ID="FlashControl1" runat="server" 
                     MovieUrl="./images/banners/rflash.swf" width="280px" height="170px" />
             </div>
         </div>
@@ -427,7 +427,8 @@
                 </a>
                 <br />
                 <a href="#">
-                    <img src="images/advertise/bann2.jpg" width="125" alt="bann2" />
+                    <Bewise:FlashControl ID="FlashControl2" runat="server" 
+                    MovieUrl="./images/banners/rflash.swf" width="125px" height="170px" />
                 </a>
             </div>
 
