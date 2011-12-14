@@ -28,7 +28,7 @@ public class CommonDb
     /// create new connection
     /// </summary>
     /// <returns></returns>
-    public static SqlConnection OpenConnection()
+    public SqlConnection OpenConnection()
     {
         conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
@@ -53,7 +53,7 @@ public class CommonDb
     /// close a connection
     /// </summary>
     /// <param name="sqlCn"></param>
-    public static void CloseConnection(SqlConnection sqlCn)
+    public void CloseConnection(SqlConnection sqlCn)
     {
         if (sqlCn != null)
         {
@@ -68,7 +68,7 @@ public class CommonDb
     /// </summary>
     /// <param name="spName">Sql store procedure name</param>
     /// <returns>Sql data in a DataTable</returns>
-    public static DataTable executeSelect(string spName)
+    public DataTable executeSelect(string spName)
     {
         DataSet dataSet = new DataSet();
         //Open connection
@@ -90,7 +90,7 @@ public class CommonDb
     /// <param name="spName">Sql store procedure name</param>
     /// <param name="paramList">Parameters of the store procedure</param>
     /// <returns>Sql data in a DataTable</returns>
-    public static DataTable executeSelect(string spName, SqlParameter[] paramList)
+    public DataTable executeSelect(string spName, SqlParameter[] paramList)
     {
         DataSet dataSet = new DataSet();
         //Open connection
@@ -113,7 +113,7 @@ public class CommonDb
     /// <param name="spName">Sql store procedure name</param>
     /// <param name="paramList">Parameters of the store procedure</param>
     /// <returns>Sql data in a DataTable</returns>
-    public static int executeUpdate(string spName, SqlParameter[] paramList)
+    public int executeUpdate(string spName, SqlParameter[] paramList)
     {
         int result = 0;
         //Open connection
@@ -144,7 +144,7 @@ public class CommonDb
     /// <param name="spName"></param>
     /// <param name="paramList"></param>
     /// <returns>id tu tang cua record vua insert</returns>
-    public static int executeScalary(string spName, SqlParameter[] paramList)
+    public int executeScalary(string spName, SqlParameter[] paramList)
     {
         int result = 0;
         //Open connection
