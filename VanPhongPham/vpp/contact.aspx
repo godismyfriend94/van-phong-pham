@@ -38,12 +38,10 @@
     	<div class="prod_box_big">
         	<div class="top_prod_box_big"></div>
             <div class="center_prod_box_big">      
-                      
-                 
               	<div class="contact_form">
                     
                     <div class="form_row">
-                    <label class="contact"><strong>Name:</strong></label>
+                    <label class="contact"><strong>Tên:</strong></label>
                     <input type="text" class="contact_input" />
                     </div>  
 
@@ -52,26 +50,24 @@
                     <input type="text" class="contact_input" />
                     </div>
 
-
                     <div class="form_row">
-                    <label class="contact"><strong>Phone:</strong></label>
+                    <label class="contact"><strong>Điện thoại:</strong></label>
                     <input type="text" class="contact_input" />
                     </div>
                     
                     <div class="form_row">
-                    <label class="contact"><strong>Company:</strong></label>
+                    <label class="contact"><strong>Công ty:</strong></label>
                     <input type="text" class="contact_input" />
                     </div>
 
-
                     <div class="form_row">
-                    <label class="contact"><strong>Message:</strong></label>
+                    <label class="contact"><strong>Nội dung:</strong></label>
                     <textarea class="contact_textarea" cols="25"></textarea>
                     </div>
 
                     
                     <div class="form_row">
-                    <a href="#" class="contact">send</a>
+                    <a href="#" class="contact">Gửi</a>
                     </div>      
                     
                 </div> 
