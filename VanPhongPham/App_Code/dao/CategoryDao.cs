@@ -52,16 +52,19 @@ public class CategoryDao
     /// <returns></returns>
     public bool InsertCategory(Category category)
     {
-        SqlParameter[] paramList = new SqlParameter[3];
+        SqlParameter[] paramList = new SqlParameter[4];
 
         paramList[0] = new SqlParameter("@CategoryName", SqlDbType.NVarChar, 256);
         paramList[0].Value = category.CategoryName;
 
-        paramList[1] = new SqlParameter("@Description", SqlDbType.NVarChar, 2048);
-        paramList[1].Value = category.Description;
+        paramList[1] = new SqlParameter("@CategoryImage", SqlDbType.NVarChar, 256);
+        paramList[1].Value = category.CategoryImage;
 
-        paramList[2] = new SqlParameter("@StatusId", SqlDbType.NVarChar, 256);
-        paramList[2].Value = category.StatusId;
+        paramList[2] = new SqlParameter("@Description", SqlDbType.NVarChar, 2048);
+        paramList[2].Value = category.Description;
+
+        paramList[3] = new SqlParameter("@StatusId", SqlDbType.NVarChar, 256);
+        paramList[3].Value = category.StatusId;
 
         if (db.executeUpdate("InsertCategory", paramList) == 0)
         {
@@ -80,7 +83,7 @@ public class CategoryDao
     /// <returns></returns>
     public bool UpdateCategory(Category category)
     {
-        SqlParameter[] paramList = new SqlParameter[4];
+        SqlParameter[] paramList = new SqlParameter[5];
 
         paramList[0] = new SqlParameter("@CategoryId", SqlDbType.Int);
         paramList[0].Value = category.CategoryId;
@@ -88,11 +91,14 @@ public class CategoryDao
         paramList[1] = new SqlParameter("@CategoryName", SqlDbType.NVarChar, 256);
         paramList[1].Value = category.CategoryName;
 
-        paramList[2] = new SqlParameter("@Description", SqlDbType.NVarChar, 2048);
-        paramList[2].Value = category.Description;
+        paramList[2] = new SqlParameter("@CategoryImage", SqlDbType.NVarChar, 256);
+        paramList[2].Value = category.CategoryImage;
 
-        paramList[3] = new SqlParameter("@StatusId", SqlDbType.NVarChar, 2048);
-        paramList[3].Value = category.StatusId;
+        paramList[3] = new SqlParameter("@Description", SqlDbType.NVarChar, 2048);
+        paramList[3].Value = category.Description;
+
+        paramList[4] = new SqlParameter("@StatusId", SqlDbType.NVarChar, 2048);
+        paramList[4].Value = category.StatusId;
 
         if (db.executeUpdate("UpdateCategory", paramList) == 0)
         {

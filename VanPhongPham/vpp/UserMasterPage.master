@@ -98,17 +98,71 @@
                 close();
             }
         }
+        
     </script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+	    function initialize() {
+		    var latlng = new google.maps.LatLng(21.000353,105.821975);
+		    var settings = {
+			    zoom: 15,
+			    center: latlng,
+			    mapTypeControl: true,
+			    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+			    navigationControl: true,
+			    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+			    mapTypeId: google.maps.MapTypeId.ROADMAP};
+		    var map = new google.maps.Map(document.getElementById("map"), settings);
+		    var contentString = '<div id="content">'+
+			    '<div id="siteNotice">'+
+			    '</div>'+
+			    '<h3 id="firstHeading" class="firstHeading">Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội</h3>'+
+			    '<div id="bodyContent">'+
+			    '<p><br/>(Trụ sở chính)<br/>'+
+                '<b>Địa chỉ:<b/> 18 Tô Vĩnh Diện - Hà Nội'+
+                '<br/><b>Tel:<b/> 04-66732220 / 0913583121</p>'+
+			    '</div>'+
+			    '</div>';
+		    var infowindow = new google.maps.InfoWindow({
+			    content: contentString
+		    });
+			
+		    var companyImage = new google.maps.MarkerImage('images/logoGMap.png',
+			    new google.maps.Size(100,50),
+			    new google.maps.Point(0,0),
+			    new google.maps.Point(50,50)
+		    );
+
+		    var companyShadow = new google.maps.MarkerImage('images/logo_shadow.png',
+			    new google.maps.Size(130,50),
+			    new google.maps.Point(0,0),
+			    new google.maps.Point(65, 50));
+
+		    var companyPos = new google.maps.LatLng(21.000353,105.821975);
+
+		    var companyMarker = new google.maps.Marker({
+			    position: companyPos,
+			    map: map,
+			    icon: companyImage,
+			    shadow: companyShadow,
+			    title:"Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội",
+			    zIndex: 3});
+//		    google.maps.event.addListener(companyMarker, 'click', function() {
+//			    infowindow.open(map,companyMarker);
+//		    });
+                infowindow.open(map,companyMarker);
+	    }
+    </script>
+
     <!--[if IE 6]>-->
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <!--<![endif]-->
     <script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/switchimages.js"></script>
     <script type="text/javascript" src="js/plusone.js"></script>
-    
     <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
-<body runat="server">
+<body onload="initialize()">
 <form runat="server" id="frm_main">
 <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>    
@@ -123,6 +177,8 @@
         
         <div class="languages">
         	<div class="lang_text">
+        	<a href="faqs.aspx" title="header=[Giải đáp thắc mắc cơ bản] body=[&nbsp;] fade=[on]">Câu hỏi thường gặp ?</a>
+                    &nbsp;&nbsp;&nbsp; 
         	<a href="#" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">
         	Đăng nhập 
         	</a>
@@ -212,9 +268,10 @@
                          <li class="divider"></li>
                          <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                          <li class="divider"></li>
-                         
-                         <li><a href="contact.aspx" class="nav7">FAQs</a></li>
+                         <li><a href="#" class="nav4">Diễn đàn</a></li>
                          <li class="divider"></li>
+                         
+                        <li><a href="aboutus.aspx" class="nav7">Giới thiệu</a></li>
                          <%--<li class="currencies">Loại tiền: 
                          <select>
                          <option selected="true">VND</option>
@@ -305,6 +362,19 @@
          <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
      </div>  
      
+     <div class="title_box">Thống kê truy cập</div>  
+     <div class="border_box_statistic">
+        <br />
+         <p style="color: Green; font-size: 13px;">
+            <img src="images/User.png" alt="Đang truy cập"/> Đang truy cập: 212
+         </p><br />
+         <p style="color: Blue; font-size: 13px;">
+            <img src="images/icon_visited.gif" alt="Đã truy cập"/>Đã truy cập:  212345
+         </p><br />
+         <p style="color: #DE6B10; font-size: 13px;">
+            <img src="images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011
+         </p><br />
+     </div>  
      <%--<div class="title_box">Newsletter</div>  
      <div class="border_box">
 		<input type="text" name="newsletter" class="newsletter_input" value="your email"/>
@@ -318,10 +388,10 @@
     </div><!-- end of left content -->
    
    <div class="center_content">
-   <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
+        <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
                  
-     </asp:ContentPlaceHolder>
-   	 </div>
+        </asp:ContentPlaceHolder>
+    </div>
    	 
    <!-- end of center content -->
    
@@ -345,6 +415,51 @@
          <div class="product_img"><a href="details.aspx"><img src="images/p2.gif" alt="" title="" border="0" /></a></div>
          <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
      </div>
+     
+     <div class="title_box">Hỗ trợ trực tuyến</div>  
+     <div class="border_box">
+         <table class="list_product_buy" border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" >
+			<tbody>
+			    <tr>
+			        <td>
+                        <a href = 'ymsgr:sendIM?congvinh_sor'>
+                            <img  alt=""  src="http://presence.msg.yahoo.com/online?u=congvinh_sor&m=g&t=14" border="0" height="50px" width="50px"/>           
+                        </a> 
+                    </td>
+                    <td style="color:#a81f22; ">
+                        Tr&#432;&#417;ng Công Vinh<br />
+                    </td>
+			    </tr>
+			    <tr>
+			        <td>
+                        <a href = 'ymsgr:sendIM?nang_am_tinhanh16'>
+                            <img  alt=""  src="http://presence.msg.yahoo.com/online?u=nang_am_tinhanh16&m=g&t=14" border="0" height="50px" width="50px"/>           
+                        </a>                 
+                    </td>
+                    <td  style="color:#a81f22;" >
+                        &#272;&#7895; B&#7843;o &#272;&#7883;nh<br />
+                    </td>
+			    </tr>
+			    <tr>
+			        <td>
+                        <a href = 'ymsgr:sendIM?anhnq90'>
+                            <img  alt=""  src="http://presence.msg.yahoo.com/online?u=anhnq90&m=g&t=14" border="0" height="50px" width="50px"/>           
+                        </a>                 
+                    </td>
+                    <td  style="color:#a81f22;" >
+                        Ngô Quang Anh<br />
+                    </td>
+			    </tr>
+			    
+			    <tr>
+			        <td colspan="2">
+			            <asp:Label ID="Label1" runat="server" Text="Hotline 24/7: (043) 343 3343" ForeColor="Blue"></asp:Label>
+			        </td>
+			    </tr>
+			</tbody>
+		</table>
+     </div>
+     
     <div class="title_box">H&atilde;ng s&#7843;n xu&#7845;t </div>
     
         <ul class="left_menu">
