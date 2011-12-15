@@ -72,22 +72,12 @@
              <a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>
              
               <br /><br /><br /><br /><br /><br />
+              
          </div>  
-
-        <div class="comment">
-             <!-- AddThis Button BEGIN -->
-                    <div>
-                    <script type="text/javascript" src="js/plusone.js"></script>
-                        <g:plusone  size="small" lang="vi"></g:plusone>
-                        
-                        <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed2e0173abe82f3">
-                        <img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
-                        
-                    </div>
-                    <%--http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed2e0173abe82f3--%>
-                    <script type="text/javascript" src="js/addthis.js"></script>
-                    <!-- AddThis Button END -->
-                    <br /><br />
+        </div>
+        <div class="bottom_prod_box_big"></div>                                
+    </div>
+        
         <asp:UpdatePanel runat="server" ID="up1">
         <ContentTemplate>
         <asp:CollapsiblePanelExtender ID="cpeDemo" runat="Server"
@@ -101,8 +91,7 @@
             SkinID="CollapsiblePanelDemo" />
         <div>
         <asp:Panel ID="description_HeaderPanel" runat="server" style="cursor: pointer;">
-            <div style="padding:5px; cursor: pointer; vertical-align: middle;">
-                <div style="float: left;">
+                <div class="center_title_bar">
                     <asp:Label ID="Label2" ForeColor="blue" Font-Bold="true" runat="server" Text="Đánh giá về chất lượng sản phẩm và dịch vụ"></asp:Label>
                  </div>
                 <div style="float: left;">
@@ -111,11 +100,29 @@
 <%--                <div style="float: right; vertical-align: middle;">
                     <asp:ImageButton ID="Image1" runat="server" ImageUrl="images/expand_blue.jpg" AlternateText="(Show Details...)"/>
                 </div>--%>
-            </div>
         </asp:Panel>
         </div>
-        <div style="float:left; margin-top: 20px;">
+        <div style="float:left;">
         <asp:Panel id="description_ContentPanel" runat="server" style="overflow:hidden;">
+            <div class="prod_box_big">
+        	<div class="top_prod_box_big"></div>
+            <div class="center_prod_box_big">      
+              	<div class="contact_form_map">
+            <div>
+             <!-- AddThis Button BEGIN -->
+            <div>
+            <script type="text/javascript" src="js/plusone.js"></script>
+                <g:plusone  size="small" lang="vi"></g:plusone>
+                
+                <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4ed2e0173abe82f3">
+                <img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/></a>
+                
+            </div>
+            <%--http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed2e0173abe82f3--%>
+            <script type="text/javascript" src="js/addthis.js"></script>
+            <!-- AddThis Button END -->
+            </div>
+            <br /><br />
             <div style="float: left;">
                     <asp:Label ID="lblHowLike" ForeColor="#a81f22" Font-Bold="true" runat="server" Text="Bạn cảm thấy sản phẩm này như nào? "></asp:Label>
                     &nbsp;&nbsp;
@@ -134,13 +141,13 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Label ID="lblResponse" runat="server" Text=""></asp:Label>   
                 <br />
-                <div class="form_row">
-                    <label class="contact">
+                <div class="review_form_row">
+                    <label class="review">
                         <strong>
                             <asp:Label ID="lblNameReview" runat="server" Text="Name:"></asp:Label>
                         </strong>
                     </label>
-                    <asp:TextBox ID="txtNameReview" runat="server" CssClass="contact_input"></asp:TextBox>&nbsp;
+                    <asp:TextBox ID="txtNameReview" runat="server" CssClass="review_input"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ControlToValidate="txtNameReview" runat="server" 
                         ID="RqValidator1" ErrorMessage="Input name" ValidationGroup="group1" SetFocusOnError="true" Text="*" >
                     </asp:RequiredFieldValidator>
@@ -149,13 +156,13 @@
                     </asp:ValidatorCalloutExtender>
                 </div>  
 
-                <div class="form_row">
+                <div class="review_form_row">
                     <label class="contact">
                         <strong>
                             <asp:Label ID="lblEmailReview" runat="server" Text="Email:"></asp:Label>
                         </strong>
                     </label>
-                    <asp:TextBox ID="txtEmailReview" runat="server" CssClass="contact_input"></asp:TextBox>&nbsp;
+                    <asp:TextBox ID="txtEmailReview" runat="server" CssClass="review_input"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ControlToValidate="txtEmailReview" SetFocusOnError="true" runat="server" 
                         ID="RqValidator2" ErrorMessage="Input email" ValidationGroup="group1" Text="*" >
                     </asp:RequiredFieldValidator>
@@ -169,13 +176,13 @@
                         Enabled="True" TargetControlID="RegularExpressionValidator1">
                     </asp:ValidatorCalloutExtender>
                 </div>
-                <div class="form_row">
-                    <label class="contact">
+                <div class="review_form_row">
+                    <label class="review">
                         <strong>
                             <asp:Label ID="lblMessageReview" runat="server" Text="Message:"></asp:Label>
                         </strong>
                     </label>
-                    <asp:TextBox ID="txtMessageReview" TextMode="MultiLine" runat="server" CssClass="textarea_input"></asp:TextBox>&nbsp;
+                    <asp:TextBox ID="txtMessageReview" TextMode="MultiLine" runat="server" CssClass="textarea_review_input"></asp:TextBox>&nbsp;
                     <asp:RequiredFieldValidator ControlToValidate="txtMessageReview" SetFocusOnError="true" runat="server" 
                         ID="RqValidator3" ErrorMessage="Input message" ValidationGroup="group1" Text="*" ></asp:RequiredFieldValidator>
                     <asp:ValidatorCalloutExtender ID="ValidatorCalloutExtender2" runat="server" 
@@ -183,21 +190,18 @@
                     </asp:ValidatorCalloutExtender>
                 </div>
 
-                <div class="form_row">
+                <div class="review_form_row">
                     <asp:Button ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="register" Text="- Đánh giá -" />
                 </div> 
-                    
+                </div>             
+                </div>
+                <div class="bottom_prod_box_big"></div>                                
+                </div>
             </asp:Panel>
             </div>
         </ContentTemplate> 
         </asp:UpdatePanel>
-       
-        </div>
-                
-        </div>
-        <div class="bottom_prod_box_big"></div>                                
-    </div>
-
+        
     <div class="center_title_bar">Sản phẩm cùng loại</div>
   	<div class="prod_box">
     	<div class="top_prod_box"></div>

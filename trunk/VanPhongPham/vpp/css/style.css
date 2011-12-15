@@ -729,8 +729,15 @@ border:1px dashed gray;
     clear: both;
     display: block;
 }
-/*---------------contact_form------------------
-.contact_form{
+
+.tech_detail{
+    padding-left:10px;
+    margin-top: 30px;
+    clear: both;
+    display: block;
+}
+/*---------------review_form------------------*/
+.review_form{
 width:355px;
 float:left;
 padding:25px;
@@ -739,7 +746,7 @@ _margin:20px 0 0 5px;
 border:1px #DFD1D2 dashed;
 position:relative;
 }
-.form_row{
+.review_form_row{
 width:355px;
 _width:375px;
 clear:both;
@@ -747,7 +754,7 @@ padding:10px 0 10px 0;
 _padding:5px 0 5px 0;
 color:#a53d17;
 }
-label.contact{
+label.review{
 width:75px;
 float:left;
 font-size:12px;
@@ -755,7 +762,7 @@ text-align:right;
 padding:4px 5px 0 0;
 color: #333333;
 }
-input.contact_input{
+input.review_input{
 width:253px;
 height:18px;
 background-color:#fff;
@@ -764,7 +771,7 @@ border:1px #DFDFDF solid;
 float:left;
 }
 
-.textarea_input{
+.textarea_review_input{
 width:253px;
 height:50px;
 background-color:#fff;
@@ -772,7 +779,7 @@ color:#333333;
 border:1px #DFDFDF solid;
 float:left;
 }
-textarea.contact_textarea{
+textarea.review_textarea{
 width:253px;
 height:120px;
 font-family:Arial, Helvetica, sans-serif;
@@ -793,7 +800,7 @@ float:right;
 color:#FFFFFF;
 background:url(../images/register_bt.gif) center;
 }
-a.contact{
+a.review{
 width:53px;
 height:24px;
 display:block;
@@ -805,7 +812,6 @@ text-align:center;
 line-height:24px;
 color:#fff;
 }
-*/
 /* Rating */
 .ratingStar {
     font-size: 0pt;
