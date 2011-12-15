@@ -109,9 +109,11 @@
             </div>
             <div class="languages">
                 <div class="lang_text">
-                    <a href="#" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">Đăng
-                        nhập </a>&nbsp;&nbsp;&nbsp; <a href="#" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">
-                            Đăng ký </a>
+                    <a href="vpp/faqs.aspx" title="header=[Giải đáp thắc mắc cơ bản] body=[&nbsp;] fade=[on]">Câu hỏi thường gặp ?</a>
+                    &nbsp;&nbsp;&nbsp; 
+                    <a href="#" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">Đăng nhập </a>
+                    &nbsp;&nbsp;&nbsp; 
+                    <a href="#" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">Đăng ký </a>
                 </div>
                 <%-- <a href="#" class="lang"><img src="vpp/images/en.gif" alt="" title="" border="0" /></a>
             <a href="#" class="lang"><img src="vpp/images/en.gif" alt="" title="" border="0" /></a> --%>
@@ -184,7 +186,7 @@
                     <li class="divider"></li>
                     <li><a href="#" class="nav4">Diễn đàn</a></li>
                     <li class="divider"></li>
-                    <li><a href="vpp/contact.aspx" class="nav7">FAQs</a></li>
+                    <li><a href="vpp/aboutus.aspx" class="nav7">Giới thiệu</a></li>
                     <%--<li class="currencies">Loại tiền: 
                          <select>
                          <option selected="true">VND</option>
@@ -282,12 +284,29 @@
                     <div class="prod_price">
                         <span class="reduce">350$</span> <span class="price">270$</span></div>
                 </div>
+  
                 <div class="title_box">
-                    Newsletter</div>
+                    Đăng ký nhận báo giá</div>
                 <div class="border_box">
-                    <input type="text" name="newsletter" class="newsletter_input" value="your email" />
-                    <a href="#" class="join">join</a>
+                    <input type="text" name="newsletter" class="newsletter_input" value="Email: " />
+                    <a href="#" class="join">Gửi</a>
                 </div>
+              
+                <div class="title_box">Thống kê truy cập</div>  
+                 <div class="border_box">
+                    <br />
+                     <p style="color: Green; font-size: 13px;">
+                        <img src="vpp/images/User.png" alt="Đang truy cập"/> Đang truy cập: 212
+                     </p><br />
+                     <p style="color: Blue; font-size: 13px;">
+                        <img src="vpp/images/icon_visited.gif" alt="Đã truy cập"/>Đã truy cập:  212345
+                     </p><br />
+                     <p style="color: #DE6B10; font-size: 13px;">
+                        <img src="vpp/images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011
+                     </p><br />
+                 </div>  
+     
+                
                 <div class="banner_adds">
                     <a href="#">
                         <img src="images/advertise/bann2.jpg" alt="" title="" border="0" /></a>
@@ -372,7 +391,7 @@
                         <span class="border_cart"></span>Tổng tiền: <span class="price">350$</span>
                     </div>
                     <div class="cart_icon">
-                        <a href="#" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
+                        <a href="vpp/shoppingcart.aspx" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
                             <img src="vpp/images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
                 </div>
                 <div class="title_box">
@@ -386,6 +405,52 @@
                     <div class="prod_price">
                         <span class="reduce">350$</span> <span class="price">270$</span></div>
                 </div>
+                
+                <div class="title_box">Hỗ trợ trực tuyến</div>  
+                 <div class="border_box">
+                     <table class="list_product_buy" border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" >
+		                <tbody>
+		                    <tr>
+		                        <td>
+                                    <a href = 'ymsgr:sendIM?congvinh_sor'>
+                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=congvinh_sor&m=g&t=14" border="0" height="50px" width="50px"/>           
+                                    </a>
+                                </td>
+                                <td style="color:#a81f22; ">
+                                    Tr&#432;&#417;ng Công Vinh<br />
+                                </td>
+		                    </tr>
+		                    <tr>
+		                        <td>
+                                    <a href = 'ymsgr:sendIM?nang_am_tinhanh16'>
+                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=nang_am_tinhanh16&m=g&t=14" border="0" height="50px" width="50px"/>           
+                                    </a>                 
+                                </td>
+                                <td  style="color:#a81f22;" >
+                                    &#272;&#7895; B&#7843;o &#272;&#7883;nh<br />
+                                </td>
+		                    </tr>
+		                    <tr>
+		                        <td>
+                                    <a href = 'ymsgr:sendIM?anhnq90'>
+                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=anhnq90&m=g&t=14" border="0" height="50px" width="50px"/>           
+                                    </a>                 
+                                </td>
+                                <td  style="color:#a81f22;" >
+                                    Ngô Quang Anh<br />
+                                    
+                                </td>
+		                    </tr>
+            			    
+		                    <tr>
+		                        <td colspan="2">
+		                            <asp:Label ID="Label1" runat="server" Text="Hotline 24/7: (043) 343 3343" ForeColor="Blue"></asp:Label>
+		                        </td>
+		                    </tr>
+		                </tbody>
+	                </table>
+                 </div>
+     
                 <div class="title_box">
                     H&atilde;ng s&#7843;n xu&#7845;t
                 </div>
@@ -451,7 +516,7 @@
             </div>
             <div class="right_footer">
                 <a href="index.aspx">Trang chủ</a> <a href="vpp/aboutus.aspx">Giới thiệu</a> <a href="vpp/sitemap.aspx">
-                    Sơ đồ</a> <a href="#">RSS</a> <a href="vpp/contact.aspx">Liên hệ</a>
+                    Sơ đồ</a><a href="vpp/contact.aspx">Liên hệ</a>
             </div>
         </div>
     </div>

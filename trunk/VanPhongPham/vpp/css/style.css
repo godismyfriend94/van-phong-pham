@@ -55,7 +55,7 @@ padding:2px 0 0 15px;
 }
 .languages{
 float:right;
-width:150px;
+width:250px;
 padding:8px 0 0 0;
 }
 .lang_text{
@@ -323,6 +323,13 @@ background:url(../images/checked.png) no-repeat left #7bbcc7; color:#FFFFFF;back
 width:194px;
 height:auto;
 text-align:center;
+border:1px #6da6b1 solid;
+}
+
+.border_box_statistic{
+width:194px;
+height:auto;
+text-align:left;
 border:1px #6da6b1 solid;
 }
 
@@ -607,6 +614,11 @@ width:355px;
 float:left;
 padding:0px 0 0 75px;
 }
+.contact_form_map{
+width:555px;
+float:left;
+padding:0px 0 0 15px;
+}
 .form_row{
 width:335px;
 clear:both;
@@ -703,7 +715,7 @@ border:1px dashed gray;
     clear: both;
     display: block;
 }
-/*---------------contact_form------------------*/
+/*---------------contact_form------------------
 .contact_form{
 width:355px;
 float:left;
@@ -779,7 +791,7 @@ text-align:center;
 line-height:24px;
 color:#fff;
 }
-
+*/
 /* Rating */
 .ratingStar {
     font-size: 0pt;

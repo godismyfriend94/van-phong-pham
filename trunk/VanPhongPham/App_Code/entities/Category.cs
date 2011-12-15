@@ -17,6 +17,7 @@ public class Category
 {
     int categoryId;
     string categoryName;
+    string categoryImage;
     string description;
     string statusId;
 
@@ -29,6 +30,12 @@ public class Category
     {
         get { return categoryName; }
         set { categoryName = value; }
+    }
+
+    public string CategoryImage
+    {
+        get { return categoryImage; }
+        set { categoryImage = value; }
     }
 
     public string Description
