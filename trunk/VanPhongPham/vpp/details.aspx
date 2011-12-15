@@ -92,7 +92,7 @@
         <div>
         <asp:Panel ID="description_HeaderPanel" runat="server" style="cursor: pointer;">
                 <div class="center_title_bar">
-                    <asp:Label ID="Label2" ForeColor="blue" Font-Bold="true" runat="server" Text="Đánh giá về chất lượng sản phẩm và dịch vụ"></asp:Label>
+                    <asp:Label ID="Label2" Font-Bold="true" runat="server" Text="Đánh giá về chất lượng sản phẩm và dịch vụ"></asp:Label>
                  </div>
                 <div style="float: left;">
                     <asp:Label ID="Label1" runat="server"></asp:Label>
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="review_form_row">
-                    <asp:Button ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="register" Text="- Đánh giá -" />
+                    <asp:LinkButton ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="contact" Text="Đánh giá"></asp:LinkButton>
                 </div> 
                 </div>             
                 </div>
@@ -201,6 +201,220 @@
             </div>
         </ContentTemplate> 
         </asp:UpdatePanel>
+        
+    <div class="center_title_bar">Thông số kỹ thuật</div>
+	<div class="prod_box_big">
+    	<div class="top_prod_box_big"></div>
+        <div class="center_prod_box_big">      
+          	<div class="contact_form_map">
+                  <table width="461" cellspacing="0" cellpadding="0" border="1" style="width:345.85pt;mso-cellspacing:0in;border:solid #BFBFBF 1.0pt;
+    mso-border-themecolor:background1;mso-border-themeshade:191;mso-border-alt:
+    solid #BFBFBF .25pt;mso-border-themecolor:background1;mso-border-themeshade:
+    191;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in;mso-border-insideh:
+    .25pt solid #BFBFBF;mso-border-insideh-themecolor:background1;mso-border-insideh-themeshade:
+    191;mso-border-insidev:.25pt solid #BFBFBF;mso-border-insidev-themecolor:background1;
+    mso-border-insidev-themeshade:191" class="MsoNormalTable">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt" colspan="2">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Model</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">H&atilde;ng sản xuất</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">EPSON</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt" colspan="2">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Th&ocirc;ng số kỹ   thuật</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:3;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Loại m&aacute;y in</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">In Kim</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:4;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Cỡ giấy</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">A4</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:5;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Độ ph&acirc;n giải</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">360x360dpi</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:6;height:43.0pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:43.0pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Kết nối</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:43.0pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">&bull; USB<br />
+            &bull; Parallel<br />
+            &bull; IEEE 1284</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:7;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Chức năng</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">&bull; In trực tiếp</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:8;height:71.4pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:71.4pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">OS Supported</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:71.4pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">&bull; Microsoft Windows 2000<br />
+            &bull; Microsoft Windows 98<br />
+            &bull; Microsoft Windows Me<br />
+            &bull; Microsoft Windows NT 4.0<br />
+            &bull; Microsoft Windows XP</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:9;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">K&iacute;ch thước</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">366 x 275 x 159 mm</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:10;height:15.35pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:15.35pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Khối lượng</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:15.35pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;">4.4Kg</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:11;mso-yfti-lastrow:yes;height:14.6pt">
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span lang="VI" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">Website</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+            &quot;Times New Roman&quot;"> :</span></p>
+            </td>
+            <td style="border:solid #BFBFBF 1.0pt;mso-border-themecolor:background1;
+            mso-border-themeshade:191;mso-border-alt:solid #BFBFBF .25pt;mso-border-themecolor:
+            background1;mso-border-themeshade:191;padding:0in 0in 0in 0in;height:14.6pt">
+            <p style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+            normal" class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+            mso-fareast-font-family:&quot;Times New Roman&quot;"><a target="_blank" href="http://www.epson.co.nz/products/dotmatrix/lq300plusII_specs.asp"><span style="color:blue">Chi tiết</span></a></span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>             
+        </div>
+        <div class="bottom_prod_box_big"></div>                                
+    </div>    
         
     <div class="center_title_bar">Sản phẩm cùng loại</div>
   	<div class="prod_box">

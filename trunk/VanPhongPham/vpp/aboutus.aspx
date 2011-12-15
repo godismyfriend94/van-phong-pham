@@ -35,7 +35,7 @@
             <div class="bottom_prod_box_big"></div>                                
         </div>
         
-    <div class="center_title_bar">Bản đồ trực tuyến</div>
+       <div class="center_title_bar">Bản đồ trực tuyến</div>
     	<div class="prod_box_big">
         	<div class="top_prod_box_big"></div>
             <div class="center_prod_box_big">      
