@@ -293,7 +293,7 @@
                 </div>
               
                 <div class="title_box">Thống kê truy cập</div>  
-                 <div class="border_box">
+                 <div class="border_box_statistic">
                     <br />
                      <p style="color: Green; font-size: 13px;">
                         <img src="vpp/images/User.png" alt="Đang truy cập"/> Đang truy cập: 212
