@@ -33,7 +33,7 @@
             <div class="bottom_prod_box_big"></div>                                
         </div>
         
-    <div class="center_title_bar">Liên hệ trực tiếp</div>
+        <div class="center_title_bar">Liên hệ trực tiếp</div>
     
     	<div class="prod_box_big">
         	<div class="top_prod_box_big"></div>
@@ -62,7 +62,7 @@
 
                     <div class="form_row">
                     <label class="contact"><strong>Nội dung:</strong></label>
-                    <textarea class="contact_textarea" cols="25"></textarea>
+                    <textarea class="contact_textarea" cols="25" cols="50"></textarea>
                     </div>
 
                     
