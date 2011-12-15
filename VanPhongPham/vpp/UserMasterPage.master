@@ -127,16 +127,16 @@
 			    content: contentString
 		    });
 			
-		    var companyImage = new google.maps.MarkerImage('images/logoGMap.png',
-			    new google.maps.Size(100,50),
+		    var companyImage = new google.maps.MarkerImage('images/marker.png',
+			    new google.maps.Size(32,32),
 			    new google.maps.Point(0,0),
-			    new google.maps.Point(50,50)
+			    new google.maps.Point(25,32)
 		    );
 
 		    var companyShadow = new google.maps.MarkerImage('images/logo_shadow.png',
-			    new google.maps.Size(130,50),
+			    new google.maps.Size(32,32),
 			    new google.maps.Point(0,0),
-			    new google.maps.Point(65, 50));
+			    new google.maps.Point(25, 32));
 
 		    var companyPos = new google.maps.LatLng(21.000353,105.821975);
 
