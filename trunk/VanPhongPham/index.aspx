@@ -111,9 +111,9 @@
                 <div class="lang_text">
                     <a href="vpp/faqs.aspx" title="header=[Giải đáp thắc mắc cơ bản] body=[&nbsp;] fade=[on]">Câu hỏi thường gặp ?</a>
                     &nbsp;&nbsp;&nbsp; 
-                    <a href="#" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">Đăng nhập </a>
+                    <a href="vpp/login.aspx" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">Đăng nhập </a>
                     &nbsp;&nbsp;&nbsp; 
-                    <a href="#" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">Đăng ký </a>
+                    <a href="vpp/register.aspx" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">Đăng ký </a>
                 </div>
                 <%-- <a href="#" class="lang"><img src="vpp/images/en.gif" alt="" title="" border="0" /></a>
             <a href="#" class="lang"><img src="vpp/images/en.gif" alt="" title="" border="0" /></a> --%>
@@ -180,13 +180,12 @@
                     <li class="divider"></li>
                     <li><a href="#" class="nav4">Chính sách</a></li>
                     <li class="divider"></li>
-                    <li><a href="#" class="nav5">Giao h&agrave;ng </a></li>
+                    <li><a href="vpp/aboutus.aspx" class="nav7">Giới thiệu</a></li>
                     <li class="divider"></li>
                     <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                     <li class="divider"></li>
                     <li><a href="#" class="nav4">Diễn đàn</a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/aboutus.aspx" class="nav7">Giới thiệu</a></li>
+                    
                     <%--<li class="currencies">Loại tiền: 
                          <select>
                          <option selected="true">VND</option>
