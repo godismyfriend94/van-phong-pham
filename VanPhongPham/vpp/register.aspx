@@ -6,5 +6,15 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
+    <div class="center_title_bar">Đăng ký tài khoản mới</div>
+	<div class="prod_box_big">
+    	<div class="top_prod_box_big"></div>
+        <div class="center_prod_box_big">      
+          	<div class="contact_form_map">
+                  
+            </div>             
+        </div>
+        <div class="bottom_prod_box_big"></div>                                
+    </div>
 </asp:Content>
 

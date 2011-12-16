@@ -1036,3 +1036,20 @@ color:#fff;
 	color:#ffffff;	
 	display:none;
 }
+
+/*========Google map style*/
+.firstHeading
+{
+	color: Green;
+	font-weight: bold;
+}
+.main_office
+{
+	color: Red;
+	font-size: 12px;
+}
+.info_office
+{
+	color: Navy;
+	font-size: 13px;
+}
