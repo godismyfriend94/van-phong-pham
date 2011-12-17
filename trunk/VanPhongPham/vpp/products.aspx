@@ -7,6 +7,7 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
+    
 <usc:LastestProduct runat="server" ID="uscLastestProduct" />
 </asp:Content>
 

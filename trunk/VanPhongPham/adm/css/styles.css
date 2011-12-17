@@ -564,7 +564,7 @@ margin-bottom: 15px;
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Vinh moi them \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 .menu_area1 
 {
-	width: 45%;
+	width: 95%;
 	text-align: left;
 	float: left;
 	margin-top:10px;
@@ -628,7 +628,7 @@ margin-bottom: 15px;
 .ideas:hover {
 	font-family: Arial;
 	font-size: 20px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-transform: capitalize;
 	color: Red;
 	text-decoration: none;
