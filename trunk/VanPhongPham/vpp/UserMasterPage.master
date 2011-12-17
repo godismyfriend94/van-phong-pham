@@ -318,7 +318,7 @@
          <p style="color: #DE6B10; font-size: 13px;">
             <img src="images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011
          </p><br />
-     </div>  
+     </div>
      <%--<div class="title_box">Newsletter</div>  
      <div class="border_box">
 		<input type="text" name="newsletter" class="newsletter_input" value="your email"/>

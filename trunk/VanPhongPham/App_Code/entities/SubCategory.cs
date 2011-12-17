@@ -18,6 +18,9 @@ public class SubCategory
     int subCategoryId;
     int categoryId;
     string subCategoryName;
+    string subCategoryImage;
+
+    
     int parent;
     string description;
     string statusId;
@@ -38,6 +41,12 @@ public class SubCategory
     {
         get { return subCategoryName; }
         set { subCategoryName = value; }
+    }
+
+    public string SubCategoryImage
+    {
+        get { return subCategoryImage; }
+        set { subCategoryImage = value; }
     }
 
     public int Parent
