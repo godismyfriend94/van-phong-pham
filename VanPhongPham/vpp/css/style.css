@@ -1053,3 +1053,85 @@ color:#fff;
 	color: Navy;
 	font-size: 13px;
 }
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Vinh moi them \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.menu_area1 
+{
+	width: 90%;
+	text-align: left;
+	float: left;
+	margin-top:10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.menu_area2
+{
+	width: 45%;
+	text-align: left;
+	float: right;
+	margin-top:10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.menu_text 
+{
+
+	width: 100%;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #aaaaaa;
+	text-decoration: none;
+}
+.image
+{
+	float: left;
+	width: 90px;
+	height: 90px;
+	}
+	
+.ideas 
+{
+	width: 100%;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #5a5a5a;
+	text-decoration: none;
+	margin: 0px;
+	
+	height: 170px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 3px;
+}
+.ideas:hover {
+	font-family: Arial;
+	font-size: 20px;
+	/*font-weight: bold;*/
+	text-transform: capitalize;
+	color: Red;
+	text-decoration: none;
+
+	margin: 0px;
+	
+	/*height: 70px;*/
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 3px;
+}
