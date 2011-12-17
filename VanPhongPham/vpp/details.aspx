@@ -78,8 +78,8 @@
         <div class="bottom_prod_box_big"></div>                                
     </div>
         
-        <asp:UpdatePanel runat="server" ID="up1">
-        <ContentTemplate>
+        <%--<asp:UpdatePanel runat="server" ID="up1">
+        <ContentTemplate>--%>
         <asp:CollapsiblePanelExtender ID="cpeDemo" runat="Server"
             TargetControlID="description_ContentPanel"
             ExpandControlID="description_HeaderPanel"
@@ -92,7 +92,7 @@
         <div>
         <asp:Panel ID="description_HeaderPanel" runat="server" style="cursor: pointer;">
                 <div class="center_title_bar">
-                    <asp:Label ID="Label2" Font-Bold="true" runat="server" Text="Đánh giá về chất lượng sản phẩm và dịch vụ"></asp:Label>
+                    <asp:Label ID="Label2" Font-Bold="true" runat="server" Text="Đánh giá và chia sẻ về chất lượng sản phẩm"></asp:Label>
                  </div>
                 <div style="float: left;">
                     <asp:Label ID="Label1" runat="server"></asp:Label>
@@ -144,7 +144,7 @@
                 <div class="review_form_row">
                     <label class="review">
                         <strong>
-                            <asp:Label ID="lblNameReview" runat="server" Text="Name:"></asp:Label>
+                            <asp:Label ID="lblNameReview" runat="server" Text="Tên:"></asp:Label>
                         </strong>
                     </label>
                     <asp:TextBox ID="txtNameReview" runat="server" CssClass="review_input"></asp:TextBox>&nbsp;
@@ -179,7 +179,7 @@
                 <div class="review_form_row">
                     <label class="review">
                         <strong>
-                            <asp:Label ID="lblMessageReview" runat="server" Text="Message:"></asp:Label>
+                            <asp:Label ID="lblMessageReview" runat="server" Text="Nội dung:"></asp:Label>
                         </strong>
                     </label>
                     <asp:TextBox ID="txtMessageReview" TextMode="MultiLine" runat="server" CssClass="textarea_review_input"></asp:TextBox>&nbsp;
@@ -192,15 +192,15 @@
 
                 <div class="review_form_row">
                     <asp:LinkButton ID="btnSubmitRate" runat="server" ValidationGroup="group1" OnClick="btnSubmitRate_Click" CssClass="contact" Text="Đánh giá"></asp:LinkButton>
-                </div> 
-                </div>             
+                </div>
+                </div>
                 </div>
                 <div class="bottom_prod_box_big"></div>                                
                 </div>
             </asp:Panel>
             </div>
-        </ContentTemplate> 
-        </asp:UpdatePanel>
+        <%--</ContentTemplate> 
+        </asp:UpdatePanel>--%>
         
     <div class="center_title_bar">Thông số kỹ thuật</div>
 	<div class="prod_box_big">
