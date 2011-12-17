@@ -1135,3 +1135,56 @@ color:#fff;
 	padding-bottom: 20px;
 	padding-left: 3px;
 }
+/*--------------------------------*/
+
+.menu_text_subcategory 
+{
+	width: 100%;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #aaaaaa;
+	text-decoration: none;
+}
+.image_subcategory
+{
+	float: left;
+	width: 50px;
+	height: 50px;
+	}
+	
+.ideas_subcategory
+{
+	width: 100%;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #5a5a5a;
+	text-decoration: none;
+	margin: 0px;
+	
+	height: 170px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 3px;
+}
+.ideas_subcategory:hover {
+	font-family: Arial;
+	font-size: 20px;
+	/*font-weight: bold;*/
+	text-transform: capitalize;
+	color: Red;
+	text-decoration: none;
+
+	margin: 0px;
+	
+	/*height: 70px;*/
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 3px;
+}
