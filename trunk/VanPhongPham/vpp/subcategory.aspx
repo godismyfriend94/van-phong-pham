@@ -6,6 +6,7 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="plhd_Content" Runat="Server">
+<div class="center_title_bar">Danh mục sản phẩm</div>
 <div class="menu_area1">
     <asp:HyperLink ID="hplThongTinQTM" NavigateUrl="products.aspx" CssClass="ideas_subcategory" runat="server">
         <asp:Image ID="Image1" CssClass="image_subcategory" runat="server" ImageUrl="images/Canon ImageCLASS MF4350D.png" />

@@ -30,4 +30,39 @@ public partial class index : System.Web.UI.Page
         imgSlide[4] = new AjaxControlToolkit.Slide("vpp/images/p1.gif", "HTC galaxy", "Androi with touch pad and 8 mega pixel");
         return (imgSlide);
     }
+
+    /// <summary>
+    /// Download bao gia...
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void DownloadQuote_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            //Lay ve path cua root server
+            string RootPath = HttpContext.Current.Server.MapPath("~");
+            System.String filename = "tencongty_baogia.xls";
+
+            // set the http content type to "APPLICATION/OCTET-STREAM
+            Response.ContentType = "APPLICATION/OCTET-STREAM";
+
+            // initialize the http content-disposition header to
+            // indicate a file attachment with the default filename
+            // "myFile.txt"
+            System.String disHeader = "Attachment; Filename=\"" + filename +
+               "\"";
+            Response.AppendHeader("Content-Disposition", disHeader);
+
+            // transfer the file byte-by-byte to the response object
+            System.IO.FileInfo fileToDownload = new
+               System.IO.FileInfo(RootPath + "/files/baogia/" + filename);
+            Response.Flush();
+            Response.WriteFile(fileToDownload.FullName);
+        }
+        catch (Exception ex)
+        {
+            //e.StackTrace;
+        }
+    }
 }

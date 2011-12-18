@@ -462,10 +462,20 @@
                     <li class="odd"><a href="#">Toshiba</a></li>
                     <li class="even"><a href="#">Dell</a></li>
                 </ul>
+                
+                <div class="title_box">
+                    Báo giá
+                 </div>
+                 <div class="border_box">
+                 <a href="vpp/quotes.aspx"><img src="vpp/images/imagesdownload.jpg" width="64" height="64" alt="báo giá"/></a> 
+                 </div>
+                 
                 <div class="banner_adds">
                     <a href="#">
                         <img src="images/advertise/bann1.jpg" alt="" title="" border="0" /></a>
                 </div>
+                
+                
             </div>
             <!-- end of right content -->
             <!-- bat dau vung quang cao truot 2 ben trang web -->
