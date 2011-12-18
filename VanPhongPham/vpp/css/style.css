@@ -1188,3 +1188,16 @@ color:#fff;
 	padding-bottom: 20px;
 	padding-left: 3px;
 }
+
+.quote_box{
+width:196px;
+/*height:30px;*/
+margin:5px 0 0 0;
+text-align:center;
+/*background:url(../images/imagesdownload.jpg) no-repeat center;*/
+
+font-size:13px;
+font-weight:bold;
+color: Orange;
+line-height:30px;
+}

@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LastestProduct.ascx.cs" Inherits="vpp_LastestProduct" %>
+<div class="center_title_bar">Danh sách sản phẩm trong danh mục</div>
  <asp:DataList ID="lstProductLastest" runat="server" RepeatColumns="3" Width="568px" 
    DataSourceID="SqlDataSource1">
    <ItemTemplate>
