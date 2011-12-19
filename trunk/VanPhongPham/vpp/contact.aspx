@@ -70,9 +70,7 @@
                     <a href="#" class="contact">Gửi</a>
                     </div>      
                     
-                </div> 
-                
-                                     
+                </div>                
             </div>
             <div class="bottom_prod_box_big"></div>                                
         </div>
