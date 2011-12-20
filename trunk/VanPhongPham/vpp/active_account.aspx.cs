@@ -15,19 +15,18 @@ public partial class vpp_active_account : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //lblMsg.Visible = false;
+        //string strToken = Request.QueryString["token"] + "";
 
-    }
-
-    public bool UnlockAccount(string strToken)
-    {
-        Librarys.iSQLDB DB = new Librarys.iSQLDB();
-        DB.Open();
-        DataTable DBread = DB.getDataTable("SELECT TOP 1 FLD_ID FROM TBL_ACCOUNT WHERE (DATEDIFF(minute, FLD_REGTIME, getdate()) < 1440) and FLD_Token=@Token", new object[] { "@Token", strToken });
-        DB.Close();
-        if (DBread.Rows.Count > 0)
-        {
-            return this.updateLock(DBread.Rows[0]["FLD_ID"] + ""); // update account to unlock and clear token
-        }
-        return false; // fail        
+        //// check valid token
+        //HiepKhach HK = new HiepKhach();
+        //if (strToken != "" && HK.UnlockAccount(strToken))
+        //{
+        //    lblMsg.Text = "Tài khoản đã được kích hoạt thành công. Hãy đăng nhập lại hệ thống.";
+        //}
+        //else
+        //{
+        //    lblMsg.Text = "Tài khoản kích hoạt thất bại. Xin hãy liên lạc với admin để được giúp đỡ.";
+        //}
     }
 }

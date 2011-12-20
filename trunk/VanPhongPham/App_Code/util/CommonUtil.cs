@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Text;
+using System.Security.Cryptography;
 /// <summary>
 /// Chua cac ham xu ly co ban nhu validate, loai bo sql injection...
 /// </summary>
@@ -95,5 +96,29 @@ public class CommonUtil
         }
         return s.ToString();
     }
-    
+
+    public  static  string  generateToken()
+    {        
+        return  CreateKey(System.Convert.ToInt32(24));              
+    }
+
+    private  static  String  CreateKey(int  numBytes)
+    {
+        RNGCryptoServiceProvider  rng = new  RNGCryptoServiceProvider();
+        byte[] buff = new  byte[numBytes];
+
+        rng.GetBytes(buff);
+        return  BytesToHexString(buff);
+    }
+
+    private static String BytesToHexString(byte[] bytes)
+    {
+        StringBuilder hexString = new StringBuilder(64);
+
+        for (int counter = 0; counter < bytes.Length; counter++)
+        {
+            hexString.Append(String.Format("{0:X2}", bytes[counter]));
+        }
+        return hexString.ToString();
+    }
 }

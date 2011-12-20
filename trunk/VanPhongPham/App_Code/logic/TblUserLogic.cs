@@ -17,8 +17,19 @@ using System.Xml.Linq;
 
 public class TblUserLogic
 {
+    TblUserDao tblUserDao = new TblUserDao();
+
     public TblUserLogic()
     {
 
+    }
+    /// <summary>
+    /// UnlockAccount(string strToken)
+    /// </summary>
+    /// <param name="strToken"></param>
+    /// <returns></returns>
+    public bool UnlockAccount(string strToken)
+    {
+        return tblUserDao.UnlockAccount(strToken);
     }
 }
