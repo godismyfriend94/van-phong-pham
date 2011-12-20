@@ -46,7 +46,7 @@
             $('dt a').click(function() {
                 $('dd:visible').slideUp('slow');
                 $('.active').removeClass('active');
-                $(this).parent().addClass('active').next().slideDown('slow');
+                $(this).parent().addClass('active').next().slideDown('low');
                 return false;
             });
 

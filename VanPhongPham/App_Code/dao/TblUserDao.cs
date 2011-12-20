@@ -284,4 +284,21 @@ public class TblUserDao
             return true;
         }
     }
+    /// <summary>
+    /// UnlockAccount(string strToken)
+    /// </summary>
+    /// <param name="strToken"></param>
+    /// <returns></returns>
+    public bool UnlockAccount(string strToken)
+    {
+        //Librarys.iSQLDB DB = new Librarys.iSQLDB();
+        //DB.Open();
+        //DataTable DBread = DB.getDataTable("SELECT TOP 1 Flg_Token FROM TblUser WHERE (DATEDIFF(minute, JoinDate, getdate()) < 1440) and Fld_Token=@Token", new object[] { "@Token", strToken });
+        //DB.Close();
+        //if (DBread.Rows.Count > 0)
+        //{
+        //    return this.updateLock(DBread.Rows[0]["FLD_Token"] + ""); // update account to unlock and clear token
+        //}
+        return false; // fail        
+    }
 }
