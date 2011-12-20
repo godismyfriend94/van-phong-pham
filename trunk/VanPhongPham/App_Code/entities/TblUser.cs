@@ -26,6 +26,7 @@ public class TblUser
     string phone;
     string address;
     DateTime joinDate;
+    string registerCode;
     string statusId;
 
     public int UserId
@@ -93,7 +94,13 @@ public class TblUser
         get { return joinDate; }
         set { joinDate = value; }
     }
-    
+
+    public string RegisterCode
+    {
+        get { return registerCode; }
+        set { registerCode = value; }
+    }
+
     public string StatusId
     {
         get { return statusId; }
