@@ -112,7 +112,7 @@ public class TblUserDao
     /// <returns></returns>
     public int InsertUser(TblUser tblUser)
     {
-        SqlParameter[] paramList = new SqlParameter[10];
+        SqlParameter[] paramList = new SqlParameter[11];
 
         paramList[0] = new SqlParameter("@GroupId", SqlDbType.NVarChar, 256);
         paramList[0].Value = tblUser.GroupId;
@@ -141,8 +141,11 @@ public class TblUserDao
         paramList[8] = new SqlParameter("@Phone", SqlDbType.VarChar, 50);
         paramList[8].Value = tblUser.Phone;
 
-        paramList[9] = new SqlParameter("@StatusId", SqlDbType.Int);
-        paramList[9].Value = tblUser.StatusId;
+        paramList[9] = new SqlParameter("@RegisterCode", SqlDbType.NVarChar, 256);
+        paramList[9].Value = tblUser.RegisterCode;
+
+        paramList[10] = new SqlParameter("@StatusId", SqlDbType.Int);
+        paramList[10].Value = tblUser.StatusId;
 
         return db.executeUpdate("InsertUser", paramList);
     }
@@ -154,7 +157,7 @@ public class TblUserDao
     /// <returns></returns>
     public bool UpdateUserById(TblUser tblUser)
     {
-        SqlParameter[] paramList = new SqlParameter[11];
+        SqlParameter[] paramList = new SqlParameter[12];
 
         paramList[0] = new SqlParameter("@UserId", SqlDbType.Int);
         paramList[0].Value = tblUser.UserId;
@@ -186,8 +189,11 @@ public class TblUserDao
         paramList[9] = new SqlParameter("@Phone", SqlDbType.VarChar, 50);
         paramList[9].Value = tblUser.Phone;
 
-        paramList[10] = new SqlParameter("@StatusId", SqlDbType.Int);
-        paramList[10].Value = tblUser.StatusId;
+        paramList[10] = new SqlParameter("@RegisterCode", SqlDbType.NVarChar, 256);
+        paramList[10].Value = tblUser.RegisterCode;
+
+        paramList[11] = new SqlParameter("@StatusId", SqlDbType.Int);
+        paramList[11].Value = tblUser.StatusId;
 
         if (db.executeUpdate("UpdateUserById", paramList) == 0)
         {
