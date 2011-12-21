@@ -19,7 +19,9 @@ public class Product
     string productName;
     int subCategoryId;
     string viewQuantity;
+    string thumbnails;
     float price;
+    float promotion;
     int quantity;
     string quality;
     string madeBy;
@@ -56,10 +58,22 @@ public class Product
         set { viewQuantity = value; }
     }
 
+    public string Thumbnails
+    {
+        get { return thumbnails; }
+        set { thumbnails = value; }
+    }
+
     public float Price
     {
         get { return price; }
         set { price = value; }
+    }
+
+    public float Promotion
+    {
+        get { return promotion; }
+        set { promotion = value; }
     }
 
     public int Quantity

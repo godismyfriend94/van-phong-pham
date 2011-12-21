@@ -20,7 +20,7 @@
                 <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
                     <a style="text-decoration: none;" href="#">
                         <asp:Image ID="Image3" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label3" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
                         Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.
                         <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
                     </a>
@@ -28,7 +28,7 @@
                 </Header>
                 <Content>
                     <p style="color: #333333;text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <asp:Label ID="Label4" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
+                    <asp:Label ID="Label4" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
                     Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê. 
                     Theo truyền thuyết, nữ thần Ái tình của Hy Lạp đã tặng một bông hồng cho Eros, vị thần Ái tình. 
                     Ngày nay, những bông hồng có thể truyền đạt những ẩn ý tình cảm khác nhau.
@@ -42,16 +42,18 @@
                 <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
                     <a style="text-decoration: none;" href="#">
                         <asp:Image ID="Image1" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label1" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        Question ?
+                        <asp:Label ID="Label1" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.
                         <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
                     </a>
                 </div>
                 </Header>
                 <Content>
                     <p style="color: #333333;text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <asp:Label ID="Label2" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
-                    Answer...
+                    <asp:Label ID="Label2" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
+                    Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê. 
+                    Theo truyền thuyết, nữ thần Ái tình của Hy Lạp đã tặng một bông hồng cho Eros, vị thần Ái tình. 
+                    Ngày nay, những bông hồng có thể truyền đạt những ẩn ý tình cảm khác nhau.
                     <%--<%#Eval("Answer") %>--%>
                     </p>
                 </Content>
@@ -62,7 +64,7 @@
                 <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
                     <a style="text-decoration: none;" href="#">
                         <asp:Image ID="Image2" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label5" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
                         Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.
                         <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
                     </a>
@@ -70,7 +72,7 @@
                 </Header>
                 <Content>
                     <p style="color: #333333;text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <asp:Label ID="Label6" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
+                    <asp:Label ID="Label6" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
                     Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê. 
                     Theo truyền thuyết, nữ thần Ái tình của Hy Lạp đã tặng một bông hồng cho Eros, vị thần Ái tình. 
                     Ngày nay, những bông hồng có thể truyền đạt những ẩn ý tình cảm khác nhau.
@@ -84,16 +86,18 @@
                 <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
                     <a style="text-decoration: none;" href="#">
                         <asp:Image ID="Image4" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label7" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        Question ?
+                        <asp:Label ID="Label7" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.
                         <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
                     </a>
                 </div>
                 </Header>
                 <Content>
                     <p style="color: #333333;text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <asp:Label ID="Label8" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
-                    Answer...
+                    <asp:Label ID="Label8" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
+                    Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê. 
+                    Theo truyền thuyết, nữ thần Ái tình của Hy Lạp đã tặng một bông hồng cho Eros, vị thần Ái tình. 
+                    Ngày nay, những bông hồng có thể truyền đạt những ẩn ý tình cảm khác nhau.
                     <%--<%#Eval("Answer") %>--%>
                     </p>
                 </Content>
