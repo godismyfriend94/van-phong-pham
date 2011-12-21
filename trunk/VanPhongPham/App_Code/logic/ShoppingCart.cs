@@ -39,7 +39,7 @@ public class ShoppingCart
     /// Add one Item into Cart
     /// </summary>
 
-    #region for Bouquet
+    #region for Product
     public void AddItem(string _productId)
     {
         // Creat new a Cartitem
@@ -67,7 +67,7 @@ public class ShoppingCart
 
 
     /// <summary>
-    /// Update quantity to Bouquet Item in Cart
+    /// Update quantity to Product Item in Cart
     /// </summary>
     /// <param name="_bouquetId"></param>
     /// <param name="_quantity"></param>
@@ -95,7 +95,9 @@ public class ShoppingCart
         CartItem removedItem = new CartItem(_productId);
         Items.Remove(removedItem);
     }
-    #endregion bouquet
+
+    #endregion Product
+
     public float GetSubTotal()
     {
         float subTotal = 0;
