@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LastestProduct.ascx.cs" Inherits="vpp_LastestProduct" %>
+<%@ Register Assembly="CollectionPager" Namespace="SiteUtils" TagPrefix="cc1" %>
 <div class="center_title_bar">Danh sách sản phẩm trong danh mục</div>
  <asp:DataList ID="lstProductLastest" runat="server" RepeatColumns="3" Width="568px" 
    DataSourceID="SqlDataSource1">
@@ -24,14 +25,23 @@
                <img alt="" border="0" class="left_bt" src="images/favs.gif" title="" /></a>
                <a href="#" title="header=[Tặng phẩm] body=[&nbsp;] fade=[on]">
                <img alt="" border="0" class="left_bt" src="images/favorites.gif" title="" /></a>--%>
-               <a href="details.aspx" class="prod_details" title="header=[Xem chi tiết] body=[&nbsp;] fade=[on]">Xem</a>
+               <a href="details.aspx?prodId=<%#Eval("ProductId")%>" class="prod_details" title="header=[Xem chi tiết] body=[&nbsp;] fade=[on]">Xem</a>
            </div>
        </div>
        <br />
    </ItemTemplate>
 </asp:DataList>       
 
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+<div class="pagination">    
+    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="30"
+        LabelText="Trang:" 
+        ResultsFormat="Display: {0}-{1} (của {2})" LabelStyle="" 
+        ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" >
+    </cc1:CollectionPager>
+
+</div>  
+    
+<%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" 
    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
    SelectCommand="SELECT * FROM Product">
-</asp:SqlDataSource>
+</asp:SqlDataSource>--%>
