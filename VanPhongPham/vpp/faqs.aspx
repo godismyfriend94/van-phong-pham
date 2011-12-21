@@ -21,7 +21,7 @@
                     <a style="text-decoration: none;" href="#">
                         <asp:Image ID="Image3" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
                         <asp:Label ID="Label3" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.
+                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là ff ff ff ff ff ff ff ff ff ff ff ff ff.
                         <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
                     </a>
                 </div>

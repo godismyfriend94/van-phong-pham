@@ -145,4 +145,9 @@ public class Product
 	public Product()
 	{
 	}
+
+    public Product(int _productId)
+    {
+        this.productId = _productId;
+    }
 }

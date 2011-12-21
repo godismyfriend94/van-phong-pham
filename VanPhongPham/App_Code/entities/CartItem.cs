@@ -9,7 +9,7 @@ using System.Web;
 /// </summary>
 public class CartItem:IEquatable<CartItem>
 {
-    private string productId;
+    private int productId;
     private int quantity;
     private Product product = null;
 
@@ -18,9 +18,9 @@ public class CartItem:IEquatable<CartItem>
         get { return quantity; }
         set { quantity = value; }
     }
-    
 
-    public string ProductId
+
+    public int ProductId
     {
         get { return productId; }
         set 
@@ -62,7 +62,7 @@ public class CartItem:IEquatable<CartItem>
         get { return UnitPrice * Quantity; }
     }
 
-    public CartItem(string _productId)
+    public CartItem(int _productId)
 	{
         this.ProductId = _productId;
     }

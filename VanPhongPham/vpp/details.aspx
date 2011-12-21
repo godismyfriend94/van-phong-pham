@@ -207,7 +207,7 @@
     	<div class="top_prod_box_big"></div>
         <div class="center_prod_box_big">      
           	<div class="contact_form_map">
-                  <table width="461" cellspacing="0" cellpadding="0" border="1" style="width:345.85pt;mso-cellspacing:0in;border:solid #BFBFBF 1.0pt;
+                  <table width="480" cellspacing="0" cellpadding="0" border="1" style="width:345.85pt;mso-cellspacing:0in;border:solid #BFBFBF 1.0pt;
     mso-border-themecolor:background1;mso-border-themeshade:191;mso-border-alt:
     solid #BFBFBF .25pt;mso-border-themecolor:background1;mso-border-themeshade:
     191;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in;mso-border-insideh:

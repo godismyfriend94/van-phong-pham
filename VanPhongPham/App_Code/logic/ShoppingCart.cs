@@ -40,7 +40,7 @@ public class ShoppingCart
     /// </summary>
 
     #region for Product
-    public void AddItem(string _productId)
+    public void AddItem(int _productId)
     {
         // Creat new a Cartitem
         CartItem newItem = new CartItem(_productId);
@@ -71,7 +71,7 @@ public class ShoppingCart
     /// </summary>
     /// <param name="_bouquetId"></param>
     /// <param name="_quantity"></param>
-    public void SetItemQuantity(string _productId,int _quantity)
+    public void SetItemQuantity(int _productId,int _quantity)
     {
         if (_quantity== 0)
         {
@@ -90,7 +90,7 @@ public class ShoppingCart
     }
 
 
-    public void RemoveItem(string _productId)
+    public void RemoveItem(int _productId)
     {
         CartItem removedItem = new CartItem(_productId);
         Items.Remove(removedItem);
