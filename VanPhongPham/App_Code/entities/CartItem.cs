@@ -30,7 +30,6 @@ public class CartItem:IEquatable<CartItem>
         }
     }
 
-    
     public Product Product
     {
         get
