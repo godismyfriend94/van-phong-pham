@@ -45,6 +45,30 @@ public class ProductDao
 
         return db.executeSelect("GetProductById", paramList);
     }
+
+    /// <summary>
+    /// GetTop18NewProductByViewOption
+    /// </summary>
+    /// <param name="viewOption"></param>
+    /// <returns></returns>
+    public DataTable GetTop18NewProductByViewOption(String viewOption)
+    {
+        SqlParameter[] paramList = new SqlParameter[1];
+
+        paramList[0] = new SqlParameter("@ViewOption", SqlDbType.NVarChar, 256);
+        paramList[0].Value = viewOption;
+
+        return db.executeSelect("GetTop18NewProductByViewOption", paramList);
+    }
+
+    /// <summary>
+    /// GetTopView12Product
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetTopView12Product()
+    {
+        return db.executeSelect("GetTopView12Product");
+    }
     /// <summary>
     /// InsertProduct - them thông tin product
     /// </summary>

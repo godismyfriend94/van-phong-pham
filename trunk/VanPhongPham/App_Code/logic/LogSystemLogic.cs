@@ -17,7 +17,56 @@ using System.Xml.Linq;
 
 public class LogSystemLogic
 {
+    LogSystemDao logSystemDao = new LogSystemDao();
     public LogSystemLogic()
     {
+    }
+
+    /// <summary>
+    /// GetAllLog - lấy về tất cả Log
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetAllLog()
+    {
+        return logSystemDao.GetAllLog();
+    }
+
+    /// <summary>
+    /// GetLogById - lấy về Log theo id
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public DataTable GetLogById(int logId)
+    {
+        return logSystemDao.GetLogById(logId);
+    }
+    /// <summary>
+    /// InsertLog - them thông tin log
+    /// </summary>
+    /// <param name="emp"></param>
+    /// <returns></returns>
+    public bool InsertLog(LogSystem logSystem)
+    {
+        return logSystemDao.InsertLog(logSystem);
+    }
+
+    /// <summary>
+    /// UpdateLog - sửa thông tin log
+    /// </summary>
+    /// <param name="emp"></param>
+    /// <returns></returns>
+    public bool UpdateLog(LogSystem logSystem)
+    {
+        return logSystemDao.UpdateLog(logSystem);
+    }
+
+    /// <summary>
+    /// DeleteLog - xoa thông tin log
+    /// </summary>
+    /// <param name="emp"></param>
+    /// <returns></returns>
+    public bool DeleteLog(LogSystem logSystem)
+    {
+        return logSystemDao.DeleteLog(logSystem);
     }
 }

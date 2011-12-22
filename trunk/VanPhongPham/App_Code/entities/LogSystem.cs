@@ -54,4 +54,11 @@ public class LogSystem
 	public LogSystem()
 	{
 	}
+
+    public LogSystem(string _logName, string _logForTable, string _logContent)
+    {
+        this.logName = _logName;
+        this.logForTable = _logForTable;
+        this.logContent = _logContent;
+    }
 }
