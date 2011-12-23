@@ -123,7 +123,7 @@
         <div id="header">
             <div id="logo">
                 <a href="index.aspx">
-                    <img src="vpp/images/logo.png" alt="" title="" border="0" width="145" height="145" /></a>
+                    <img src="images/banners/logo.png" alt="" title="" border="0" width="145" height="145" /></a>
             </div>
             <div class="oferta_content">
                 <div class="top_divider">
@@ -457,7 +457,7 @@
         <!-- end of main content -->
         <div class="footer">
             <div class="left_footer">
-                <img src="vpp/images/footer_logo.png" alt="" title="" width="170" height="49" />
+                <img src="images/banners/logo.png" alt="" title="" width="170" height="49" />
             </div>
             <div class="center_footer">
                 Hanoitech.vn. All Rights Reserved 2008<br />

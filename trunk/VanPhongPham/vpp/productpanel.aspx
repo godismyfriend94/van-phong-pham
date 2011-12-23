@@ -9,7 +9,6 @@
 <div class="center_title_bar">Danh mục sản phẩm</div>
 <div class="menu_area1">
     
-    
     <asp:HyperLink ID="hplThongTinQTM" NavigateUrl="subcategory.aspx" CssClass="ideas" runat="server">
         <asp:Image ID="Image1" CssClass="image" runat="server" ImageUrl="../images/products/Canon ImageCLASS MF4350D.png" />
         Thiết bị văn phòng
@@ -18,7 +17,7 @@
         </span>
     </asp:HyperLink> 
     <br /><br /><br /><br /><br />
-
+    
     <asp:HyperLink ID="HyperLink1" NavigateUrl="subcategory.aspx" CssClass="ideas" runat="server">
         <asp:Image ID="Image2" CssClass="image" runat="server" ImageUrl="../images/products/epson-pigment-inktec.jpg" />
         Mực máy in
