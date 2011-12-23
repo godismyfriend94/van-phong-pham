@@ -1,6 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="false" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
-<%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
 <%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

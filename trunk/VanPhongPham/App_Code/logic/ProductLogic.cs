@@ -52,6 +52,15 @@ public class ProductLogic
     }
 
     /// <summary>
+    /// GetProductOfCategory
+    /// </summary>
+    /// <param name="subCategoryId"></param>
+    /// <returns></returns>
+    public DataTable GetProductOfCategory(int subCategoryId)
+    {
+        return productDao.GetProductOfCategory(subCategoryId);
+    }
+    /// <summary>
     /// GetTopView12Product
     /// </summary>
     /// <returns></returns>

@@ -11,7 +11,7 @@
     
     
     <asp:HyperLink ID="hplThongTinQTM" NavigateUrl="subcategory.aspx" CssClass="ideas" runat="server">
-        <asp:Image ID="Image1" CssClass="image" runat="server" ImageUrl="images/Canon ImageCLASS MF4350D.png" />
+        <asp:Image ID="Image1" CssClass="image" runat="server" ImageUrl="../images/products/Canon ImageCLASS MF4350D.png" />
         Thiết bị văn phòng
         <span class="menu_text">
             <br />Máy in, máy photocopy, máy scan, máy chấm công, máy hủy tài liệu...
@@ -20,7 +20,7 @@
     <br /><br /><br /><br /><br />
 
     <asp:HyperLink ID="HyperLink1" NavigateUrl="subcategory.aspx" CssClass="ideas" runat="server">
-        <asp:Image ID="Image2" CssClass="image" runat="server" ImageUrl="images/epson-pigment-inktec.jpg" />
+        <asp:Image ID="Image2" CssClass="image" runat="server" ImageUrl="../images/products/epson-pigment-inktec.jpg" />
         Mực máy in
         <span class="menu_text">
             <br />Mực in màu, mực in laser, mực máy in phun, mực máy in kim...
@@ -29,7 +29,7 @@
     <br /><br /><br /><br /><br />
 
     <asp:HyperLink ID="HyperLink2" CssClass="ideas" NavigateUrl="subcategory.aspx" runat="server">
-        <asp:Image ID="Image7" CssClass="image" runat="server" ImageUrl="images/gur1323833816.jpg" />
+        <asp:Image ID="Image7" CssClass="image" runat="server" ImageUrl="../images/products/gur1323833816.jpg" />
         Linh phụ kiện máy tính
         <span class="menu_text">
             <br />Linh kiện máy để bàn, linh kiện máy xách tay...

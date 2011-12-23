@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="products.aspx.cs" Inherits="vpp_products" Title="Untitled Page" %>
-<%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
+<%@ Register Src="ProductOfCategory.ascx" TagPrefix ="usc" TagName="ProductOfCategory" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">
@@ -8,14 +8,14 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
 
-<usc:LastestProduct runat="server" ID="uscLastestProduct" />
+<usc:ProductOfCategory runat="server" ID="uscProductOfCategory" />
 
 <div class="center_title_bar">Sản phẩm khác</div>
 <div class="prod_box">
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/laptop.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>             
@@ -30,7 +30,7 @@
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/laptop.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>             
@@ -45,7 +45,7 @@
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/laptop.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>             

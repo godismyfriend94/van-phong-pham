@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index"
     Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
-<%@ Register Src="vpp/LastestProduct.ascx" TagPrefix="usc" TagName="LastestProduct" %>
 <%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
+<%@ Register Src="LastestProduct.ascx" TagPrefix ="usc" TagName="LastestProduct" %>
+<%@ Register Src="ProductTopView.ascx" TagPrefix ="usc" TagName="ProductTopView" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -292,7 +293,7 @@
                     <a href="#" class="join">Gửi</a>
                 </div>
               
-                <div class="title_box">Thống kê truy cập</div>  
+                <div class="title_box">Thống kê truy cập</div>
                  <div class="border_box_statistic">
                     <br />
                      <p style="color: Green; font-size: 13px;">
@@ -314,71 +315,11 @@
             </div>
             <!-- end of left content -->
             <div class="center_content">
-                <div class="center_title_bar">
-                    S&#7843;n ph&#7849;m m&#7899;i
-                </div>
-                <!--begin lastest products-->
-                <asp:DataList ID="lstProductLastest" runat="server" RepeatColumns="3" Width="568px"
-                    DataSourceID="SqlDataSource1">
-                    <ItemTemplate>
-                        <div class="prod_box">
-                            <div class="top_prod_box">
-                            </div>
-                            <div class="center_prod_box">
-                                <div class="product_title">
-                                    <a href="vpp/details.aspx">Iphone Apple</a></div>
-                                <div class="product_img">
-                                    <a href="vpp/details.aspx">
-                                        <img alt="" border="0" src="vpp/images/p4.gif" title="" /></a></div>
-                                <div class="prod_price">
-                                    <span class="price">270$</span></div>
-                            </div>
-                            <div class="bottom_prod_box">
-                            </div>
-                            <div class="prod_details_tab">
-                                <a href="#" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]" class="prod_addtocart">
-                                    đặt hàng </a>
-                                <%--<a href="#" title="header=[Ưu đãi khi mua] body=[&nbsp;] fade=[on]">
-               <img alt="" border="0" class="left_bt" src="vpp/images/favs.gif" title="" /></a>
-               <a href="#" title="header=[Tặng phẩm] body=[&nbsp;] fade=[on]">
-               <img alt="" border="0" class="left_bt" src="vpp/images/favorites.gif" title="" /></a>--%>
-                                <a href="vpp/details.aspx" class="prod_details" title="header=[Xem chi tiết sản phẩm] body=[&nbsp;] fade=[on]">
-                                    chi tiết</a>
-                            </div>
-                        </div>
-                        <br />
-                    </ItemTemplate>
-                </asp:DataList>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-                    SelectCommand="SELECT * FROM Product"></asp:SqlDataSource>
+                <!-- end of left content -->
+                <usc:LastestProduct runat="server" ID="uscLastestProduct" />
                 <!--end of lastest products-->
-                <div class="center_title_bar">
-                    S&#7843;n ph&#7849;m xem nhi&#7873;u nh&#7845;t
-                </div>
-                <div class="prod_box">
-                    <div class="top_prod_box">
-                    </div>
-                    <div class="center_prod_box">
-                        <div class="product_title">
-                            <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
-                        <div class="product_img">
-                            <a href="vpp/details.aspx">
-                                <img src="vpp/images/laptop.gif" alt="" title="" border="0" /></a></div>
-                        <div class="prod_price">
-                            <span class="reduce">350$</span> <span class="price">270$</span></div>
-                    </div>
-                    <div class="bottom_prod_box">
-                    </div>
-                    <div class="prod_details_tab">
-                        <a href="#" title="header=[Add to cart] body=[&nbsp;] fade=[on]">
-                            <img src="vpp/images/cart.gif" alt="" title="" border="0" class="left_bt" /></a>
-                        <a href="#" title="header=[Specials] body=[&nbsp;] fade=[on]">
-                            <img src="vpp/images/favs.gif" alt="" title="" border="0" class="left_bt" /></a>
-                        <a href="#" title="header=[Gifts] body=[&nbsp;] fade=[on]">
-                            <img src="vpp/images/favorites.gif" alt="" title="" border="0" class="left_bt" /></a>
-                        <a href="vpp/details.aspx" class="prod_details">details</a>
-                    </div>
-                </div>
+                <usc:ProductTopView runat="server" ID="uscProductTopView" />
+                <!--end of top view products-->
             </div>
             <!-- end of center content -->
             <div class="right_content">

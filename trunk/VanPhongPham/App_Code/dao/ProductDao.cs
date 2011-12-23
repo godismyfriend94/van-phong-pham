@@ -62,6 +62,21 @@ public class ProductDao
     }
 
     /// <summary>
+    /// GetProductOfCategory
+    /// </summary>
+    /// <param name="subCategoryId"></param>
+    /// <returns></returns>
+    public DataTable GetProductOfCategory(int subCategoryId)
+    {
+        SqlParameter[] paramList = new SqlParameter[1];
+
+        paramList[0] = new SqlParameter("@SubCategoryId", SqlDbType.Int);
+        paramList[0].Value = subCategoryId;
+
+        return db.executeSelect("GetProductOfCategory", paramList);
+    }
+
+    /// <summary>
     /// GetTopView12Product
     /// </summary>
     /// <returns></returns>
