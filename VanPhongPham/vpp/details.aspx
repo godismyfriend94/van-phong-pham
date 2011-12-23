@@ -37,21 +37,21 @@
         <div class="center_prod_box_big">
              <div class="product_img_big">
 
-                <a href="images/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link"  style="border: 0px;">
-		            <img alt="" src="images/Canon ImageCLASS MF4350D.png" id="img_main" width="170" height="170" style="border: 0px;"/>
+                <a href="../images/products/Canon ImageCLASS MF4350D.png" style=""  class="jqzoom" title="xem chi tiết"  id="img_link"  style="border: 0px;">
+		            <img alt="" src="../images/products/Canon ImageCLASS MF4350D.png" id="img_main" width="170" height="170" style="border: 0px;"/>
                 </a>
                  <div class="thumbs">
-                     <a href="images/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/Canon ImageCLASS MF4350D.png" alt="" title="" border="0" width="28" height="28" style="border: 0px;"/>
+                     <a href="../images/products/Canon ImageCLASS MF4350D.png" title="header=[Thumb1] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="../images/products/Canon ImageCLASS MF4350D.png" alt="" title="" border="0" width="28" height="28" style="border: 0px;"/>
                      </a>
-                     <a href="images/CanonimageCLASS MF4550d.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonimageCLASS MF4550d.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
+                     <a href="../images/products/CanonimageCLASS MF4550d.png" title="header=[Thumb2] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="../images/products/CanonimageCLASS MF4550d.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
-                     <a href="images/CanonimageCLASSD520.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonimageCLASSD520.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
+                     <a href="../images/products/CanonimageCLASSD520.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="../images/products/CanonimageCLASSD520.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
-                     <a href="images/CanonPixmaMX-328.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
-                        <img src="images/CanonPixmaMX-328.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
+                     <a href="../images/products/CanonPixmaMX-328.png" title="header=[Thumb3] body=[&nbsp;] fade=[on]" onclick="swap(this); return false;">
+                        <img src="../images/products/CanonPixmaMX-328.png" alt="" title="" border="0"  width="28" height="28" style="border: 0px;"/>
                      </a>
                  </div>
              </div>
@@ -98,7 +98,7 @@
                     <asp:Label ID="Label1" runat="server"></asp:Label>
                 </div>
 <%--                <div style="float: right; vertical-align: middle;">
-                    <asp:ImageButton ID="Image1" runat="server" ImageUrl="images/expand_blue.jpg" AlternateText="(Show Details...)"/>
+                    <asp:ImageButton ID="Image1" runat="server" ImageUrl="../images/products/expand_blue.jpg" AlternateText="(Show Details...)"/>
                 </div>--%>
         </asp:Panel>
         </div>
@@ -445,7 +445,7 @@
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/laptop.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/laptop.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>             
@@ -460,7 +460,7 @@
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Iphone Apple</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/p4.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/p4.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>             
@@ -476,7 +476,7 @@
     	<div class="top_prod_box"></div>
         <div class="center_prod_box">            
              <div class="product_title"><a href="details.aspx">Samsung Webcam</a></div>
-             <div class="product_img"><a href="details.aspx"><img src="images/p5.gif" alt="" title="" border="0" /></a></div>
+             <div class="product_img"><a href="details.aspx"><img src="../images/products/p5.gif" alt="" title="" border="0" /></a></div>
              <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>                        
         </div>
         <div class="bottom_prod_box"></div>
