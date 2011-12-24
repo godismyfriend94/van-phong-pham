@@ -8,51 +8,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="plhd_Content" Runat="Server">
 <div class="center_title_bar">Danh mục sản phẩm</div>
 <div class="menu_area1">
-   <%-- bắt đầu 1 item --%>
-    <asp:HyperLink ID="hplThongTinQTM" NavigateUrl="products.aspx?subCatId=1" CssClass="ideas_subcategory" runat="server">
-        <asp:Image ID="Image1" CssClass="image_subcategory" runat="server" ImageUrl="../images/products/Canon ImageCLASS MF4350D.png" />
-        Máy photocopy
-        <span class="menu_text_subcategory">
-            <br />Máy in, máy photocopy, máy scan, máy chấm công, máy hủy tài liệu...
-        </span>
-    </asp:HyperLink> 
-    <br /><br /><br />
-    <%-- kết thúc 1 item --%>
-    <asp:HyperLink ID="HyperLink1" NavigateUrl="products.aspx?subCatId=2" CssClass="ideas_subcategory" runat="server">
-        <asp:Image ID="Image2" CssClass="image_subcategory" runat="server" ImageUrl="../images/products/epson-pigment-inktec.jpg" />
-        Máy in
-        <span class="menu_text_subcategory">
-            <br />Mực in màu, mực in laser, mực máy in phun, mực máy in kim...
-        </span>
-    </asp:HyperLink>
-    <br /><br /><br />
-
-    <asp:HyperLink ID="HyperLink2" CssClass="ideas_subcategory" NavigateUrl="products.aspx?subCatId=3" runat="server">
-        <asp:Image ID="Image7" CssClass="image_subcategory" runat="server" ImageUrl="../images/products/gur1323833816.jpg" />
-        Máy Scanner
-        <span class="menu_text_subcategory">
-            <br />Linh kiện máy để bàn, linh kiện máy xách tay...
-        </span>
-    </asp:HyperLink>
-    <br /><br /><br />
-    
-    <asp:HyperLink ID="HyperLink3" CssClass="ideas_subcategory" NavigateUrl="products.aspx?subCatId=4" runat="server">
-        <asp:Image ID="Image3" CssClass="image_subcategory" runat="server" ImageUrl="../images/products/epson-pigment-inktec.jpg" />
-        Máy hủy tài liệu
-        <span class="menu_text_subcategory">
-            <br />Linh kiện máy để bàn, linh kiện máy xách tay...
-        </span>
-    </asp:HyperLink>
-    <br /><br /><br />
-    
-    <asp:HyperLink ID="HyperLink4" CssClass="ideas_subcategory" NavigateUrl="products.aspx?subCatId=6" runat="server">
-        <asp:Image ID="Image4" CssClass="image_subcategory" runat="server" ImageUrl="../images/products/Canon ImageCLASS MF4350D.png" />
-        Máy chấm công
-        <span class="menu_text_subcategory">
-            <br />Linh kiện máy để bàn, linh kiện máy xách tay...
-        </span>
-    </asp:HyperLink>
-    <br /><br /><br />
+    <asp:DataList ID="lstSubCategory" runat="server" RepeatColumns="1" Width="540px" >
+       <ItemTemplate>
+        <a href="products.aspx?subcat=<%#Eval("SubCategoryId")%>" class="ideas_subcategory">
+        <%--<asp:HyperLink ID="hplThongTinQTM" NavigateUrl="subcategory.aspx?cat=<%#Eval("CategoryId")%>" CssClass="ideas" runat="server">--%>
+            <img alt="" border="0" src="../images/products/<%#Eval("SubCategoryImage")%>" class="image_subcategory"/>
+            <%--<asp:Image ID="Image1" CssClass="image" runat="server" ImageUrl="../images/products/<%#Eval("CategoryImage")%>" />--%>
+            <%#Eval("SubCategoryName")%>
+            <span class="menu_text">
+                <br /><%#Eval("Description")%>
+            </span>
+        </a>
+        <br /><br /><br />
+    </ItemTemplate>
+    </asp:DataList>
+    <p style="text-align:center;color:#990000; margin-top: 25px;"><asp:Label ID="lblNotFoundProduct" runat="server" Text="Không có sản phẩm nào thuộc danh mục này!" Visible="false" Font-Bold="true"></asp:Label></p> 
 </div>
 </asp:Content>
 

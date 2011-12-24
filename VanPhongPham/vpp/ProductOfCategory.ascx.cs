@@ -30,7 +30,7 @@ public partial class vpp_ProductOfCategory : System.Web.UI.UserControl
         int subCategoryId = 0;
         try
         {
-            subCategoryId = int.Parse(Request.QueryString["subCatId"].ToString());
+            subCategoryId = int.Parse(Request.QueryString["subcat"].ToString());
         }
         catch (NullReferenceException nex)
         {
