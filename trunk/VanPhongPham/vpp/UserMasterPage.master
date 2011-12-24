@@ -481,11 +481,11 @@
   <%--      <img src="images/payment.gif" alt="" title="" />--%>
      </div>
         <div class="right_footer">
-        <a href="index.html">Trang chủ</a>
+        <a href="../index.aspx">Trang chủ</a>
         <a href="details.aspx">Giới thiệu</a>
         <a href="details.aspx">Sơ đồ</a>
         <a href="details.aspx">RSS</a>
-        <a href="contact.html">Liên hệ</a>
+        <a href="contact.aspx">Liên hệ</a>
         </div>   
    </div>                 
 </div>

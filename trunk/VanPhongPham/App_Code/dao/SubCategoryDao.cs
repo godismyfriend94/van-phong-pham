@@ -44,6 +44,21 @@ public class SubCategoryDao
 
         return db.executeSelect("GetSubsubCategoryById", paramList);
     }
+
+    /// <summary>
+    /// GetSubCategoryByCategoryId
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public DataTable GetSubCategoryByCategoryId(int id)
+    {
+        SqlParameter[] paramList = new SqlParameter[1];
+
+        paramList[0] = new SqlParameter("@CategoryId", SqlDbType.Int);
+        paramList[0].Value = id;
+
+        return db.executeSelect("GetSubCategoryByCategoryId", paramList);
+    }
     /// <summary>
     /// InsertSubsubCategory - them thông tin subCategory
     /// </summary>
