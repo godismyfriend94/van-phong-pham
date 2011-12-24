@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="false" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
-
+<%@ Import Namespace="System.Data" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -163,7 +163,7 @@
             </asp:SlideShowExtender>
             
             <asp:Image ID="img1" runat="server"
-                  Height="92px" Width="94px" ImageUrl="images/laptop.png"
+                  Height="92px" Width="94px" ImageUrl="../images/products/laptop.png"
                   CssClass="oferta_img"/>   
                   
             <div class="oferta_details">                        
@@ -239,62 +239,27 @@
         <div class="border_box_menu">
         <div id="left_menu_acc" class="post">
             <dl>
-            <dt><a href="#">Mực máy in</a></dt>
-            <dd>
-                <ul style="margin-left: 0px;">
-                    <li><a href="details.aspx">- Thiet bi van phong</a></li>
-                    <li><a href="details.aspx">- Muc in may tinh</a></li>
-                    <li><a href="details.aspx">- Thiet bi van phong</a></li>
-                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                    <li><a href="details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
-                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                    <li><a href="details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
-                    <li><a href="details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                </ul>
-            </dd>
-            <dt><a href="#"><b>Thiết bị văn phòng</b></a></dt>
-            <dd>
-                <ul>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                </ul>
-            </dd>
-            <dt><a href="#">Máy tính</a></dt>
-            <dd>
-                <ul>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                </ul>
-            </dd>
-            <dt><a href="#">Dịch vụ</a></dt>
-            <dd>
-                <ul>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                    <li><a href="#">- Home</a></li>
-                    <li><a href="#">- About</a></li>
-                    <li><a href="#">- contact</a></li>
-                    <li><a href="#">- Services</a></li>
-                </ul>
-            </dd>
+            <!-- start parent repeater -->
+            <asp:repeater id="parentRepeater" runat="server" EnableViewState="false">
+               <itemtemplate>
+                    <dt><a href="#"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></dt>
+                  <!-- start child repeater -->
+                  <asp:repeater id="childRepeater" 
+                  datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
+                  runat="server" EnableViewState="false">
+                     <itemtemplate>
+                        <dd>
+                            <ul style="margin-left: 0px;">
+                                <li><a href="details.aspx"><%# DataBinder.Eval(Container.DataItem,  "[\"SubCategoryName\"]")%></a></li>
+                            </ul>
+                        </dd>        
+                     </itemtemplate>
+                  </asp:repeater>
+                  <!-- end child repeater -->
+
+               </itemtemplate>
+            </asp:repeater>
+            <!-- end parent repeater -->
             </dl>
         </div>
     </div>
