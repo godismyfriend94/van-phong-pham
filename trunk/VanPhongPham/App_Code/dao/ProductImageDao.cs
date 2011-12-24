@@ -43,6 +43,21 @@ public class ProductImageDao
 
         return db.executeSelect("GetProductImageById", paramList);
     }
+
+    /// <summary>
+    /// GetProductImageByProductId
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public DataTable GetProductImageByProductId(int id)
+    {
+        SqlParameter[] paramList = new SqlParameter[1];
+
+        paramList[0] = new SqlParameter("@ProductId", SqlDbType.Int);
+        paramList[0].Value = id;
+
+        return db.executeSelect("GetProductImageByProductId", paramList);
+    }
     /// <summary>
     /// InsertproductImage - them thông tin productImage
     /// </summary>

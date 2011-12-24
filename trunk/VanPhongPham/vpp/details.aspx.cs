@@ -11,9 +11,27 @@ using AjaxControlToolkit;
 
 public partial class vpp_details : System.Web.UI.Page
 {
+    static int productId;
+    ProductLogic productLogic = new ProductLogic();
+    ProductImageDao productImageDao = new ProductImageDao();
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!Page.IsPostBack)
+        {
+            ProductDetail();
+        }
+    }
 
+    private void ProductDetail()
+    {
+        productId = int.Parse(Request.QueryString["prodId"].ToString());
+
+        dtvDetail.DataSource = productLogic.GetProductById(productId);
+        dtvDetail.DataBind();
+
+        Repeater rptComposition = (Repeater)dtvDetail.FindControl("rptComposition");
+        rptComposition.DataSource = productImageDao.GetProductImageByProductId(productId);
+        rptComposition.DataBind();
     }
 
     protected void productRating_Changed(object sender, RatingEventArgs e)

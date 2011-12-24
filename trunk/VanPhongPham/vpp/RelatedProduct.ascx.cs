@@ -25,11 +25,13 @@ public partial class vpp_RelatedProduct : System.Web.UI.UserControl
 
     public void DisplayProducts()
     {
-        ProductDao productDao = new ProductDao();
-        string productId = "";
+        int productId = 0;
+        int subCatId = 0;
+        Product product = new Product();
         try
         {
-            productId = Request.QueryString["prodId"].ToString();
+            productId = int.Parse(Request.QueryString["prodId"].ToString());
+            subCatId = int.Parse(productLogic.GetProductById(productId).Rows[0]["SubCategoryId"].ToString());
         }
         catch (NullReferenceException nex)
         {
@@ -37,16 +39,16 @@ public partial class vpp_RelatedProduct : System.Web.UI.UserControl
             logSystemLogic.InsertLog(logSystem);
         }
 
-        if (productId != null)
+        if (productId != 0)
         {
-            clPager.BindToControl = lstProductLastest;
-            clPager.DataSource = productLogic.GetTop18NewProductByViewOption("new").DefaultView;
-            lstProductLastest.DataSource = clPager.DataSourcePaged;
-            lstProductLastest.DataBind();
+            clPager.BindToControl = lstProductRelated;
+            clPager.DataSource = productLogic.GetProductOfCategory(subCatId).DefaultView;
+            lstProductRelated.DataSource = clPager.DataSourcePaged;
+            lstProductRelated.DataBind();
         }
 
         //Hiển thị câu thông báo không có sản phẩm nào
-        if (productLogic.GetTop18NewProductByViewOption("new").Rows.Count == 0)
+        if (productLogic.GetProductOfCategory(subCatId).Rows.Count == 0)
         {
             lblNotFoundProduct.Visible = true;
         }
