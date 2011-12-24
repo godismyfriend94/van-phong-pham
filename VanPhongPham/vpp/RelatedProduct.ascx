@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="RelatedProduct.ascx.cs" Inherits="vpp_RelatedProduct" %>
 <%@ Register Assembly="CollectionPager" Namespace="SiteUtils" TagPrefix="cc1" %>
-<div class="center_title_bar">Danh sách sản phẩm liên quan</div>
+<div class="center_title_bar">Sản phẩm cùng loại</div>
  <asp:DataList ID="lstProductRelated" runat="server" RepeatColumns="3" Width="568px" 
    >
    <ItemTemplate>
