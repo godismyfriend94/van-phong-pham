@@ -71,13 +71,13 @@
              </div>
              <div class="prod_price_big"><span class="reduce">
                     <%#Eval("Price")%>
-                </span> 
+                </span>
                 <span class="price">
-                    <%#Eval("PromotionPrice")%>
+                    <%#Eval("PromotionPrice")%> VND
                 </span></div>
              
              <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
-             <a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>
+             <%--<a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>--%>
              
               <br /><br /><br /><br /><br /><br />
               
