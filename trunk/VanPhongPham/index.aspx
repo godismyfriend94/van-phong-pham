@@ -90,14 +90,14 @@
             }
         }
     </script>
-    <!--[if IE 6]>
+    <!--[if IE 6]-->
     <!--<![endif]-->
 
     <script type="text/javascript" src="vpp/js/boxOver.js"></script>
 
     <title id="Title1" runat="server">Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
 </head>
-<body>
+<body  onload="initialize()">
     <form runat="server" id="frm_main">
     <div id="main_container">
         <div class="top_bar">
@@ -125,13 +125,13 @@
                 <a href="index.aspx">
                     <img src="images/banners/logo.png" alt="" title="" border="0" width="145" height="145" /></a>
             </div>
-            <div class="oferta_content">
+            <div class="oferte_content">
                 <div class="top_divider">
                     <img src="vpp/images/header_divider.png" alt="" title="" width="1" height="164" />
                 </div>
                 <div class="oferta">
                    <%-- <div class="oferte_content">--%>
-                        <!-- --------------------------------------------------- -->
+                       
                         <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
                         </asp:ToolkitScriptManager>
                         <asp:SlideShowExtender ID="SlideShowExtender" runat="server" BehaviorID="SSBehaviorID"
@@ -206,12 +206,7 @@
             <div class="title_box">
                 Danh m&#7909;c s&#7843;n ph&#7849;m
             </div>
-                <!--
-        <ul class="left_menu">
-            <li class="odd"><a href="#">Processors</a></li>
-            <li class="even"><a href="#">Motherboards</a></li>
-        </ul>
-        -->
+      
                 <div class="border_box_menu">
                     <div id="left_menu_acc" class="post">
                         <dl>
