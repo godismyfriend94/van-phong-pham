@@ -23,11 +23,11 @@ public partial class index : System.Web.UI.Page
     {
         AjaxControlToolkit.Slide[] imgSlide = new AjaxControlToolkit.Slide[5];
 
-        imgSlide[0] = new AjaxControlToolkit.Slide("vpp/images/camera.png", "Camera", "Camera made in China fake 1 Muc in may tinh, muc in may tinh, muc in may tinhMuc in may tinh, muc in may tinh,");
-        imgSlide[1] = new AjaxControlToolkit.Slide("vpp/images/laptop.png", "laptop", "laptop made in Malaysia , pin 5 cell");
-        imgSlide[2] = new AjaxControlToolkit.Slide("vpp/images/iphone.png", "iphone", "iphone 4gs white and luxury");
-        imgSlide[3] = new AjaxControlToolkit.Slide("vpp/images/p2.gif", "HP compac", "HP professional ,14.5 inch");
-        imgSlide[4] = new AjaxControlToolkit.Slide("vpp/images/p1.gif", "HTC galaxy", "Androi with touch pad and 8 mega pixel");
+        imgSlide[0] = new AjaxControlToolkit.Slide("images/products/camera.png", "Camera", "Camera made in China fake 1 Muc in may tinh, muc in may tinh, muc in may tinhMuc in may tinh, muc in may tinh,");
+        imgSlide[1] = new AjaxControlToolkit.Slide("images/products/laptop.png", "laptop", "laptop made in Malaysia , pin 5 cell");
+        imgSlide[2] = new AjaxControlToolkit.Slide("images/products/iphone.png", "iphone", "iphone 4gs white and luxury");
+        imgSlide[3] = new AjaxControlToolkit.Slide("images/products/p2.gif", "HP compac", "HP professional ,14.5 inch");
+        imgSlide[4] = new AjaxControlToolkit.Slide("images/products/p1.gif", "HTC galaxy", "Androi with touch pad and 8 mega pixel");
         return (imgSlide);
     }
 

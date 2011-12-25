@@ -188,12 +188,7 @@
                     <li><a href="#" class="nav4">Diễn đàn</a></li>
                     <li class="divider"></li>
                     <li><a href="vpp/aboutus.aspx" class="nav4">Giới thiệu</a></li>
-                    <%--<li class="currencies">Loại tiền: 
-                         <select>
-                         <option selected="true">VND</option>
-                         <option>US Dollar</option>
-                         </select>
-                         </li>--%>
+                   
                 </ul>
                 <div class="right_menu_corner">
                 </div>
@@ -403,7 +398,7 @@
                     Báo giá
                  </div>
                  <div class="border_box">
-                 <a href="vpp/quotes.aspx"><img src="vpp/images/imagesdownload.jpg" width="64" height="64" alt="báo giá"/></a> 
+                 <a href="vpp/quotes.aspx"><img src="vpp/images/imagesdownload.jpg" border="0" width="64" height="64" alt="báo giá"/></a> 
                  </div>
                  
                 <div class="banner_adds">
@@ -417,24 +412,24 @@
             <!-- bat dau vung quang cao truot 2 ben trang web -->
             <div id="divAdRight" style="display: none; position: absolute; top: 0px">
                 <a href="#">
-                    <img src="images/advertise/bann1.jpg" width="125" alt="bann1" />
+                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
                 </a>
                 <br />
                 <a href="#">
-                    <img src="images/advertise/bann2.jpg" width="125" alt="bann2" />
+                    <img src="images/advertise/bann2.jpg" border="0" width="125" alt="bann2" />
                 </a>
                 <br />
                 <a href="#">
-                    <img src="images/advertise/bann1.jpg" width="125" alt="bann1" />
+                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
                 </a>
             </div>
             <div id="divAdLeft" style="display: none; position: absolute; top: 0px">
                 <a href="#">
-                    <img src="images/advertise/bann2.jpg" width="125" alt="bann2" />
+                    <img src="images/advertise/bann2.jpg" border="0" width="125" alt="bann2" />
                 </a>
                 <br />
                 <a href="#">
-                    <img src="images/advertise/bann1.jpg" width="125" alt="bann1" />
+                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
                 </a>
                 <br />
                 <a href="#">
@@ -452,7 +447,7 @@
         <!-- end of main content -->
         <div class="footer">
             <div class="left_footer">
-                <img src="images/banners/logo.png" alt="" title="" width="170" height="49" />
+                <img src="images/banners/logo.png" alt="" title="" width="170" height="49" border="0" />
             </div>
             <div class="center_footer">
                 Hanoitech.vn. All Rights Reserved 2008<br />
