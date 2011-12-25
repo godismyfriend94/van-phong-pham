@@ -100,7 +100,7 @@ width:280px;
 }
 /*------------------------------oferte_content-----------------------*/
 .oferta_content{
-width:500px;
+width:480px;
 height:164px;
 float:left;
 padding:0 0 0 20px;
@@ -1202,7 +1202,7 @@ color: Orange;
 line-height:30px;
 }
 /*------------------Paging----------------*/
-div.pagination {
+div.pagination2 {
 width:420px;
 padding:5px;
 margin:5px;
@@ -1212,19 +1212,19 @@ clear:both;
 font-size:10px;
 }
 
-div.pagination a {
+div.pagination2 a {
 padding: 2px 5px 2px 5px;
 margin-right: 2px;
 border: 1px solid #ddd;
 text-decoration: none; 
 color: #990000;
 }
-div.pagination a:hover, div.pagination a:active {
+div.pagination2 a:hover, div.pagination a:active {
 border:1px solid #990000;
 color: #fff;
 background-color: #990000;
 }
-div.pagination span.current {
+div.pagination2 span.current {
 padding: 2px 5px 2px 5px;
 margin-right: 2px;
 border: 1px solid #990000;
@@ -1232,7 +1232,7 @@ font-weight: bold;
 background-color: #990000;
 color: #FFF;
 }
-div.pagination span.disabled {
+div.pagination2 span.disabled {
 padding: 2px 5px 2px 5px;
 margin-right: 2px;
 border: 1px solid #f3f3f3;

@@ -139,7 +139,7 @@
                             ImageTitleLabelID="lblTitle" NextButtonID="btnNext" PreviousButtonID="btnPrev"
                             PlayButtonID="btnPlay" Loop="true" PlayInterval="2000">
                         </asp:SlideShowExtender>
-                        <asp:Image ID="img1" runat="server" Height="92px" Width="94px" ImageUrl="vpp/images/laptop.png"
+                        <asp:Image ID="img1" runat="server" Height="92px" Width="94px" ImageUrl="images/products/camera.png"
                             CssClass="oferta_img" />
                         <div class="oferta_details">
                             <div class="oferta_title">
@@ -164,7 +164,7 @@
             <!-- end of oferte_content-->
             <div id ="right_flash">
                 <Bewise:FlashControl ID="FlashControl1" runat="server" 
-                    MovieUrl="./images/banners/rflash.swf" width="280px" height="170px" />
+                    MovieUrl="./images/banners/rflash.swf" width="270px" height="170px" />
             </div>
         </div>
             
@@ -281,7 +281,7 @@
                         <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
                     <div class="product_img">
                         <a href="vpp/details.aspx">
-                            <img src="vpp/images/laptop.png" alt="" title="" border="0" /></a></div>
+                            <img src="images/products/camera.png" alt="" title="" border="0" /></a></div>
                     <div class="prod_price">
                         <span class="reduce">350$</span> <span class="price">270$</span></div>
                 </div>
@@ -342,7 +342,7 @@
                         <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
                     <div class="product_img">
                         <a href="vpp/details.aspx">
-                            <img src="vpp/images/p2.gif" alt="" title="" border="0" /></a></div>
+                            <img src="images/products/p2.gif" alt="" title="" border="0" /></a></div>
                     <div class="prod_price">
                         <span class="reduce">350$</span> <span class="price">270$</span></div>
                 </div>
