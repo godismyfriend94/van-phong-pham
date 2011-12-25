@@ -33,9 +33,9 @@ public partial class vpp_LastestProduct : System.Web.UI.UserControl
 
         if (productId != null)
         {
-            clPager.BindToControl = lstProductLastest;
-            clPager.DataSource = productLogic.GetTop18NewProductByViewOption("new").DefaultView;
-            lstProductLastest.DataSource = clPager.DataSourcePaged;
+            clPager1.BindToControl = lstProductLastest;
+            clPager1.DataSource = productLogic.GetTop18NewProductByViewOption("new").DefaultView;
+            lstProductLastest.DataSource = clPager1.DataSourcePaged;
             lstProductLastest.DataBind();
         }
 

@@ -383,7 +383,7 @@
         Báo giá
      </div>
      <div class="border_box">
-     <a href="quotes.aspx"><img src="images/imagesdownload.jpg" width="64" height="64" alt="báo giá"/></a> 
+     <a href="quotes.aspx"><img src="images/imagesdownload.jpg" border="0" width="64" height="64" alt="báo giá"/></a> 
      </div>
      
      <div class="banner_adds">

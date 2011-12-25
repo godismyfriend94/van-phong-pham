@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ProductTopView.ascx.cs" Inherits="vpp_ProductTopView" %>
 <%@ Register Assembly="CollectionPager" Namespace="SiteUtils" TagPrefix="cc1" %>
+<link href="vpp/css/style.css" rel="stylesheet" type="text/css"/>
 <div class="center_title_bar">Sản phẩm xem nhiều nhất</div>
  <asp:DataList ID="lstProductTopView" runat="server" RepeatColumns="3" Width="568px">
    <ItemTemplate>
@@ -28,10 +29,10 @@
    </ItemTemplate>
 </asp:DataList>       
 <p style="text-align:center;color:#990000; margin-top: 25px;"><asp:Label ID="lblNotFoundProduct" runat="server" Text="Không có sản phẩm nào thuộc danh mục này!" Visible="false" Font-Bold="true"></asp:Label></p>                    
-<div class="pagination">
-    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="12"
+<div class="pagination2">
+    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="9"
         LabelText="Trang:" 
         ResultsFormat="Display: {0}-{1} (của {2})" LabelStyle="" 
         ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" >
     </cc1:CollectionPager>
-</div>  
+</div> 
