@@ -382,30 +382,30 @@
    <!-- bat dau vung quang cao truot 2 ben trang web -->   
    <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
       <a href="#">
-          <img src="../images/advertise/bann1.jpg" width="125"  alt="bann1" style="border: 0px;"/>
+          <img src="../images/advertise/bann1.jpg" border="0" width="125"  alt="bann1" style="border: 0px;"/>
       </a>
       <br />
       <a href="#">
-          <img src="../images/advertise/bann2.jpg" width="125" alt="bann2" style="border: 0px;"/>
+          <img src="../images/advertise/bann2.jpg" border="0" width="125" alt="bann2" style="border: 0px;"/>
       </a>
       <br />
       <a href="#">
-          <img src="../images/advertise/bann1.jpg" width="125"  alt="bann1" style="border: 0px;"/>
+          <img src="../images/advertise/bann1.jpg" border="0" width="125"  alt="bann1" style="border: 0px;"/>
       </a>
       
     </div>
     
     <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
         <a href="#">
-          <img src="../images/advertise/bann2.jpg" width="125" alt="bann2" style="border: 0px;"/>
+          <img src="../images/advertise/bann2.jpg" border="0" width="125" alt="bann2" style="border: 0px;"/>
         </a>
         <br />
         <a href="#">
-          <img src="../images/advertise/bann1.jpg" width="125"  alt="bann1" style="border: 0px;"/>
+          <img src="../images/advertise/bann1.jpg" border="0" width="125"  alt="bann1" style="border: 0px;"/>
         </a>
         <br />
         <a href="#">
-          <img src="../images/advertise/bann2.jpg" width="125"  alt="bann2" style="border: 0px;"/>
+          <img src="../images/advertise/bann2.jpg" border="0" width="125"  alt="bann2" style="border: 0px;"/>
         </a>
     </div>
     
