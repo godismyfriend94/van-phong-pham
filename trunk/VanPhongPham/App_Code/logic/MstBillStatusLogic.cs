@@ -17,8 +17,28 @@ using System.Xml.Linq;
 
 public class MstBillStatusLogic
 {
+    MstBillStatusDao mstBillStatusDao = new MstBillStatusDao();
     public MstBillStatusLogic()
     {
 
+    }
+
+    /// <summary>
+    /// GetAllMstBillStatus - lấy về tất cả Bill status
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetAllMstBillStatus()
+    {
+        return mstBillStatusDao.GetAllMstBillStatus();
+    }
+
+    /// <summary>
+    /// GetMstBillStatusById - lấy về bill status theo id
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public DataTable GetMstBillStatusById(int statusId)
+    {
+        return mstBillStatusDao.GetMstBillStatusById(statusId);
     }
 }

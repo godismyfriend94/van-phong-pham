@@ -5,7 +5,7 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="plhd_Content" Runat="Server">
-<div class="center_title_bar">Danh mục sản phẩm</div>
+<div class="center_title_bar">Danh mục chính</div>
 <div class="menu_area1">
 <asp:DataList ID="lstCategory" runat="server" RepeatColumns="1" Width="540px" >
    <ItemTemplate>

@@ -23,10 +23,10 @@ public class SupportDao
     /// GetAllSupport - lấy về tất cả support
     /// </summary>
     /// <returns></returns>
-    //public DataTable GetAllSupport()
-    //{
-    //    return db.executeSelect("GetAllSupport");
-    //}
+    public DataTable GetAllSupport()
+    {
+        return db.executeSelect("GetAllSupport");
+    }
 
     /// <summary>
     /// GetsupportById - lấy về support  theo id

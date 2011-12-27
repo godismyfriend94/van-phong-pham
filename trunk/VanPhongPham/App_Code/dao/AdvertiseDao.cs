@@ -28,6 +28,23 @@ public class AdvertiseDao
     }
 
     /// <summary>
+    /// GetLeftAdvertise
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetLeftAdvertise()
+    {
+        return db.executeSelect("GetLeftAdvertise");
+    }
+
+    /// <summary>
+    /// GetRighAdvertise
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetRighAdvertise()
+    {
+        return db.executeSelect("GetRighAdvertise");
+    }
+    /// <summary>
     /// GetAdvertiseById - lấy về advertiseBy theo id
     /// </summary>
     /// <param name="id"></param>

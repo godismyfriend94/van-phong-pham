@@ -64,7 +64,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             cmd2.Fill(ds, "SubCategory");
 
             //Create the relation bewtween the Authors and Titles tables.
-            ds.Relations.Add("myrelation",
+            ds.Relations.Add("myrelation", 
             ds.Tables["Category"].Columns["CategoryId"],
             ds.Tables["SubCategory"].Columns["CategoryId"]);
             ds.Relations[0].Nested = true;
@@ -74,7 +74,6 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             parentRepeater.DataBind();
         }
     }
-
 
     [System.Web.Services.WebMethod]
     [System.Web.Script.Services.ScriptMethod]
@@ -88,6 +87,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
         imgSlide[4] = new AjaxControlToolkit.Slide("../images/products/p1.gif", "HTC galaxy", "Androi with touch pad and 8 mega pixel");
         return (imgSlide);
     }
+
     protected DataView GetChildRelation(object dataItem,
                                   string relation)
     {
