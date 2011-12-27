@@ -13,8 +13,19 @@ using System.Xml.Linq;
 
 public partial class index : System.Web.UI.Page
 {
+    ProductLogic ProductLogic = new ProductLogic();
     protected void Page_Load(object sender, EventArgs e)
     {
+        AdvertiseLogic advertiseLogic = new AdvertiseLogic();
+        if (!Page.IsPostBack)
+        {
+            //khu vực code vùng quảng cáo
+            leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
+            leftRepeaterAdv.DataBind();
+
+            righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
+            righRepeaterAdv.DataBind();
+        }
     }
 
     [System.Web.Services.WebMethod]
@@ -22,7 +33,10 @@ public partial class index : System.Web.UI.Page
     public static AjaxControlToolkit.Slide[] GetSlides()
     {
         AjaxControlToolkit.Slide[] imgSlide = new AjaxControlToolkit.Slide[5];
-
+        //string imageURL;
+        //string title;
+        //string subDescription;
+        //DataTable dt = 
         imgSlide[0] = new AjaxControlToolkit.Slide("images/products/camera.png", "Camera", "Camera made in China fake 1 Muc in may tinh, muc in may tinh, muc in may tinhMuc in may tinh, muc in may tinh,");
         imgSlide[1] = new AjaxControlToolkit.Slide("images/products/laptop.png", "laptop", "laptop made in Malaysia , pin 5 cell");
         imgSlide[2] = new AjaxControlToolkit.Slide("images/products/iphone.png", "iphone", "iphone 4gs white and luxury");
