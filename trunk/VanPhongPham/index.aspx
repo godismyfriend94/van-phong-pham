@@ -410,32 +410,26 @@
             </div>
             <!-- end of right content -->
             <!-- bat dau vung quang cao truot 2 ben trang web -->
-            <div id="divAdRight" style="display: none; position: absolute; top: 0px">
-                <a href="#">
-                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
+            <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+            <asp:repeater id="leftRepeaterAdv" runat="server" EnableViewState="false">
+            <itemtemplate>
+                <a href="<%#Eval("AdvertiseLink")%>">
+                  <img src="images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
                 </a>
                 <br />
-                <a href="#">
-                    <img src="images/advertise/bann2.jpg" border="0" width="125" alt="bann2" />
-                </a>
-                <br />
-                <a href="#">
-                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
-                </a>
+            </itemtemplate>
+            </asp:repeater>
             </div>
-            <div id="divAdLeft" style="display: none; position: absolute; top: 0px">
-                <a href="#">
-                    <img src="images/advertise/bann2.jpg" border="0" width="125" alt="bann2" />
-                </a>
-                <br />
-                <a href="#">
-                    <img src="images/advertise/bann1.jpg" border="0" width="125" alt="bann1" />
-                </a>
-                <br />
-                <a href="#">
-                    <Bewise:FlashControl ID="FlashControl2" runat="server" 
-                    MovieUrl="./images/banners/rflash.swf" width="125px" height="170px" />
-                </a>
+            
+            <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+                <asp:repeater id="righRepeaterAdv" runat="server" EnableViewState="false">
+                <itemtemplate>
+                    <a href="<%#Eval("AdvertiseLink")%>">
+                      <img src="images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
+                    </a>
+                    <br />
+                </itemtemplate>
+                </asp:repeater>
             </div>
 
             <script type="text/javascript">

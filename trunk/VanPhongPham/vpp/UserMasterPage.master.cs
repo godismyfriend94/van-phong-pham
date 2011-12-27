@@ -48,6 +48,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
     {
         CategoryLogic categoryLogic = new CategoryLogic();
         SubCategoryLogic subCategoryLogic = new SubCategoryLogic();
+        AdvertiseLogic advertiseLogic = new AdvertiseLogic();
         if (!Page.IsPostBack)
         {
             CommonDb db = new CommonDb();
@@ -72,6 +73,13 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             //Bind the Authors table to the parent Repeater control, and call DataBind.
             parentRepeater.DataSource = ds.Tables["Category"];
             parentRepeater.DataBind();
+
+            //khu vực code vùng quảng cáo
+            leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
+            leftRepeaterAdv.DataBind();
+
+            righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
+            righRepeaterAdv.DataBind();
         }
     }
 
