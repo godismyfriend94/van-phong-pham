@@ -16,8 +16,28 @@ using System.Xml.Linq;
 
 public class MstGroupLogic
 {
+    MstGroupDao mstGroupDao = new MstGroupDao();
     public MstGroupLogic()
     {
+    }
+
+    /// <summary>
+    /// GetAllMstGroup - lấy về tất cả group
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetAllGroup()
+    {
+        return mstGroupDao.GetAllGroup();
+    }
+
+    /// <summary>
+    /// GetMstGroupByID - lấy về group theo id
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public DataTable GetMstGroupById(string groupId)
+    {
+        return mstGroupDao.GetMstGroupById(groupId);
     }
 }
 

@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang danh danh mục chi tiết</span>
-    </div> 
+    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="plhd_Content" Runat="Server">
-<div class="center_title_bar">Danh mục sản phẩm</div>
+<div class="center_title_bar">Danh mục chi tiết</div>
 <div class="menu_area1">
     <asp:DataList ID="lstSubCategory" runat="server" RepeatColumns="1" Width="540px" >
        <ItemTemplate>

@@ -13,7 +13,7 @@ public partial class vpp_details : System.Web.UI.Page
 {
     static int productId;
     ProductLogic productLogic = new ProductLogic();
-    ProductImageDao productImageDao = new ProductImageDao();
+    ProductImageLogic productImageLogic = new ProductImageLogic();
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
@@ -30,7 +30,7 @@ public partial class vpp_details : System.Web.UI.Page
         dtvDetail.DataBind();
 
         Repeater rptComposition = (Repeater)dtvDetail.FindControl("rptComposition");
-        rptComposition.DataSource = productImageDao.GetProductImageByProductId(productId);
+        rptComposition.DataSource = productImageLogic.GetProductImageByProductId(productId);
         rptComposition.DataBind();
     }
 

@@ -17,9 +17,29 @@ using System.Xml.Linq;
 
 public class MstStatusLogic
 {
+    MstStatusDao mstStatusDao = new MstStatusDao();
     public MstStatusLogic()
     {
 
+    }
+
+    /// <summary>
+    /// GetAllMstGroup - lấy về tất cả status
+    /// </summary>
+    /// <returns></returns>
+    public DataTable GetAllMstStatus()
+    {
+        return mstStatusDao.GetAllMstStatus();
+    }
+
+    /// <summary>
+    /// GetMstStatusById - lấy về status theo id
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public DataTable GetMstStatusById(int statusId)
+    {
+        return mstStatusDao.GetMstStatusById(statusId);
     }
 }
 
