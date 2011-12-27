@@ -62,6 +62,21 @@ public class ProductDao
     }
 
     /// <summary>
+    /// GetProductForSlide
+    /// </summary>
+    /// <param name="viewOption"></param>
+    /// <returns></returns>
+    public DataTable GetProductForSlide(String viewOption)
+    {
+        SqlParameter[] paramList = new SqlParameter[1];
+
+        paramList[0] = new SqlParameter("@ViewOption", SqlDbType.NVarChar, 256);
+        paramList[0].Value = viewOption;
+
+        return db.executeSelect("GetProductForSlide", paramList);
+    }
+
+    /// <summary>
     /// GetProductOfCategory
     /// </summary>
     /// <param name="subCategoryId"></param>
