@@ -205,62 +205,27 @@
                 <div class="border_box_menu">
                     <div id="left_menu_acc" class="post">
                         <dl>
-                            <dt><a href="#">Mực máy in</a></dt>
-                            <dd>
-                                <ul style="margin-left: 0px;">
-                                    <li><a href="vpp/details.aspx">- Thiet bi van phong</a></li>
-                                    <li><a href="vpp/details.aspx">- Muc in may tinh</a></li>
-                                    <li><a href="vpp/details.aspx">- Thiet bi van phong</a></li>
-                                    <li><a href="vpp/details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                                    <li><a href="vpp/details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
-                                    <li><a href="vpp/details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                                    <li><a href="vpp/details.aspx">- Thiet bi van phong Thiet bi van phong</a></li>
-                                    <li><a href="vpp/details.aspx">- Muc in may tinh, muc in may tinh, muc in may tinh</a></li>
-                                </ul>
-                            </dd>
-                            <dt><a href="#"><b>Thiết bị văn phòng</b></a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                </ul>
-                            </dd>
-                            <dt><a href="#">Máy tính</a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                </ul>
-                            </dd>
-                            <dt><a href="#">Dịch vụ</a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                    <li><a href="#">- Home</a></li>
-                                    <li><a href="#">- About</a></li>
-                                    <li><a href="#">- contact</a></li>
-                                    <li><a href="#">- Services</a></li>
-                                </ul>
-                            </dd>
+                            <!-- start parent repeater -->
+                        <asp:repeater id="parentRepeater" runat="server" EnableViewState="false">
+                           <itemtemplate>
+                                <dt><a href="#"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></dt>
+                              <!-- start child repeater -->
+                              <asp:repeater id="childRepeater" 
+                              datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
+                              runat="server" EnableViewState="false">
+                                 <itemtemplate>
+                                    <dd>
+                                        <ul style="margin-left: 0px;">
+                                            <li><a href="details.aspx"><%# DataBinder.Eval(Container.DataItem,  "[\"SubCategoryName\"]")%></a></li>
+                                        </ul>
+                                    </dd>        
+                                 </itemtemplate>
+                          </asp:repeater>
+                          <!-- end child repeater -->
+
+                           </itemtemplate>
+                        </asp:repeater>
+                        <!-- end parent repeater -->
                         </dl>
                     </div>
                 </div>

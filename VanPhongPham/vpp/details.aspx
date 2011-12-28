@@ -96,8 +96,8 @@
 </asp:TemplateField>
 </Fields> 
 </asp:DetailsView>  
-        <%--<asp:UpdatePanel runat="server" ID="up1">
-        <ContentTemplate>--%>
+        <asp:UpdatePanel runat="server" ID="up1">
+        <ContentTemplate>
         <asp:CollapsiblePanelExtender ID="cpeDemo" runat="Server"
             TargetControlID="description_ContentPanel"
             ExpandControlID="description_HeaderPanel"
@@ -217,8 +217,8 @@
                 </div>
             </asp:Panel>
             </div>
-        <%--</ContentTemplate> 
-        </asp:UpdatePanel>--%>                                 
+        </ContentTemplate> 
+        </asp:UpdatePanel>                          
 <usc:RelatedProduct runat="server" ID="uscRelatedProduct" />
         <%--<object data=http://vatgia.com/hanoitechpro width="600" height="400"> 
             <embed src=http://vatgia.com/hanoitechpro width="600" height="400"></embed> 
