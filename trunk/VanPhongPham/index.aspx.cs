@@ -10,6 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using System.Data.SqlClient;
 
 public partial class index : System.Web.UI.Page
 {
@@ -25,7 +26,47 @@ public partial class index : System.Web.UI.Page
 
             righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
             righRepeaterAdv.DataBind();
+            //============================================
+            CommonDb db = new CommonDb();
+            //Create the connection and DataAdapter for the Authors table.
+            SqlConnection cnn = db.OpenConnection();
+            SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
+
+            //Create and fill the DataSet.
+            DataSet ds = new DataSet();
+            cmd1.Fill(ds, "Category");
+
+            //Create a second DataAdapter for the Titles table.
+            SqlDataAdapter cmd2 = new SqlDataAdapter("select * from SubCategory", cnn);
+            cmd2.Fill(ds, "SubCategory");
+
+            //Create the relation bewtween the Authors and Titles tables.
+            ds.Relations.Add("myrelation",
+            ds.Tables["Category"].Columns["CategoryId"],
+            ds.Tables["SubCategory"].Columns["CategoryId"]);
+            ds.Relations[0].Nested = true;
+
+            //Bind the Authors table to the parent Repeater control, and call DataBind.
+            parentRepeater.DataSource = ds.Tables["Category"];
+            parentRepeater.DataBind();
+            //============================================
         }
+    }
+
+    /// <summary>
+    /// GetChildRelation
+    /// </summary>
+    /// <param name="dataItem"></param>
+    /// <param name="relation"></param>
+    /// <returns></returns>
+    protected DataView GetChildRelation(object dataItem,
+                                  string relation)
+    {
+        DataRowView drv = dataItem as DataRowView;
+        if (drv != null)
+            return drv.CreateChildView(relation);
+        else
+            return null;
     }
 
     [System.Web.Services.WebMethod]

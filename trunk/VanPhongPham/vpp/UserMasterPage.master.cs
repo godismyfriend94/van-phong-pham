@@ -91,13 +91,13 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             parentRepeater.DataBind();
            
 
-            //khu vực code vùng quảng cáo
+            //bắt đầu khu vực code vùng quảng cáo ----------------------------------
             leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
             leftRepeaterAdv.DataBind();
 
             righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
             righRepeaterAdv.DataBind();
-
+            //hết khu vực code vùng quảng cáo ----------------------------------
         }
     }
 
