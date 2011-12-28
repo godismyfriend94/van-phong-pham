@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/boxOver.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <%--<script type="text/javascript" src="js/jquery.js"></script--%>>
     <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
@@ -143,7 +143,7 @@
             <a href="../index.aspx"><img src="../images/banners/logo.png" alt="" title="" border="0" width="140" height="140" /></a>
 	    </div>
         
-        <div class="oferta_content">
+        <div class="oferte_content">
         <div class="top_divider">
             <img src="images/header_divider.png" alt="" title="" width="1" height="164" /></div>
             
@@ -232,7 +232,7 @@
         <div id="left_menu_acc" class="post">
             <dl>
             <!-- start parent repeater -->
-            <asp:repeater id="parentRepeater" runat="server" EnableViewState="false">
+            <asp:repeater id="parentRepeater" runat="server" EnableViewState="false"  >
                <itemtemplate>
                     <dt><a href="#"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></dt>
                   <!-- start child repeater -->
@@ -242,7 +242,7 @@
                      <itemtemplate>
                         <dd>
                             <ul style="margin-left: 0px;">
-                                <li><a href="details.aspx"><%# DataBinder.Eval(Container.DataItem,  "[\"SubCategoryName\"]")%></a></li>
+                                <li><a href="details.aspx"><%# DataBinder.Eval(Container.DataItem,  "SubCategoryName")%></a></li>
                             </ul>
                         </dd>        
                      </itemtemplate>
@@ -250,8 +250,7 @@
                   <!-- end child repeater -->
 
                </itemtemplate>
-            </asp:repeater>
-            <!-- end parent repeater -->
+            </asp:repeater>         
             </dl>
         </div>
     </div>
