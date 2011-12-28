@@ -13,7 +13,9 @@ using System.Data.SqlClient;
 
 public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
 {
+
     static ProductLogic productLogic = new ProductLogic();
+
     //protected void Page_Load(object sender, EventArgs e)
     //{
     //    CategoryLogic categoryLogic = new CategoryLogic();
@@ -55,6 +57,18 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             CommonDb db = new CommonDb();
             //Create the connection and DataAdapter for the Authors table.
             SqlConnection cnn = db.OpenConnection();
+
+            
+            //sqlCmd = new SqlCommand("usp_GetParentAndChilds", cnn);
+            //sqlCmd.CommandType = CommandType.StoredProcedure;
+
+            //sqlAdap = new SqlDataAdapter(sqlCmd);
+            //DataSet ds = new DataSet();
+            //sqlAdap.Fill(ds);
+
+
+
+
             SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
 
             //Create and fill the DataSet.
@@ -64,16 +78,18 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             //Create a second DataAdapter for the Titles table.
             SqlDataAdapter cmd2 = new SqlDataAdapter("select * from SubCategory", cnn);
             cmd2.Fill(ds, "SubCategory");
-
+           
             //Create the relation bewtween the Authors and Titles tables.
+
             ds.Relations.Add("myrelation", 
             ds.Tables["Category"].Columns["CategoryId"],
             ds.Tables["SubCategory"].Columns["CategoryId"]);
-            ds.Relations[0].Nested = true;
+            ds.Relations[0].Nested = true;            
 
             //Bind the Authors table to the parent Repeater control, and call DataBind.
-            parentRepeater.DataSource = ds.Tables["Category"];
+            parentRepeater.DataSource = ds.Tables[0];
             parentRepeater.DataBind();
+           
 
             //khu vực code vùng quảng cáo
             leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
@@ -81,6 +97,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
 
             righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
             righRepeaterAdv.DataBind();
+
         }
     }
 
