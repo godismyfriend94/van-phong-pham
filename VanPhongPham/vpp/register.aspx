@@ -10,37 +10,213 @@
 	<div class="prod_box_big">
         	<div class="top_prod_box_big"></div>
             <div class="center_prod_box_big">      
-              	<div class="contact_form">
+              	<div class="contact_form_map">
                     
+                   <form name="register" action="#">          
                     <div class="form_row">
-                    <label class="contact"><strong>Tên:</strong></label>
-                    <input type="text" class="contact_input" />
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblUserNameRegister" runat="server" Text="Tài khoản"></asp:Label>
+                            </strong>
+                        <asp:Label ID="Label3" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtUserName" runat="server" CssClass="contact_input" ValidationGroup="group1"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtUserName" runat="server" 
+                            ID="RqValidator1" ErrorMessage="Input username" ValidationGroup="group1" >*</asp:RequiredFieldValidator>
+                        <asp:ValidatorCalloutExtender ID="Rq_ValidatorCalloutExtender" runat="server" 
+                            Enabled="True" TargetControlID="RqValidator1">
+                        </asp:ValidatorCalloutExtender>
                     </div>  
 
-                    <div class="form_row">
-                    <label class="contact"><strong>Email:</strong></label>
-                    <input type="text" class="contact_input" />
-                    </div>
 
                     <div class="form_row">
-                    <label class="contact"><strong>Điện thoại:</strong></label>
-                    <input type="text" class="contact_input" />
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblPasswordRegister" runat="server" Text="Mật khẩu:"></asp:Label>
+                            </strong>
+                        <asp:Label ID="Label4" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtPassword" runat="server" CssClass="contact_input" TextMode="Password"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtPassword" runat="server" 
+                            ID="RequiredFieldValidator1" ErrorMessage="Input password" ValidationGroup="group1" >*
+                        </asp:RequiredFieldValidator>
+                      
+                        <asp:ValidatorCalloutExtender ID="RequiredFieldValidator1_ValidatorCalloutExtender" 
+                            runat="server" Enabled="True" TargetControlID="RequiredFieldValidator1">
+                        </asp:ValidatorCalloutExtender>
+                        
+                        <asp:PasswordStrength ID="PasswordStrength2" runat="server" TargetControlID="txtPassword"
+                            DisplayPosition="BelowLeft"
+                            StrengthIndicatorType="BarIndicator"
+                            PreferredPasswordLength="12"
+                            HelpStatusLabelID="TextBox2_HelpLabel"
+                            StrengthStyles="
+                                    BarIndicator_txtPassword_weak;
+                                    BarIndicator_txtPassword_average;
+                                    BarIndicator_txtPassword_good"
+                            BarBorderCssClass="BarBorder_txtPassword"
+                            
+                            MinimumNumericCharacters="1"
+                            MinimumSymbolCharacters="0"
+                            TextStrengthDescriptions="Very Poor;Weak;Average;Strong;Excellent"
+                            RequiresUpperAndLowerCaseCharacters="false" />
+                    </div>
+                    <div class="form_row">
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblReType" runat="server" Text="Xác nhận mật khẩu:"></asp:Label>
+                        </strong>
+                        </label>
+                        
+                        <asp:TextBox ID="txtReType" runat="server" CssClass="contact_input" TextMode="Password"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtReType" runat="server" 
+                            ID="RequiredFieldValidator6" ErrorMessage="Re-type password" Text="*" ValidationGroup="group1" >
+                        </asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtReType" 
+                            ControlToCompare="txtPassword" ErrorMessage="Re-type not match..." Display="None" ValidationGroup="group1">
+                        </asp:CompareValidator>
+                        <asp:ValidatorCalloutExtender ID="ValidatorCalloutExtender1" 
+                            runat="server" Enabled="True" TargetControlID="CompareValidator1">
+                        </asp:ValidatorCalloutExtender>
+                      
+                    </div>    
+                    
+                    <div class="form_row">
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblFullNameRegister" runat="server" Text="Tên:"></asp:Label>
+                            </strong>
+                        <asp:Label ID="Label5" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtFullName" runat="server" CssClass="contact_input"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtFullName" runat="server" 
+                            ID="RequiredFieldValidator2" ErrorMessage="Input fullname" ValidationGroup="group1" >*
+                        </asp:RequiredFieldValidator>
+                        <asp:ValidatorCalloutExtender ID="RequiredFieldValidator2_ValidatorCalloutExtender" 
+                            runat="server" Enabled="True" TargetControlID="RequiredFieldValidator2">
+                        </asp:ValidatorCalloutExtender>
+                    </div> 
+                    
+                    <div class="form_row">
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblBirthDayRegister" runat="server" Text="Ngày sinh:"></asp:Label>
+                        </strong>
+                        </label>
+                        
+                        <asp:TextBox ID="txtDateOfBirth" runat="server" CssClass="contact_input"></asp:TextBox>
+                        &nbsp;
+                        <asp:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Format="MM/dd/yyyy" 
+                                Enabled="True" TargetControlID="txtDateOfBirth">
+                        </asp:CalendarExtender>
+                        <asp:RequiredFieldValidator ControlToValidate="txtDateOfBirth" runat="server" 
+                            ID="RequiredFieldValidator5" ErrorMessage="Input date of birth" 
+                            ValidationGroup="group1" >*
+                        </asp:RequiredFieldValidator>
+                        <asp:ValidatorCalloutExtender ID="RequiredFieldValidator5_ValidatorCalloutExtender" 
+                            runat="server" Enabled="True" TargetControlID="RequiredFieldValidator5">
+                        </asp:ValidatorCalloutExtender>
+                        
                     </div>
                     
                     <div class="form_row">
-                    <label class="contact"><strong>Công ty:</strong></label>
-                    <input type="text" class="contact_input" />
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblGenderRegister" runat="server" Text="Giới tính:"></asp:Label>
+                        </strong>
+                        </label>
+                        <asp:RadioButton ID="rbnMaleRegister" runat="server" Text=" Male" 
+                            GroupName="gender" Checked="True"/>&nbsp;&nbsp;
+                        
+                        <asp:RadioButton ID="rbnFemaleRegister" runat="server" Text=" Female" GroupName="gender"/>
                     </div>
 
                     <div class="form_row">
-                    <label class="contact"><strong>Nội dung:</strong></label>
-                    <textarea class="contact_textarea" cols="25" cols="50"></textarea>
-                    </div>
-
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblAddressRegister" runat="server" Text="Địa chỉ:"></asp:Label>
+                            </strong>
+                        <asp:Label ID="Label6" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtAddress" runat="server" CssClass="contact_input"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtAddress" runat="server" 
+                            ID="RequiredFieldValidator3" ErrorMessage="Input address" ValidationGroup="group1" >*
+                        </asp:RequiredFieldValidator>
+                        <asp:ValidatorCalloutExtender ID="RequiredFieldValidator3_ValidatorCalloutExtender" 
+                            runat="server" Enabled="True" TargetControlID="RequiredFieldValidator3">
+                        </asp:ValidatorCalloutExtender>
+                    </div> 
                     
                     <div class="form_row">
-                    <a href="#" class="contact">Đăng ký</a>
-                    </div>      
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblPhoneRegister" runat="server" Text="Điện thoại:"></asp:Label>
+                            </strong>
+                        <asp:Label ID="Label7" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtPhone" runat="server" CssClass="contact_input"></asp:TextBox>
+                        &nbsp;
+                            <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ValidationGroup="group1"
+                                ErrorMessage="Input phone number" ControlToValidate="txtPhone">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="revPhone" runat="server" SetFocusOnError="true"
+                                ErrorMessage="Invalid phone number" ValidationExpression="\d+" ControlToValidate="txtPhone" ValidationGroup="group1">*</asp:RegularExpressionValidator>
+                            <asp:ValidatorCalloutExtender ID="vcePhone" 
+                                runat="server" Enabled="True" TargetControlID="rfvPhone" PopupPosition="TopLeft">
+                            </asp:ValidatorCalloutExtender>
+                            <asp:ValidatorCalloutExtender ID="vcePhone2" 
+                                runat="server" Enabled="True" TargetControlID="revPhone" PopupPosition="TopLeft">
+                            </asp:ValidatorCalloutExtender>
+                    </div> 
+                    
+                    <div class="form_row">
+                        <label class="contact">
+                        <strong> 
+                            <asp:Label ID="lblEmailRegister" runat="server" Text="Email:"></asp:Label>
+                            
+                        </strong>
+                        <asp:Label ID="Label11" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
+                        </label>
+                        
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="contact_input"></asp:TextBox>
+                        &nbsp;
+                        <asp:RequiredFieldValidator ControlToValidate="txtEmail" runat="server" 
+                            ID="RequiredFieldValidator4" ErrorMessage="Input your email" ValidationGroup="group1" >*
+                        </asp:RequiredFieldValidator>
+                        <asp:ValidatorCalloutExtender ID="RequiredFieldValidator4_ValidatorCalloutExtender" 
+                            runat="server" Enabled="True" TargetControlID="RequiredFieldValidator4">
+                        </asp:ValidatorCalloutExtender>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" 
+                            runat="server" ErrorMessage="Email is not valid" Text=" *" 
+                            ControlToValidate="txtEmail" SetFocusOnError="true" ValidationGroup="group1" 
+                            ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+                        </asp:RegularExpressionValidator>
+                    </div>  
+                            
+                    <div class="form_row">
+                        <label class="contact">
+                        </label>
+                        <div class="terms">
+                            <asp:CheckBox ID="chbTermCondition" Checked="true" runat="server" Text=" Tôi đồng ý với các điều khoản sử dụng" />
+                        </div>
+                    </div> 
+
+                    <div class="form_row">
+                        <asp:LinkButton ID="btnRegister" CssClass="contact" runat="server" Text="Register" 
+                            onclick="btnRegister_Click" ValidationGroup="group1" />
+                    </div>  
+                    <br />
+                    
+                </form>     
                     
                 </div>                
             </div>

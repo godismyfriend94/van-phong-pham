@@ -642,11 +642,13 @@ float:left;
 padding:0px 0 0 75px;
 }
 .contact_form_map{
-width:555px;
+width:550px;
 float:left;
 padding:0px 0 0 15px;
 }
-.form_row{
+.form_row
+{
+text-align: left;
 width:335px;
 clear:both;
 padding:10px 0 10px 0;
@@ -654,7 +656,7 @@ _padding:5px 0 5px 0;
 color:#a53d17;
 }
 label.contact{
-width:75px;
+width:85px;
 float:left;
 font-size:12px;
 text-align:right;
@@ -662,10 +664,10 @@ padding:4px 5px 0 0;
 color: #333333;
 }
 input.contact_input{
-width:253px;
+width:200px;
 height:18px;
 background-color:#fff;
-color:#999999;
+color:#555555;
 border:1px #DFDFDF solid;
 float:left;
 }
@@ -684,6 +686,7 @@ width:99px;
 height:27px;
 display:block;
 float:right;
+text-align: center;
 margin:0 0 0 10px;
 background:url(../images/contact_bt.gif) no-repeat left;
 padding:0 0 0 10px;
@@ -1238,4 +1241,9 @@ padding: 2px 5px 2px 5px;
 margin-right: 2px;
 border: 1px solid #f3f3f3;
 color: #ccc;
+}
+
+p.details{
+padding:5px 15px 5px 15px;
+font-size:11px;
 }
