@@ -13,8 +13,13 @@ using System.Xml.Linq;
 
 public partial class vpp_faqs : System.Web.UI.Page
 {
+    static FAQsLogic fAQsLogic = new FAQsLogic();
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!Page.IsPostBack)
+        {
+            lstvFaq.DataSource = fAQsLogic.GetAllFAQs();
+            lstvFaq.DataBind();
+        }
     }
 }

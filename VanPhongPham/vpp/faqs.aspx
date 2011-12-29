@@ -8,48 +8,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
     <div class="center_title_bar">Các câu hỏi thường gặp</div>
     <div class="menu_area1">
-    <asp:Accordion ID="MyAccordion" runat="server" SelectedIndex="0"
-            HeaderCssClass="accordionHeader" HeaderSelectedCssClass="accordionHeaderSelected"
-            ContentCssClass="accordionContent" FadeTransitions="false" FramesPerSecond="40" 
-            TransitionDuration="250" AutoSize="None" RequireOpenedPane="false" SuppressHeaderPostbacks="true">
-           <Panes>
-           <%--<asp:DataList ID="lstvFaq" RepeatDirection="Vertical" runat="server">
-            <ItemTemplate>--%>
-            <asp:AccordionPane ID="AccordionPane1" runat="server">
-                <Header>
-                <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <a style="text-decoration: none;" href="#">
-                        <asp:Image ID="Image3" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label3" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là ff ff ff ff ff ff ff ff ff ff ff ff ff.
-                        <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
-                    </a>
-                </div>
-                </Header>
-                <Header>
-                <div style="text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <a style="text-decoration: none;" href="#">
+    <dl style="font-size: 12px; text-align: left; line-height: 25px; text-decoration: none;">
+         <asp:DataList ID="lstvFaq" RepeatDirection="Vertical" runat="server">
+            <ItemTemplate>
+                <dt style="text-align:left; font-size: 12px;">
+                    <a class="active" style="text-decoration: none;" href="#">
                         <asp:Image ID="Image1" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="Label1" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê.Hoa Hồng luôn là ff ff ff ff ff ff ff ff ff ff ff ff ff.
-                        <%--<asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>--%>
+                        <asp:Label ID="lblFaqId" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        <asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>
                     </a>
-                </div>
-                </Header>
-                <Content>
-                    <p style="color: #333333;text-align:left; font-size: 12px; margin-bottom: 10px;">
-                    <asp:Label ID="Label4" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
-                    Hoa Hồng luôn là biểu tượng của tình yêu và sự đam mê. 
-                    Theo truyền thuyết, nữ thần Ái tình của Hy Lạp đã tặng một bông hồng cho Eros, vị thần Ái tình. 
-                    Ngày nay, những bông hồng có thể truyền đạt những ẩn ý tình cảm khác nhau.
-                    <%--<%#Eval("Answer") %>--%>
+                </dt>
+                <dd style="text-align:left; font-size: 12px;">
+                    <p style="color: #555555;">
+                    <asp:Label ID="lblAnswerFAQ" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
+                    
+                    <%#Eval("Answer") %>
                     </p>
-                </Content>
-            </asp:AccordionPane>
-            <%--            </ItemTemplate>
-         </asp:DataList>--%>
-            </Panes>
-        </asp:Accordion>
+                </dd>
+            </ItemTemplate>
+         </asp:DataList>
+    </dl>    
     </div>
 </asp:Content>
 
