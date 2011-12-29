@@ -30,11 +30,10 @@
         "/>
     
     <link rel="SHORTCUT ICON" href="images/iconHNTechPro.png"/>
-    
     <link rel="stylesheet" type="text/css" href="css/iecss.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/boxOver.js"></script>
-    <%--<script type="text/javascript" src="js/jquery.js"></script--%>>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/adv_float.js"></script>
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
@@ -232,25 +231,25 @@
         <div id="left_menu_acc" class="post">
             <dl>
             <!-- start parent repeater -->
-            <asp:repeater id="parentRepeater" runat="server" EnableViewState="false"  >
+            <asp:repeater id="parentRepeater" runat="server" EnableViewState="false" EnableTheming="true">
                <itemtemplate>
                     <dt><a href="#"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></dt>
-                  <!-- start child repeater -->
-                  <asp:repeater id="childRepeater" 
-                  datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
-                  runat="server" EnableViewState="false">
+                    <dd>
+                    <!-- start child repeater -->
+                    <asp:repeater id="childRepeater" 
+                    datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
+                    runat="server" EnableViewState="false"  EnableTheming="true">
                      <itemtemplate>
-                        <dd>
                             <ul style="margin-left: 0px;">
-                                <li><a href="details.aspx"><%# DataBinder.Eval(Container.DataItem,  "SubCategoryName")%></a></li>
+                                <li><a href="details.aspx"><%# Eval("SubCategoryName")%></a></li>
                             </ul>
-                        </dd>        
                      </itemtemplate>
-                  </asp:repeater>
-                  <!-- end child repeater -->
-
+                    </asp:repeater>
+                    <!-- end child repeater -->
+                    </dd> 
                </itemtemplate>
-            </asp:repeater>         
+            </asp:repeater>
+            <!-- end parent repeater -->       
             </dl>
         </div>
     </div>
