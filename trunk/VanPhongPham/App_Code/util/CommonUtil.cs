@@ -29,7 +29,7 @@ public class CommonUtil
     /// </summary>
     /// <param name="str"></param>
     /// <returns></returns>
-    public static string EscapeInjection(string str) 
+    public string EscapeInjection(string str) 
     {
         try
         {
@@ -49,7 +49,7 @@ public class CommonUtil
     /// </summary>
     /// <param name="content"></param>
     /// <returns></returns>
-    public static string EscapeHTML(string content)
+    public string EscapeHTML(string content)
     {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < content.ToCharArray().Length; i++)
@@ -84,7 +84,7 @@ public class CommonUtil
     /// </summary>
     /// <param name="sPassword"></param>
     /// <returns></returns>
-    public static string MD5(string sPassword)
+    public string MD5(string sPassword)
     {
         System.Security.Cryptography.MD5CryptoServiceProvider x = new System.Security.Cryptography.MD5CryptoServiceProvider();
         byte[] bs = System.Text.Encoding.UTF8.GetBytes(sPassword);
@@ -96,13 +96,20 @@ public class CommonUtil
         }
         return s.ToString();
     }
-
-    public  static  string  generateToken()
+    /// <summary>
+    /// CreateKey
+    /// </summary>
+    /// <returns></returns>
+    public string  generateToken()
     {        
         return  CreateKey(System.Convert.ToInt32(24));              
     }
-
-    private  static  String  CreateKey(int  numBytes)
+    /// <summary>
+    /// CreateKey
+    /// </summary>
+    /// <param name="numBytes"></param>
+    /// <returns></returns>
+    private string  CreateKey(int  numBytes)
     {
         RNGCryptoServiceProvider  rng = new  RNGCryptoServiceProvider();
         byte[] buff = new  byte[numBytes];
@@ -110,8 +117,12 @@ public class CommonUtil
         rng.GetBytes(buff);
         return  BytesToHexString(buff);
     }
-
-    private static String BytesToHexString(byte[] bytes)
+    /// <summary>
+    /// BytesToHexString
+    /// </summary>
+    /// <param name="bytes"></param>
+    /// <returns></returns>
+    private static string BytesToHexString(byte[] bytes)
     {
         StringBuilder hexString = new StringBuilder(64);
 

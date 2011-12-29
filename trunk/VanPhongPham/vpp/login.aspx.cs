@@ -17,4 +17,77 @@ public partial class vpp_login : System.Web.UI.Page
     {
 
     }
+
+    /// <summary>
+    /// Login
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnLoginMyAccount_Click(object sender, EventArgs e)
+    {
+        CommonUtil commonUtil = new CommonUtil();
+        string username = commonUtil.EscapeInjection(txtUsername.Text);
+        string password = commonUtil.EscapeInjection(txtPassword.Text);
+        string passMD5 = commonUtil.MD5(password);
+
+        TblUserLogic tblUserLogic = new TblUserLogic();
+
+        //if (tblUserLogic.IsValidLogin(username, password))
+        //{
+        //    lblLoginFail.Visible = false;
+
+        //    HttpCookie cookieRememberMe = new HttpCookie("RememberMe");
+
+        //    Session["username"] = username;
+
+        //    //neu chon check box remember
+        //    if (chbRememberMeAcc.Checked == true)
+        //    {
+        //        //xoa cookie cu
+        //        if (Request.Cookies["RememberMe"] != null)
+        //        {
+        //            cookieRememberMe = new HttpCookie("RememberMe");
+        //            cookieRememberMe.Values.Add("UserName", "");
+        //            cookieRememberMe.Values.Add("Password", "");
+        //            cookieRememberMe.Values.Add("CheckBox", "");
+        //            cookieRememberMe.Expires = DateTime.Now.AddDays(30);
+        //            Response.Cookies.Add(cookieRememberMe);
+        //        }
+
+        //        //luu cookie
+        //        cookieRememberMe = new HttpCookie("RememberMe");
+        //        cookieRememberMe.Values.Add("UserName", txtUsername.Text.Trim());
+        //        cookieRememberMe.Values.Add("Password", txtPassword.Text.Trim());
+        //        cookieRememberMe.Values.Add("CheckBox", "True");
+        //        cookieRememberMe.Expires = DateTime.Now.AddDays(30);
+        //        Response.Cookies.Add(cookieRememberMe);
+        //    }
+        //    else
+        //    {
+        //        //delete cookie
+        //        if (Request.Cookies["RememberMe"] != null)
+        //        {
+        //            cookieRememberMe = new HttpCookie("RememberMe");
+        //            cookieRememberMe.Values.Add("UserName", txtUsername.Text.Trim());
+        //            cookieRememberMe.Values.Add("Password", "");
+        //            cookieRememberMe.Values.Add("CheckBox", "");
+        //            cookieRememberMe.Expires = DateTime.Now.AddDays(30);
+        //            Response.Cookies.Add(cookieRememberMe);
+        //        }
+        //    }
+        //    if (username == "adminadmin")
+        //    {
+        //        Response.Redirect("../admin/login.aspx");
+        //    }
+        //    else
+        //    {
+        //        Response.Redirect(Session["currentpage"].ToString());
+        //    }
+        //}
+        //else
+        //{
+        //    lblLoginFail.Text = "Invalid username or password !";
+        //    lblLoginFail.Visible = true;
+        //}
+    }
 }
