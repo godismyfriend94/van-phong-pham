@@ -6,21 +6,22 @@
     </div> 
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
+    <!--Begin doan javascript xu ly cho left menu-->
     <div class="center_title_bar">Các câu hỏi thường gặp</div>
     <div class="menu_area1">
     <dl style="font-size: 12px; text-align: left; line-height: 25px; text-decoration: none;">
          <asp:DataList ID="lstvFaq" RepeatDirection="Vertical" runat="server">
             <ItemTemplate>
                 <dt style="text-align:left; font-size: 12px;">
-                    <a class="active" style="text-decoration: none;" href="#">
+                    <a class="actived" style="text-decoration: none;" href="#">
                         <asp:Image ID="Image1" runat="server" ImageUrl="images/Question-icon.jpg" Width="30px" Height="30px" />
-                        <asp:Label ID="lblFaqId" runat="server" Text="Question: " ForeColor="#941921" Font-Bold="true"></asp:Label>
-                        <asp:Label ID="lblQuestionFAQ" runat="server" ForeColor="#333333" Font-Bold="true" Text='<%#Eval("Question") %>'></asp:Label>
+                        <asp:Label ID="lblFaqId" runat="server" Text="Câu hỏi: " ForeColor="#941921" Font-Bold="true"></asp:Label>
+                        <asp:Label ID="lblQuestionFAQ" runat="server" Text='<%#Eval("Question") %>'></asp:Label>
                     </a>
                 </dt>
                 <dd style="text-align:left; font-size: 12px;">
                     <p style="color: #555555;">
-                    <asp:Label ID="lblAnswerFAQ" runat="server" ForeColor="Green" Font-Bold="true" Text="Answer: "></asp:Label>
+                    <asp:Label ID="lblAnswerFAQ" runat="server" ForeColor="Green" Font-Bold="true" Text="Trả lời: "></asp:Label>
                     
                     <%#Eval("Answer") %>
                     </p>
