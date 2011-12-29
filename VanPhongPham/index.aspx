@@ -210,18 +210,17 @@
                            <itemtemplate>
                                 <dt><a href="#"><%# DataBinder.Eval(Container.DataItem, "CategoryName")%></a></dt>
                                 <dd>
-                              <!-- start child repeater -->
-                              <asp:repeater id="childRepeater" 
-                              datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
-                              runat="server" EnableViewState="false"  EnableTheming="true">
+                                <!-- start child repeater -->
+                                <asp:repeater id="childRepeater" 
+                                datasource='<%# GetChildRelation(Container.DataItem, "myrelation")%>' 
+                                runat="server" EnableViewState="false"  EnableTheming="true">
                                  <itemtemplate>
-                                    
                                         <ul style="margin-left: 0px;">
                                             <li><a href="details.aspx"><%# Eval("SubCategoryName")%></a></li>
                                         </ul>
                                  </itemtemplate>
-                              </asp:repeater>
-                              <!-- end child repeater -->
+                                </asp:repeater>
+                                <!-- end child repeater -->
                                 </dd> 
                            </itemtemplate>
                         </asp:repeater>
