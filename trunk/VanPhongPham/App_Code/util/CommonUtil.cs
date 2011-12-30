@@ -146,7 +146,7 @@ public class CommonUtil
     /// <param name="subject"></param>
     /// <param name="body"></param>
     /// <returns></returns>
-    public bool SendMail(string from, string to, string cc, string bcc, string subject, string body)
+    public bool SendMail(string from, string to, string cc, string bcc, string subject, string body, string strFileName)
     {
         //Mail initialization 
         MailMessage mail = new MailMessage();
@@ -157,6 +157,21 @@ public class CommonUtil
         mail.Subject = subject;
         mail.BodyFormat = MailFormat.Html;
         mail.Body = body;
+        mail.BodyEncoding = System.Text.Encoding.UTF8;
+        try
+        {
+            //Lay ve path cua root server
+            string RootPath = HttpContext.Current.Server.MapPath("~");
+            strFileName = RootPath+ "/files/baogia/tencongty_baogia.xls";
+
+            MailAttachment attach = new MailAttachment(strFileName);
+            mail.Attachments.Add(attach);
+        }catch(Exception ex)
+        {
+            LogSystem logSystem = new LogSystem("Load file attachment", "Common Util", ex.ToString());
+            logSystemLogic.InsertLog(logSystem);
+        }
+
         // Smtp configuration
         SmtpMail.SmtpServer = "smtp.gmail.com";
         // - smtp.gmail.com use smtp authentication
