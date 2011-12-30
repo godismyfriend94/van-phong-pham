@@ -672,7 +672,7 @@ border:1px #DFDFDF solid;
 float:left;
 }
 textarea.contact_textarea{
-width:253px;
+width:200px;
 height:50px;
 font-family:Arial, Helvetica, sans-serif;
 font-size:12px;
@@ -733,7 +733,6 @@ font-size: 13px;
 width:200px;
 text-align:center;
 border:1px dashed gray;
-
 }
 
 
@@ -1096,7 +1095,7 @@ color:#fff;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	color: #aaaaaa;
+	color: #888888;
 	text-decoration: none;
 }
 .image
@@ -1104,8 +1103,22 @@ color:#fff;
 	float: left;
 	width: 90px;
 	height: 90px;
+	
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	
 	}
 	
+.image:hover
+{
+	float: left;
+	width: 90px;
+	height: 90px;
+	
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+	}
+
 .ideas 
 {
 	width: 100%;
@@ -1138,6 +1151,9 @@ color:#fff;
 	padding-right: 0px;
 	padding-bottom: 20px;
 	padding-left: 3px;
+	
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 /*--------------------------------*/
 
@@ -1157,6 +1173,19 @@ color:#fff;
 	float: left;
 	width: 50px;
 	height: 50px;
+	
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	}
+	
+.image_subcategory:hover
+{
+	float: left;
+	width: 50px;
+	height: 50px;
+	
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
 	}
 	
 .ideas_subcategory
@@ -1191,6 +1220,8 @@ color:#fff;
 	padding-right: 0px;
 	padding-bottom: 20px;
 	padding-left: 3px;
+	
+	
 }
 
 .quote_box{
@@ -1247,3 +1278,17 @@ p.details{
 padding:5px 15px 5px 15px;
 font-size:11px;
 }
+
+/*============================================*/
+.image-product
+{
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	
+	}
+	
+.image-product:hover
+{
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+	}

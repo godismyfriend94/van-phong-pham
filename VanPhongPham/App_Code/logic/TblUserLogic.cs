@@ -71,14 +71,62 @@ public class TblUserLogic
     {
         return tblUserDao.SearchUserByUserName(userName);
     }
+
+    /// <summary>
+    /// GetUserByUserNameAndPassword
+    /// </summary>
+    /// <param name="userName"></param>
+    /// <param name="password"></param>
+    /// <returns></returns>
+    public TblUser GetUserByUserNameAndPassword(string userName, string password)
+    {
+        DataTable dt = tblUserDao.GetUserByUserNameAndPassword(userName, password);
+        TblUser tblUser = null;
+
+        if (dt.Rows.Count > 0)
+        {
+            tblUser = new TblUser();
+            tblUser.GroupId = dt.Rows[0]["GroupId"].ToString();
+            tblUser.UserName = dt.Rows[0]["UserName"].ToString();
+            tblUser.Password = dt.Rows[0]["Password"].ToString();
+            tblUser.FullName = dt.Rows[0]["FullName"].ToString();
+            tblUser.DateOfBirth = DateTime.Parse(dt.Rows[0]["DateOfBirth"].ToString());
+            tblUser.Gender = Boolean.Parse(dt.Rows[0]["Gender"].ToString());
+            tblUser.Email = dt.Rows[0]["Email"].ToString();
+            tblUser.Address = dt.Rows[0]["Address"].ToString();
+            tblUser.JoinDate = DateTime.Parse(dt.Rows[0]["JoinDate"].ToString());
+            tblUser.RegisterCode = dt.Rows[0]["RegisterCode"].ToString();
+            tblUser.StatusId = dt.Rows[0]["StatusId"].ToString();
+        }
+        return tblUser;
+    }
     /// <summary>
     /// GetUserByEmail - lấy về user theo email
     /// </summary>
     /// <param name="groupId"></param>
     /// <returns></returns>
-    public DataTable GetUserByEmail(string email)
+    public TblUser GetUserByEmail(string email)
     {
-        return tblUserDao.GetUserByEmail(email);
+        DataTable dt = tblUserDao.GetUserByEmail(email);
+
+        TblUser tblUser = null;
+
+        if (dt.Rows.Count > 0)
+        {
+            tblUser = new TblUser();
+            tblUser.GroupId = dt.Rows[0]["GroupId"].ToString();
+            tblUser.UserName = dt.Rows[0]["UserName"].ToString();
+            tblUser.Password = dt.Rows[0]["Password"].ToString();
+            tblUser.FullName = dt.Rows[0]["FullName"].ToString();
+            tblUser.DateOfBirth = DateTime.Parse(dt.Rows[0]["DateOfBirth"].ToString());
+            tblUser.Gender = Boolean.Parse(dt.Rows[0]["Gender"].ToString());
+            tblUser.Email = dt.Rows[0]["Email"].ToString();
+            tblUser.Address = dt.Rows[0]["Address"].ToString();
+            tblUser.JoinDate = DateTime.Parse(dt.Rows[0]["JoinDate"].ToString());
+            tblUser.RegisterCode = dt.Rows[0]["RegisterCode"].ToString();
+            tblUser.StatusId = dt.Rows[0]["StatusId"].ToString();
+        }
+        return tblUser;
     }
 
     /// <summary>

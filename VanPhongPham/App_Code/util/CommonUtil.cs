@@ -11,11 +11,14 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Text;
 using System.Security.Cryptography;
+using System.Web.Mail;
+using System.Net;
 /// <summary>
 /// Chua cac ham xu ly co ban nhu validate, loai bo sql injection...
 /// </summary>
 public class CommonUtil
 {
+    LogSystemLogic logSystemLogic = new LogSystemLogic();
     /// <summary>
     /// CommonUtil - default constructor
     /// </summary>
@@ -131,5 +134,50 @@ public class CommonUtil
             hexString.Append(String.Format("{0:X2}", bytes[counter]));
         }
         return hexString.ToString();
+    }
+
+    /// <summary>
+    /// SendMail
+    /// </summary>
+    /// <param name="from"></param>
+    /// <param name="to"></param>
+    /// <param name="cc"></param>
+    /// <param name="bcc"></param>
+    /// <param name="subject"></param>
+    /// <param name="body"></param>
+    /// <returns></returns>
+    public bool SendMail(string from, string to, string cc, string bcc, string subject, string body)
+    {
+        //Mail initialization 
+        MailMessage mail = new MailMessage();
+        mail.From = from;
+        mail.To = to;
+        mail.Cc = cc;
+        mail.Bcc = bcc;
+        mail.Subject = subject;
+        mail.BodyFormat = MailFormat.Html;
+        mail.Body = body;
+        // Smtp configuration
+        SmtpMail.SmtpServer = "smtp.gmail.com";
+        // - smtp.gmail.com use smtp authentication
+        mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate", "1");
+        mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendusername", "anztechpro2012@gmail.com");
+        mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendpassword", "anz13579");
+        // - smtp.gmail.com use port 465 or 587
+        mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/smtpserverport", "465");
+        // - smtp.gmail.com use STARTTLS (some clients call this SSL)
+        mail.Fields.Add("http://schemas.microsoft.com/cdo/configuration/smtpusessl", "true");
+        // Mail sending
+        try
+        {
+            SmtpMail.Send(mail);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            LogSystem logSystem = new LogSystem("Send email", "Common Util", ex.ToString());
+            logSystemLogic.InsertLog(logSystem);
+            return false;
+        }
     }
 }
