@@ -42,20 +42,28 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
             DataTable table = new DataTable();
             //table = cusBus.GetCustomerPasswordByEmail(txtEmail.Text.Trim());
             string body = @"
-            <html>
+            <?xml version='1.0' encoding='utf-8' ?>
+            <html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/></head>
                 <body>
                     <Table>
                         <tr>
-                            <td>Hi, we're <a href='localhost/ofd'>FLOWER SHOP</a></td>
+                            <td>
+                                <p>
+                                Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội
+                                    18 Tô Vĩnh Diện - Thanh Xuân - Hà Nội
+                                Điện thoại: 04-35683040 -35683640- 66732220 </p></td>
                         </tr>
                         <tr>
-                            <td>Your account has recovered:.</td>
+                            <td>Xin chào bạn!</td>
                         </tr>
                         <tr>
-                            <td>User name: " + userName + @"</td>
+                            <td>Thông tin về tài khoản của bạn như sau: </td>
                         </tr>
                         <tr>
-                            <td>Password: " + password + @"</td>
+                            <td>Tên tài khoản: " + userName + @"</td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu: " + password + @"</td>
                         </tr>
                     </Table>
                 </body>
@@ -66,7 +74,9 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
                 </body>
             </html>"
                 +
-            @"<html>
+            @"
+                <?xml version='1.0' encoding='utf-8' ?>
+                <html><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/></head>
                 <body>
                     <Table>
                         <tr>
@@ -75,10 +85,10 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
                         </tr>
                         <tr>
                             <td>
-                                NOTE: This is an automated mail. Please, do not reply.
+                                Lưu ý: đây là thư gửi tự động, làm ơn không trả lời! xin cảm ơn!
                             </td>
                         </tr>" +
-                    "<tr><td> </td></tr><tr><td>Regards,</td></tr><tr><td>Thanks for use our service</td></tr></table><img src='http://images3.wikia.nocookie.net/__cb20091205161621/poptarts/images/0/06/Thanks.gif' alt='logopng' width='116' height='100' /></body></html>";
+                    "<tr><td> </td></tr><tr><td>Kính thư,</td></tr><tr><td>Cảm ơn bạn đã sử dụng các dịch vụ của chúng tôi.</td></tr></table><img src='http://images3.wikia.nocookie.net/__cb20091205161621/poptarts/images/0/06/Thanks.gif' alt='logopng' width='116' height='100' /></body></html>";
 
             if (commonUtil.SendMail(from, to, "", "", subject, body))
             {
