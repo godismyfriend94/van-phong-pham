@@ -41,6 +41,13 @@
                     <asp:TextBox ID="txtEmail" runat="server" CssClass="contact_input"></asp:TextBox>
                     
                 </div>
+                <div class="form_row">
+                    <label class="contact">
+                    </label>
+                    
+                    <asp:Label ID="Label1" runat="server" Text="Ví dụ: azn@gmail.com" ForeColor="Gray"></asp:Label>
+                    
+                </div>
                 
                 <div class="form_row">
                     <asp:LinkButton ID="btnGetPassword" CssClass="contact" runat="server" Text="Gửi" OnClick="btnGetPassword_Click" ValidationGroup="group1" />

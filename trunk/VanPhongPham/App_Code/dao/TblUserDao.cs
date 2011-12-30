@@ -62,6 +62,25 @@ public class TblUserDao
     }
 
     /// <summary>
+    /// GetUserByUserNameAndPassword
+    /// </summary>
+    /// <param name="userName"></param>
+    /// <param name="password"></param>
+    /// <returns></returns>
+    public DataTable GetUserByUserNameAndPassword(string userName, string password)
+    {
+        SqlParameter[] paramList = new SqlParameter[2];
+
+        paramList[0] = new SqlParameter("@UserName", SqlDbType.NVarChar, 256);
+        paramList[0].Value = userName;
+
+        paramList[1] = new SqlParameter("@password", SqlDbType.NVarChar, 256);
+        paramList[1].Value = password;
+
+        return db.executeSelect("GetUserByUserNameAndPassword", paramList);
+    }
+
+    /// <summary>
     /// GetUserByUserName - lấy về user theo userName
     /// </summary>
     /// <param name="groupId"></param>

@@ -62,7 +62,7 @@
 
                     <div class="form_row">
                     <label class="contact"><strong>Nội dung:</strong></label>
-                    <textarea class="contact_textarea" cols="25" cols="50"></textarea>
+                    <textarea class="contact_textarea" cols="25" rows="25"></textarea>
                     </div>
 
                     
