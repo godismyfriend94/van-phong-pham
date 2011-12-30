@@ -164,7 +164,7 @@
             <!-- end of oferte_content-->
             <div id ="right_flash">
                 <Bewise:FlashControl ID="FlashControl1" runat="server" 
-                    MovieUrl="./images/banners/rflash.swf" width="270px" height="170px" />
+                    MovieUrl="./images/banners/rflash.swf" width="280px" height="173px" />
             </div>
         </div>
             
@@ -374,19 +374,9 @@
             </div>
             <!-- end of right content -->
             <!-- bat dau vung quang cao truot 2 ben trang web -->
-            <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-            <asp:repeater id="leftRepeaterAdv" runat="server" EnableViewState="false">
-            <itemtemplate>
-                <a href="<%#Eval("AdvertiseLink")%>">
-                  <img src="images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
-                </a>
-                <br />
-            </itemtemplate>
-            </asp:repeater>
-            </div>
-            
+
             <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-                <asp:repeater id="righRepeaterAdv" runat="server" EnableViewState="false">
+                <asp:repeater id="leftRepeaterAdv" runat="server" EnableViewState="false">
                 <itemtemplate>
                     <a href="<%#Eval("AdvertiseLink")%>">
                       <img src="images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
@@ -396,6 +386,17 @@
                 </asp:repeater>
             </div>
 
+            <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+            <asp:repeater id="righRepeaterAdv" runat="server" EnableViewState="false">
+            <itemtemplate>
+                <a href="<%#Eval("AdvertiseLink")%>">
+                  <img src="images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
+                </a>
+                <br />
+            </itemtemplate>
+            </asp:repeater>
+            </div>
+            
             <script type="text/javascript">
                 document.write("<script type='text/javascript' language='javascript'>MainContentW = 1000;LeftBannerW = 125;RightBannerW = 125;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 10;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");
             </script>
