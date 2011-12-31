@@ -238,7 +238,7 @@ background:url(../images/menu_divider.gif) no-repeat center;
 a.nav1:link, a.nav1:visited {
 display:block; float:left; padding:0px 8px 0px 22px; margin:0 14px 0 14px;height:50px;text-decoration:none; background:url(../images/home.png) no-repeat left; color:#676d77;}
 a.nav2:link, a.nav2:visited {
-display:block; float:left; padding:0px 8px 0px 22px; margin:0 14px 0 14px;height:50px;text-decoration:none; background:url(../images/services.png) no-repeat left; color:#676d77;}
+display:block; float:left; padding:0px 8px 0px 22px; margin:0 14px 0 14px;height:50px;text-decoration:none; background:url(../images/products-img.png) no-repeat left; color:#676d77;}
 a.nav3:link, a.nav3:visited {
 display:block; float:left; padding:0px 8px 0px 22px; margin:0 14px 0 14px;height:50px;text-decoration:none; background:url(../images/favs.png) no-repeat left; color:#676d77;}
 a.nav4:link, a.nav4:visited {
@@ -1104,8 +1104,7 @@ color:#fff;
 	width: 90px;
 	height: 90px;
 	
-	opacity:1.0;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
+	
 	
 	}
 	
@@ -1115,8 +1114,7 @@ color:#fff;
 	width: 90px;
 	height: 90px;
 	
-	opacity:0.5;
-	filter:alpha(opacity=50); /* For IE8 and earlier */
+	
 	}
 
 .ideas 
@@ -1135,6 +1133,9 @@ color:#fff;
 	padding-right: 0px;
 	padding-bottom: 20px;
 	padding-left: 3px;
+	
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 .ideas:hover {
 	font-family: Arial;
@@ -1152,8 +1153,8 @@ color:#fff;
 	padding-bottom: 20px;
 	padding-left: 3px;
 	
-	opacity:1.0;
-	filter:alpha(opacity=100); /* For IE8 and earlier */
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 /*--------------------------------*/
 
