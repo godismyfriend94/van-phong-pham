@@ -132,10 +132,10 @@
                             <asp:Label ID="lblGenderRegister" runat="server" Text="Giới tính:"></asp:Label>
                         </strong>
                         </label>
-                        <asp:RadioButton ID="rbnMaleRegister" runat="server" Text=" Male" 
+                        <asp:RadioButton ID="rbnMaleRegister" runat="server" Text=" Nam" 
                             GroupName="gender" Checked="True"/>&nbsp;&nbsp;
                         
-                        <asp:RadioButton ID="rbnFemaleRegister" runat="server" Text=" Female" GroupName="gender"/>
+                        <asp:RadioButton ID="rbnFemaleRegister" runat="server" Text=" Nữ" GroupName="gender"/>
                     </div>
 
                     <div class="form_row">
@@ -146,7 +146,7 @@
                         <asp:Label ID="Label6" runat="server" Text="(*)" ForeColor="Red"></asp:Label>
                         </label>
                         
-                        <asp:TextBox ID="txtAddress" runat="server" CssClass="contact_input"></asp:TextBox>
+                        <asp:TextBox ID="txtAddress" runat="server" CssClass="contact_input" TextMode="MultiLine" Columns="25" Rows="3"></asp:TextBox>
                         &nbsp;
                         <asp:RequiredFieldValidator ControlToValidate="txtAddress" runat="server" 
                             ID="RequiredFieldValidator3" ErrorMessage="Input address" ValidationGroup="group1" >*
@@ -211,7 +211,7 @@
                     </div> 
 
                     <div class="form_row">
-                        <asp:LinkButton ID="btnRegister" CssClass="contact" runat="server" Text="Register" 
+                        <asp:LinkButton ID="btnRegister" CssClass="contact" runat="server" Text="Đăng ký" 
                             onclick="btnRegister_Click" ValidationGroup="group1" />
                     </div>  
                     <br />

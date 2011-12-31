@@ -191,7 +191,7 @@
     </div> 
     <div id ="right_flash">
         <Bewise:FlashControl id="FlashControl1" runat="server" 
-                    MovieUrl="../images/banners/rflash.swf" width="280" height="170" />
+                    MovieUrl="../images/banners/rflash.swf" width="280" height="173" />
     </div>
     <!-- end of oferta_content-->
     </div>
@@ -378,19 +378,10 @@
    </div><!-- end of right content -->
    
    <!-- bat dau vung quang cao truot 2 ben trang web -->   
-   <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-    <asp:repeater id="leftRepeaterAdv" runat="server" EnableViewState="false">
-    <itemtemplate>
-        <a href="<%#Eval("AdvertiseLink")%>">
-          <img src="../images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
-        </a>
-        <br />
-    </itemtemplate>
-    </asp:repeater>
-    </div>
+   
     
     <div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-        <asp:repeater id="righRepeaterAdv" runat="server" EnableViewState="false">
+        <asp:repeater id="leftRepeaterAdv" runat="server" EnableViewState="false">
         <itemtemplate>
             <a href="<%#Eval("AdvertiseLink")%>">
               <img src="../images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
@@ -398,6 +389,17 @@
             <br />
         </itemtemplate>
         </asp:repeater>
+    </div>
+    
+    <div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+    <asp:repeater id="righRepeaterAdv" runat="server" EnableViewState="false">
+    <itemtemplate>
+        <a href="<%#Eval("AdvertiseLink")%>">
+          <img src="../images/advertise/<%#Eval("ImageURL")%>" border="0" width="125"  alt="<%#Eval("AdvertiseName")%>" style="border: 0px;"/>
+        </a>
+        <br />
+    </itemtemplate>
+    </asp:repeater>
     </div>
     
     <script type="text/javascript">
