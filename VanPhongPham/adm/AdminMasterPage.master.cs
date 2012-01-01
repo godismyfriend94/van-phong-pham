@@ -24,7 +24,7 @@ public partial class view_admin_AdminMasterPage : System.Web.UI.MasterPage
         if (!Page.IsPostBack)
         {
             //If not yet logined, back to login.aspx
-            //CheckLogin();
+            CheckLogin();
             //Set calendar
             //SetCalendar();
             //Load Exchange rate
@@ -56,13 +56,14 @@ public partial class view_admin_AdminMasterPage : System.Web.UI.MasterPage
     /// </summary>
     public void CheckLogin()
     {
-        if (Session["admin_username"] == null || Session["admin_username"] == "")
+        if (Session["user_logined"] == null || Session["user_logined"].ToString() == "")
         {
-            Response.Redirect("login.aspx");
+            Response.Redirect("../vpp/login.aspx");
         }
         else
         {
-            lblHelloAdmin.Text = Session["admin_username"].ToString();
+            TblUser tblUser = (TblUser)Session["user_logined"];
+            lblHelloAdmin.Text = tblUser.UserName;
         }
     }
     /// <summary>
@@ -72,10 +73,14 @@ public partial class view_admin_AdminMasterPage : System.Web.UI.MasterPage
     /// <param name="e"></param>
     public void lbtnLogout_click(object sender, EventArgs e)
     {
-        Session["admin_username"] = "";
-        Session["admin_permission"] = 0;
+        LogOut();
+    }
 
-        Response.Redirect("login.aspx");
+    private void LogOut()
+    {
+        Session["user_logined"] = null;
+
+        Response.Redirect("../index.aspx");
     }
     /// <summary>
     /// Icon logout click event
@@ -84,10 +89,7 @@ public partial class view_admin_AdminMasterPage : System.Web.UI.MasterPage
     /// <param name="e"></param>
     public void lbtnLogoutIcon_click(object sender, EventArgs e)
     {
-        Session["admin_username"] = "";
-        Session["admin_permission"] = 0;
-
-        Response.Redirect("login.aspx");
+        LogOut();
     }
     /// <summary>
     /// load exchange rate

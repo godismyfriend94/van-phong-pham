@@ -281,7 +281,7 @@
     </div><!-- end of left content -->
    
    <div class="center_content">
-        <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
+        <asp:ContentPlaceHolder ID="plhd_Content" runat="server" >
                  
         </asp:ContentPlaceHolder>
     </div>
@@ -289,19 +289,30 @@
    <!-- end of center content -->
    
    <div class="right_content">
-   		<div class="shopping_cart">
-        	<div class="cart_title">Giỏ hàng</div>
-            
-            <div class="cart_details">
-            3 sản phẩm <br />
-            <span class="border_cart"></span>
-            Tổng tiền: <span class="price">350$</span>
-            </div>
-            
-            <div class="cart_icon"><a href="#" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
-			<img src="images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
+	<div class="shopping_cart">
+    	<div class="cart_title">Giỏ hàng</div>
         
+        <div class="cart_details">
+        3 sản phẩm <br />
+        <span class="border_cart"></span>
+        Tổng tiền: <span class="price">350$</span>
         </div>
+        
+        <div class="cart_icon"><a href="#" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
+		<img src="images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
+    
+    </div>
+    <asp:Panel ID="pnlAdmPanel" runat="server" Visible="false">
+        <div class="title_box">Khu vực quản trị</div>  
+        <div class="border_box">
+         <div class="product_title">
+            <a href="../adm/index.aspx" target="_blank">Tới trang quản trị</a>
+        </div>
+         <div class="product_img">
+            <a href="../adm/index.aspx" target="_blank"><img src="../adm/images/amd_profile.png" alt="" title="" border="0" /></a>
+         </div>
+        </div>
+    </asp:Panel>
      <div class="title_box">Sản phẩm mới</div>  
      <div class="border_box">
          <div class="product_title"><a href="details.aspx">Motorola 156 MX-VL</a></div>

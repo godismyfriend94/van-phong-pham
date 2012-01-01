@@ -58,7 +58,14 @@
                  </div>
              </div>
          <div class="details_big_box">
-             <div class="product_title_big"><%#Eval("ProductName")%></div>
+             <div class="product_title_big">
+                <asp:Panel runat="server" ID="pnlEditProductPanel" Visible="false">
+                    <a href="../adm/editProduct.aspx?prodId=<%#Eval("ProductId")%>" target="_blank" class="edit_product">[Sửa sản phẩm này]</a>
+                    <br /><br />
+                </asp:Panel>
+                
+                <%#Eval("ProductName")%>
+             </div>
              <div class="specifications">
                 Hãng sản xuất: <span class="blue"><%#Eval("MadeBy")%></span><br />
             

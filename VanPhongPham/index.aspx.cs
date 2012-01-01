@@ -15,11 +15,23 @@ using System.Data.SqlClient;
 public partial class index : System.Web.UI.Page
 {
     static ProductLogic productLogic = new ProductLogic();
+    static TblUser tblUser = null;
     protected void Page_Load(object sender, EventArgs e)
     {
+
         AdvertiseLogic advertiseLogic = new AdvertiseLogic();
         if (!Page.IsPostBack)
         {
+            if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
+            {
+                tblUser = (TblUser)Session["user_logined"];
+                if (tblUser.GroupId == "g5")
+                {
+                    pnlAdmPanel.Visible = true;
+                }
+            }
+            
+            
             //khu vực code vùng quảng cáo
             leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
             leftRepeaterAdv.DataBind();

@@ -1294,3 +1294,10 @@ font-size:11px;
 	opacity:0.5;
 	filter:alpha(opacity=50); /* For IE8 and earlier */
 	}
+	
+.edit_product
+{
+	color: Gray;
+	text-decoration: none; 
+	font-weight: normal;
+}

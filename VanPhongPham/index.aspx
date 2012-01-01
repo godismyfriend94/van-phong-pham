@@ -289,6 +289,18 @@
                         <a href="vpp/shoppingcart.aspx" title="header=[Xem giỏ hàng] body=[&nbsp;] fade=[on]">
                             <img src="vpp/images/shoppingcart.png" alt="" title="" width="48" height="48" border="0" /></a></div>
                 </div>
+                
+            <asp:Panel ID="pnlAdmPanel" runat="server" Visible="false">
+                <div class="title_box">Khu vực quản trị</div>  
+                <div class="border_box">
+                 <div class="product_title">
+                    <a href="adm/index.aspx" target="_blank">Tới trang quản trị</a>
+                </div>
+                 <div class="product_img">
+                    <a href="adm/index.aspx" target="_blank"><img src="adm/images/amd_profile.png" alt="" title="" border="0" /></a>
+                 </div>
+                </div>
+            </asp:Panel>
                 <div class="title_box">
                     Sản phẩm mới</div>
                 <div class="border_box">
