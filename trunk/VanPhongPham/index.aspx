@@ -173,21 +173,21 @@
                 <div class="left_menu_corner">
                 </div>
                 <ul class="menu">
-                    <li><a href="index.aspx" class="nav1">Trang ch&#7911; </a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/productpanel.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/services.aspx" class="nav5">Dịch vụ</a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/policy.aspx" class="nav4">Chính sách</a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="nav4">Diễn đàn</a></li>
-                    <li class="divider"></li>
-                    <li><a href="vpp/aboutus.aspx" class="nav4">Giới thiệu</a></li>
+                    <li><a href="index.aspx" class="nav1"> Trang ch&#7911; </a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/productpanel.aspx" class="nav2">S&#7843;n ph&#7849;m </a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/services.aspx" class="nav5">Dịch vụ</a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/promotion.aspx" class="nav3">Khuy&#7871;n m&#7841;i </a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/policy.aspx" class="nav4">Chính sách</a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
+                         <li class="divider"></li>
+                         <li><a href="#" class="nav7">Diễn đàn</a></li>
+                         <li class="divider"></li>
+                         <li><a href="vpp/aboutus.aspx" class="nav8">Giới thiệu</a></li>
                    
                 </ul>
                 <div class="right_menu_corner">

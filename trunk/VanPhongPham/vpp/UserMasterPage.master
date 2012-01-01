@@ -213,9 +213,9 @@
                          <li class="divider"></li>
                          <li><a href="contact.aspx" class="nav6">Li&ecirc;n h&#7879; </a></li>
                          <li class="divider"></li>
-                         <li><a href="#" class="nav4">Diễn đàn</a></li>
+                         <li><a href="#" class="nav7">Diễn đàn</a></li>
                          <li class="divider"></li>
-                         <li><a href="aboutus.aspx" class="nav4">Giới thiệu</a></li>
+                         <li><a href="aboutus.aspx" class="nav8">Giới thiệu</a></li>
                        
                     </ul>
              <div class="right_menu_corner"></div>
@@ -273,7 +273,7 @@
             <img src="images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011
          </p><br />
      </div>
-   
+        
      <div class="banner_adds">
      
      <a href="#"><img src="../images/advertise/bann2.jpg" alt="" title="" border="0" /></a>
