@@ -62,6 +62,14 @@ public partial class index : System.Web.UI.Page
             parentRepeater.DataSource = ds.Tables["Category"];
             parentRepeater.DataBind();
             //============================================
+            if (Session["user_logined"] == null || Session["user_logined"] == "")
+            {
+                lbtnLogin.Text = "Đăng nhập";
+            }
+            else
+            {
+                lbtnLogin.Text = "Thoát";
+            }
         }
     }
 
@@ -134,5 +142,32 @@ public partial class index : System.Web.UI.Page
         {
             //e.StackTrace;
         }
+    }
+
+    /// <summary>
+    /// lbtnLogin_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    public void lbtnLogin_Click(object sender, EventArgs e)
+    {
+        string label = lbtnLogin.Text;
+
+        if (label.Equals("Đăng nhập"))
+        {
+            Response.Redirect("vpp/login.aspx");
+        }
+        else if (label.Equals("Thoát"))
+        {
+            LogOut();
+        }
+
+    }
+
+    private void LogOut()
+    {
+        Session["user_logined"] = null;
+
+        Response.Redirect("../index.aspx");
     }
 }
