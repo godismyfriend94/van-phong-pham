@@ -37,17 +37,6 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             //Create the connection and DataAdapter for the Authors table.
             SqlConnection cnn = db.OpenConnection();
 
-            
-            //sqlCmd = new SqlCommand("usp_GetParentAndChilds", cnn);
-            //sqlCmd.CommandType = CommandType.StoredProcedure;
-
-            //sqlAdap = new SqlDataAdapter(sqlCmd);
-            //DataSet ds = new DataSet();
-            //sqlAdap.Fill(ds);
-
-
-
-
             SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
 
             //Create and fill the DataSet.
@@ -77,6 +66,15 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             righRepeaterAdv.DataSource = advertiseLogic.GetRighAdvertise();
             righRepeaterAdv.DataBind();
             //hết khu vực code vùng quảng cáo ----------------------------------
+
+            if (Session["user_logined"] == null || Session["user_logined"] == "")
+            {
+                lbtnLogin.Text = "Đăng nhập";
+            }
+            else
+            {
+                lbtnLogin.Text = "Thoát";
+            }
         }
     }
     /// <summary>
@@ -156,6 +154,30 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
     //{
     //    AjaxControlToolkit.Slide[] imgSlide = new AjaxControlToolkit.Slide[5];
 
+    /// <summary>
+    /// lbtnLogin_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    public void lbtnLogin_Click(object sender, EventArgs e)
+    {
+        string label = lbtnLogin.Text;
 
-   
+        if (label.Equals("Đăng nhập"))
+        {
+            Response.Redirect("vpp/login.aspx");
+        }
+        else if (label.Equals("Thoát"))
+        {
+            LogOut();
+        }
+        
+    }
+
+    private void LogOut()
+    {
+        Session["user_logined"] = null;
+
+        Response.Redirect("../index.aspx");
+    }
 }

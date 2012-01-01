@@ -112,7 +112,11 @@
                 <div class="lang_text">
                     <a href="vpp/faqs.aspx" title="header=[Giải đáp thắc mắc cơ bản] body=[&nbsp;] fade=[on]">Câu hỏi thường gặp ?</a>
                     &nbsp;&nbsp;&nbsp; 
-                    <a href="vpp/login.aspx" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">Đăng nhập </a>
+                    <%--        	<a href="login.aspx" title="header=[Đăng nhập khi đã có tài khoản] body=[&nbsp;] fade=[on]">
+        	        Đăng nhập
+        	        </a>--%>
+        	        <asp:LinkButton ID="lbtnLogin" runat="server" Text="Đăng nhập" 
+                            onclick="lbtnLogin_Click"/>
                     &nbsp;&nbsp;&nbsp; 
                     <a href="vpp/register.aspx" title="header=[Đăng ký tài khoản mới] body=[&nbsp;] fade=[on]">Đăng ký </a>
                 </div>
