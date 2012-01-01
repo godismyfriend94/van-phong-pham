@@ -15,37 +15,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
 {
 
     static ProductLogic productLogic = new ProductLogic();
-
-    //protected void Page_Load(object sender, EventArgs e)
-    //{
-    //    CategoryLogic categoryLogic = new CategoryLogic();
-    //    SubCategoryLogic subCategoryLogic = new SubCategoryLogic();
-    //    if (!Page.IsPostBack)
-    //    {
-    //        CommonDb db = new CommonDb();
-    //        //Create the connection and DataAdapter for the Authors table.
-    //        SqlConnection cnn = db.OpenConnection();
-    //        SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
-
-    //        //Create and fill the DataSet.
-    //        DataSet ds = new DataSet();
-    //        cmd1.Fill(ds, "Category");
-
-    //        //Create a second DataAdapter for the Titles table.
-    //        SqlDataAdapter cmd2 = new SqlDataAdapter("select * from SubCategory", cnn);
-    //        cmd2.Fill(ds, "SubCategory");
-
-    //        //Create the relation bewtween the Authors and Titles tables.
-    //        ds.Relations.Add("myrelation",
-    //        ds.Tables["Category"].Columns["CategoryId"],
-    //        ds.Tables["SubCategory"].Columns["CategoryId"]);
-    //        ds.Relations[0].Nested = true;
-
-    //        //Bind the Authors table to the parent Repeater control, and call DataBind.
-    //        parentRepeater.DataSource = ds.Tables["Category"];
-    //        parentRepeater.DataBind();
-    //    }   
-    //}
+    static TblUser tblUser = null;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -54,6 +24,15 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
         AdvertiseLogic advertiseLogic = new AdvertiseLogic();
         if (!Page.IsPostBack)
         {
+            if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
+            {
+                tblUser = (TblUser)Session["user_logined"];
+                if (CheckPermission(tblUser.GroupId))
+                {
+                    pnlAdmPanel.Visible = true;
+                }
+            }
+            
             CommonDb db = new CommonDb();
             //Create the connection and DataAdapter for the Authors table.
             SqlConnection cnn = db.OpenConnection();
@@ -100,7 +79,38 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             //hết khu vực code vùng quảng cáo ----------------------------------
         }
     }
+    /// <summary>
+    /// CheckPermission
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public bool CheckPermission(string groupId)
+    {
+        bool isValid = false;
 
+        if(groupId.Equals("g2"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g3"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g4"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g5"))
+        {
+            isValid = true;
+        }
+        else
+        {
+            isValid = false;
+        }
+
+        return isValid;
+    }
     [System.Web.Services.WebMethod]
     [System.Web.Script.Services.ScriptMethod]
     public static AjaxControlToolkit.Slide[] GetSlides()

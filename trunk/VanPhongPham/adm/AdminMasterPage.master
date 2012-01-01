@@ -71,10 +71,9 @@
 
     <div id="arrows"></div>
     <div class="bodytext" id="hello">
-        Hello 
+        Xin chào 
         <a href="adminprofile.aspx">
-            <asp:Label ID="lblHelloAdmin" runat="server" Text="Administrator"></asp:Label>
-            
+            <asp:Label ID="lblHelloAdmin" runat="server" Text="Admin"></asp:Label>
         </a>
         <img src="images/icons/user.png" alt="user_icon" width="22" height="25" border="0" />
         <br />
@@ -85,10 +84,10 @@
 
     <div id="visitsite">
       <div align="center" class="toplinks">
-        <div id="visitsite_icon"><a href="../user/home.aspx" target="_blank"><img src="images/icons/big_visitsite.png" alt="big_visitsite" width="30" height="25" border="0" /></a></div>
+        <div id="visitsite_icon"><a href="../index.aspx" target="_blank"><img src="images/icons/big_visitsite.png" alt="big_visitsite" width="30" height="25" border="0" /></a></div>
         <br />
         <br />
-          <a href="../user/home.aspx" target="_blank"><span class="toplinks">VISIT SITE</span></a></div>
+          <a href="../index.aspx" target="_blank"><span class="toplinks">Trang chủ</span></a></div>
     </div>
 
     <!--// Visit site edit ends -->
@@ -98,7 +97,7 @@
         <div id="users_icon"><a href="employee.aspx"><img src="images/icons/big_users.png" alt="big_users" width="24" height="26" border="0" /></a></div>
     <span class="toplinks"><br />
           <br />
-          <a href="employee.aspx"><span class="toplinks">EMPLOYEE</span></a></span></div>
+          <a href="employee.aspx"><span class="toplinks">Thành viên</span></a></span></div>
       <br />
     </div>
 
@@ -109,7 +108,7 @@
         <div id="settings_icon"><a href="adminprofile.aspx"><img src="images/MyProfile.png" alt="big_settings" width="30" height="30" border="0" /></a></div>
 			    <span class="toplinks"><br />
           <br />
-          <a href="adminprofile.aspx"><span class="toplinks">MY PROFILE</span></a></span><br />
+          <a href="adminprofile.aspx"><span class="toplinks">Tiểu sử</span></a></span><br />
       </div>
     </div>
     <!--// settings edit ends -->
@@ -124,7 +123,7 @@
         <span class="toplinks"><br />
             <br />
             <asp:LinkButton ID="lbtnLogout" OnClick="lbtnLogout_click" runat="server">
-                <span class="toplinks">LOG OUT</span>
+                <span class="toplinks">Thoát</span>
             </asp:LinkButton>
         </span>
         <br />
@@ -135,16 +134,24 @@
     <div class="bodytext" id="dropdown">
         <ul id="jsddm">
 	        <li>
-	            <a href="#">What would you like to do today?</a>
+	            <a href="#">Bạn muốn quản lý gì hôm nay?</a>
 	            <ul>
-		            <li><a href="flower.aspx">» Create a Flower</a></li>
-		            <li><a href="bouquet.aspx">» Create a Bouquet</a></li>
-		            <li><a href="employee.aspx">» Add a Employee</a></li>
-		            <li><a href="adminprofile.aspx">» Edit my Profile</a></li>
-                    <li><a href="comment.aspx">» View User's Comments</a></li>
-                    <li><a href="storage.aspx">» Manage Storage</a></li>
-                    <li><a href="customer.aspx">» Manage Customer</a></li>
-                    <li><a href="bill.aspx">» Manage Bill</a></li>
+	                <li><a href="adminprofile.aspx">» Quản lý chung</a></li>
+		            <li><a href="adminprofile.aspx">» Quản lý danh mục chính</a></li>
+		            <li><a href="employee.aspx">» Quản lý danh mục phụ</a></li>
+		            <li><a href="flower.aspx">» Quản lý sản phẩm</a></li>
+		            <li><a href="bouquet.aspx">» Quản lý thành viên</a></li>
+                    <li><a href="comment.aspx">» Quản lý hóa đơn</a></li>
+                    <li><a href="storage.aspx">» Quản lý giao diện</a></li>
+                    <li><a href="customer.aspx">» Quản lý liên hệ</a></li>
+                    <li><a href="bill.aspx">» Quản lý đánh giá</a></li>
+                    <li><a href="comment.aspx">» Quản lý hệ thống</a></li>
+                    <li><a href="storage.aspx">» Quản lý quảng cáo</a></li>
+                    <li><a href="customer.aspx">» Quản lý chính sách</a></li>
+                    <li><a href="bill.aspx">» Quản lý đối tác</a></li>
+                    <li><a href="comment.aspx">» Quản lý báo giá</a></li>
+                    <li><a href="storage.aspx">» Quản lý dịch vụ</a></li>
+                    <li><a href="customer.aspx">» Quản lý trợ giúp</a></li>
 	            </ul>
 	        </li>
         </ul>

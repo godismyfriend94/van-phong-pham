@@ -12,13 +12,29 @@ using AjaxControlToolkit;
 public partial class vpp_details : System.Web.UI.Page
 {
     static int productId;
+    static TblUser tblUser;
     ProductLogic productLogic = new ProductLogic();
     ProductImageLogic productImageLogic = new ProductImageLogic();
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
         {
             ProductDetail();
+
+            if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
+            {
+                tblUser = (TblUser)Session["user_logined"];
+                if (tblUser != null && CheckPermission(tblUser.GroupId))
+                {
+                    //ContentPlaceHolder mpContentPlaceHolder;
+                    //Panel panel;
+                    //mpContentPlaceHolder = (ContentPlaceHolder)Page.FindControl("plhd_Content");
+                    //panel = (Panel)mpContentPlaceHolder.FindControl("pnlEditProductPanel");
+                    Panel panel = (Panel)dtvDetail.FindControl("pnlEditProductPanel");
+                    panel.Visible = true;
+                }
+            }
         }
     }
 
@@ -32,6 +48,39 @@ public partial class vpp_details : System.Web.UI.Page
         Repeater rptComposition = (Repeater)dtvDetail.FindControl("rptComposition");
         rptComposition.DataSource = productImageLogic.GetProductImageByProductId(productId);
         rptComposition.DataBind();
+    }
+
+    /// <summary>
+    /// CheckPermission
+    /// </summary>
+    /// <param name="groupId"></param>
+    /// <returns></returns>
+    public bool CheckPermission(string groupId)
+    {
+        bool isValid = false;
+
+        if (groupId.Equals("g2"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g3"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g4"))
+        {
+            isValid = true;
+        }
+        else if (groupId.Equals("g5"))
+        {
+            isValid = true;
+        }
+        else
+        {
+            isValid = false;
+        }
+
+        return isValid;
     }
 
     protected void productRating_Changed(object sender, RatingEventArgs e)
