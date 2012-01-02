@@ -18,7 +18,6 @@ public partial class index : System.Web.UI.Page
     static TblUser tblUser = null;
     protected void Page_Load(object sender, EventArgs e)
     {
-
         AdvertiseLogic advertiseLogic = new AdvertiseLogic();
         if (!Page.IsPostBack)
         {
@@ -163,11 +162,13 @@ public partial class index : System.Web.UI.Page
         }
 
     }
-
+    /// <summary>
+    /// LogOut
+    /// </summary>
     private void LogOut()
     {
         Session["user_logined"] = null;
 
-        Response.Redirect("../index.aspx");
+        Response.Redirect("index.aspx");
     }
 }

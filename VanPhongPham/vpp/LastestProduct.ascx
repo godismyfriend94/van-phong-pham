@@ -12,7 +12,7 @@
                    <a href="details.aspx?prodId=<%#Eval("ProductId")%>"><%#Eval("ProductName")%></a></div>
                <div class="product_img">
                    <a href="details.aspx?prodId=<%#Eval("ProductId")%>">
-                   <img alt="" border="0" src="images/<%#Eval("Thumbnails")%>" title="" width="92" height="92"/></a></div>
+                   <img alt="" border="0" src="images/<%#Eval("Thumbnails")%>" title="" width="92" height="92" class="image-product"/></a></div>
                <div class="prod_price">
                    <span class="price"><%#Eval("Price")%> VND</span></div>
            </div>

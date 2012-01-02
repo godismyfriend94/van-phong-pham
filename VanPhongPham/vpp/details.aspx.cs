@@ -33,6 +33,9 @@ public partial class vpp_details : System.Web.UI.Page
                     //panel = (Panel)mpContentPlaceHolder.FindControl("pnlEditProductPanel");
                     Panel panel = (Panel)dtvDetail.FindControl("pnlEditProductPanel");
                     panel.Visible = true;
+
+                    UpdatePanel upnEditPrice = (UpdatePanel)dtvDetail.FindControl("upnEditPrice");
+                    upnEditPrice.Visible = true;
                 }
             }
         }
@@ -118,8 +121,36 @@ public partial class vpp_details : System.Web.UI.Page
         lblResponse.Text = "<b>" + howSpicy + "</b>";
     }
 
-
+    /// <summary>
+    /// btnSubmitRate_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void btnSubmitRate_Click(object sender, EventArgs e)
+    {
+
+    }
+    /// <summary>
+    /// btnEditPriceToogle_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnEditPriceToogle_Click(object sender, EventArgs e)
+    {
+        Panel panel = (Panel)dtvDetail.FindControl("pnlEditPrice");
+        
+        panel.Visible = true;
+
+        //TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
+        //txtPrice.Text = "123456789";
+    }
+
+    /// <summary>
+    /// btnEditPrice_Click
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void btnEditPrice_Click(object sender, EventArgs e)
     {
 
     }
