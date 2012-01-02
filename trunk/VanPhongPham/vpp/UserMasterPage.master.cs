@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 
 public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
 {
-
+    static string title = "Văn phòng phẩm - 18 Tô Vĩnh Diện";
     static ProductLogic productLogic = new ProductLogic();
     static TblUser tblUser = null;
 
@@ -24,6 +24,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
         AdvertiseLogic advertiseLogic = new AdvertiseLogic();
         if (!Page.IsPostBack)
         {
+            Page.Title = title;
             if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
             {
                 tblUser = (TblUser)Session["user_logined"];

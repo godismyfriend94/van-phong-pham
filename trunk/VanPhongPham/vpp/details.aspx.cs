@@ -11,6 +11,7 @@ using AjaxControlToolkit;
 
 public partial class vpp_details : System.Web.UI.Page
 {
+    static string title = "Văn phòng phẩm - 18 Tô Vĩnh Diện";
     static int productId;
     static TblUser tblUser;
     ProductLogic productLogic = new ProductLogic();
@@ -117,7 +118,7 @@ public partial class vpp_details : System.Web.UI.Page
 
                 break;
         }
-
+        Page.Title = title;
         lblResponse.Text = "<b>" + howSpicy + "</b>";
     }
 
@@ -140,7 +141,7 @@ public partial class vpp_details : System.Web.UI.Page
         Panel panel = (Panel)dtvDetail.FindControl("pnlEditPrice");
         
         panel.Visible = true;
-
+        Page.Title = title;
         //TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
         //txtPrice.Text = "123456789";
     }

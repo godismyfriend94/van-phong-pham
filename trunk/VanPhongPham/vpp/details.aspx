@@ -266,9 +266,46 @@
                 </div>
             </asp:Panel>
             </div>
+            
+        <asp:CollapsiblePanelExtender ID="CollapsiblePanelExtender1" runat="Server"
+            TargetControlID="pnlReviewListContent"
+            ExpandControlID="pnlReviewListHeader"
+            CollapseControlID="pnlReviewListHeader" 
+            Collapsed="True"
+            TextLabelID="lblHeader2"
+
+            SuppressPostBack="true"
+            SkinID="CollapsiblePanelDemo" />
+        <div>
+        <asp:Panel ID="pnlReviewListHeader" runat="server" style="cursor: pointer;">
+                <div class="center_title_bar">
+                    <asp:Label ID="lblHeader1" Font-Bold="true" runat="server" Text="Xem các đánh giá về sản phẩm này."></asp:Label>
+                 </div>
+                <div style="float: left;">
+                    <asp:Label ID="lblHeader2" runat="server"></asp:Label>
+                </div>
+<%--                <div style="float: right; vertical-align: middle;">
+                    <asp:ImageButton ID="Image1" runat="server" ImageUrl="../images/products/expand_blue.jpg" AlternateText="(Show Details...)"/>
+                </div>--%>
+        </asp:Panel>
+        </div>
+        <div style="float:left;">
+        <asp:Panel id="pnlReviewListContent" runat="server" style="overflow:hidden;">
+            <div class="prod_box_big">
+        	<div class="top_prod_box_big"></div>
+            <div class="center_prod_box_big">      
+              	<div class="contact_form_map">
+                    
+                <br /><br />
+                </div>
+                </div>
+                <div class="bottom_prod_box_big"></div>                                
+                </div>
+            </asp:Panel>
+            </div>
         </ContentTemplate> 
         </asp:UpdatePanel>                          
-<usc:RelatedProduct runat="server" ID="uscRelatedProduct" />
+        <usc:RelatedProduct runat="server" ID="uscRelatedProduct" />
         <%--<object data=http://vatgia.com/hanoitechpro width="600" height="400"> 
             <embed src=http://vatgia.com/hanoitechpro width="600" height="400"></embed> 
             Error: Embedded data could not be displayed. 
