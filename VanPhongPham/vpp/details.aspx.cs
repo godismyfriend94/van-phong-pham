@@ -21,6 +21,7 @@ public partial class vpp_details : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
+
             ProductDetail();
 
             if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
@@ -131,28 +132,56 @@ public partial class vpp_details : System.Web.UI.Page
     {
 
     }
+
     /// <summary>
-    /// btnEditPriceToogle_Click
+    /// dtvDetail_OnItemCommand
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    protected void btnEditPriceToogle_Click(object sender, EventArgs e)
+    protected void dtvDetail_OnItemCommand(object sender, CommandEventArgs e)
     {
         Panel panel = (Panel)dtvDetail.FindControl("pnlEditPrice");
+        string commandName = e.CommandName;
+        int prodId = int.Parse(e.CommandArgument.ToString());
+        if (commandName.Equals("editPriceToggle"))
+        {
+            panel.Visible = true;
+            Page.Title = title;
+            LinkButton btnSavePrice = (LinkButton)dtvDetail.FindControl("lbtnSavePrice");
+
+            btnSavePrice.Attributes.Add("onclick", "return confirm('Bạn đã chắc chắn chưa?');");
+        }
+        else if (commandName.Equals("savePrice"))
+        {
+            TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
+            
+            //HiddenField optionField = (HiddenField)dtvDetail.FindControl("confirmToSave");
+            //int option = int.Parse(optionField.Value.ToString());
+            Response.Redirect("details.aspx?prodId=" + prodId.ToString());
+        }
+    }
+    ///// <summary>
+    ///// btnEditPriceToogle_Click
+    ///// </summary>
+    ///// <param name="sender"></param>
+    ///// <param name="e"></param>
+    //protected void btnEditPriceToogle_Click(object sender, EventArgs e)
+    //{
+    //    Panel panel = (Panel)dtvDetail.FindControl("pnlEditPrice");
         
-        panel.Visible = true;
-        Page.Title = title;
-        //TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
-        //txtPrice.Text = "123456789";
-    }
+    //    panel.Visible = true;
+    //    Page.Title = title;
+    //    //TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
+    //    //txtPrice.Text = "123456789";
+    //}
 
-    /// <summary>
-    /// btnEditPrice_Click
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    protected void btnEditPrice_Click(object sender, EventArgs e)
-    {
+    ///// <summary>
+    ///// btnEditPrice_Click
+    ///// </summary>
+    ///// <param name="sender"></param>
+    ///// <param name="e"></param>
+    //protected void btnEditPrice_Click(object sender, EventArgs e)
+    //{
 
-    }
+    //}
 }

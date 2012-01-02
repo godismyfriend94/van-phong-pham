@@ -111,7 +111,7 @@
                         </strong>
                         </label>
                         
-                        <asp:TextBox ID="txtDateOfBirth" runat="server" CssClass="contact_input"></asp:TextBox>
+                        <%--<asp:TextBox ID="txtDateOfBirth" runat="server" CssClass="contact_input"></asp:TextBox>
                         &nbsp;
                         <asp:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Format="MM/dd/yyyy" 
                                 Enabled="True" TargetControlID="txtDateOfBirth">
@@ -122,7 +122,27 @@
                         </asp:RequiredFieldValidator>
                         <asp:ValidatorCalloutExtender ID="RequiredFieldValidator5_ValidatorCalloutExtender" 
                             runat="server" Enabled="True" TargetControlID="RequiredFieldValidator5">
-                        </asp:ValidatorCalloutExtender>
+                        </asp:ValidatorCalloutExtender>--%>
+                        <asp:TextBox ID="txtDateOfBirth" runat="server" Width="130px" Height="20" MaxLength="1" style="text-align:justify" ValidationGroup="MKE" />
+                        <asp:ImageButton ID="ImgBntCalc" runat="server" ImageUrl="../images/gui/Calendar_scheduleHS.png" CausesValidation="False" />
+                        <asp:MaskedEditExtender ID="MaskedEditExtender5" runat="server"
+                            TargetControlID="txtDateOfBirth"
+                            Mask="99/99/9999"
+                            MessageValidatorTip="true"
+                            OnFocusCssClass="MaskedEditFocus"
+                            OnInvalidCssClass="MaskedEditError"
+                            MaskType="Date"
+                            DisplayMoney="Left"
+                            AcceptNegative="Left"
+                            ErrorTooltipEnabled="True" />
+                        <asp:MaskedEditValidator ID="MaskedEditValidator5" runat="server"
+                            ControlExtender="MaskedEditExtender5"
+                            ControlToValidate="txtDateOfBirth"
+                            InvalidValueMessage="Ngày không hợp lệ"
+                            Display="Dynamic"
+                            InvalidValueBlurredMessage="Ngày không hợp lệ"
+                            ValidationGroup="MKE" />
+                         <asp:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtDateOfBirth" PopupButtonID="ImgBntCalc" />
                         
                     </div>
                     
