@@ -165,7 +165,7 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
 
         if (label.Equals("Đăng nhập"))
         {
-            Response.Redirect("vpp/login.aspx");
+            Response.Redirect("login.aspx");
         }
         else if (label.Equals("Thoát"))
         {

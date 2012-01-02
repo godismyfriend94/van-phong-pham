@@ -73,16 +73,58 @@
                 
                 Tình trạng: <span class="blue"><%#Eval("Quality")%></span><br />
                 
-                Chi phí vận chuyển <span class="blue"><%#Eval("TransportCost")%> VND</span><br />
+                Chi phí vận chuyển <span class="blue"><%#Eval("TransportCost")%> VNĐ</span><br />
                 Cập nhật ngày: <span class="blue"><%#Eval("CreateDate")%></span><br />
              </div>
              <div class="prod_price_big"><span class="reduce">
-                    <%#Eval("Price")%>
+                    <%#String.Format("{0:0,0}",Eval("Price"))%> &nbsp;VNĐ
                 </span>
                 <span class="price">
-                    <%#Eval("PromotionPrice")%> VND
-                </span></div>
-             
+                    <%#String.Format("{0:0,0}", Eval("PromotionPrice"))%> &nbsp;VNĐ
+                </span>
+                <asp:UpdatePanel runat="server" ID="upnEditPrice" Visible="false">
+                    <ContentTemplate>
+                        <asp:LinkButton ID="btnGetPassword" CssClass="edit_product" runat="server" Text="[Sửa giá]" OnClick="btnEditPriceToogle_Click"/>
+                        <asp:Panel runat="server" ID="pnlEditPrice" Visible="false">
+                            <br />
+                            <asp:TextBox ID="txtPrice" runat="server" Width="130px" Text="<%#Eval("PromotionPrice")%>" Height="20px" ValidationGroup="MKE" ></asp:TextBox>
+                            &nbsp; VNĐ
+                            <asp:MaskedEditExtender ID="MaskedEditExtender2" runat="server"
+                                TargetControlID="txtPrice"
+                                Mask="999,999,999"
+                                MessageValidatorTip="true"
+                                OnFocusCssClass="MaskedEditFocus"
+                                OnInvalidCssClass="MaskedEditError"
+                                MaskType="Number"
+                                InputDirection="LeftToRight"
+                                
+                                AcceptNegative="Right"
+                                ErrorTooltipEnabled="True" />
+                            <asp:MaskedEditValidator ID="MaskedEditValidator2" runat="server"
+                                ControlExtender="MaskedEditExtender2"
+                                ControlToValidate="txtPrice"
+                                IsValidEmpty="False"
+                                EmptyValueMessage="Hãy nhập giá"
+                                InvalidValueMessage="Giá không hợp lệ"
+                                MinimumValueMessage="Giá phải lớn hơn 0"
+                                MinimumValue="1"
+                                Display="Dynamic"
+                                
+                                EmptyValueBlurredText="*"
+                                InvalidValueBlurredMessage="*"
+                                MaximumValueBlurredMessage="*"
+                                MinimumValueBlurredText="*"
+                                ValidationGroup="MKE" />
+                                
+                                <br />
+                            <asp:LinkButton ID="LinkButton1" CssClass="edit_product" runat="server" Text="[Lưu lại]" OnClick="btnEditPrice_Click"/>
+                            <br /><br />
+                        </asp:Panel>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                
+            </div>
+                
              <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
              <%--<a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>--%>
              
@@ -182,7 +224,7 @@
                 </div>  
 
                 <div class="review_form_row">
-                    <label class="contact">
+                    <label class="review">
                         <strong>
                             <asp:Label ID="lblEmailReview" runat="server" Text="Email:"></asp:Label>
                         </strong>
