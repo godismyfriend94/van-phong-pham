@@ -35,6 +35,7 @@
     <script type="text/javascript" src="js/boxOver.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/adv_float.js"></script>
+    
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     
@@ -62,7 +63,7 @@
     
 </head>
 <body onload="initialize()">
-<form runat="server" id="frm_main">
+<form runat="server" id="mainform">
 <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
             </asp:ToolkitScriptManager>    
 <div id="main_container">

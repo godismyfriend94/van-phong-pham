@@ -6,6 +6,7 @@
 	
     <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
     <script src="js/jqzoom.pack.1.0.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/Product.js"></script>
     <link rel="stylesheet" href="css/jqzoom.css" type="text/css" />
     <style type ="text/css">
 
@@ -27,16 +28,17 @@
              document.getElementById("img_link").href = image.href;
          }
      </script>
+       
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang chi tiết sản phẩm</span>
     </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
 <asp:DetailsView ID="dtvDetail" runat="server" AutoGenerateRows="False" GridLines="None" 
-        BorderColor="White" BorderStyle="None" 
+        BorderColor="White" BorderStyle="None" OnItemCommand="dtvDetail_OnItemCommand"
         >
-<Fields>
-<asp:TemplateField>
+    <Fields>
+    <asp:TemplateField>
     <ItemTemplate>
     <div class="center_title_bar">Chi tiết sản phẩm</div>
 	<div class="prod_box_big">
@@ -84,10 +86,10 @@
                 </span>
                 <asp:UpdatePanel runat="server" ID="upnEditPrice" Visible="false">
                     <ContentTemplate>
-                        <asp:LinkButton ID="btnGetPassword" CssClass="edit_product" runat="server" Text="[Sửa giá]" OnClick="btnEditPriceToogle_Click"/>
+                        <asp:LinkButton ID="btnGetPassword" CssClass="edit_product" runat="server" CommandName="editPriceToggle" Text="[Sửa giá]" CommandArgument='<%#Eval("ProductId")%>'/>
                         <asp:Panel runat="server" ID="pnlEditPrice" Visible="false">
                             <br />
-                            <asp:TextBox ID="txtPrice" runat="server" Width="130px" Text="<%#Eval("PromotionPrice")%>" Height="20px" ValidationGroup="MKE" ></asp:TextBox>
+                            <asp:TextBox ID="txtPrice" runat="server" Width="130px" Text='<%#Eval("PromotionPrice")%>' Height="20px" CssClass="contact_input" ValidationGroup="MKE" ></asp:TextBox>
                             &nbsp; VNĐ
                             <asp:MaskedEditExtender ID="MaskedEditExtender2" runat="server"
                                 TargetControlID="txtPrice"
@@ -97,7 +99,6 @@
                                 OnInvalidCssClass="MaskedEditError"
                                 MaskType="Number"
                                 InputDirection="LeftToRight"
-                                
                                 AcceptNegative="Right"
                                 ErrorTooltipEnabled="True" />
                             <asp:MaskedEditValidator ID="MaskedEditValidator2" runat="server"
@@ -109,15 +110,13 @@
                                 MinimumValueMessage="Giá phải lớn hơn 0"
                                 MinimumValue="1"
                                 Display="Dynamic"
-                                
                                 EmptyValueBlurredText="*"
                                 InvalidValueBlurredMessage="*"
                                 MaximumValueBlurredMessage="*"
                                 MinimumValueBlurredText="*"
                                 ValidationGroup="MKE" />
-                                
                                 <br />
-                            <asp:LinkButton ID="LinkButton1" CssClass="edit_product" runat="server" Text="[Lưu lại]" OnClick="btnEditPrice_Click"/>
+                            <asp:LinkButton ID="lbtnSavePrice" CssClass="edit_product" runat="server"  CommandArgument='<%#Eval("ProductId")%>' CommandName="savePrice" Text="[Lưu lại]"/>
                             <br /><br />
                         </asp:Panel>
                     </ContentTemplate>
