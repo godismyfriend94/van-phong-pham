@@ -9,15 +9,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">   
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    
+    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
     <meta name="robots" content="index, assignment" />
     <meta name="keywords" content="hanoitechpro, thiet bi van phong, thiết bị văn phòng
         máy in, may in, may photocopy, máy photocopy, do muc may in, đổ mực máy in,
         18 tô vĩnh diện, 18 to vinh dien, hộp mực máy in, hop muc may in,
         sửa chữa máy in, sua chua may in, lắp đặt máy văn phòng, lap dat may van phong" />
         
-        <!--thẻ meta description rất quan trọng khi chia sẻ qua thư, các trang chia sẻ sẽ lấy giá trị
-        trong thuộc tính content để gắn vào nội dung thư chia sẻ.-->
+        <%--thẻ meta description rất quan trọng khi chia sẻ qua thư, các trang chia sẻ sẽ lấy giá trị
+        trong thuộc tính content để gắn vào nội dung thư chia sẻ.--%>
     <meta name="description" content="
         Công Ty TNHH Kỹ Thuật Và Phát Triển Công Nghệ Hà Nội
         18 Tô Vĩnh Diện - Thanh Xuân - Hà Nội. 
@@ -38,8 +38,7 @@
     <link href="css/fMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     
-
-    <!--Begin doan javascript xu ly cho left menu-->
+    <%--Begin doan javascript xu ly cho left menu--%>
     <script type="text/javascript">
         $(document).ready(function() {
             $('dd:not(:first)').hide();
@@ -57,56 +56,10 @@
             });
         });
     </script>
-    <script type="text/javascript" >
-        PositionX = 100;
-        PositionY = 100;
-
-        defaultWidth  = 500;
-        defaultHeight = 500;
-        var AutoClose = true;
-
-        if (parseInt(navigator.appVersion.charAt(0))>=4){
-        var isNN=(navigator.appName=="Netscape")?1:0;
-        var isIE=(navigator.appName.indexOf("Microsoft")!=-1)?1:0;}
-        var optNN='scrollbars=no,width='+defaultWidth+',height='+defaultHeight+',left='+PositionX+',top='+PositionY;
-        var optIE='scrollbars=no,width=150,height=100,left='+PositionX+',top='+PositionY;
-        function popImage(imageURL,imageTitle){
-            if (isNN){imgWin=window.open('about:blank','',optNN);}
-            if (isIE){imgWin=window.open('about:blank','',optIE);}
-            with (imgWin.document){
-                writeln('<html><head><title>Loading...</title><style>body{margin:0px;}</style>');
-                writeln('<sc'+'ript>');
-                writeln('var isNN,isIE;');
-                writeln('if (parseInt(navigator.appVersion.charAt(0))>=4){');
-                writeln('isNN=(navigator.appName=="Netscape")?1:0;');
-                writeln('isIE=(navigator.appName.indexOf("Microsoft")!=-1)?1:0;}');
-                writeln('function reSizeToImage(){');
-                writeln('if (isIE){');
-                writeln('window.resizeTo(300,300);');
-                writeln('width=300-(document.body.clientWidth-document.images[0].width);');
-                writeln('height=300-(document.body.clientHeight-document.images[0].height);');
-                writeln('window.resizeTo(width,height);}');
-                writeln('if (isNN){');       
-                writeln('window.innerWidth=document.images["George"].width;');
-                writeln('window.innerHeight=document.images["George"].height;}}');
-                writeln('function doTitle(){document.title="'+imageTitle+'";}');
-                writeln('</sc'+'ript>');
-                if (!AutoClose) writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()">')
-                else 
-                    writeln('</head><body bgcolor=ffffff scroll="no" onload="reSizeToImage();doTitle();self.focus()" onblur="self.close()">');
-                    writeln('<img name="George" src='+imageURL+' style="display:block"></body></html>');
-                close();
-            }
-        }
-        
-    </script>
-    <!--[if IE 6]>-->
-    <link rel="stylesheet" type="text/css" href="css/iecss.css" />
-    <!--<![endif]-->
-    <script type="text/javascript" src="js/boxOver.js"></script>
-    <script type="text/javascript" src="js/switchimages.js"></script>
+    <%--[if IE 6]>
+    <[endif]--%>
     <script type="text/javascript" src="js/plusone.js"></script>
-    <title>Văn phòng phẩm - 18 Tô Vĩnh Diện</title>
+    
 </head>
 <body onload="initialize()">
 <form runat="server" id="frm_main">
