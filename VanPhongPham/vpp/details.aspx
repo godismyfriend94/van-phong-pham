@@ -84,13 +84,19 @@
                 <span class="price">
                     <%#String.Format("{0:0,0}", Eval("PromotionPrice"))%> &nbsp;VNĐ
                 </span>
+            </div>
+            <div class="specifications">
                 <asp:UpdatePanel runat="server" ID="upnEditPrice" Visible="false">
                     <ContentTemplate>
                         <asp:LinkButton ID="btnGetPassword" CssClass="edit_product" runat="server" CommandName="editPriceToggle" Text="[Sửa giá]" CommandArgument='<%#Eval("ProductId")%>'/>
                         <asp:Panel runat="server" ID="pnlEditPrice" Visible="false">
                             <br />
-                            <asp:TextBox ID="txtPrice" runat="server" Width="130px" Text='<%#Eval("PromotionPrice")%>' Height="20px" CssClass="contact_input" ValidationGroup="MKE" ></asp:TextBox>
+                            <div class="edit_price_row">
+                            <label class="priceEdit">Giá gốc:</label> 
+                            <asp:TextBox ID="txtPrice" runat="server" Width="130px" Text='<%#Eval("Price")%>' Height="20px" CssClass="contact_input" ValidationGroup="MKE" ></asp:TextBox>
                             &nbsp; VNĐ
+                            
+                            
                             <asp:MaskedEditExtender ID="MaskedEditExtender2" runat="server"
                                 TargetControlID="txtPrice"
                                 Mask="999,999,999"
@@ -106,15 +112,47 @@
                                 ControlToValidate="txtPrice"
                                 IsValidEmpty="False"
                                 EmptyValueMessage="Hãy nhập giá"
+                                InvalidValueMessage="Giá trị không hợp lệ"
+                                MinimumValueMessage="Giá trị phải lớn hơn 0"
+                                MinimumValue="1"
+                                Display="Dynamic"
+                                EmptyValueBlurredText="*"
+                                InvalidValueBlurredMessage="Không hợp lệ"
+                                MaximumValueBlurredMessage="*"
+                                MinimumValueBlurredText="*"
+                                ValidationGroup="MKE" />
+                            </div>
+                                                        
+                            <div class="edit_price_row">
+                            <label class="priceEdit">Khuyến mại: </label> 
+                            <asp:TextBox ID="txtPromotion" runat="server" Width="130px" Text='<%#Eval("Promotion")%>' Height="20px"  CssClass="contact_input" ValidationGroup="vgrPrice"></asp:TextBox>
+                            &nbsp; %
+                            
+                            <asp:MaskedEditExtender ID="MaskedEditExtender1" runat="server"
+                                TargetControlID="txtPromotion"
+                                Mask="99"
+                                MessageValidatorTip="true"
+                                OnFocusCssClass="MaskedEditFocus"
+                                OnInvalidCssClass="MaskedEditError"
+                                MaskType="Number"
+                                InputDirection="LeftToRight"
+                                AcceptNegative="Right"
+                                ErrorTooltipEnabled="True" />
+                            <asp:MaskedEditValidator ID="MaskedEditValidator1" runat="server"
+                                ControlExtender="MaskedEditExtender2"
+                                ControlToValidate="txtPromotion"
+                                IsValidEmpty="False"
+                                EmptyValueMessage="Hãy nhập giá"
                                 InvalidValueMessage="Giá không hợp lệ"
                                 MinimumValueMessage="Giá phải lớn hơn 0"
-                                MinimumValue="1"
+                                MinimumValue="0"
                                 Display="Dynamic"
                                 EmptyValueBlurredText="*"
                                 InvalidValueBlurredMessage="*"
                                 MaximumValueBlurredMessage="*"
                                 MinimumValueBlurredText="*"
-                                ValidationGroup="MKE" />
+                                ValidationGroup="vgrPrice" />
+                            </div>
                                 <br />
                             <asp:LinkButton ID="lbtnSavePrice" CssClass="edit_product" runat="server"  CommandArgument='<%#Eval("ProductId")%>' CommandName="savePrice" Text="[Lưu lại]"/>
                             <br /><br />
@@ -122,7 +160,7 @@
                     </ContentTemplate>
                 </asp:UpdatePanel>
                 
-            </div>
+                </div>
                 
              <a href="#" class="addtocart" title="header=[Cho vào giỏ hàng] body=[&nbsp;] fade=[on]">Cho vào giỏ</a>
              <%--<a href="#" class="compare" title="header=[So sánh sản phẩm] body=[&nbsp;] fade=[on]">So sánh</a>--%>

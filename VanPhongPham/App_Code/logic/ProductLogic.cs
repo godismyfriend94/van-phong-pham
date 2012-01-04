@@ -99,6 +99,16 @@ public class ProductLogic
     }
 
     /// <summary>
+    /// UpdatePriceAndPromotion
+    /// </summary>
+    /// <param name="product"></param>
+    /// <returns></returns>
+    public bool UpdatePriceAndPromotion(Product product)
+    {
+        return productDao.UpdatePriceAndPromotion(product);
+    }
+
+    /// <summary>
     /// Deleteproduct - xoa thông tin product
     /// </summary>
     /// <param name="product"></param>

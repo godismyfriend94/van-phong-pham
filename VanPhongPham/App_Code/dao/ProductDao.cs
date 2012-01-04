@@ -237,6 +237,35 @@ public class ProductDao
     }
 
     /// <summary>
+    /// UpdatePriceAndPromotion
+    /// </summary>
+    /// <param name="product"></param>
+    /// <returns></returns>
+    public bool UpdatePriceAndPromotion(Product product)
+    {
+        SqlParameter[] paramList = new SqlParameter[3];
+
+        paramList[0] = new SqlParameter("@ProductId", SqlDbType.Int);
+        paramList[0].Value = product.ProductId;
+
+        paramList[1] = new SqlParameter("@Price", SqlDbType.Float);
+        paramList[1].Value = product.Price;
+
+        paramList[2] = new SqlParameter("@Promotion", SqlDbType.Float);
+        paramList[2].Value = product.Promotion;
+
+        if (db.executeUpdate("UpdatePriceAndPromotion", paramList) == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+
+    /// <summary>
     /// Deleteproduct - xoa thông tin product
     /// </summary>
     /// <param name="product"></param>
