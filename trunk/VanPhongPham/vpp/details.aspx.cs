@@ -154,9 +154,22 @@ public partial class vpp_details : System.Web.UI.Page
         else if (commandName.Equals("savePrice"))
         {
             TextBox txtPrice = (TextBox)dtvDetail.FindControl("txtPrice");
-            
-            //HiddenField optionField = (HiddenField)dtvDetail.FindControl("confirmToSave");
-            //int option = int.Parse(optionField.Value.ToString());
+            TextBox txtPromotion = (TextBox)dtvDetail.FindControl("txtPromotion");
+            float price = float.Parse(txtPrice.Text);
+            float promotion = float.Parse(txtPromotion.Text);
+            Product product = new Product();
+            product.Price = price;
+            product.Promotion = promotion;
+            product.ProductId = prodId;
+
+            if (productLogic.UpdatePriceAndPromotion(product))
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "AZN.com", "<script>alert('Cập nhật thành công!')</script>", false);
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "AZN.com", "<script>alert('Cập nhật thất bại!')</script>", false);
+            }
             Response.Redirect("details.aspx?prodId=" + prodId.ToString());
         }
     }
