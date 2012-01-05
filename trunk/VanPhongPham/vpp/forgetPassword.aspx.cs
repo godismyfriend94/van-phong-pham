@@ -88,7 +88,13 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
                                 Lưu ý: đây là thư gửi tự động, làm ơn không trả lời! xin cảm ơn!
                             </td>
                         </tr>" +
-                    "<tr><td> </td></tr><tr><td>Kính thư,</td></tr><tr><td>Cảm ơn bạn đã sử dụng các dịch vụ của chúng tôi.</td></tr></table><img src='http://images3.wikia.nocookie.net/__cb20091205161621/poptarts/images/0/06/Thanks.gif' alt='logopng' width='116' height='100' /></body></html>";
+                    "<tr><td> </td></tr><tr><td>Kính thư,</td></tr>"+
+                    "<tr><td>Cảm ơn bạn đã sử dụng các dịch vụ của chúng tôi.</td></tr>"+
+                    "<tr><td><object data=http://vatgia.com/hanoitechpro width='600' height='400'>"+
+                        "<embed src=http://vatgia.com/hanoitechpro width='600' height='400'></embed>" +
+                        "Error: Embedded data could not be displayed. "+
+                        "</object></td></tr>" +
+                    "</table><img src='http://images3.wikia.nocookie.net/__cb20091205161621/poptarts/images/0/06/Thanks.gif' alt='logopng' width='116' height='100' /></body></html>";
 
             if (commonUtil.SendMail(from, to, "", "", subject, body, ""))
             {
