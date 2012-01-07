@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/adm/AdminMasterPage.master" AutoEventWireup="true" CodeFile="subcategory.aspx.cs" Inherits="adm_subcategory" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/adm/AdminMasterPage.master" AutoEventWireup="true" CodeFile="profile.aspx.cs" Inherits="adm_profile" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="plhd_Content" Runat="Server">
 <div class="title">
@@ -13,7 +13,6 @@
         <div class="form_subtitle">
             <asp:Label ID="lblCusList" runat="server" Text="Danh sách thành viên"></asp:Label>
         </div>
-        
     </div>
     <br />
     <div class="contact_form">
