@@ -42,15 +42,14 @@
         <table width="493" border="0" class="class2">
             <tr>
                 <%--<td valign="middle"><a href="employee.aspx">Employee</a></td>--%>
-                <td valign="middle"><a href="flower.aspx">Flower</a></td>
-                <td valign="middle"><a href="bouquet.aspx">Bouquet</a></td>
-                <td valign="middle"><a href="occasion.aspx">Occasion</a></td>
-                <td valign="middle"><a href="gift.aspx">Gift</a></td>
-                <td valign="middle"><a href="storage.aspx">Storage</a></td>
-                <td valign="middle"><a href="bill.aspx">Bill</a></td>
-                <td valign="middle"><a href="customer.aspx">Customer</a></td>
-                <td valign="middle"><a href="comment.aspx">Comment</a></td>
-                <td valign="middle"><a href="faq.aspx">FAQs</a></td>
+                <td valign="middle"><a href="flower.aspx">Sản phẩm</a></td>
+                <td valign="middle"><a href="bouquet.aspx">Hóa đơn</a></td>
+                <td valign="middle"><a href="occasion.aspx">Danh mục chính</a></td>
+                <td valign="middle"><a href="gift.aspx">Danh mục phụ</a></td>
+                <td valign="middle"><a href="bill.aspx">Dịch vụ</a></td>
+                <td valign="middle"><a href="storage.aspx">Quảng cáo</a></td>
+                <td valign="middle"><a href="bill.aspx">Chính sách</a></td>
+                <td valign="middle"><a href="customer.aspx">Giao diện</a></td>
             </tr>
         </table>
     </div>
@@ -278,123 +277,10 @@
         
         <div style=" padding-left: 10px; ">
         <asp:ContentPlaceHolder ID="plhd_Content" runat="server">
-            <table width="772" border="0">
-                <tr>
-                    <th height="58" valign="middle" bgcolor="#E5E5E5" scope="col"><h1 align="left">Welcome to your Admin Panel</h1></th> <!--// H1 title -->
-                </tr>
-                <tr>
-                    <td bgcolor="#FFFFFF">
-                        <p class="bodytext_paragraph">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sollicitudin tincidunt lacus. Sed non purus. Nullam porttitor ante id sem. <br /> <!--// bodytext -->
-                            Nam vel metus. Duis vitae lectus. Integer laoreet pulvinar nisi.  Nam vel metus. Duis vitae lectus. Integer laoreet pulvinar nisi.
-                            Lorem<br />
-                            ipsum dolor sit amet, consectetuer adipiscing elit. Duis sollicitudin tincidunt lacus. Sed non purus. Duis sollicitudin tincidunt lacus.<br />
-                            <br />
-                            Nullam porttitor ante id sem. 
-                            Nam vel metus. Duis vitae lectus. Integer laoreet pulvinar nisi.  Nam vel metus. 
-                            Duis vitae lectus. Integer laoreet pulvinar nisi. Nam vel metus.<br />
-                            <br />
-                        </p>
-                    </td>
-                </tr>
-            </table>
-          
-            <h2>  This is H2 Header title</h2> <!--// h2 title -->
-            <h3> This is H3 Header title</h3><br /> <!--// h3 title -->
-            <br />
-            <br />
-            <br />
-            <br />
-            <div id="positive"> <!--// Positive message -->
-                <table width="450" cellpadding="0" cellspacing="12">
-                    <tr>
-                        <td width="52">
-                            <div align="center">
-                                <img src="images/icons/positive.png" alt="positive" width="22" height="16" />
-                            </div>
-                        </td>
-                        <td width="388" class="bodytext">
-                            <strong>Congratulations!</strong> 
-                            Your information has been submitted suffesfully.
-                            <br />
-                        </td> <!--// positive message -->
-                    </tr>
-                </table>
-            </div>
-          
-            <div id="negative"> <!--// error message -->
-                <table width="450" cellpadding="0" cellspacing="12">
-                    <tr>
-                        <td width="52"><div align="center"><img src="images/icons/negative.png" alt="negative" width="18" height="18" /></div></td>
-                        <td width="388" class="bodytext"><strong>Error!</strong> Please try again, following fields were incorrect..</td> <!--// error text -->
-                    </tr>
-                </table>
-            </div>
-            <div id="tip"> <!--// tip message starts -->
-                <table width="450" cellpadding="0" cellspacing="12">
-                    <tr>
-                        <td width="52"><div align="center"><img src="images/icons/attention.png" alt="attention" width="22" height="18" /></div></td>
-                        <td width="388" class="bodytext"><span class=""><strong>ProAdmin TopTip!</strong> You can speed your working with...</span></td> <!--// tip message -->
-                    </tr>
-                </table>
-            </div>
-
-            <div class="bodytext_fieldstitle" id="fieldmedium">Form Fields – Medium</div> <!--// Form title medium -->
-            <div class="bodytext_fieldstitle" id="formtitle">Form Fields – Small</div> <!--// Form title small -->
-            <div class="bodytext_fieldstitle" id="fieldlarge">Form Fields – Large</div> <!--// Form title large -->
-            <div class="bodytext_fieldstitle" id="yourmessage">Your Message</div> <!--// Form title message -->
-          
-          
-          <!--// Small form field starts -->
-          
-          <div id="small"> 
-            <input name="search2" type="text" class="fields" id="search2" onfocus="if (value='Lorem ipsum dolor') {value=''}" onblur="if (value=='') {value='Lorem ipsum dolor'}" value="Lorem ipsum dolor" size="25" />
-            <br />
-            <span class="instructions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin bibendum nisi at ipsum.</span><span class="style9"><br />
-            </span><br />
-          </div>
-          
-          <!--// Small form field ends -->
-          
-          
-           <!--// medium form field starts -->
-           
-          <div id="medium">
-            <input name="search3" type="text" class="fields" id="search3" onfocus="if (value='Lorem ipsum dolor') {value=''}" onblur="if (value=='') {value='Lorem ipsum dolor'}" value="Lorem ipsum dolor" size="50" />
-            <br />
-          <span class="instructions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin bibendum nisi at ipsum..</span
-          ></div> 
-          
-            <!--// medium form field ends--> 
-	         <!--// large form field starts -->
-             
-          <div id="large">
-            <input name="search4" type="text" class="fields" id="search4" onfocus="if (value='Lorem ipsum dolor') {value=''}" onblur="if (value=='') {value='Lorem ipsum dolor'}" value="Lorem ipsum dolor" size="80" />
-          <span class="instructions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin bibendum nisi at ipsum.</span>
-          </div>  
-          
-           <!--// large form field ends -->
-           <!--// message form field starts -->
-
-          <div id="message"> 
-            <label></label>
-            <textarea name="search5" cols="80" rows="10" class="fields" id="search5" onfocus="if (value='Lorem ipsum dolor') {value=''}" onblur="if (value=='') {value='Lorem ipsum dolor'}" >Lorem ipsum dolor</textarea>
-            <span class="instructions">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin bibendum nisi at ipsum.    <br />
-            dolor sit amet, consectetuer adipiscing elit. Proin bibendum nisi at ipsum.</span><br />
-            <br />
-            <br />
             
-            <!--// message form field ends -->
-            <!--// Buttons start-->
-            <label> 
-            <input name="submit" type="submit" class="button" id="submit" value="Submit" /></label> <!--// submit -->
-            <input name="reset" type="reset" class="button" id="reset" value="Reset" />  <!--// reset -->
-            <input name="browse" type="reset" class="button" id="browse" value="Browse..." /> <!--// browse -->
-          </div>  
-
 
         </asp:ContentPlaceHolder>
-    </div>
+        </div>
     </div>
     <!--// Buttons ends -->
     <!--// Content ends -->

@@ -26,7 +26,7 @@ public partial class view_admin_AdminMasterPage : System.Web.UI.MasterPage
             //If not yet logined, back to login.aspx
             CheckLogin();
             //Set calendar
-            //SetCalendar();
+            SetCalendar();
             //Load Exchange rate
             //LoadExchangeRate();
             //currPending = myBill.Rows.Count;
