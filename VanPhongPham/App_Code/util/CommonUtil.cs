@@ -36,11 +36,11 @@ public class CommonUtil
     {
         try
         {
-        	str = str.Replace("\\", "\\\\");
+            str = str.Replace("\\", "\\\\");
         	str = str.Replace("'", "\\'");
-        	str = str.Replace("%", "\\%");
+            str = str.Replace("%", "\\%");
             return str;
-        } 
+        }
         catch (Exception e)
         {
             return str;

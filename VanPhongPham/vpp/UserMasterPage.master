@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="false" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="view_user_UserMasterPage" Debug="false"%>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Assembly="FlashControl" Namespace="Bewise.Web.UI.WebControls" TagPrefix="Bewise" %>
 <%@ Import Namespace="System.Data" %>
@@ -221,10 +221,12 @@
      <div class="border_box_statistic">
         <br />
          <p style="color: Green; font-size: 13px;">
-            <img src="images/User.png" alt="Đang truy cập"/> Đang truy cập: 212
+            <img src="images/User.png" alt="Đang truy cập"/> Đang truy cập: 
+            <asp:Label ID="lblDangTruyCap" ForeColor="Green" runat="server" Text="--"></asp:Label>
          </p><br />
          <p style="color: Blue; font-size: 13px;">
-            <img src="images/icon_visited.gif" alt="Đã truy cập"/>Đã truy cập:  212345
+            <img src="images/icon_visited.gif" alt="Đã truy cập"/>Đã truy cập:  
+            <asp:Label ID="lblDaTruyCap" ForeColor="Blue" runat="server" Text="--"></asp:Label>
          </p><br />
          <p style="color: #DE6B10; font-size: 13px;">
             <img src="images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011

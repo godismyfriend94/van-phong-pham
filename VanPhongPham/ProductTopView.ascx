@@ -14,7 +14,7 @@
                    <a href="vpp/details.aspx?prodId=<%#Eval("ProductId")%>">
                    <img alt="" border="0" src="images/products/<%#Eval("Thumbnails")%>" title="" width="92" height="92" class="image-product"/></a></div>
                <div class="prod_price">
-                   <span class="price"><%#Eval("Price")%> VND</span></div>
+                   <span class="price"><%#String.Format("{0:0,0}", Eval("PromotionPrice"))%> &nbsp;VNĐ</span></div>
            </div>
            <div class="bottom_prod_box">
            </div>

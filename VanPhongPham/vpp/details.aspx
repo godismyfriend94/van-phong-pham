@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="details.aspx.cs" Inherits="vpp_details" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register Src="RelatedProduct.ascx" TagPrefix ="usc" TagName="RelatedProduct" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
@@ -176,7 +176,7 @@
   	    <asp:Panel runat="server" Width="540px" ScrollBars="Auto">
             <%#Eval("Description")%>
         </asp:Panel>
-    </div>   
+    </div>
     
 </ItemTemplate>   
 </asp:TemplateField>

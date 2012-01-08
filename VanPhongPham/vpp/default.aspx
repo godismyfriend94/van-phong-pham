@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="vpp_default" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="vpp_default"  ErrorPage="errorpage.aspx"%>
 <%@ Register Src="LastestProduct.ascx" TagPrefix="usc" TagName="LastestProduct" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 

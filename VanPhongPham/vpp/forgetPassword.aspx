@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="forgetPassword.aspx.cs" Inherits="vpp_forgetPassword" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="forgetPassword.aspx.cs" Inherits="vpp_forgetPassword" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">
@@ -52,7 +52,9 @@
                 <div class="form_row">
                     <asp:LinkButton ID="btnGetPassword" CssClass="contact" runat="server" Text="Gửi" OnClick="btnGetPassword_Click" ValidationGroup="group1" />
                 </div>
-      
+                <div class="form_row">
+                    <asp:Label ID="lblStatus" runat="server"></asp:Label>
+                </div>
             </div>             
         </div>
         <div class="bottom_prod_box_big"></div>                                

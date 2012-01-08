@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="productpanel.aspx.cs" Inherits="vpp_productpanel" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="productpanel.aspx.cs" Inherits="vpp_productpanel" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">
         Bạn đang ở: <span class="current">trang danh mục sản phẩm</span>

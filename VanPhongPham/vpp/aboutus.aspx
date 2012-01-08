@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="aboutus.aspx.cs" Inherits="vpp_aboutus" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="aboutus.aspx.cs" Inherits="vpp_aboutus" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
