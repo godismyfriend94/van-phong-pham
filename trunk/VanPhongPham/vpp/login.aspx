@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="vpp_login" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="vpp_login" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">
@@ -42,6 +42,10 @@
                     <div class="form_row">
                         <asp:LinkButton ID="LinkButton1" CssClass="contact" runat="server" Text="Đăng nhập" OnClick="btnLoginMyAccount_Click" />
                     </div>
+                    
+                    <%--<div class="form_row">
+                        <asp:Label ID="lblStatus" runat="server"></asp:Label>
+                    </div>--%>
                 </div>                
             </div>
             <div class="bottom_prod_box_big"></div>                                

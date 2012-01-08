@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="active_account.aspx.cs" Inherits="vpp_active_account" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="active_account.aspx.cs" Inherits="vpp_active_account" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
 </asp:Content>

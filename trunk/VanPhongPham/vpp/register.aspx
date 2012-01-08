@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="register.aspx.cs" Inherits="vpp_register" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="UserMasterPage.master" AutoEventWireup="true" CodeFile="register.aspx.cs" Inherits="vpp_register" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">
     <div class="crumb_navigation">

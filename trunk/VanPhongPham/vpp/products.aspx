@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="products.aspx.cs" Inherits="vpp_products" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/vpp/UserMasterPage.master" AutoEventWireup="true" CodeFile="products.aspx.cs" Inherits="vpp_products" Title="Untitled Page"  ErrorPage="errorpage.aspx"%>
 <%@ Register Src="ProductOfCategory.ascx" TagPrefix ="usc" TagName="ProductOfCategory" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpld_crumb_navigator" Runat="Server">

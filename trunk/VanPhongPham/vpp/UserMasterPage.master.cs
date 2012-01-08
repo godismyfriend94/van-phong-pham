@@ -22,44 +22,18 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
         CategoryLogic categoryLogic = new CategoryLogic();
         SubCategoryLogic subCategoryLogic = new SubCategoryLogic();
         AdvertiseLogic advertiseLogic = new AdvertiseLogic();
+        LoadLeftMenu();
+        Page.Title = title;
+        if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
+        {
+            tblUser = (TblUser)Session["user_logined"];
+            if (CheckPermission(tblUser.GroupId))
+            {
+                pnlAdmPanel.Visible = true;
+            }
+        }
         if (!Page.IsPostBack)
         {
-            Page.Title = title;
-            if (Session["user_logined"] != null && Session["user_logined"].ToString() != "")
-            {
-                tblUser = (TblUser)Session["user_logined"];
-                if (CheckPermission(tblUser.GroupId))
-                {
-                    pnlAdmPanel.Visible = true;
-                }
-            }
-            
-            CommonDb db = new CommonDb();
-            //Create the connection and DataAdapter for the Authors table.
-            SqlConnection cnn = db.OpenConnection();
-
-            SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
-
-            //Create and fill the DataSet.
-            DataSet ds = new DataSet();
-            cmd1.Fill(ds, "Category");
-
-            //Create a second DataAdapter for the Titles table.
-            SqlDataAdapter cmd2 = new SqlDataAdapter("select * from SubCategory", cnn);
-            cmd2.Fill(ds, "SubCategory");
-           
-            //Create the relation bewtween the Authors and Titles tables.
-
-            ds.Relations.Add("myrelation", 
-            ds.Tables["Category"].Columns["CategoryId"],
-            ds.Tables["SubCategory"].Columns["CategoryId"]);
-            ds.Relations[0].Nested = true;            
-
-            //Bind the Authors table to the parent Repeater control, and call DataBind.
-            parentRepeater.DataSource = ds.Tables[0];
-            parentRepeater.DataBind();
-           
-
             //bắt đầu khu vực code vùng quảng cáo ----------------------------------
             leftRepeaterAdv.DataSource = advertiseLogic.GetLeftAdvertise();
             leftRepeaterAdv.DataBind();
@@ -76,7 +50,49 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             {
                 lbtnLogin.Text = "Thoát";
             }
+            //Thống kê truy cập
+            StatisticVisit();
         }
+    }
+    /// <summary>
+    /// StatisticVisit
+    /// </summary>
+    private void StatisticVisit()
+    {
+        dangtruycap = Application["DangTruyCap"].ToString();
+        lblDangTruyCap.Text = dangtruycap;
+        datruycap = Application["DaTruyCap"].ToString();
+        lblDaTruyCap.Text = datruycap;
+    }
+    /// <summary>
+    /// LoadLeftMenu
+    /// </summary>
+    private void LoadLeftMenu()
+    {
+        CommonDb db = new CommonDb();
+        //Create the connection and DataAdapter for the Authors table.
+        SqlConnection cnn = db.OpenConnection();
+
+        SqlDataAdapter cmd1 = new SqlDataAdapter("select * from Category", cnn);
+
+        //Create and fill the DataSet.
+        DataSet ds = new DataSet();
+        cmd1.Fill(ds, "Category");
+
+        //Create a second DataAdapter for the Titles table.
+        SqlDataAdapter cmd2 = new SqlDataAdapter("select * from SubCategory", cnn);
+        cmd2.Fill(ds, "SubCategory");
+
+        //Create the relation bewtween the Authors and Titles tables.
+
+        ds.Relations.Add("myrelation",
+        ds.Tables["Category"].Columns["CategoryId"],
+        ds.Tables["SubCategory"].Columns["CategoryId"]);
+        ds.Relations[0].Nested = true;
+
+        //Bind the Authors table to the parent Repeater control, and call DataBind.
+        parentRepeater.DataSource = ds.Tables[0];
+        parentRepeater.DataBind();
     }
     /// <summary>
     /// CheckPermission

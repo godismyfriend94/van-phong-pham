@@ -15,7 +15,7 @@
                    <a href="vpp/details.aspx?prodId=<%#Eval("ProductId")%>">
                    <img alt="" border="0" src="images/products/<%#Eval("Thumbnails")%>" title="" width="92" height="92" class="image-product"/></a></div>
                <div class="prod_price">
-                   <span class="price"><%#Eval("Price")%> VND</span></div>
+                   <span class="price"><%#String.Format("{0:0,0}", Eval("PromotionPrice"))%> &nbsp;VNĐ</span></div>
            </div>
            <div class="bottom_prod_box">
            </div>
@@ -31,7 +31,7 @@
 </asp:DataList>       
 <p style="text-align:center;color:#990000; margin-top: 25px;"><asp:Label ID="lblNotFoundProduct" runat="server" Text="Không có sản phẩm nào thuộc danh mục này!" Visible="false" Font-Bold="true"></asp:Label></p>                    
 <div class="pagination2">
-    <cc1:CollectionPager ID="clPager1" runat="server" MaxPages="10" PageSize="12"
+    <cc1:CollectionPager ID="clPager1" runat="server" MaxPages="10" PageSize="18"
         LabelText="Trang:" 
         ResultsFormat="Display: {0}-{1} (của {2})" LabelStyle="" 
         ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;"

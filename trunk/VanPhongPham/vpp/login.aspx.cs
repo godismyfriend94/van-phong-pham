@@ -30,7 +30,7 @@ public partial class vpp_login : System.Web.UI.Page
         string username = commonUtil.EscapeInjection(txtUsername.Text);
         string password = commonUtil.EscapeInjection(txtPassword.Text);
         string passMD5 = commonUtil.MD5(password);
-
+        //lblStatus.Text = password;
         TblUserLogic tblUserLogic = new TblUserLogic();
 
         tblUser = tblUserLogic.GetUserByUserNameAndPassword(username, passMD5);
