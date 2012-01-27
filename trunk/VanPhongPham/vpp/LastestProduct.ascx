@@ -30,10 +30,14 @@
 </asp:DataList>       
 
 <div class="pagination">
-    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="18"
+    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="12"
         LabelText="Trang:" 
-        ResultsFormat="Display: {0}-{1} (của {2})" LabelStyle="" 
-        ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" >
+        ResultsFormat="Hiển thị: {0}-{1} (của {2})" LabelStyle="" 
+        ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" 
+        BackText=" Trang trước "
+        NextText=" Trang sau "
+        
+        >
     </cc1:CollectionPager>
 
 </div>  

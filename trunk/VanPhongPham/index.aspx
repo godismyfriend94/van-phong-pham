@@ -55,6 +55,182 @@
             });
         });
     </script>
+    
+    <%--<script type="text/javascript">
+
+    $(document).ready(function() {		
+    	
+	    //Execute the slideShow
+	    slideShow();
+
+    });
+
+    function slideShow() {
+
+	    //Set the opacity of all images to 0
+	    $('#gallery a').css({opacity: 0.0});
+    	
+	    //Get the first image and display it (set it to full opacity)
+	    $('#gallery a:first').css({opacity: 1.0});
+    	
+	    //Set the caption background to semi-transparent
+	    $('#gallery .caption').css({opacity: 0.7});
+
+	    //Resize the width of the caption according to the image width
+	    $('#gallery .caption').css({width: $('#gallery a').find('img').css('width')});
+    	
+	    //Get the caption of the first image from REL attribute and display it
+	    $('#gallery .content').html($('#gallery a:first').find('img').attr('rel'))
+	    .animate({opacity: 0.7}, 400);
+    	
+	    //Call the gallery function to run the slideshow, 6000 = change to next image after 6 seconds
+	    setInterval('gallery()',6000);
+    	
+    }
+
+    function gallery() {
+    	
+	    //if no IMGs have the show class, grab the first image
+	    var current = ($('#gallery a.show')?  $('#gallery a.show') : $('#gallery a:first'));
+
+	    //Get next image, if it reached the end of the slideshow, rotate it back to the first image
+	    var next = ((current.next().length) ? ((current.next().hasClass('caption'))? $('#gallery a:first') :current.next()) : $('#gallery a:first'));	
+    	
+	    //Get next image caption
+	    var caption = next.find('img').attr('rel');	
+    	
+	    //Set the fade in effect for the next image, show class has higher z-index
+	    next.css({opacity: 0.0})
+	    .addClass('show')
+	    .animate({opacity: 1.0}, 1000);
+
+	    //Hide the current image
+	    current.animate({opacity: 0.0}, 1000)
+	    .removeClass('show');
+    	
+	    //Set the opacity to 0 and height to 1px
+	    $('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });	
+    	
+	    //Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+	    $('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '80px'},500 );
+    	
+	    //Display the content
+	    $('#gallery .content').html(caption);
+    	
+    	
+    }
+
+    </script>
+    <style type="text/css">
+    .clear {
+	    clear:both
+    }
+
+    #gallery {
+	    position:relative;
+	    height:280px;
+	    width: 565px;
+	    margin-left: 10px;
+    }
+	    #gallery a {
+		    float:left;
+		    position:absolute;
+		    width: 565px;
+	    }
+    	
+	    #gallery a img {
+		    border:none;
+		    width: 565px;
+	    }
+    	
+	    #gallery a.show {
+		    z-index:500;
+		    
+	    }
+
+	    #gallery .caption {
+		    z-index:600; 
+		    background-color:#000; 
+		    color:#ffffff; 
+		    height:80px; 
+		    width:100%; 
+		    position:absolute;
+		    bottom:0;
+	    }
+
+	    #gallery .caption .content {
+		    margin:5px
+	    }
+    	
+	    #gallery .caption .content h3 {
+		    margin:0;
+		    padding:0;
+		    color:#1DCCEF;
+	    }
+    	
+
+    </style>--%>
+    <style type="text/css" media="screen">
+    div#slideShow{
+		background:#ffffff;
+		width:565px;
+		margin-left: 10px;
+		font-size: 12px;
+	}
+	div#slideShowItems{
+	  	height:160px;
+	  	width:565px;
+		overflow:hidden;
+		position:relative;
+		
+	}
+	
+	div#slideShowItems div{
+		width:565px;
+		color: #333333;
+	}
+	
+	div#slideShowItems img {
+		margin-right:5px;
+		float:left;
+	}
+	
+	ul#slideShowCount{
+		margin:0px;
+		padding:0px;
+		width:565px;
+	}
+	ul#slideShowCount li.slide{
+		line-height:14px;
+		float:right;
+		cursor:pointer;
+		width:26px;
+		height:18px;
+		display:block;
+		color:Black;
+		/*background: transparent url(images/slideshows/tabs.jpg) no-repeat scroll left top;*/
+	}
+	
+	ul#slideShowCount li.slide span{
+		padding-left:10px;
+		
+		font-weight:bold;
+		font-size:12px;
+	}
+	
+	ul#slideShowCount li.slide:hover
+	{
+		color: Blue;
+		background-position:left -18px;
+	}
+	
+	ul#slideShowCount li.slide.selectedTab{
+		/*background-position:left -18px;*/
+		color: Red;
+	}
+	
+	
+	</style>
  <!--End doan javascript xu ly cho left menu-->
  
     <!--[if IE 6]-->
@@ -211,24 +387,26 @@
                         <span class="reduce">350$</span> <span class="price">270$</span></div>
                 </div>
   
-                <div class="title_box">
+                <%--<div class="title_box">
                     Đăng ký nhận báo giá</div>
                 <div class="border_box">
                     <input type="text" name="newsletter" class="newsletter_input" value="Email: " />
                     <a href="#" class="join">Gửi</a>
-                </div>
+                </div>--%>
               
                 <div class="title_box">Thống kê truy cập</div>
                  <div class="border_box_statistic">
                     <br />
                      <p style="color: Green; font-size: 13px;">
-                        <img src="vpp/images/User.png" alt="Đang truy cập"/> Đang truy cập: 212
+                        <img src="vpp/images/User.png" alt="-"/> Đang truy cập: 
+                        <asp:Label ID="lblDangTruyCap" ForeColor="Green" runat="server" Text="--"></asp:Label>
                      </p><br />
                      <p style="color: Blue; font-size: 13px;">
-                        <img src="vpp/images/icon_visited.gif" alt="Đã truy cập"/>Đã truy cập:  212345
+                        <img src="vpp/images/icon_visited.gif" alt="-"/> Đã truy cập:  
+                        <asp:Label ID="lblDaTruyCap" ForeColor="Blue" runat="server" Text="--"></asp:Label>
                      </p><br />
                      <p style="color: #DE6B10; font-size: 13px;">
-                        <img src="vpp/images/icon_birthday.gif" alt="Ngày tham gia"/>Ngày tham gia: 24/12/2011
+                        <img src="vpp/images/icon_birthday.gif" alt="-"/>Ngày tham gia: 24/12/2011
                      </p><br />
                  </div>  
      
@@ -240,6 +418,75 @@
             </div>
             <!-- end of left content -->
             <div class="center_content">
+                <%--<div id="gallery">
+	            <a href="#" class="show">
+		            <img src="images/slideshows/flowing-rock.jpg" alt="Flowing Rock" width="580" height="280" title="" alt="" 
+		            rel="<h3>Flowing Rock</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/grass-blades.jpg" alt="Grass Blades" width="580" height="280" title="" alt="" 
+		            rel="<h3>Grass Blades</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/ladybug.jpg" alt="Ladybug" width="580" height="280" title="" alt="" 
+		            rel="<h3>Ladybug</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
+	            </a>
+
+	            <a href="#">
+		            <img src="images/slideshows/lightning.jpg" alt="Lightning" width="580" height="280" title="" alt="" 
+		            rel="<h3>Lightning</h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/lotus.jpg" alt="Lotus" width="580" height="280" title="" alt="" 
+		            rel="<h3>Lotus</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/mojave.jpg" alt="Mojave" width="580" height="280" title="" alt="" 
+		            rel="<h3>Mojave</h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."/>
+	            </a>
+            		
+	            <a href="#">
+		            <img src="images/slideshows/pier.jpg" alt="Pier" width="580" height="280" title="" alt="" 
+		            rel="<h3>Pier</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/sea-mist.jpg" alt="Sea Mist" width="580" height="280" title="" alt="" 
+		            rel="<h3>Sea Mist</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+	            </a>
+            	
+	            <a href="#">
+		            <img src="images/slideshows/stones.jpg" alt="Stone" width="580" height="280" title="" alt="" 
+		            rel="<h3>Stone</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
+	            </a>
+
+	            <div class="caption">
+	                <div class="content"></div>
+	            </div>
+                </div>--%>
+                <asp:Panel runat="server" ID="pnl_category_slide">
+                <div id="slideShow">
+		            <div id="slideShowItems">
+		                <asp:DataList ID="lstCategory" runat="server" RepeatColumns="1" Width="540px" >
+                           <ItemTemplate>
+                            <div>
+				                <a href="vpp/subcategory.aspx?cat=<%#Eval("CategoryId")%>">
+				                    <img alt="" border="0" height="160" width="160" src="images/products/<%#Eval("CategoryImage")%>" />
+				                </a>
+				                <h2><%#Eval("CategoryName")%></h2>
+				                <p><%#Eval("Description")%></p>
+			                </div>
+                        </ItemTemplate>
+                        </asp:DataList>
+		            </div>
+	            </div>
+	            <br />
+	            </asp:Panel>
+            <br/>
                 <!-- end of left content -->
                 <usc:LastestProduct runat="server" ID="uscLastestProduct" />
                 <!--end of lastest products-->
@@ -345,7 +592,9 @@
                     Báo giá
                  </div>
                  <div class="border_box">
-                 <a href="vpp/quotes.aspx"><img src="vpp/images/imagesdownload.jpg" border="0" width="64" height="64" alt="báo giá"/></a> 
+                    <a href="vpp/quotes.aspx" title="header=[Tải báo giá về] body=[&nbsp;] fade=[on]">
+                        <img src="vpp/images/imagesdownload.jpg" border="0" width="64" height="64" alt="báo giá"/>
+                    </a> 
                  </div>
                  
                 <div class="banner_adds">
@@ -407,3 +656,84 @@
     <!-- end of main_container -->
 </body>
 </html>
+<script type="text/javascript">
+
+/* Slide Show */
+$(document).ready(function() {
+	$('#slideShowItems div').hide().css({position:'absolute',width:'565px'});
+
+var currentSlide = -1;
+var prevSlide = null;
+var slides = $('#slideShowItems div');
+var interval = null;
+var FADE_SPEED = 500;
+var DELAY_SPEED = 8000;
+
+var html = '<ul id="slideShowCount">'
+
+for (var i = slides.length - 1;i >= 0 ; i--){
+	html += '<li id="slide'+ i+'" class="slide"><span>'+(i+1)+'</span></li>' ;
+}
+
+html += '</ul>';
+$('#slideShow').after(html);
+
+for (var i = slides.length - 1;i >= 0 ; i--){
+	$('#slide'+i).bind("click",{index:i},function(event){
+		currentSlide = event.data.index;
+		gotoSlide(event.data.index);
+	});
+};
+
+if (slides.length <= 1){
+	$('.slide').hide();
+}
+
+nextSlide();
+
+function nextSlide (){
+
+	if (currentSlide >= slides.length -1){
+		currentSlide = 0;
+	}else{
+		currentSlide++
+	}
+
+	gotoSlide(currentSlide);
+
+}
+
+function gotoSlide(slideNum){
+
+	if (slideNum != prevSlide){
+
+		if (prevSlide != null){
+			$(slides[prevSlide]).stop().hide();
+			$('#slide'+prevSlide).removeClass('selectedTab');
+		}
+
+		$('#slide'+currentSlide).addClass('selectedTab');
+
+
+		$('#slide'+slideNum).addClass('selectedTab');
+		$('#slide'+prevSlide).removeClass('selectedTab');
+
+		$(slides[slideNum]).stop().slideDown(FADE_SPEED,function(){
+			$(this).css({opacity:1});
+			if(jQuery.browser.msie){
+				this.style.removeAttribute('filter');
+			}
+		});
+
+		prevSlide = currentSlide;
+
+		if (interval != null){
+			clearInterval(interval);
+		}
+		interval = setInterval(nextSlide, DELAY_SPEED);
+	}
+
+}
+});
+
+</script>
