@@ -59,6 +59,8 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
     /// </summary>
     private void StatisticVisit()
     {
+        string dangtruycap;
+        string datruycap;
         dangtruycap = Application["DangTruyCap"].ToString();
         lblDangTruyCap.Text = dangtruycap;
         datruycap = Application["DaTruyCap"].ToString();

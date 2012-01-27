@@ -31,10 +31,12 @@
  <br /><br />     
 <p style="text-align:center;color:#990000; margin-top: 25px;"><asp:Label ID="lblNotFoundProduct" runat="server" Text="Không có sản phẩm nào thuộc danh mục này!" Visible="false" Font-Bold="true"></asp:Label></p>                    
 <div class="pagination2">
-    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="15"
+    <cc1:CollectionPager ID="clPager" runat="server" MaxPages="10" PageSize="12"
         LabelText="Trang:" 
         ResultsFormat="Hiển thị: {0}-{1} (của {2})" LabelStyle="" 
-        ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" >
+        ResultsStyle="PADDING-BOTTOM:4px;PADDING-TOP:4px;" 
+        BackText=" Trang trước "
+        NextText=" Trang sau "
+        >
     </cc1:CollectionPager>
-
 </div>  

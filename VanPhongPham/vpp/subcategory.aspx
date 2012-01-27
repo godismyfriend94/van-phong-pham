@@ -10,7 +10,7 @@
 <div class="menu_area1">
     <asp:DataList ID="lstSubCategory" runat="server" RepeatColumns="1" Width="540px" >
        <ItemTemplate>
-        <a href="products.aspx?subcat=<%#Eval("SubCategoryId")%>" class="ideas_subcategory">
+        <a href="products.aspx?subcat=<%#Eval("SubCategoryId")%>" class="ideas">
         <%--<asp:HyperLink ID="hplThongTinQTM" NavigateUrl="subcategory.aspx?cat=<%#Eval("CategoryId")%>" CssClass="ideas" runat="server">--%>
             <img alt="" border="0" src="../images/products/<%#Eval("SubCategoryImage")%>" class="image_subcategory"/>
             <%--<asp:Image ID="Image1" CssClass="image" runat="server" ImageUrl="../images/products/<%#Eval("CategoryImage")%>" />--%>
