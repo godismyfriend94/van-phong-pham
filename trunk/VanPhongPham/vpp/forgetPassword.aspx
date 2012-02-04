@@ -52,9 +52,7 @@
                 <div class="form_row">
                     <asp:LinkButton ID="btnGetPassword" CssClass="contact" runat="server" Text="Gửi" OnClick="btnGetPassword_Click" ValidationGroup="group1" />
                 </div>
-                <div class="form_row">
-                    <asp:Label ID="lblStatus" runat="server"></asp:Label>
-                </div>
+
             </div>             
         </div>
         <div class="bottom_prod_box_big"></div>                                

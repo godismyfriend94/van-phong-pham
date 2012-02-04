@@ -52,6 +52,29 @@ public partial class view_user_UserMasterPage : System.Web.UI.MasterPage
             }
             //Thống kê truy cập
             StatisticVisit();
+            //Danh sách hỗ trợ trực tuyến
+            SupporterList();
+        }
+    }
+    /// <summary>
+    /// SupporterList
+    /// </summary>
+    public void SupporterList()
+    {
+        SupportLogic supportLogic = new SupportLogic();
+
+        DataTable dt = supportLogic.GetAllSupport();
+
+        //Hiển thị câu thông báo không có sản phẩm nào
+        if (dt.Rows.Count != 0)
+        {
+            pnl_supporter.Visible = true;
+            lstSupporter.DataSource = dt;
+            lstSupporter.DataBind();
+        }
+        else
+        {
+            pnl_supporter.Visible = false;
         }
     }
     /// <summary>

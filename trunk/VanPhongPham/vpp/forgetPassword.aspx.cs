@@ -104,7 +104,7 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
                                 </td>
                             </tr>" +
                             "<tr><td> </td></tr><tr><td>Kính thư,</td></tr>" +
-                            "<tr><td>Cảm ơn bạn đã sử dụng các dịch vụ của chúng tôi.</td></tr>" +
+                            "<tr><td>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.</td></tr>" +
                     //"<tr><td><object data=http://vatgia.com/hanoitechpro width='600' height='400'>"+
                     //    "<embed src=http://vatgia.com/hanoitechpro width='600' height='400'></embed>" +
                     //    "Error: Embedded data could not be displayed. "+
@@ -114,7 +114,6 @@ public partial class vpp_forgetPassword : System.Web.UI.Page
                 if (commonUtil.SendMail(from, to, "", "", subject, body, ""))
                 {
                     ScriptManager.RegisterStartupScript(this, typeof(Page), "anz.vnn.vn", "<script>alert('Mật khẩu đã được gửi vào email của bạn, hãy kiểm tra email!')</script>", false);
-                    lblStatus.Text = md5Password;
                 }
                 else
                 {

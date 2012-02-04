@@ -8,6 +8,7 @@ using System.Threading;
 using System.Resources;
 using System.Globalization;
 using AjaxControlToolkit;
+using System.Data;
 
 public partial class vpp_details : System.Web.UI.Page
 {
@@ -46,10 +47,16 @@ public partial class vpp_details : System.Web.UI.Page
     private void ProductDetail()
     {
         productId = int.Parse(Request.QueryString["prodId"].ToString());
-
-        dtvDetail.DataSource = productLogic.GetProductById(productId);
+        DataTable ds = productLogic.GetProductById(productId);
+        float promotion = float.Parse(ds.Rows[0]["Promotion"].ToString());
+        dtvDetail.DataSource = ds;
         dtvDetail.DataBind();
 
+        if (promotion > 0)
+        {
+            Panel panel = (Panel)dtvDetail.FindControl("price_promotion");
+            panel.Visible = true;
+        }
         Repeater rptComposition = (Repeater)dtvDetail.FindControl("rptComposition");
         rptComposition.DataSource = productImageLogic.GetProductImageByProductId(productId);
         rptComposition.DataBind();
