@@ -525,12 +525,11 @@
                     H&atilde;ng s&#7843;n xu&#7845;t
                 </div>
                 <ul class="left_menu">
-                    <li class="odd"><a href="#">Sony</a></li>
-                    <li class="even"><a href="#">Samsung</a></li>
-                    <li class="odd"><a href="#">Canon</a></li>
-                    <li class="even"><a href="#">Misubishi</a></li>
-                    <li class="odd"><a href="#">Toshiba</a></li>
-                    <li class="even"><a href="#">Dell</a></li>
+                    <asp:DataList ID="dtl_supplier" runat="server" >
+                    <ItemTemplate>
+                        <li><a href="<%#Eval("SupplierLink")%>"> <%#Eval("SupplierName")%></a></li>
+                    </ItemTemplate>
+                    </asp:DataList>
                 </ul>
                 </asp:Panel>
                 
