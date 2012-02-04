@@ -78,9 +78,14 @@
                 Chi phí vận chuyển <span class="blue"><%#Eval("TransportCost")%> VNĐ</span><br />
                 Cập nhật ngày: <span class="blue"><%#Eval("CreateDate")%></span><br />
              </div>
-             <div class="prod_price_big"><span class="reduce">
-                    <%#String.Format("{0:0,0}",Eval("Price"))%> &nbsp;VNĐ
-                </span>
+             <div class="prod_price_big">
+                Giá: 
+                <asp:Panel runat="server" ID="price_promotion" Visible="false">
+                     <span class="reduce">
+                        <%#String.Format("{0:0,0}",Eval("Price"))%> &nbsp;VNĐ
+                    </span>
+                </asp:Panel>
+                
                 <span class="price">
                     <%#String.Format("{0:0,0}", Eval("PromotionPrice"))%> &nbsp;VNĐ
                 </span>

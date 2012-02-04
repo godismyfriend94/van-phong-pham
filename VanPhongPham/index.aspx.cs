@@ -56,9 +56,28 @@ public partial class index : System.Web.UI.Page
             }
             //thống kê truy cập
             StatisticVisit();
+            //hỗ trợ trực tuyến
+            SupporterList();
         }
     }
+    public void SupporterList()
+    {
+        SupportLogic supportLogic = new SupportLogic();
 
+        DataTable dt = supportLogic.GetAllSupport();
+        
+        //Hiển thị câu thông báo không có sản phẩm nào
+        if (dt.Rows.Count != 0)
+        {
+            pnl_supporter.Visible = true;
+            lstSupporter.DataSource = dt;
+            lstSupporter.DataBind();
+        }
+        else
+        {
+            pnl_supporter.Visible = false;
+        }
+    }
     public void DisplayCategorySlide()
     {
         lstCategory.DataSource = categoryLogic.GetAllCategory().DefaultView;

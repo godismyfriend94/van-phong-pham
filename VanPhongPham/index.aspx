@@ -378,13 +378,18 @@
                 <div class="title_box">
                     Sản phẩm tiêu biểu</div>
                 <div class="border_box">
-                    <div class="product_title">
+                    <marquee height="100%" scrollamount="2" direction="up" onmouseout="this.start();"
+                    onmouseover="this.stop();" loop="true">
+                    <center>
+                        <div class="product_title">
                         <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
-                    <div class="product_img">
-                        <a href="vpp/details.aspx">
-                            <img src="images/products/camera.png" alt="" title="" border="0" /></a></div>
-                    <div class="prod_price">
-                        <span class="reduce">350$</span> <span class="price">270$</span></div>
+                        <div class="product_img">
+                            <a href="vpp/details.aspx">
+                                <img src="images/products/camera.png" alt="" title="" border="0" /></a></div>
+                        <div class="prod_price">
+                            <span class="reduce">350$</span> <span class="price">270$</span></div>
+                    </center>
+                    </marquee>
                 </div>
   
                 <%--<div class="title_box">
@@ -405,9 +410,9 @@
                         <img src="vpp/images/icon_visited.gif" alt="-"/> Đã truy cập:  
                         <asp:Label ID="lblDaTruyCap" ForeColor="Blue" runat="server" Text="--"></asp:Label>
                      </p><br />
-                     <p style="color: #DE6B10; font-size: 13px;">
+                     <%--<p style="color: #DE6B10; font-size: 13px;">
                         <img src="vpp/images/icon_birthday.gif" alt="-"/>Ngày tham gia: 24/12/2011
-                     </p><br />
+                     </p><br />--%>
                  </div>  
      
                 
@@ -418,56 +423,6 @@
             </div>
             <!-- end of left content -->
             <div class="center_content">
-                <%--<div id="gallery">
-	            <a href="#" class="show">
-		            <img src="images/slideshows/flowing-rock.jpg" alt="Flowing Rock" width="580" height="280" title="" alt="" 
-		            rel="<h3>Flowing Rock</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/grass-blades.jpg" alt="Grass Blades" width="580" height="280" title="" alt="" 
-		            rel="<h3>Grass Blades</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/ladybug.jpg" alt="Ladybug" width="580" height="280" title="" alt="" 
-		            rel="<h3>Ladybug</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
-	            </a>
-
-	            <a href="#">
-		            <img src="images/slideshows/lightning.jpg" alt="Lightning" width="580" height="280" title="" alt="" 
-		            rel="<h3>Lightning</h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/lotus.jpg" alt="Lotus" width="580" height="280" title="" alt="" 
-		            rel="<h3>Lotus</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/mojave.jpg" alt="Mojave" width="580" height="280" title="" alt="" 
-		            rel="<h3>Mojave</h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."/>
-	            </a>
-            		
-	            <a href="#">
-		            <img src="images/slideshows/pier.jpg" alt="Pier" width="580" height="280" title="" alt="" 
-		            rel="<h3>Pier</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/sea-mist.jpg" alt="Sea Mist" width="580" height="280" title="" alt="" 
-		            rel="<h3>Sea Mist</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-	            </a>
-            	
-	            <a href="#">
-		            <img src="images/slideshows/stones.jpg" alt="Stone" width="580" height="280" title="" alt="" 
-		            rel="<h3>Stone</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
-	            </a>
-
-	            <div class="caption">
-	                <div class="content"></div>
-	            </div>
-                </div>--%>
                 <asp:Panel runat="server" ID="pnl_category_slide">
                 <div id="slideShow">
 		            <div id="slideShowItems">
@@ -521,52 +476,40 @@
             </asp:Panel>
                 <div class="title_box">
                     Sản phẩm mới</div>
-                <div class="border_box">
-                    <div class="product_title">
-                        <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
-                    <div class="product_img">
-                        <a href="vpp/details.aspx">
-                            <img src="images/products/p2.gif" alt="" title="" border="0" /></a></div>
-                    <div class="prod_price">
-                        <span class="reduce">350$</span> <span class="price">270$</span></div>
-                </div>
                 
+                <div class="border_box">
+                    <marquee height="100%" scrollamount="2" direction="up" onmouseout="this.start();"
+                    onmouseover="this.stop();" loop="true">
+                    <center>
+                        <div class="product_title">
+                            <a href="vpp/details.aspx">Motorola 156 MX-VL</a></div>
+                        <div class="product_img">
+                            <a href="vpp/details.aspx">
+                                <img src="images/products/p2.gif" alt="" title="" border="0" /></a></div>
+                        <div class="prod_price">
+                            <span class="reduce">350$</span> <span class="price">270$</span></div>
+                    </center>
+                    </marquee>
+                </div>
+                <asp:Panel runat="server" ID="pnl_supporter" Visible="true">
                 <div class="title_box">Hỗ trợ trực tuyến</div>  
                  <div class="border_box">
                      <table class="list_product_buy" border="0" cellpadding="0" cellspacing="0" style="margin-left: 5px;" >
 		                <tbody>
-		                    <tr>
+		                    <asp:DataList ID="lstSupporter" runat="server">
+                            <ItemTemplate>
+		                        <tr>
 		                        <td>
-                                    <a href = 'ymsgr:sendIM?congvinh_sor'>
-                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=congvinh_sor&m=g&t=14" border="0" height="50px" width="50px"/>           
+                                    <a href = '<%#Eval("SupportLink")%>' style="text-decoration: none;">
+                                        &nbsp;&nbsp;<img  alt=""  src="<%#Eval("SupportImage")%>" border="0" height="50px" width="50px"/>           
                                     </a>
                                 </td>
                                 <td style="color:#a81f22; ">
-                                    Tr&#432;&#417;ng Công Vinh<br />
+                                    <%#Eval("SupportName")%><br />
                                 </td>
 		                    </tr>
-		                    <tr>
-		                        <td>
-                                    <a href = 'ymsgr:sendIM?nang_am_tinhanh16'>
-                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=nang_am_tinhanh16&m=g&t=14" border="0" height="50px" width="50px"/>           
-                                    </a>                 
-                                </td>
-                                <td  style="color:#a81f22;" >
-                                    &#272;&#7895; B&#7843;o &#272;&#7883;nh<br />
-                                </td>
-		                    </tr>
-		                    <tr>
-		                        <td>
-                                    <a href = 'ymsgr:sendIM?anhnq90'>
-                                        <img  alt=""  src="http://presence.msg.yahoo.com/online?u=anhnq90&m=g&t=14" border="0" height="50px" width="50px"/>           
-                                    </a>                 
-                                </td>
-                                <td  style="color:#a81f22;" >
-                                    Ngô Quang Anh<br />
-                                    
-                                </td>
-		                    </tr>
-            			    
+            			    </ItemTemplate>
+            			    </asp:DataList>
 		                    <tr>
 		                        <td colspan="2">
 		                            <asp:Label ID="Label1" runat="server" Text="Hotline 24/7: (043) 343 3343" ForeColor="Blue"></asp:Label>
@@ -575,7 +518,9 @@
 		                </tbody>
 	                </table>
                  </div>
-     
+                </asp:Panel>
+                
+                <asp:Panel runat="server" ID="pnl_supplier" Visible="true">
                 <div class="title_box">
                     H&atilde;ng s&#7843;n xu&#7845;t
                 </div>
@@ -587,6 +532,7 @@
                     <li class="odd"><a href="#">Toshiba</a></li>
                     <li class="even"><a href="#">Dell</a></li>
                 </ul>
+                </asp:Panel>
                 
                 <div class="title_box">
                     Báo giá
