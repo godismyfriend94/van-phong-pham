@@ -58,8 +58,13 @@ public partial class index : System.Web.UI.Page
             StatisticVisit();
             //hỗ trợ trực tuyến
             SupporterList();
+            //Hãng sản xuất
+            SupplierList();
         }
     }
+    /// <summary>
+    /// SupporterList
+    /// </summary>
     public void SupporterList()
     {
         SupportLogic supportLogic = new SupportLogic();
@@ -78,6 +83,30 @@ public partial class index : System.Web.UI.Page
             pnl_supporter.Visible = false;
         }
     }
+    /// <summary>
+    /// SupplierList
+    /// </summary>
+    public void SupplierList()
+    {
+        SupplierLogic supplierLogic = new SupplierLogic();
+
+        DataTable dt = supplierLogic.GetAllSupplier();
+
+        //Hiển thị câu thông báo không có item nào
+        if (dt.Rows.Count != 0)
+        {
+            pnl_supplier.Visible = true;
+            dtl_supplier.DataSource = dt;
+            dtl_supplier.DataBind();
+        }
+        else
+        {
+            pnl_supplier.Visible = false;
+        }
+    }
+    /// <summary>
+    /// DisplayCategorySlide
+    /// </summary>
     public void DisplayCategorySlide()
     {
         lstCategory.DataSource = categoryLogic.GetAllCategory().DefaultView;

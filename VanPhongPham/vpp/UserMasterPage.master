@@ -321,12 +321,12 @@
     <div class="title_box">H&atilde;ng s&#7843;n xu&#7845;t </div>
     
         <ul class="left_menu">
-        <li class="odd"><a href="#">Sony</a></li>
-        <li class="even"><a href="#">Samsung</a></li>       
-        <li class="odd"><a href="#">Canon</a></li>  
-        <li class="even"><a href="#">Misubishi</a></li>   
-        <li class="odd"><a href="#">Toshiba</a></li>   
-        <li class="even"><a href="#">Dell</a></li>   
+        <li><a href="#">Sony</a></li>
+        <li><a href="#">Samsung</a></li>       
+        <li><a href="#">Canon</a></li>  
+        <li><a href="#">Misubishi</a></li>   
+        <li><a href="#">Toshiba</a></li>   
+        <li><a href="#">Dell</a></li>   
         </ul>
      
      <div class="title_box">
