@@ -12,7 +12,10 @@
             <div class="center_prod_box_big">      
               	<div class="contact_form_map">
                     
-                   <form name="register" action="#">          
+                   <form name="register" action="#">   
+                    <div class="form_row">
+                        <asp:Label ID="Label9" runat="server" Text="Dấu (*) là những thông tin bắt buộc phải nhập" ForeColor="Blue"></asp:Label>
+                    </div>        
                     <div class="form_row">
                         <label class="contact">
                         <strong> 

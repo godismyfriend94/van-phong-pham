@@ -16,6 +16,7 @@ using System.Xml.Linq;
 public class Advertise
 {
     int advertiseId;
+    string advertiseType;
     string advertiseName;
     string advertiseLink;
     string imageURL;
